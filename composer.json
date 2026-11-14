@@ -1,0 +1,95 @@
+{
+    "name": "lifeastroapi/lifeastroapi",
+    "description": "Official PHP SDK for LifeAstroAPI: Vedic astrology and Hindu calendar API (panchang, festivals, kundli, dasha, kundli matching, muhurat, horoscopes, numerology, tarot, Western astrology) in 10 languages.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "astrology",
+        "vedic-astrology",
+        "jyotish",
+        "panchang",
+        "kundli",
+        "kundli-matching",
+        "horoscope",
+        "hindu-calendar",
+        "festivals",
+        "muhurat",
+        "numerology",
+        "tarot",
+        "western-astrology",
+        "astrology-api",
+        "lifeastroapi",
+        "sdk",
+        "api-client"
+    ],
+    "homepage": "https://lifeastroapi.com",
+    "authors": [
+        {
+            "name": "Ayanshu Life",
+            "email": "support@lifeastroapi.com",
+            "homepage": "https://lifeastroapi.com"
+        }
+    ],
+    "support": {
+        "email": "support@lifeastroapi.com",
+        "issues": "https://github.com/ayanshulife/lifeastroapi-php/issues",
+        "source": "https://github.com/ayanshulife/lifeastroapi-php",
+        "docs": "https://lifeastroapi.com/docs/"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "nyholm/psr7": "^1.8",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^10.5 || ^11.5 || ^12.0",
+        "squizlabs/php_codesniffer": "^3.13 || ^4.0"
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "Pass a Guzzle client as the PSR-18 transport instead of the built-in cURL one.",
+        "symfony/http-client": "Pass Symfony's Psr18Client as the PSR-18 transport instead of the built-in cURL one."
+    },
+    "autoload": {
+        "psr-4": {
+            "LifeAstroApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LifeAstroApi\\Tests\\": "tests/",
+            "LifeAstroApi\\Tool\\": "tool/"
+        }
+    },
+    "scripts": {
+        "generate": "node tool/generate.mjs",
+        "goldens": "node tool/node-goldens.mjs",
+        "test": "phpunit",
+        "analyse": "phpstan analyse --memory-limit=1G",
+        "cs": "phpcs",
+        "cs-fix": "phpcbf",
+        "check": [
+            "@test",
+            "@analyse",
+            "@cs"
+        ],
+        "live": "php tool/live-sweep.php"
+    },
+    "scripts-descriptions": {
+        "generate": "Regenerate src/Resources from the Node SDK's endpoint manifest (needs node).",
+        "goldens": "Record the Node SDK's request URLs for every method into tests/fixtures (needs node).",
+        "test": "Run the unit tests (mock transport, no network).",
+        "analyse": "Run PHPStan at level max.",
+        "cs": "Check PSR-12 code style.",
+        "cs-fix": "Fix PSR-12 code style.",
+        "check": "Tests, PHPStan and code style.",
+        "live": "Call every method once against a real API (spends credits; needs --base-url)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

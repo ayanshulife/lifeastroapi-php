@@ -1,0 +1,13 @@
+parameters:
+    level: max
+    # The oldest PHP this package supports: PHPStan reports syntax and functions newer than 8.1.
+    phpVersion: 80100
+    paths:
+        - src
+        - tests
+        - tool
+        - examples
+    excludePaths:
+        # Need packages this library does not install (Laravel, Guzzle); they are checked by hand.
+        - examples/laravel
+        - examples/psr18.php

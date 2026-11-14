@@ -1,0 +1,25 @@
+# Composer
+/vendor/
+/composer.phar
+# A library does not pin its dependencies; apps that install it do.
+/composer.lock
+
+# Tool caches
+/.phpunit.cache/
+/.phpunit.result.cache
+/.phpcs-cache
+/build/
+
+# Live sweep output (tool/live-sweep.php --dump)
+/live-dump/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,1167 @@
+{
+ "node_sdk_version": "0.9.1",
+ "methods": {
+  "ashtakavarga.bhinna": {
+   "url": "/v1/ashtakavarga/bhinna/Jupiter?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata",
+   "lang_url": "/v1/ashtakavarga/bhinna/Jupiter?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "ashtakavarga.kaksha": {
+   "url": "/v1/ashtakavarga/kaksha?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/ashtakavarga/kaksha?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "ashtakavarga.sarva": {
+   "url": "/v1/ashtakavarga/sarva?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata"
+  },
+  "ashtakavarga.transitScore": {
+   "url": "/v1/ashtakavarga/transit-score?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/ashtakavarga/transit-score?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "calendar.adhikMaas": {
+   "url": "/v1/calendar/adhik-maas?year=2026",
+   "lang_url": "/v1/calendar/adhik-maas?lang=bn&locale=bn&year=2026"
+  },
+  "calendar.month": {
+   "url": "/v1/calendar/month?date=2026-11-20&tz=Asia%2FKolkata",
+   "lang_url": "/v1/calendar/month?date=2026-11-20&lang=bn&locale=bn&tz=Asia%2FKolkata"
+  },
+  "calendar.ritu": {
+   "url": "/v1/calendar/ritu?date=2026-11-20&tz=Asia%2FKolkata",
+   "lang_url": "/v1/calendar/ritu?date=2026-11-20&lang=bn&locale=bn&tz=Asia%2FKolkata"
+  },
+  "calendar.samvatsara": {
+   "url": "/v1/calendar/samvatsara?date=2026-11-20&tz=Asia%2FKolkata",
+   "lang_url": "/v1/calendar/samvatsara?date=2026-11-20&lang=bn&locale=bn&tz=Asia%2FKolkata"
+  },
+  "calendar.solstices": {
+   "url": "/v1/calendar/solstices?year=2026",
+   "lang_url": "/v1/calendar/solstices?lang=bn&locale=bn&year=2026"
+  },
+  "chart.ascendant": {
+   "url": "/v1/chart/ascendant?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/ascendant?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.ashtakvarga": {
+   "url": "/v1/chart/ashtakvarga?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/ashtakvarga?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.ashtakvargaPlanet": {
+   "url": "/v1/chart/ashtakvarga/Jupiter?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/ashtakvarga/Jupiter?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.aspects": {
+   "url": "/v1/chart/aspects?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/aspects?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.astroDetails": {
+   "url": "/v1/chart/astro-details?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/astro-details?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.avakhada": {
+   "url": "/v1/chart/avakhada?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/avakhada?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.bhavabala": {
+   "url": "/v1/chart/bhavabala?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.combustion": {
+   "url": "/v1/chart/combustion?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/combustion?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.dignity": {
+   "url": "/v1/chart/dignity?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/dignity?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.divisional": {
+   "url": "/v1/chart/divisional/D9?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/divisional/D9?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.doshas": {
+   "url": "/v1/chart/doshas?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.ghatak": {
+   "url": "/v1/chart/ghatak?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/ghatak?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.grahaYuddha": {
+   "url": "/v1/chart/graha-yuddha?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/graha-yuddha?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.houseOccupants": {
+   "url": "/v1/chart/house-occupants?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/house-occupants?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.houses": {
+   "url": "/v1/chart/houses?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/houses?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.kpHouseSignificator": {
+   "url": "/v1/chart/kp-house-significator?cusp=7&date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/kp-house-significator?cusp=7&date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.kpSublord": {
+   "url": "/v1/chart/kp-sublord?date=1990-01-15&lat=19.076&lon=72.8777&planet=Jupiter&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/kp-sublord?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&planet=Jupiter&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.kundliFacts": {
+   "url": "/v1/chart/kundli-facts?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/kundli-facts?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.nakshatra": {
+   "url": "/v1/chart/nakshatra?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/nakshatra?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.navamsa": {
+   "url": "/v1/chart/divisional/D9?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/divisional/D9?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.planet": {
+   "url": "/v1/chart/planet/Jupiter?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/planet/Jupiter?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.planets": {
+   "url": "/v1/chart/planets?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/planets?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.sensitivity": {
+   "url": "/v1/chart/sensitivity?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.shadbala": {
+   "url": "/v1/chart/shadbala?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/shadbala?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.shadbalaComponent": {
+   "url": "/v1/chart/shadbala/sthana?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/chart/shadbala/sthana?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "chart.yogas": {
+   "url": "/v1/chart/yogas?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.char": {
+   "url": "/v1/dasha/char?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/char?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.charAntar": {
+   "url": "/v1/dasha/char/leo/scorpio?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/char/leo/scorpio?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.charCurrent": {
+   "url": "/v1/dasha/char/current?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/char/current?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.charMaha": {
+   "url": "/v1/dasha/char/leo?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/char/leo?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.charMajor": {
+   "url": "/v1/dasha/char/major?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/char/major?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.vimshottari": {
+   "url": "/v1/dasha/vimshottari?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/vimshottari?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.vimshottariAntar": {
+   "url": "/v1/dasha/vimshottari/Jupiter/Saturn?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/vimshottari/Jupiter/Saturn?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.vimshottariCurrent": {
+   "url": "/v1/dasha/vimshottari/current?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/vimshottari/current?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.vimshottariMaha": {
+   "url": "/v1/dasha/vimshottari/Jupiter?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/vimshottari/Jupiter?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.vimshottariPratyantar": {
+   "url": "/v1/dasha/vimshottari/Jupiter/Saturn/Mercury?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/vimshottari/Jupiter/Saturn/Mercury?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.vimshottariSookshma": {
+   "url": "/v1/dasha/vimshottari/Jupiter/Saturn/Mercury/Ketu?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/vimshottari/Jupiter/Saturn/Mercury/Ketu?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.yogini": {
+   "url": "/v1/dasha/yogini?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/yogini?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.yoginiByName": {
+   "url": "/v1/dasha/yogini/mangala?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/yogini/mangala?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "dasha.yoginiCurrent": {
+   "url": "/v1/dasha/yogini/current?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/dasha/yogini/current?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "eclipses.all": {
+   "url": "/v1/eclipses/all?end_date=2027-12-31&start_date=2026-01-01",
+   "lang_url": "/v1/eclipses/all?end_date=2027-12-31&lang=bn&locale=bn&start_date=2026-01-01"
+  },
+  "eclipses.lunar": {
+   "url": "/v1/eclipses/lunar?end_date=2027-12-31&start_date=2026-01-01",
+   "lang_url": "/v1/eclipses/lunar?end_date=2027-12-31&lang=bn&locale=bn&start_date=2026-01-01"
+  },
+  "eclipses.solar": {
+   "url": "/v1/eclipses/solar?end_date=2027-12-31&start_date=2026-01-01",
+   "lang_url": "/v1/eclipses/solar?end_date=2027-12-31&lang=bn&locale=bn&start_date=2026-01-01"
+  },
+  "festivals.month": {
+   "url": "/v1/festivals/month?month=11&year=2026",
+   "lang_url": "/v1/festivals/month?lang=bn&locale=bn&month=11&year=2026"
+  },
+  "festivals.onDate": {
+   "url": "/v1/festivals/on-date?date=2026-11-20",
+   "lang_url": "/v1/festivals/on-date?date=2026-11-20&lang=bn&locale=bn"
+  },
+  "festivals.vrat": {
+   "url": "/v1/festivals/vrat?type=ekadashi&year=2026",
+   "lang_url": "/v1/festivals/vrat?lang=bn&locale=bn&type=ekadashi&year=2026"
+  },
+  "geo.place": {
+   "url": "/v1/geo/place/1275339"
+  },
+  "geo.reverse": {
+   "url": "/v1/geo/reverse?lat=19.076&lon=72.8777"
+  },
+  "geo.search": {
+   "url": "/v1/geo/search?q=Mumbai"
+  },
+  "geo.timezone": {
+   "url": "/v1/geo/timezone?lat=19.076&lon=72.8777"
+  },
+  "horoscope.daily": {
+   "url": "/v1/horoscope/daily?rashi=aries",
+   "lang_url": "/v1/horoscope/daily?lang=bn&rashi=aries"
+  },
+  "horoscope.monthly": {
+   "url": "/v1/horoscope/monthly?month=2026-11&rashi=aries",
+   "lang_url": "/v1/horoscope/monthly?lang=bn&month=2026-11&rashi=aries"
+  },
+  "horoscope.weekly": {
+   "url": "/v1/horoscope/weekly?rashi=aries&week=2026-W47",
+   "lang_url": "/v1/horoscope/weekly?lang=bn&rashi=aries&week=2026-W47"
+  },
+  "lalkitab.chart": {
+   "url": "/v1/lalkitab/chart?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/lalkitab/chart?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "lalkitab.dasha": {
+   "url": "/v1/lalkitab/dasha?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/lalkitab/dasha?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "lalkitab.dashaCurrent": {
+   "url": "/v1/lalkitab/dasha/current?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/lalkitab/dasha/current?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "meta.ayanamsas": {
+   "url": "/v1/meta/ayanamsas?date=2026-11-14&tz=UTC"
+  },
+  "meta.endpoints": {
+   "url": "/v1/meta/endpoints"
+  },
+  "meta.vedicDoshas": {
+   "url": "/v1/meta/vedic/doshas"
+  },
+  "meta.vedicLocales": {
+   "url": "/v1/meta/vedic/locales"
+  },
+  "meta.vedicNarrativeAxes": {
+   "url": "/v1/meta/vedic/narrative-axes"
+  },
+  "meta.vedicYogas": {
+   "url": "/v1/meta/vedic/yogas"
+  },
+  "meta.version": {
+   "url": "/v1/meta/version"
+  },
+  "milan.ashtakoota": {
+   "url": "/v1/milan/ashtakoota?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/ashtakoota?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.ashtakootaKoota": {
+   "url": "/v1/milan/ashtakoota/nadi?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/ashtakoota/nadi?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.ashtakootaTotal": {
+   "url": "/v1/milan/ashtakoota/total?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata"
+  },
+  "milan.dashaSync": {
+   "url": "/v1/milan/dasha-sync?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&from=2026-11-20&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&marriage_windows=true&years=3",
+   "lang_url": "/v1/milan/dasha-sync?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&from=2026-11-20&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn&marriage_windows=true&years=3"
+  },
+  "milan.dhanYog": {
+   "url": "/v1/milan/dhan-yog?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/dhan-yog?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.longevity": {
+   "url": "/v1/milan/longevity?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/longevity?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.mahendra": {
+   "url": "/v1/milan/mahendra?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/mahendra?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.mangalDosha": {
+   "url": "/v1/milan/mangal-dosha?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/mangal-dosha?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.nadiDosha": {
+   "url": "/v1/milan/nadi-dosha?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/nadi-dosha?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.navamsaCompat": {
+   "url": "/v1/milan/navamsa-compat?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/navamsa-compat?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.overlay": {
+   "url": "/v1/milan/overlay?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata"
+  },
+  "milan.santanYog": {
+   "url": "/v1/milan/santan-yog?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/santan-yog?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.shaniDosha": {
+   "url": "/v1/milan/shani-dosha?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/shani-dosha?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.streeDirgha": {
+   "url": "/v1/milan/stree-dirgha?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/stree-dirgha?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.summary": {
+   "url": "/v1/milan/summary?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/summary?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "milan.vivahPhal": {
+   "url": "/v1/milan/vivah-phal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata",
+   "lang_url": "/v1/milan/vivah-phal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "muhurta.bestTime": {
+   "url": "/v1/muhurta/best-time?end_date=2026-11-30&lat=19.076&lon=72.8777&start_date=2026-11-01&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/best-time?end_date=2026-11-30&lang=bn&lat=19.076&locale=bn&lon=72.8777&start_date=2026-11-01&tz=Asia%2FKolkata"
+  },
+  "muhurta.chandraBala": {
+   "url": "/v1/muhurta/chandra-bala?birth_moon_sign=3&date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "muhurta.grahaPravesh": {
+   "url": "/v1/muhurta/graha-pravesh?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/graha-pravesh?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "muhurta.naamkaran": {
+   "url": "/v1/muhurta/naamkaran?birth_date=2026-11-05&date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/naamkaran?birth_date=2026-11-05&date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "muhurta.panchakaRahita": {
+   "url": "/v1/muhurta/panchaka-rahita?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/panchaka-rahita?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "muhurta.sarvarthaSiddhi": {
+   "url": "/v1/muhurta/sarvartha-siddhi?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/sarvartha-siddhi?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "muhurta.shubhaYoga": {
+   "url": "/v1/muhurta/shubha-yoga?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/shubha-yoga?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "muhurta.taraBala": {
+   "url": "/v1/muhurta/tara-bala?birth_nak=7&date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "muhurta.vivah": {
+   "url": "/v1/muhurta/vivah?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/vivah?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "muhurta.vyapar": {
+   "url": "/v1/muhurta/vyapar?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/vyapar?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "muhurta.yatra": {
+   "url": "/v1/muhurta/yatra?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/muhurta/yatra?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "narrative.careerOutlook": {
+   "url": "/v1/vedic/narrative/career-outlook?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/career-outlook?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.dashaPhal": {
+   "url": "/v1/vedic/narrative/dasha-phal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/dasha-phal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "narrative.dashaTreePhal": {
+   "url": "/v1/vedic/narrative/dasha-tree-phal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&maha=Jupiter",
+   "lang_url": "/v1/vedic/narrative/dasha-tree-phal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&locale=bn&maha=Jupiter"
+  },
+  "narrative.divisional": {
+   "url": "/v1/vedic/narrative/divisional/D9?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/divisional/D9?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.dosha": {
+   "url": "/v1/vedic/narrative/dosha/mangal_dosha?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/dosha/mangal_dosha?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.doshas": {
+   "url": "/v1/vedic/narrative/doshas?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/doshas?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.financeOutlook": {
+   "url": "/v1/vedic/narrative/finance-outlook?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/finance-outlook?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.horoscopeDailyByLagna": {
+   "url": "/v1/vedic/narrative/horoscope/daily-by-lagna?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/horoscope/daily-by-lagna?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.horoscopeDailyByMoon": {
+   "url": "/v1/vedic/narrative/horoscope/daily-by-moon?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/horoscope/daily-by-moon?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.horoscopeDailyTamil": {
+   "url": "/v1/vedic/narrative/horoscope/daily-tamil?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/horoscope/daily-tamil?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.horoscopeWeeklyByLagna": {
+   "url": "/v1/vedic/narrative/horoscope/weekly-by-lagna?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/horoscope/weekly-by-lagna?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.horoscopeWeeklyByMoon": {
+   "url": "/v1/vedic/narrative/horoscope/weekly-by-moon?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/horoscope/weekly-by-moon?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.houseLord": {
+   "url": "/v1/vedic/narrative/house-lord?date=1990-01-15&house=5&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/house-lord?date=1990-01-15&house=5&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.houseLordsOverview": {
+   "url": "/v1/vedic/narrative/house-lords-overview?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/house-lords-overview?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.karakas": {
+   "url": "/v1/vedic/narrative/karakas?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/karakas?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.lagna": {
+   "url": "/v1/vedic/narrative/lagna?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/lagna?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.marriageOutlook": {
+   "url": "/v1/vedic/narrative/marriage-outlook?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/marriage-outlook?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.milan": {
+   "url": "/v1/vedic/narrative/milan?boy.date=1990-01-15&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/milan?boy.date=1990-01-15&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "narrative.moonSign": {
+   "url": "/v1/vedic/narrative/moon-sign?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/moon-sign?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.nakshatra": {
+   "url": "/v1/vedic/narrative/nakshatra?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/nakshatra?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.planetInHouse": {
+   "url": "/v1/vedic/narrative/planet-in-house?date=1990-01-15&lat=19.076&lon=72.8777&planet=Jupiter&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/planet-in-house?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&planet=Jupiter&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.planetInSign": {
+   "url": "/v1/vedic/narrative/planet-in-sign?date=1990-01-15&lat=19.076&lon=72.8777&planet=Jupiter&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/planet-in-sign?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&planet=Jupiter&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.planetsInHouses": {
+   "url": "/v1/vedic/narrative/planets-in-houses?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/planets-in-houses?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.planetsInSigns": {
+   "url": "/v1/vedic/narrative/planets-in-signs?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/planets-in-signs?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.prashna": {
+   "url": "/v1/vedic/narrative/prashna?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&topic=career&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/prashna?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&topic=career&tz=Asia%2FKolkata"
+  },
+  "narrative.profile": {
+   "url": "/v1/vedic/narrative/profile?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/profile?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.reference": {
+   "url": "/v1/vedic/narrative/reference",
+   "lang_url": "/v1/vedic/narrative/reference?lang=bn&locale=bn"
+  },
+  "narrative.referenceFamily": {
+   "url": "/v1/vedic/narrative/reference/yoga",
+   "lang_url": "/v1/vedic/narrative/reference/yoga?lang=bn&locale=bn"
+  },
+  "narrative.sadeSatiHistory": {
+   "url": "/v1/vedic/narrative/sade-sati-history?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/sade-sati-history?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "narrative.sadeSatiPhase": {
+   "url": "/v1/vedic/narrative/sade-sati-phase?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/sade-sati-phase?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "narrative.sadeSatiStatus": {
+   "url": "/v1/vedic/narrative/sade-sati-status?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/sade-sati-status?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "narrative.sunSign": {
+   "url": "/v1/vedic/narrative/sun-sign?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/sun-sign?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.transitAshtakavarga": {
+   "url": "/v1/vedic/narrative/transit-ashtakavarga?birth.date=1990-01-15&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lat=19.076&lon=72.8777",
+   "lang_url": "/v1/vedic/narrative/transit-ashtakavarga?birth.date=1990-01-15&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&lat=19.076&locale=bn&lon=72.8777"
+  },
+  "narrative.transitDouble": {
+   "url": "/v1/vedic/narrative/transit-double?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/transit-double?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "narrative.transitPhal": {
+   "url": "/v1/vedic/narrative/transit-phal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/transit-phal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "narrative.varshaphalThemes": {
+   "url": "/v1/vedic/narrative/varshaphal-themes?birth.date=1990-01-15&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lat=19.076&lon=72.8777&year=2026",
+   "lang_url": "/v1/vedic/narrative/varshaphal-themes?birth.date=1990-01-15&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&lat=19.076&locale=bn&lon=72.8777&year=2026"
+  },
+  "narrative.yearlyBhavishyafal": {
+   "url": "/v1/vedic/narrative/yearly-bhavishyafal?birth.date=1990-01-15&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lat=19.076&lon=72.8777&year=2026",
+   "lang_url": "/v1/vedic/narrative/yearly-bhavishyafal?birth.date=1990-01-15&birth.time=10%3A30&birth.tz=Asia%2FKolkata&lang=bn&lat=19.076&locale=bn&lon=72.8777&year=2026"
+  },
+  "narrative.yoga": {
+   "url": "/v1/vedic/narrative/yoga/hamsa?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/yoga/hamsa?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "narrative.yogas": {
+   "url": "/v1/vedic/narrative/yogas?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/narrative/yogas?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "numerology.advanced": {
+   "url": "/v1/numerology/advanced?name=Arjun+Mehta",
+   "lang_url": "/v1/numerology/advanced?lang=bn&locale=bn&name=Arjun+Mehta"
+  },
+  "numerology.challenges": {
+   "url": "/v1/numerology/challenges?dob=1990-01-15",
+   "lang_url": "/v1/numerology/challenges?dob=1990-01-15&lang=bn&locale=bn"
+  },
+  "numerology.conductor": {
+   "url": "/v1/numerology/conductor?dob=1990-01-15",
+   "lang_url": "/v1/numerology/conductor?dob=1990-01-15&lang=bn&locale=bn"
+  },
+  "numerology.destiny": {
+   "url": "/v1/numerology/destiny?name=Arjun+Mehta",
+   "lang_url": "/v1/numerology/destiny?lang=bn&locale=bn&name=Arjun+Mehta"
+  },
+  "numerology.driver": {
+   "url": "/v1/numerology/driver?dob=1990-01-15",
+   "lang_url": "/v1/numerology/driver?dob=1990-01-15&lang=bn&locale=bn"
+  },
+  "numerology.full": {
+   "url": "/v1/numerology/full?dob=1990-01-15&name=Arjun+Mehta",
+   "lang_url": "/v1/numerology/full?dob=1990-01-15&lang=bn&name=Arjun+Mehta"
+  },
+  "numerology.personalPeriods": {
+   "url": "/v1/numerology/personal-periods?dob=1990-01-15",
+   "lang_url": "/v1/numerology/personal-periods?dob=1990-01-15&lang=bn&locale=bn"
+  },
+  "numerology.personality": {
+   "url": "/v1/numerology/personality?name=Arjun+Mehta",
+   "lang_url": "/v1/numerology/personality?lang=bn&locale=bn&name=Arjun+Mehta"
+  },
+  "numerology.soul": {
+   "url": "/v1/numerology/soul?name=Arjun+Mehta",
+   "lang_url": "/v1/numerology/soul?lang=bn&locale=bn&name=Arjun+Mehta"
+  },
+  "panchang.abhijit": {
+   "url": "/v1/panchang/abhijit?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.advanced": {
+   "url": "/v1/panchang/advanced?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/advanced?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.amritKalam": {
+   "url": "/v1/panchang/amrit-kalam?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/amrit-kalam?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.basic": {
+   "url": "/v1/panchang/basic?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/basic?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.brahmaMuhurat": {
+   "url": "/v1/panchang/brahma-muhurat?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.choghadiya": {
+   "url": "/v1/panchang/choghadiya?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/choghadiya?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.durmuhurta": {
+   "url": "/v1/panchang/durmuhurta?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.gulika": {
+   "url": "/v1/panchang/gulika?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.hinduMonth": {
+   "url": "/v1/panchang/hindu-month?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/hindu-month?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.hora": {
+   "url": "/v1/panchang/hora?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/hora?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.horaDinman": {
+   "url": "/v1/panchang/hora-dinman?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/hora-dinman?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.karana": {
+   "url": "/v1/panchang/karana?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/karana?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.lagnaTable": {
+   "url": "/v1/panchang/lagna-table?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/lagna-table?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.monthly": {
+   "url": "/v1/panchang/monthly?lat=19.076&lon=72.8777&month=11&year=2026",
+   "lang_url": "/v1/panchang/monthly?lang=bn&lat=19.076&locale=bn&lon=72.8777&month=11&year=2026"
+  },
+  "panchang.moonriseMoonset": {
+   "url": "/v1/panchang/moonrise-moonset?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.nakshatra": {
+   "url": "/v1/panchang/nakshatra?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/nakshatra?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.nakshatraPrediction": {
+   "url": "/v1/panchang/nakshatra-prediction?birth_nak=7&date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/nakshatra-prediction?birth_nak=7&date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.panchaka": {
+   "url": "/v1/panchang/panchaka?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/panchaka?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.pradoshKaal": {
+   "url": "/v1/panchang/pradosh-kaal?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.rahuKaal": {
+   "url": "/v1/panchang/rahu-kaal?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.sankranti": {
+   "url": "/v1/panchang/sankranti?date=2026-11-20&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/sankranti?date=2026-11-20&lang=bn&locale=bn&tz=Asia%2FKolkata"
+  },
+  "panchang.siddhaYoga": {
+   "url": "/v1/panchang/siddha-yoga?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/siddha-yoga?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.summary": {
+   "url": "/v1/panchang/summary?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/summary?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.sunriseSunset": {
+   "url": "/v1/panchang/sunrise-sunset?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.tithi": {
+   "url": "/v1/panchang/tithi?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/tithi?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.vara": {
+   "url": "/v1/panchang/vara?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/vara?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.varjyam": {
+   "url": "/v1/panchang/varjyam?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/varjyam?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.yamaganda": {
+   "url": "/v1/panchang/yamaganda?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "panchang.yoga": {
+   "url": "/v1/panchang/yoga?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/panchang/yoga?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "planetMoments.combustionWindow": {
+   "url": "/v1/planet-moments/combustion-window?date=2026-11-20&planet=Jupiter&tz=Asia%2FKolkata",
+   "lang_url": "/v1/planet-moments/combustion-window?date=2026-11-20&lang=bn&locale=bn&planet=Jupiter&tz=Asia%2FKolkata"
+  },
+  "planetMoments.ingress": {
+   "url": "/v1/planet-moments/ingress?date=2026-11-20&planet=Jupiter&tz=Asia%2FKolkata",
+   "lang_url": "/v1/planet-moments/ingress?date=2026-11-20&lang=bn&locale=bn&planet=Jupiter&tz=Asia%2FKolkata"
+  },
+  "planetMoments.retrogradeWindow": {
+   "url": "/v1/planet-moments/retrograde-window?date=2026-11-20&planet=Jupiter&tz=Asia%2FKolkata",
+   "lang_url": "/v1/planet-moments/retrograde-window?date=2026-11-20&lang=bn&locale=bn&planet=Jupiter&tz=Asia%2FKolkata"
+  },
+  "planetMoments.speed": {
+   "url": "/v1/planet-moments/speed?date=2026-11-20&planet=Jupiter&tz=Asia%2FKolkata",
+   "lang_url": "/v1/planet-moments/speed?date=2026-11-20&lang=bn&locale=bn&planet=Jupiter&tz=Asia%2FKolkata"
+  },
+  "prashna.answer": {
+   "url": "/v1/prashna/answer?date=2026-11-20&house=5&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/prashna/answer?date=2026-11-20&house=5&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "prashna.arudha": {
+   "url": "/v1/prashna/arudha?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/prashna/arudha?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "prashna.chart": {
+   "url": "/v1/prashna/chart?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/prashna/chart?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "prashna.lagnaLord": {
+   "url": "/v1/prashna/lagna-lord?date=2026-11-20&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/prashna/lagna-lord?date=2026-11-20&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "prashna.significators": {
+   "url": "/v1/prashna/significators?date=2026-11-20&house=5&lat=19.076&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/prashna/significators?date=2026-11-20&house=5&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "remedies.byRuleId": {
+   "url": "/v1/vedic/remedies/hanuman_chalisa",
+   "lang_url": "/v1/vedic/remedies/hanuman_chalisa?lang=bn&locale=bn"
+  },
+  "remedies.daan": {
+   "url": "/v1/vedic/remedies/daan/sadesati_setting_shanti",
+   "lang_url": "/v1/vedic/remedies/daan/sadesati_setting_shanti?lang=bn&locale=bn"
+  },
+  "remedies.forGraha": {
+   "url": "/v1/vedic/remedies/for-graha?graha=saturn&reason=debilitated",
+   "lang_url": "/v1/vedic/remedies/for-graha?graha=saturn&lang=bn&locale=bn&reason=debilitated"
+  },
+  "remedies.lalkitabForPlacement": {
+   "url": "/v1/vedic/remedies/lal-kitab/saturn/8",
+   "lang_url": "/v1/vedic/remedies/lal-kitab/saturn/8?lang=bn&locale=bn"
+  },
+  "remedies.lalkitabList": {
+   "url": "/v1/vedic/remedies/lal-kitab",
+   "lang_url": "/v1/vedic/remedies/lal-kitab?lang=bn&locale=bn"
+  },
+  "remedies.mantra": {
+   "url": "/v1/vedic/remedies/mantra/hanuman_chalisa",
+   "lang_url": "/v1/vedic/remedies/mantra/hanuman_chalisa?lang=bn&locale=bn"
+  },
+  "remedies.pooja": {
+   "url": "/v1/vedic/remedies/pooja/jupiter_dasha_shanti",
+   "lang_url": "/v1/vedic/remedies/pooja/jupiter_dasha_shanti?lang=bn&locale=bn"
+  },
+  "remedies.rudraksha": {
+   "url": "/v1/vedic/remedies/rudraksha/vedic.L1.remedy.rudraksha.jupiter",
+   "lang_url": "/v1/vedic/remedies/rudraksha/vedic.L1.remedy.rudraksha.jupiter?lang=bn&locale=bn"
+  },
+  "remedies.vedic": {
+   "url": "/v1/vedic/remedies?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/vedic/remedies?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "remedies.vrat": {
+   "url": "/v1/vedic/remedies/vrat/kaalsarp_dosha_shanti",
+   "lang_url": "/v1/vedic/remedies/vrat/kaalsarp_dosha_shanti?lang=bn&locale=bn"
+  },
+  "remedies.yantra": {
+   "url": "/v1/vedic/remedies/yantra/vedic.L1.remedy.yantra.jupiter",
+   "lang_url": "/v1/vedic/remedies/yantra/vedic.L1.remedy.yantra.jupiter?lang=bn&locale=bn"
+  },
+  "reports.dashaAnalysis": {
+   "url": "/v1/reports/dasha-analysis?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/reports/dasha-analysis?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "reports.horoscopeDaily": {
+   "url": "/v1/reports/horoscope/daily?rashi=aries",
+   "lang_url": "/v1/reports/horoscope/daily?lang=bn&locale=bn&rashi=aries"
+  },
+  "reports.horoscopeMonthly": {
+   "url": "/v1/reports/horoscope/monthly?month=2026-11&rashi=aries",
+   "lang_url": "/v1/reports/horoscope/monthly?lang=bn&locale=bn&month=2026-11&rashi=aries"
+  },
+  "reports.horoscopeWeekly": {
+   "url": "/v1/reports/horoscope/weekly?rashi=aries",
+   "lang_url": "/v1/reports/horoscope/weekly?lang=bn&locale=bn&rashi=aries"
+  },
+  "reports.kundliBrihad": {
+   "url": "/v1/reports/kundli/brihad?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/reports/kundli/brihad?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "reports.kundliDetailed": {
+   "url": "/v1/reports/kundli/detailed?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/reports/kundli/detailed?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "reports.kundliLite": {
+   "url": "/v1/reports/kundli/lite?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/reports/kundli/lite?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "reports.mangalDosha": {
+   "url": "/v1/reports/mangal-dosha?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/reports/mangal-dosha?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "reports.matchMaking": {
+   "url": "/v1/reports/match-making?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata",
+   "lang_url": "/v1/reports/match-making?boy.date=1990-01-15&boy.lat=19.076&boy.lon=72.8777&boy.time=10%3A30&boy.tz=Asia%2FKolkata&girl.date=1992-06-20&girl.lat=28.6139&girl.lon=77.209&girl.time=14%3A15&girl.tz=Asia%2FKolkata&lang=bn&locale=bn"
+  },
+  "reports.numerology": {
+   "url": "/v1/reports/numerology?dob=1990-01-15&name=Arjun+Mehta",
+   "lang_url": "/v1/reports/numerology?dob=1990-01-15&lang=bn&locale=bn&name=Arjun+Mehta"
+  },
+  "reports.sadeSati": {
+   "url": "/v1/reports/sade-sati?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata",
+   "lang_url": "/v1/reports/sade-sati?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "reports.varshaphal": {
+   "url": "/v1/reports/varshaphal?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026",
+   "lang_url": "/v1/reports/varshaphal?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026"
+  },
+  "tarot.card": {
+   "url": "/v1/tarot/card/5"
+  },
+  "tarot.cards": {
+   "url": "/v1/tarot/cards"
+  },
+  "tarot.daily": {
+   "url": "/v1/tarot/daily"
+  },
+  "tarot.spread": {
+   "url": "/v1/tarot/spread?type=three"
+  },
+  "tarot.yesNo": {
+   "url": "/v1/tarot/yes-no"
+  },
+  "transit.ashtakavarga": {
+   "url": "/v1/transit/ashtakavarga?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/transit/ashtakavarga?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "transit.doubleTransit": {
+   "url": "/v1/transit/double-transit?date=2026-11-14&tz=UTC",
+   "lang_url": "/v1/transit/double-transit?date=2026-11-14&lang=bn&locale=bn&tz=UTC"
+  },
+  "transit.positions": {
+   "url": "/v1/transit/positions?date=2026-11-14&tz=UTC",
+   "lang_url": "/v1/transit/positions?date=2026-11-14&lang=bn&locale=bn&tz=UTC"
+  },
+  "transit.sadeSati": {
+   "url": "/v1/transit/sade-sati?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata"
+  },
+  "transit.sadeSatiWindows": {
+   "url": "/v1/transit/sade-sati/windows?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&from=2026-11-20&tz=Asia%2FKolkata"
+  },
+  "transit.smallPanoti": {
+   "url": "/v1/transit/small-panoti?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "transit.smallPanotiHistory": {
+   "url": "/v1/transit/small-panoti/history?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata"
+  },
+  "transit.tarabala": {
+   "url": "/v1/transit/tarabala?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/transit/tarabala?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "transit.vedha": {
+   "url": "/v1/transit/vedha?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata",
+   "lang_url": "/v1/transit/vedha?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&lang=bn&locale=bn&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "transit.windows": {
+   "url": "/v1/transit/windows?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&from=2026-11-20&planet=saturn&tz=Asia%2FKolkata"
+  },
+  "varshaphal.chart": {
+   "url": "/v1/varshaphal/chart?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026",
+   "lang_url": "/v1/varshaphal/chart?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026"
+  },
+  "varshaphal.harshaBala": {
+   "url": "/v1/varshaphal/harsha-bala?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026",
+   "lang_url": "/v1/varshaphal/harsha-bala?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026"
+  },
+  "varshaphal.lord": {
+   "url": "/v1/varshaphal/lord?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026",
+   "lang_url": "/v1/varshaphal/lord?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026"
+  },
+  "varshaphal.muddaDasha": {
+   "url": "/v1/varshaphal/mudda-dasha?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026",
+   "lang_url": "/v1/varshaphal/mudda-dasha?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026"
+  },
+  "varshaphal.muntha": {
+   "url": "/v1/varshaphal/muntha?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026"
+  },
+  "varshaphal.solarReturnJd": {
+   "url": "/v1/varshaphal/solar-return-jd?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026"
+  },
+  "varshaphal.yoga": {
+   "url": "/v1/varshaphal/yoga?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026",
+   "lang_url": "/v1/varshaphal/yoga?date=1990-01-15&lang=bn&lat=19.076&locale=bn&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata&year=2026"
+  },
+  "western.astrocartography.localSpace": {
+   "url": "/v1/western/astrocartography/local-space?date=1990-01-15&lat=19.076&lon=72.8777&observer_lat=28.6139&observer_lon=77.209&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.astrocartography.planetLines": {
+   "url": "/v1/western/astrocartography/planet-lines?date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "western.compatibility.sunSign": {
+   "url": "/v1/western/compatibility/sun-sign?sign_a=Aries&sign_b=Leo"
+  },
+  "western.composite.aspects": {
+   "url": "/v1/western/composite/aspects?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.composite.chart": {
+   "url": "/v1/western/composite/chart?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.composite.houses": {
+   "url": "/v1/western/composite/houses?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.composite.planets": {
+   "url": "/v1/western/composite/planets?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.davison.aspects": {
+   "url": "/v1/western/davison/aspects?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.davison.chart": {
+   "url": "/v1/western/davison/chart?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.davison.houses": {
+   "url": "/v1/western/davison/houses?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.davison.planets": {
+   "url": "/v1/western/davison/planets?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.dignities.almuten": {
+   "url": "/v1/western/dignities/almuten?asc_lon=123.4"
+  },
+  "western.dignities.bounds": {
+   "url": "/v1/western/dignities/bounds?lon=72.8777"
+  },
+  "western.dignities.face": {
+   "url": "/v1/western/dignities/face?lon=72.8777"
+  },
+  "western.dignities.planet": {
+   "url": "/v1/western/dignities/planet?lon=72.8777&planet=Jupiter"
+  },
+  "western.dignities.receptions": {
+   "url": "/v1/western/dignities/receptions?mars=250.2&moon=152.4&sun=294.78&venus=300.1"
+  },
+  "western.dignities.triplicity": {
+   "url": "/v1/western/dignities/triplicity?lon=72.8777"
+  },
+  "western.eclipses.upcoming": {
+   "url": "/v1/western/eclipses/upcoming"
+  },
+  "western.eclipses.visibility": {
+   "url": "/v1/western/eclipses/visibility?end_date=2027-12-31&lat=19.076&lon=72.8777&start_date=2026-01-01"
+  },
+  "western.firdaria": {
+   "url": "/v1/western/firdaria?birth_date=1990-01-15"
+  },
+  "western.heliocentric.planets": {
+   "url": "/v1/western/heliocentric/planets?date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "western.horoscope.daily": {
+   "url": "/v1/western/horoscope/daily?date=2026-11-20&sign=Leo"
+  },
+  "western.horoscope.monthly": {
+   "url": "/v1/western/horoscope/monthly?sign=Leo&year_month=2026-11"
+  },
+  "western.horoscope.weekly": {
+   "url": "/v1/western/horoscope/weekly?sign=Leo&week_start=2026-11-16"
+  },
+  "western.ingresses": {
+   "url": "/v1/western/ingresses?end_date=2027-12-31&start_date=2026-01-01"
+  },
+  "western.interpretation.aspect": {
+   "url": "/v1/western/interpretation/aspect?kind=trine&planet_a=Sun&planet_b=Moon"
+  },
+  "western.interpretation.transit": {
+   "url": "/v1/western/interpretation/transit?kind=trine&natal_planet=Sun&transit_planet=Saturn"
+  },
+  "western.lunar.phase": {
+   "url": "/v1/western/lunar/phase?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.narrative.decan": {
+   "url": "/v1/western/narrative/decan?decan=2&sign=Leo",
+   "lang_url": "/v1/western/narrative/decan?decan=2&lang=bn&locale=bn&sign=Leo"
+  },
+  "western.narrative.fixedStar": {
+   "url": "/v1/western/narrative/fixed-star/Regulus",
+   "lang_url": "/v1/western/narrative/fixed-star/Regulus?lang=bn&locale=bn"
+  },
+  "western.narrative.natalSummary": {
+   "url": "/v1/western/narrative/natal-summary?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.narrative.sabian": {
+   "url": "/v1/western/narrative/sabian?degree=100",
+   "lang_url": "/v1/western/narrative/sabian?degree=100&lang=bn&locale=bn"
+  },
+  "western.narrative.timelordFirdaria": {
+   "url": "/v1/western/narrative/timelord/firdaria?lord=Jupiter",
+   "lang_url": "/v1/western/narrative/timelord/firdaria?lang=bn&locale=bn&lord=Jupiter"
+  },
+  "western.narrative.timelordProfection": {
+   "url": "/v1/western/narrative/timelord/profection?house=5",
+   "lang_url": "/v1/western/narrative/timelord/profection?house=5&lang=bn&locale=bn"
+  },
+  "western.narrative.timelordZr": {
+   "url": "/v1/western/narrative/timelord/zr?lord=Jupiter",
+   "lang_url": "/v1/western/narrative/timelord/zr?lang=bn&locale=bn&lord=Jupiter"
+  },
+  "western.narrative.transitSummary": {
+   "url": "/v1/western/narrative/transit-summary?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "western.narrative.yearly": {
+   "url": "/v1/western/narrative/yearly?sign=Leo",
+   "lang_url": "/v1/western/narrative/yearly?lang=bn&locale=bn&sign=Leo"
+  },
+  "western.natal.antiscia": {
+   "url": "/v1/western/natal/antiscia?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.ascendant": {
+   "url": "/v1/western/natal/ascendant?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.aspectPatterns": {
+   "url": "/v1/western/natal/aspect-patterns?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.aspects": {
+   "url": "/v1/western/natal/aspects?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.asteroid": {
+   "url": "/v1/western/natal/asteroid/1?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.asteroidsBigFourPlus": {
+   "url": "/v1/western/natal/asteroids/big-four-plus?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.centaurs": {
+   "url": "/v1/western/natal/centaurs?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.chart": {
+   "url": "/v1/western/natal/chart?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.chartShape": {
+   "url": "/v1/western/natal/chart-shape?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.declinations": {
+   "url": "/v1/western/natal/declinations?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.dominant": {
+   "url": "/v1/western/natal/dominant?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.fixedStar": {
+   "url": "/v1/western/natal/fixed-stars/Regulus?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.fixedStars": {
+   "url": "/v1/western/natal/fixed-stars?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.harmonic": {
+   "url": "/v1/western/natal/harmonic/5?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.harmonicAspects": {
+   "url": "/v1/western/natal/harmonic-aspects?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.houses": {
+   "url": "/v1/western/natal/houses?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.lilithSet": {
+   "url": "/v1/western/natal/lilith-set?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.lot": {
+   "url": "/v1/western/natal/lot/fortune?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.lots": {
+   "url": "/v1/western/natal/lots?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.mc": {
+   "url": "/v1/western/natal/mc?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.midpointTree": {
+   "url": "/v1/western/natal/midpoint-tree?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.midpoints": {
+   "url": "/v1/western/natal/midpoints?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.outOfBounds": {
+   "url": "/v1/western/natal/out-of-bounds?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.parans": {
+   "url": "/v1/western/natal/parans?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.planet": {
+   "url": "/v1/western/natal/planet/Venus?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.planets": {
+   "url": "/v1/western/natal/planets?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.tnos": {
+   "url": "/v1/western/natal/tnos?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.uranianHypotheticals": {
+   "url": "/v1/western/natal/uranian-hypotheticals?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.natal.vertexSet": {
+   "url": "/v1/western/natal/vertex-set?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.primaryDirections.placidusMundane": {
+   "url": "/v1/western/primary-directions/placidus-mundane?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.primaryDirections.placidusZodiacal": {
+   "url": "/v1/western/primary-directions/placidus-zodiacal?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.primaryDirections.regiomontanus": {
+   "url": "/v1/western/primary-directions/regiomontanus?date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.profections.annual": {
+   "url": "/v1/western/profections/annual?asc_sign=leo&birth_date=1990-01-15"
+  },
+  "western.profections.daily": {
+   "url": "/v1/western/profections/daily?asc_sign=leo&birth_date=1990-01-15"
+  },
+  "western.profections.monthly": {
+   "url": "/v1/western/profections/monthly?asc_sign=leo&birth_date=1990-01-15"
+  },
+  "western.progressions.aspectsToNatal": {
+   "url": "/v1/western/progressions/aspects-to-natal?age_in_years=35.5&date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.progressions.lunation": {
+   "url": "/v1/western/progressions/lunation?age_in_years=35.5&date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.progressions.planets": {
+   "url": "/v1/western/progressions/planets?age_in_years=35.5&date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.retrogradeWindow": {
+   "url": "/v1/western/retrograde-window/Mercury?end_date=2027-12-31&start_date=2026-01-01"
+  },
+  "western.returns.lunar": {
+   "url": "/v1/western/returns/lunar?date=1990-01-15&from=2026-06-01T00%3A00%3A00Z&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.returns.lunarAspects": {
+   "url": "/v1/western/returns/lunar/aspects?date=1990-01-15&from=2026-06-01T00%3A00%3A00Z&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.returns.solar": {
+   "url": "/v1/western/returns/solar?date=1990-01-15&lat=19.076&lon=72.8777&return_year=2026&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.returns.solarAspects": {
+   "url": "/v1/western/returns/solar/aspects?date=1990-01-15&lat=19.076&lon=72.8777&return_year=2026&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.returns.solarExactJd": {
+   "url": "/v1/western/returns/solar/exact-jd?date=1990-01-15&lat=19.076&lon=72.8777&return_year=2026&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.solarArc.aspectsToNatal": {
+   "url": "/v1/western/solar-arc/aspects-to-natal?age_in_years=35.5&date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.solarArc.planets": {
+   "url": "/v1/western/solar-arc/planets?age_in_years=35.5&date=1990-01-15&lat=19.076&lon=72.8777&time=10%3A30&tz=Asia%2FKolkata"
+  },
+  "western.synastry.aspects": {
+   "url": "/v1/western/synastry/aspects?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.synastry.grid": {
+   "url": "/v1/western/synastry/grid?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.synastry.score": {
+   "url": "/v1/western/synastry/score?personA.date=1990-01-15&personA.lat=19.076&personA.lon=72.8777&personA.time=10%3A30&personA.tz=Asia%2FKolkata&personB.date=1992-06-20&personB.lat=28.6139&personB.lon=77.209&personB.time=14%3A15&personB.tz=Asia%2FKolkata"
+  },
+  "western.transits.calendar": {
+   "url": "/v1/western/transits/calendar?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&from=2026-11-01&to=2026-11-20"
+  },
+  "western.transits.exact": {
+   "url": "/v1/western/transits/exact?aspect=trine&birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&from=2026-01-01T00%3A00%3A00Z&natal_planet=Sun&to=2027-01-01T00%3A00%3A00Z&transit_planet=Saturn"
+  },
+  "western.transits.positions": {
+   "url": "/v1/western/transits/positions?date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "western.transits.toNatal": {
+   "url": "/v1/western/transits/to-natal?birth.date=1990-01-15&birth.lat=19.076&birth.lon=72.8777&birth.time=10%3A30&birth.tz=Asia%2FKolkata&date=2026-11-20&time=12%3A00&tz=Asia%2FKolkata"
+  },
+  "western.zodiacalReleasing.fortune": {
+   "url": "/v1/western/zodiacal-releasing/fortune?birth_date=1990-01-15&lot_sign=cancer"
+  },
+  "western.zodiacalReleasing.spirit": {
+   "url": "/v1/western/zodiacal-releasing/spirit?birth_date=1990-01-15&lot_sign=cancer"
+  }
+ }
+}

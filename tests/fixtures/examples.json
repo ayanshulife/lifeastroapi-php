@@ -1,0 +1,6640 @@
+{
+ "/v1/ashtakavarga/bhinna/{planet}": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/ashtakavarga/kaksha": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon",
+   "date",
+   "tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/ashtakavarga/sarva": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/ashtakavarga/transit-score": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon",
+   "date",
+   "tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/calendar/adhik-maas": {
+  "status": 200,
+  "required": [
+   "year"
+  ],
+  "params": {
+   "year": "2027"
+  },
+  "docs": {
+   "year": "Year (YYYY).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/calendar/month": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/calendar/ritu": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/calendar/samvatsara": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/calendar/solstices": {
+  "status": 200,
+  "required": [
+   "year"
+  ],
+  "params": {
+   "year": "2027",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "year": "Year (YYYY).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/chart/ascendant": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/ashtakvarga": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/ashtakvarga/{planet}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/aspects": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/astro-details": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/chart/avakhada": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/bhavabala": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/combustion": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/dignity": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/divisional/{varga}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/doshas": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "all": "false (default): present items, plus items whose pattern formed but was cancelled (present:false, cancelled:true). true: also every catalogue id that is absent, with present:false.",
+   "gender": "Optional. Narrows Mahabhagya (male day birth / female night birth) exactly like /v1/vedic/narrative/yogas."
+  }
+ },
+ "/v1/chart/ghatak": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/chart/graha-yuddha": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/house-occupants": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/houses": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/kp-house-significator": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/chart/kp-sublord": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/kundli-facts": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "vargas": "Comma list of divisional charts (D2..D60, or names such as navamsa). Default D9. D1 is rejected (planets already carry it); at most 16.",
+   "include": "Comma list of optional sections: shadbala, bhavabala, ashtakvarga, aspects, avastha, karakas, avakhada, yogas, or all. Default: every section except yogas.",
+   "gender": "Optional. Narrows Mahabhagya (male day birth / female night birth) exactly like /v1/vedic/narrative/yogas."
+  }
+ },
+ "/v1/chart/nakshatra": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/planet/{name}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/planets": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/sensitivity": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "window": "Half-width of the scan in minutes. Default 120 (±2 h), max 180.",
+   "vargas": "Comma-separated vargas besides D1 (D2..D60). Default D9,D10,D24; at most 16.",
+   "topocentric_moon": "Topocentric Moon for the nakshatra/pada spans, as on /v1/chart/*. Default false."
+  }
+ },
+ "/v1/chart/shadbala": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/shadbala/{component}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/chart/yogas": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "all": "false (default): present items, plus items whose pattern formed but was cancelled (present:false, cancelled:true). true: also every catalogue id that is absent, with present:false.",
+   "gender": "Optional. Narrows Mahabhagya (male day birth / female night birth) exactly like /v1/vedic/narrative/yogas."
+  }
+ },
+ "/v1/dasha/char": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/dasha/char/current": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "at": "2027-01-15T00:00:00Z"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "at": "UTC moment to evaluate (RFC3339 like 2027-01-15T00:00:00Z, or YYYY-MM-DD). Defaults to now."
+  }
+ },
+ "/v1/dasha/char/major": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/dasha/char/{md}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/dasha/char/{md}/{ad}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/dasha/vimshottari": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/dasha/vimshottari/current": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30",
+   "at": "2027-01-15T00:00:00Z"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "at": "UTC moment to find the running dasha for (RFC3339 like 2027-01-15T00:00:00Z, or YYYY-MM-DD). Defaults to now.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/dasha/vimshottari/{md}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/dasha/vimshottari/{md}/{ad}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/dasha/vimshottari/{md}/{ad}/{pd}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/dasha/vimshottari/{md}/{ad}/{pd}/{sd}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/dasha/yogini": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/dasha/yogini/current": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30",
+   "at": "2027-01-15T00:00:00Z"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "at": "UTC moment to find the running dasha for (RFC3339 like 2027-01-15T00:00:00Z, or YYYY-MM-DD). Defaults to now.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/dasha/yogini/{name}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/eclipses/all": {
+  "status": 200,
+  "required": [
+   "start_date",
+   "end_date"
+  ],
+  "params": {
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "start_date": "First date of the range (YYYY-MM-DD).",
+   "end_date": "Last date of the range (YYYY-MM-DD).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/eclipses/lunar": {
+  "status": 200,
+  "required": [
+   "start_date",
+   "end_date"
+  ],
+  "params": {
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "start_date": "First date of the range (YYYY-MM-DD).",
+   "end_date": "Last date of the range (YYYY-MM-DD).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/eclipses/solar": {
+  "status": 200,
+  "required": [
+   "start_date",
+   "end_date"
+  ],
+  "params": {
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "start_date": "First date of the range (YYYY-MM-DD).",
+   "end_date": "Last date of the range (YYYY-MM-DD).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/festivals/month": {
+  "status": 200,
+  "required": [
+   "year",
+   "month"
+  ],
+  "params": {
+   "year": "2027",
+   "month": "10",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "year": "Year (YYYY).",
+   "month": "Month number (1–12).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "locale": "Language for the `name` field: en (default), hi, mr, ta, kn, bn, gu, pa. `name_en` and `name_hi` are always present.",
+   "month_system": "Lunar month convention for labels (\"<Month> Amavasya\"), the hindu_month field and month-membership vrats such as Shravan Somwar: purnimanta (default; North India) or amanta (South, West and East India). Festival dates never change with this option.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/festivals/on-date": {
+  "status": 200,
+  "required": [
+   "date"
+  ],
+  "params": {
+   "date": "2027-10-29",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "locale": "Language for the `name` field: en (default), hi, mr, ta, kn, bn, gu, pa. `name_en` and `name_hi` are always present.",
+   "month_system": "Lunar month convention for labels (\"<Month> Amavasya\"), the hindu_month field and month-membership vrats such as Shravan Somwar: purnimanta (default; North India) or amanta (South, West and East India). Festival dates never change with this option.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/festivals/vrat": {
+  "status": 200,
+  "required": [
+   "year",
+   "type"
+  ],
+  "params": {
+   "year": "2027",
+   "type": "ekadashi",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "year": "Year (YYYY).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "locale": "Language for the `name` field: en (default), hi, mr, ta, kn, bn, gu, pa. `name_en` and `name_hi` are always present.",
+   "month_system": "Lunar month convention for labels (\"<Month> Amavasya\"), the hindu_month field and month-membership vrats such as Shravan Somwar: purnimanta (default; North India) or amanta (South, West and East India). Festival dates never change with this option.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/geo/place/{id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/geo/reverse": {
+  "status": 200,
+  "required": [
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "limit": "2",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/geo/search": {
+  "status": 200,
+  "required": [
+   "q"
+  ],
+  "params": {
+   "q": "Mumbai",
+   "limit": "2"
+  },
+  "docs": {}
+ },
+ "/v1/geo/timezone": {
+  "status": 200,
+  "required": [
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/horoscope/daily": {
+  "status": 500,
+  "required": [],
+  "params": {
+   "rashi": "Mesha",
+   "date": "2027-01-15"
+  },
+  "docs": {}
+ },
+ "/v1/horoscope/monthly": {
+  "status": 500,
+  "required": [],
+  "params": {
+   "rashi": "Mesha",
+   "date": "2027-01-15",
+   "month": "2027-01"
+  },
+  "docs": {}
+ },
+ "/v1/horoscope/weekly": {
+  "status": 500,
+  "required": [],
+  "params": {
+   "rashi": "Mesha",
+   "date": "2027-01-15",
+   "week": "2027-W03"
+  },
+  "docs": {}
+ },
+ "/v1/lalkitab/chart": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/lalkitab/dasha": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/lalkitab/dasha/current": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/meta/ayanamsas": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
+  }
+ },
+ "/v1/meta/endpoints": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/meta/vedic/doshas": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/meta/vedic/locales": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/meta/vedic/narrative-axes": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/meta/vedic/yogas": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/meta/version": {
+  "status": 200,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/milan/ashtakoota": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/ashtakoota/total": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/ashtakoota/{koota}": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/dasha-sync": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz",
+   "boy.lat",
+   "boy.lon",
+   "girl.lat",
+   "girl.lon"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "boy.lat": "19.076",
+   "boy.lon": "72.8777",
+   "girl.time": "08:15",
+   "girl.lat": "28.6139",
+   "girl.lon": "77.209",
+   "marriage_windows": "true",
+   "from": "2027-01-15",
+   "years": "3"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "boy.lat": "Boy's birth place latitude in decimal degrees.",
+   "boy.lon": "Boy's birth place longitude in decimal degrees.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.lat": "Girl's birth place latitude in decimal degrees.",
+   "girl.lon": "Girl's birth place longitude in decimal degrees.",
+   "marriage_windows": "Add the D-MarriageWindows1 tag to every timeline interval (implies timeline=true; needs boy.lat/lon and girl.lat/lon). Default false.",
+   "from": "Timeline start YYYY-MM-DD (local midnight in tz). Defaults to the date= moment, else now.",
+   "years": "Timeline span in calendar years. Default 10, max 30.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "timeline": "Add the aligned MD/AD timeline of both partners. Default false."
+  }
+ },
+ "/v1/milan/dhan-yog": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/longevity": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/mahendra": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/mangal-dosha": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/nadi-dosha": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/navamsa-compat": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/overlay": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "boy.lat",
+   "boy.lon",
+   "girl.date",
+   "girl.tz",
+   "girl.lat",
+   "girl.lon"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "boy.lat": "19.076",
+   "boy.lon": "72.8777",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "girl.lat": "28.6139",
+   "girl.lon": "77.209",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.lat": "Boy's birth place latitude in decimal degrees.",
+   "boy.lon": "Boy's birth place longitude in decimal degrees.",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.lat": "Girl's birth place latitude in decimal degrees.",
+   "girl.lon": "Girl's birth place longitude in decimal degrees.",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/santan-yog": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/shani-dosha": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/stree-dirgha": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/summary": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "boy.lat",
+   "boy.lon",
+   "girl.date",
+   "girl.tz",
+   "girl.lat",
+   "girl.lon"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.tz": "Asia/Kolkata",
+   "boy.lat": "19.076",
+   "boy.lon": "72.8777",
+   "girl.date": "1992-03-20",
+   "girl.tz": "Asia/Kolkata",
+   "girl.lat": "28.6139",
+   "girl.lon": "77.209",
+   "boy.time": "10:30",
+   "girl.time": "08:15",
+   "from": "2027-01-15"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.lat": "Boy's birth place latitude in decimal degrees.",
+   "boy.lon": "Boy's birth place longitude in decimal degrees.",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.lat": "Girl's birth place latitude in decimal degrees.",
+   "girl.lon": "Girl's birth place longitude in decimal degrees.",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "from": "Start of the 10-year Sade Sati range, YYYY-MM-DD (local midnight). Defaults to now.",
+   "include": "Optional: kundli_facts embeds both partners' /v1/chart/kundli-facts.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/milan/vivah-phal": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/best-time": {
+  "status": 200,
+  "required": [
+   "start_date",
+   "end_date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "start_date": "2027-01-01",
+   "end_date": "2027-01-31",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "purpose": "vivah"
+  },
+  "docs": {
+   "start_date": "First date of the range (YYYY-MM-DD).",
+   "end_date": "Max 31 days from start_date.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth_date": "Optional birth date for Chandra Bala and Tara Bala scoring.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/chandra-bala": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "birth_moon_sign"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "birth_moon_sign": "0"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth_moon_sign": "Natal Moon sign index (0=Aries, 11=Pisces)",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/graha-pravesh": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "time": "10:00"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/naamkaran": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "birth_date"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "birth_date": "2026-03-01",
+   "time": "10:00"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth_date": "Child's birth date (YYYY-MM-DD). Minimum 10 days before ceremony.",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/panchaka-rahita": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/sarvartha-siddhi": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/shubha-yoga": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/tara-bala": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "birth_nak"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "birth_nak": "3"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth_nak": "Natal nakshatra index (0=Ashwini)",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/vivah": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "time": "10:00"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/vyapar": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "time": "10:00"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/muhurta/yatra": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "time": "10:00"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "direction": "Direction of travel (compass point). Default: E.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/numerology/advanced": {
+  "status": 200,
+  "required": [
+   "name"
+  ],
+  "params": {
+   "name": "Arjun Mehta",
+   "dob": "1990-01-15"
+  },
+  "docs": {
+   "name": "Full name.",
+   "dob": "Date of birth (YYYY-MM-DD)."
+  }
+ },
+ "/v1/numerology/challenges": {
+  "status": 200,
+  "required": [
+   "dob"
+  ],
+  "params": {
+   "dob": "1990-01-15"
+  },
+  "docs": {
+   "dob": "Date of birth (YYYY-MM-DD)."
+  }
+ },
+ "/v1/numerology/conductor": {
+  "status": 200,
+  "required": [
+   "dob"
+  ],
+  "params": {
+   "dob": "1990-01-15"
+  },
+  "docs": {
+   "dob": "Date of birth (YYYY-MM-DD)."
+  }
+ },
+ "/v1/numerology/destiny": {
+  "status": 200,
+  "required": [
+   "name"
+  ],
+  "params": {
+   "name": "Arjun Mehta"
+  },
+  "docs": {
+   "name": "Full name."
+  }
+ },
+ "/v1/numerology/driver": {
+  "status": 200,
+  "required": [
+   "dob"
+  ],
+  "params": {
+   "dob": "1990-01-15"
+  },
+  "docs": {
+   "dob": "Date of birth (YYYY-MM-DD)."
+  }
+ },
+ "/v1/numerology/full": {
+  "status": 200,
+  "required": [
+   "dob"
+  ],
+  "params": {
+   "name": "Arjun Mehta",
+   "dob": "1990-01-15"
+  },
+  "docs": {
+   "name": "Full name.",
+   "dob": "Date of birth (YYYY-MM-DD)."
+  }
+ },
+ "/v1/numerology/personal-periods": {
+  "status": 200,
+  "required": [
+   "dob"
+  ],
+  "params": {
+   "dob": "1990-01-15"
+  },
+  "docs": {
+   "dob": "Date of birth (YYYY-MM-DD)."
+  }
+ },
+ "/v1/numerology/personality": {
+  "status": 200,
+  "required": [
+   "name"
+  ],
+  "params": {
+   "name": "Arjun Mehta"
+  },
+  "docs": {
+   "name": "Full name."
+  }
+ },
+ "/v1/numerology/soul": {
+  "status": 200,
+  "required": [
+   "name"
+  ],
+  "params": {
+   "name": "Arjun Mehta"
+  },
+  "docs": {
+   "name": "Full name."
+  }
+ },
+ "/v1/panchang/abhijit": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/advanced": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/amrit-kalam": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/panchang/basic": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/brahma-muhurat": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/choghadiya": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/durmuhurta": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/gulika": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/hindu-month": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/panchang/hora": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/hora-dinman": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/karana": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/lagna-table": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/monthly": {
+  "status": 200,
+  "required": [
+   "year",
+   "month",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "year": "2027",
+   "month": "1",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "year": "Year (YYYY).",
+   "month": "Month number (1–12).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "include": "`sheet` (or `festivals`) adds the calendar sheet fields.",
+   "locale": "Language for the `name` field: en (default), hi, mr, ta, kn, bn, gu, pa. `name_en` and `name_hi` are always present.",
+   "month_system": "Lunar month convention for labels (\"<Month> Amavasya\"), the hindu_month field and month-membership vrats such as Shravan Somwar: purnimanta (default; North India) or amanta (South, West and East India). Festival dates never change with this option.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/panchang/moonrise-moonset": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/nakshatra": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/panchang/nakshatra-prediction": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "birth_nak"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "birth_nak": "3"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/panchaka": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/panchang/pradosh-kaal": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/rahu-kaal": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/sankranti": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+  }
+ },
+ "/v1/panchang/siddha-yoga": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/panchang/summary": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/panchang/sunrise-sunset": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/tithi": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/vara": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/varjyam": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/panchang/yamaganda": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/panchang/yoga": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/planet-moments/combustion-window": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "planet"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "planet": "moon",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/planet-moments/ingress": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "planet"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "planet": "sun",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/planet-moments/retrograde-window": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "planet"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "planet": "mercury",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
+  }
+ },
+ "/v1/planet-moments/speed": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "planet"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "planet": "sun",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
+  }
+ },
+ "/v1/prashna/answer": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "house"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "house": "7",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "question_house": "House number representing the subject of the question",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/prashna/arudha": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/prashna/chart": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/prashna/lagna-lord": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/prashna/significators": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "house"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30",
+   "house": "7"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house": "Question house number (1–12)",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/reports/dasha-analysis": {
+  "status": 200,
+  "required": [
+   "date",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/reports/horoscope/daily": {
+  "status": 500,
+  "required": [],
+  "params": {
+   "date": "2027-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "rashi": "Mesha"
+  },
+  "docs": {}
+ },
+ "/v1/reports/horoscope/monthly": {
+  "status": 500,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "rashi": "Mesha",
+   "month": "2027-01"
+  },
+  "docs": {}
+ },
+ "/v1/reports/horoscope/weekly": {
+  "status": 500,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "rashi": "Mesha",
+   "week": "2027-W03"
+  },
+  "docs": {}
+ },
+ "/v1/reports/kundli/brihad": {
+  "status": 200,
+  "required": [
+   "date",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/reports/kundli/detailed": {
+  "status": 200,
+  "required": [
+   "date",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/reports/kundli/lite": {
+  "status": 200,
+  "required": [
+   "date",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/reports/mangal-dosha": {
+  "status": 200,
+  "required": [
+   "date",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/reports/match-making": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "girl.date"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "boy.date": "1990-01-15",
+   "boy.time": "10:30",
+   "boy.tz": "Asia/Kolkata",
+   "boy.lat": "19.076",
+   "boy.lon": "72.8777",
+   "girl.date": "1992-03-20",
+   "girl.time": "08:15",
+   "girl.tz": "Asia/Kolkata",
+   "girl.lat": "28.6139",
+   "girl.lon": "77.209"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.lat": "Boy's birth place latitude in decimal degrees.",
+   "boy.lon": "Boy's birth place longitude in decimal degrees.",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.lat": "Girl's birth place latitude in decimal degrees.",
+   "girl.lon": "Girl's birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/reports/numerology": {
+  "status": 200,
+  "required": [
+   "dob"
+  ],
+  "params": {
+   "name": "Arjun Mehta",
+   "dob": "1990-01-15"
+  },
+  "docs": {
+   "name": "Full name.",
+   "dob": "Date of birth (YYYY-MM-DD)."
+  }
+ },
+ "/v1/reports/sade-sati": {
+  "status": 200,
+  "required": [
+   "date",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/reports/varshaphal": {
+  "status": 200,
+  "required": [
+   "date",
+   "lat",
+   "lon",
+   "year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2027"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "year": "Year (YYYY)."
+  }
+ },
+ "/v1/tarot/card/{id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/tarot/cards": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/tarot/daily": {
+  "status": 200,
+  "required": [],
+  "params": {
+   "date": "2027-01-15"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD)."
+  }
+ },
+ "/v1/tarot/spread": {
+  "status": 200,
+  "required": [
+   "type"
+  ],
+  "params": {
+   "type": "three",
+   "seed": "42"
+  },
+  "docs": {}
+ },
+ "/v1/tarot/yes-no": {
+  "status": 200,
+  "required": [],
+  "params": {
+   "seed": "42"
+  },
+  "docs": {}
+ },
+ "/v1/transit/ashtakavarga": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon",
+   "date",
+   "tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "time": "06:00",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/transit/double-transit": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "time": "06:00",
+   "tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/transit/positions": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "time": "06:00",
+   "lat": "28.6139",
+   "lon": "77.209"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/transit/sade-sati": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "tz": "Asia/Kolkata",
+   "date": "2027-01-15",
+   "time": "06:00",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/transit/sade-sati/windows": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.time": "10:30",
+   "from": "2027-01-15"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "from": "Start date YYYY-MM-DD (local midnight in tz). Defaults to now.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "years": "Span in calendar years after from. Default 25, max 60.",
+   "include_past": "Also return windows from the birth moment up to from. Default false."
+  }
+ },
+ "/v1/transit/small-panoti": {
+  "status": 200,
+  "required": [
+   "tz",
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "time": "06:00",
+   "tz": "Asia/Kolkata",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+  }
+ },
+ "/v1/transit/small-panoti/history": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "time": "06:00",
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777"
+  },
+  "docs": {
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/transit/tarabala": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "date",
+   "tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "time": "06:00",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/transit/vedha": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon",
+   "date",
+   "tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "date": "2027-01-15",
+   "time": "06:00",
+   "tz": "Asia/Kolkata",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/transit/windows": {
+  "status": 200,
+  "required": [
+   "planet",
+   "birth.tz"
+  ],
+  "params": {
+   "planet": "saturn",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "from": "2027-01-15"
+  },
+  "docs": {
+   "planet": "Planet id.",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "from": "Start date YYYY-MM-DD (local midnight in tz). Defaults to now.",
+   "years": "Span in calendar years after from (per-planet default and max, see description).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/varshaphal/chart": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2026",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "year": "Gregorian year of the solar return to compute.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/varshaphal/harsha-bala": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2027"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "year": "Year (YYYY)."
+  }
+ },
+ "/v1/varshaphal/lord": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2026",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "year": "Year (YYYY).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/varshaphal/mudda-dasha": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2027"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "year": "Year (YYYY)."
+  }
+ },
+ "/v1/varshaphal/muntha": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2026",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "year": "Year (YYYY).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/varshaphal/solar-return-jd": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2026",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "year": "Year (YYYY).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+  }
+ },
+ "/v1/varshaphal/yoga": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2027"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "year": "Year (YYYY)."
+  }
+ },
+ "/v1/vedic/narrative/career-outlook": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/dasha-phal": {
+  "status": 200,
+  "required": [
+   "tz",
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+  }
+ },
+ "/v1/vedic/narrative/dasha-tree-phal": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/divisional/{varga}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/dosha/{id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/doshas": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/finance-outlook": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/horoscope/daily-by-lagna": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/horoscope/daily-by-moon": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/horoscope/daily-tamil": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/horoscope/weekly-by-lagna": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/horoscope/weekly-by-moon": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/house-lord": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "house": "7"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/house-lords-overview": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/karakas": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/lagna": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/marriage-outlook": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/milan": {
+  "status": 200,
+  "required": [
+   "boy.date",
+   "boy.tz",
+   "girl.date",
+   "girl.tz"
+  ],
+  "params": {
+   "boy.date": "1990-01-15",
+   "boy.time": "10:30",
+   "boy.tz": "Asia/Kolkata",
+   "girl.date": "1992-03-20",
+   "girl.time": "08:15",
+   "girl.tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+  }
+ },
+ "/v1/vedic/narrative/moon-sign": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/nakshatra": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/planet-in-house": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "planet": "Mars"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/planet-in-sign": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "planet": "Mars"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/planets-in-houses": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/planets-in-signs": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/prashna": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "time": "10:00",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "topic": "career"
+  },
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/vedic/narrative/profile": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/reference": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/reference/{family}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/sade-sati-history": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/sade-sati-phase": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/sade-sati-status": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/sun-sign": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/transit-ashtakavarga": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/transit-double": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/transit-phal": {
+  "status": 200,
+  "required": [
+   "tz",
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+  }
+ },
+ "/v1/vedic/narrative/varshaphal-themes": {
+  "status": 200,
+  "required": [
+   "lat",
+   "lon",
+   "birth.date",
+   "birth.tz",
+   "year"
+  ],
+  "params": {
+   "lat": "19.076",
+   "lon": "72.8777",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata",
+   "year": "2027"
+  },
+  "docs": {
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "year": "Year (YYYY)."
+  }
+ },
+ "/v1/vedic/narrative/yearly-bhavishyafal": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "year": "2027"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/yoga/{id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/narrative/yogas": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/daan/{id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/for-graha": {
+  "status": 200,
+  "required": [
+   "graha"
+  ],
+  "params": {
+   "graha": "saturn",
+   "reason": "debilitated"
+  },
+  "docs": {
+   "graha": "Graha id. Required unless reason is dosha:<id>.",
+   "reason": "debilitated | combust | dusthana | weak_shadbala | dasha | dosha:<id>",
+   "include": "Comma-separated extra kinds: pooja, pilgrimage, yantra, rudraksha, gemstone.",
+   "category": "Limit to one catalogue category.",
+   "locale": "Text locale (en, hi, mr, ta, te, kn, ...). English text is kept where no translation exists."
+  }
+ },
+ "/v1/vedic/remedies/lal-kitab": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/lal-kitab/{planet}/{house}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/mantra/{id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/pooja/{id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/rudraksha/{id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/vrat/{id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/yantra/{id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/vedic/remedies/{rule_id}": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/western/astrocartography/local-space": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/astrocartography/planet-lines": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+  }
+ },
+ "/v1/western/compatibility/sun-sign": {
+  "status": 200,
+  "required": [
+   "sign_a",
+   "sign_b"
+  ],
+  "params": {
+   "sign_a": "Aries",
+   "sign_b": "Leo"
+  },
+  "docs": {}
+ },
+ "/v1/western/composite/aspects": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "composite_method": "Composite chart method. midpoint_planets averages each planet's longitude (default, most common). midpoint_cusps averages each cusp pair instead.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/composite/chart": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "composite_method": "Composite chart method. midpoint_planets averages each planet's longitude (default, most common). midpoint_cusps averages each cusp pair instead.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/composite/houses": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "composite_method": "Composite chart method. midpoint_planets averages each planet's longitude (default, most common). midpoint_cusps averages each cusp pair instead.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/composite/planets": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "composite_method": "Composite chart method. midpoint_planets averages each planet's longitude (default, most common). midpoint_cusps averages each cusp pair instead."
+  }
+ },
+ "/v1/western/davison/aspects": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/davison/chart": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/davison/houses": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/davison/planets": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude."
+  }
+ },
+ "/v1/western/dignities/almuten": {
+  "status": 200,
+  "required": [
+   "asc_lon"
+  ],
+  "params": {
+   "asc_lon": "120"
+  },
+  "docs": {}
+ },
+ "/v1/western/dignities/bounds": {
+  "status": 200,
+  "required": [
+   "lon"
+  ],
+  "params": {
+   "lon": "72.8777"
+  },
+  "docs": {
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/western/dignities/face": {
+  "status": 200,
+  "required": [
+   "lon"
+  ],
+  "params": {
+   "lon": "72.8777"
+  },
+  "docs": {
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/western/dignities/planet": {
+  "status": 200,
+  "required": [
+   "lon",
+   "planet"
+  ],
+  "params": {
+   "lon": "72.8777",
+   "planet": "Venus"
+  },
+  "docs": {
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/western/dignities/receptions": {
+  "status": 200,
+  "required": [],
+  "params": {
+   "sun": "19",
+   "moon": "45",
+   "venus": "210"
+  },
+  "docs": {}
+ },
+ "/v1/western/dignities/triplicity": {
+  "status": 200,
+  "required": [
+   "lon"
+  ],
+  "params": {
+   "lon": "72.8777"
+  },
+  "docs": {
+   "lon": "Longitude in decimal degrees."
+  }
+ },
+ "/v1/western/eclipses/upcoming": {
+  "status": 200,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/eclipses/visibility": {
+  "status": 200,
+  "required": [
+   "lat",
+   "lon",
+   "start_date",
+   "end_date"
+  ],
+  "params": {
+   "lat": "19.076",
+   "lon": "72.8777",
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31"
+  },
+  "docs": {
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "start_date": "First date of the range (YYYY-MM-DD).",
+   "end_date": "Last date of the range (YYYY-MM-DD)."
+  }
+ },
+ "/v1/western/firdaria": {
+  "status": 200,
+  "required": [
+   "birth_date"
+  ],
+  "params": {
+   "birth_date": "1990-01-15"
+  },
+  "docs": {
+   "birth_date": "Birth date (YYYY-MM-DD)."
+  }
+ },
+ "/v1/western/heliocentric/planets": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+  }
+ },
+ "/v1/western/horoscope/daily": {
+  "status": 200,
+  "required": [
+   "sign",
+   "date"
+  ],
+  "params": {
+   "sign": "Aries",
+   "date": "1990-01-15"
+  },
+  "docs": {
+   "sign": "Tropical zodiac sign (case-insensitive on input; canonicalised in response).",
+   "date": "Birth date (YYYY-MM-DD).",
+   "tone": "Editorial voice variant. Defaults to spiritual."
+  }
+ },
+ "/v1/western/horoscope/monthly": {
+  "status": 200,
+  "required": [
+   "sign",
+   "year_month"
+  ],
+  "params": {
+   "sign": "Aries",
+   "year_month": "2026-04"
+  },
+  "docs": {
+   "sign": "Tropical zodiac sign (case-insensitive on input; canonicalised in response).",
+   "year_month": "Year-month in YYYY-MM format.",
+   "tone": "Editorial voice variant. Defaults to spiritual."
+  }
+ },
+ "/v1/western/horoscope/weekly": {
+  "status": 200,
+  "required": [
+   "sign",
+   "week_start"
+  ],
+  "params": {
+   "sign": "Aries",
+   "week_start": "2026-04-20"
+  },
+  "docs": {
+   "sign": "Tropical zodiac sign (case-insensitive on input; canonicalised in response).",
+   "week_start": "Any date in the target ISO week (YYYY-MM-DD); the handler resolves the week label internally.",
+   "tone": "Editorial voice variant. Defaults to spiritual."
+  }
+ },
+ "/v1/western/ingresses": {
+  "status": 200,
+  "required": [
+   "start_date",
+   "end_date"
+  ],
+  "params": {
+   "start_date": "2027-01-01",
+   "end_date": "2027-03-31"
+  },
+  "docs": {
+   "start_date": "First date of the range (YYYY-MM-DD).",
+   "end_date": "Last date of the range (YYYY-MM-DD)."
+  }
+ },
+ "/v1/western/interpretation/aspect": {
+  "status": 200,
+  "required": [
+   "planet_a",
+   "planet_b",
+   "kind"
+  ],
+  "params": {
+   "planet_a": "Sun",
+   "planet_b": "Mars",
+   "kind": "square"
+  },
+  "docs": {
+   "planet_a": "First body name. Aspect interpretation is direction-agnostic — (Sun, Mars) and (Mars, Sun) hit the same entry.",
+   "planet_b": "Second body name.",
+   "kind": "Aspect kind (Phase 1 catalog: major Ptolemaic only).",
+   "context": "Interpretive context. Phase 3a stub corpus typically authors only natal + transit; synastry / composite arrive with Phase 3b sourcing."
+  }
+ },
+ "/v1/western/interpretation/transit": {
+  "status": 200,
+  "required": [
+   "transit_planet",
+   "natal_planet",
+   "kind"
+  ],
+  "params": {
+   "transit_planet": "Saturn",
+   "natal_planet": "Sun",
+   "kind": "square"
+  },
+  "docs": {
+   "transit_planet": "Body that is transiting. Transit direction matters — Saturn-on-Sun is distinct from Sun-on-Saturn.",
+   "natal_planet": "Body in the natal chart that is being aspected.",
+   "kind": "Aspect kind (Phase 1 catalog: major Ptolemaic only)."
+  }
+ },
+ "/v1/western/lunar/phase": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/narrative/decan": {
+  "status": 200,
+  "required": [
+   "sign",
+   "decan"
+  ],
+  "params": {
+   "sign": "Aries",
+   "decan": "1"
+  },
+  "docs": {}
+ },
+ "/v1/western/narrative/fixed-star/{name}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/western/narrative/natal-summary": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "verbosity": "Composition depth — caps the number of aspect-highlight sections in the summary. brief=3, medium=6, full=12."
+  }
+ },
+ "/v1/western/narrative/sabian": {
+  "status": 200,
+  "required": [
+   "degree"
+  ],
+  "params": {
+   "degree": "15"
+  },
+  "docs": {}
+ },
+ "/v1/western/narrative/timelord/firdaria": {
+  "status": 200,
+  "required": [
+   "lord"
+  ],
+  "params": {
+   "lord": "Sun"
+  },
+  "docs": {}
+ },
+ "/v1/western/narrative/timelord/profection": {
+  "status": 200,
+  "required": [
+   "house"
+  ],
+  "params": {
+   "house": "1"
+  },
+  "docs": {}
+ },
+ "/v1/western/narrative/timelord/zr": {
+  "status": 200,
+  "required": [
+   "lord"
+  ],
+  "params": {
+   "lord": "Sun"
+  },
+  "docs": {}
+ },
+ "/v1/western/narrative/transit-summary": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon",
+   "date",
+   "tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "time": "06:00",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "verbosity": "Composition depth — caps the number of aspect-highlight sections in the summary. brief=3, medium=6, full=12."
+  }
+ },
+ "/v1/western/narrative/yearly": {
+  "status": 200,
+  "required": [
+   "sign"
+  ],
+  "params": {
+   "sign": "Aries"
+  },
+  "docs": {}
+ },
+ "/v1/western/natal/antiscia": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/ascendant": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/natal/aspect-patterns": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/aspects": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/natal/asteroid/{number}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/asteroids/big-four-plus": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/western/natal/centaurs": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/chart": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/natal/chart-shape": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/declinations": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/dominant": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/fixed-stars": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/fixed-stars/{name}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/harmonic-aspects": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/harmonic/{n}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/houses": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/natal/lilith-set": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/lot/{name}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/lots": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/mc": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/natal/midpoint-tree": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/midpoints": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/out-of-bounds": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/parans": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/planet/{name}": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude."
+  }
+ },
+ "/v1/western/natal/planets": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude."
+  }
+ },
+ "/v1/western/natal/tnos": {
+  "status": 503,
+  "required": [],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {}
+ },
+ "/v1/western/natal/uranian-hypotheticals": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/natal/vertex-set": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/primary-directions/placidus-mundane": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/primary-directions/placidus-zodiacal": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/primary-directions/regiomontanus": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/profections/annual": {
+  "status": 200,
+  "required": [
+   "birth_date",
+   "asc_sign"
+  ],
+  "params": {
+   "birth_date": "1990-01-15",
+   "asc_sign": "Aries"
+  },
+  "docs": {
+   "birth_date": "Birth date (YYYY-MM-DD)."
+  }
+ },
+ "/v1/western/profections/daily": {
+  "status": 200,
+  "required": [
+   "birth_date",
+   "asc_sign"
+  ],
+  "params": {
+   "birth_date": "1990-01-15",
+   "asc_sign": "Aries"
+  },
+  "docs": {
+   "birth_date": "Birth date (YYYY-MM-DD)."
+  }
+ },
+ "/v1/western/profections/monthly": {
+  "status": 200,
+  "required": [
+   "birth_date",
+   "asc_sign"
+  ],
+  "params": {
+   "birth_date": "1990-01-15",
+   "asc_sign": "Aries"
+  },
+  "docs": {
+   "birth_date": "Birth date (YYYY-MM-DD)."
+  }
+ },
+ "/v1/western/progressions/aspects-to-natal": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "age_in_years"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "age_in_years": "30",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "age_in_years": "Age in years (decimal allowed) for secondary progressions / solar arc directions. Range [0, 120].",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/progressions/lunation": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "age_in_years"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "age_in_years": "30",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "age_in_years": "Age in years (decimal allowed) for secondary progressions / solar arc directions. Range [0, 120].",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude."
+  }
+ },
+ "/v1/western/progressions/planets": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "age_in_years"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "age_in_years": "30",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "age_in_years": "Age in years (decimal allowed) for secondary progressions / solar arc directions. Range [0, 120].",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude."
+  }
+ },
+ "/v1/western/retrograde-window/{planet}": {
+  "status": 200,
+  "required": [
+   "start_date",
+   "end_date"
+  ],
+  "params": {
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31"
+  },
+  "docs": {
+   "start_date": "First date of the range (YYYY-MM-DD).",
+   "end_date": "Last date of the range (YYYY-MM-DD)."
+  }
+ },
+ "/v1/western/returns/lunar": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "from"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "from": "2026-04-25T00:00:00Z",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "from": "Search-start moment for the next lunar return (RFC3339 UTC). Required — no implicit \"now\"",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "relocate_lat": "Optional relocation latitude for relocated returns. Both relocate_lat and relocate_lon must be provided together.",
+   "relocate_lon": "Optional relocation longitude for relocated returns. Paired with relocate_lat.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/returns/lunar/aspects": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "from"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "from": "2027-01-01T00:00:00Z"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "from": "Start of the range."
+  }
+ },
+ "/v1/western/returns/solar": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "return_year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "return_year": "2026",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "return_year": "Calendar year for the solar return. Range [-1000, 5000].",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "relocate_lat": "Optional relocation latitude for relocated returns. Both relocate_lat and relocate_lon must be provided together.",
+   "relocate_lon": "Optional relocation longitude for relocated returns. Paired with relocate_lat.",
+   "rulership": "Sign-rulership scheme for House / ASC / MC ruler emission. modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius, Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio, Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs."
+  }
+ },
+ "/v1/western/returns/solar/aspects": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "return_year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "return_year": "2027"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees."
+  }
+ },
+ "/v1/western/returns/solar/exact-jd": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "return_year"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "return_year": "2026",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "return_year": "Calendar year for the solar return. Range [-1000, 5000].",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
+  }
+ },
+ "/v1/western/solar-arc/aspects-to-natal": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "age_in_years"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "age_in_years": "30",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "age_in_years": "Age in years (decimal allowed) for secondary progressions / solar arc directions. Range [0, 120].",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/solar-arc/planets": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "age_in_years"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "age_in_years": "30",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "age_in_years": "Age in years (decimal allowed) for secondary progressions / solar arc directions. Range [0, 120].",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude."
+  }
+ },
+ "/v1/western/synastry/aspects": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/synastry/grid": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/synastry/score": {
+  "status": 200,
+  "required": [
+   "personA.date",
+   "personA.tz",
+   "personA.lat",
+   "personA.lon",
+   "personB.date",
+   "personB.tz",
+   "personB.lat",
+   "personB.lon"
+  ],
+  "params": {
+   "personA.date": "1990-01-15",
+   "personA.tz": "Asia/Kolkata",
+   "personA.lat": "19.076",
+   "personA.lon": "72.8777",
+   "personB.date": "1992-03-20",
+   "personB.tz": "Asia/Kolkata",
+   "personB.lat": "28.6139",
+   "personB.lon": "77.209",
+   "personA.time": "10:30",
+   "personB.time": "08:15"
+  },
+  "docs": {
+   "personA.date": "Person A's birth date (YYYY-MM-DD).",
+   "personA.tz": "Person A's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personA.lat": "Person A's birth place latitude in decimal degrees.",
+   "personA.lon": "Person A's birth place longitude in decimal degrees.",
+   "personB.date": "Person B's birth date (YYYY-MM-DD).",
+   "personB.tz": "Person B's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "personB.lat": "Person B's birth place latitude in decimal degrees.",
+   "personB.lon": "Person B's birth place longitude in decimal degrees.",
+   "personA.time": "Person A's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "personB.time": "Person B's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "house_system": "House system. Phase 2c supports placidus (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically undefined inside polar circle); Whole Sign and Equal accept any latitude.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/transits/calendar": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon",
+   "from",
+   "to"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "from": "2027-01-01",
+   "to": "2027-01-30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "from": "Start of the range.",
+   "to": "End of the range."
+  }
+ },
+ "/v1/western/transits/exact": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon",
+   "transit_planet",
+   "natal_planet",
+   "aspect",
+   "from",
+   "to"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "transit_planet": "Saturn",
+   "natal_planet": "Sun",
+   "aspect": "square",
+   "from": "2026-01-01T00:00:00Z",
+   "to": "2027-01-01T00:00:00Z",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "transit_planet": "Transit body name.",
+   "natal_planet": "Natal body name.",
+   "aspect": "Aspect kind to bisect for.",
+   "from": "Start of search window (RFC3339 UTC). Required — cannot",
+   "to": "End of search window (RFC3339 UTC). Window capped at 5 years.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
+  }
+ },
+ "/v1/western/transits/positions": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
+  }
+ },
+ "/v1/western/transits/to-natal": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz",
+   "birth.lat",
+   "birth.lon",
+   "date",
+   "tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076",
+   "birth.lon": "72.8777",
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "time": "06:00",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "orb_conjunction": "Orb (degrees) for conjunction detection. Range (0, 15]. Default 8°.",
+   "orb_opposition": "Orb (degrees) for opposition detection. Range (0, 15]. Default 8°.",
+   "orb_trine": "Orb (degrees) for trine detection. Range (0, 15]. Default 8°.",
+   "orb_square": "Orb (degrees) for square detection. Range (0, 15]. Default 7°.",
+   "orb_sextile": "Orb (degrees) for sextile detection. Range (0, 15]. Default 6°."
+  }
+ },
+ "/v1/western/zodiacal-releasing/fortune": {
+  "status": 200,
+  "required": [
+   "birth_date",
+   "lot_sign"
+  ],
+  "params": {
+   "birth_date": "1990-01-15",
+   "lot_sign": "Aries"
+  },
+  "docs": {
+   "birth_date": "Birth date (YYYY-MM-DD)."
+  }
+ },
+ "/v1/western/zodiacal-releasing/spirit": {
+  "status": 200,
+  "required": [
+   "birth_date",
+   "lot_sign"
+  ],
+  "params": {
+   "birth_date": "1990-01-15",
+   "lot_sign": "Aries"
+  },
+  "docs": {
+   "birth_date": "Birth date (YYYY-MM-DD)."
+  }
+ }
+}
