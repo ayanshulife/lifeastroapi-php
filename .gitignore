@@ -1,25 +1,51 @@
-# Composer
+# --- Composer ---------------------------------------------------------------
 /vendor/
+# Local Composer binary (php composer.phar ...), never committed.
 /composer.phar
-# A library does not pin its dependencies; apps that install it do.
+# A library does not pin its dependencies; the apps that install it do.
 /composer.lock
 
-# Tool caches
+# --- Local overrides of the committed *.dist configs --------------------------
+/phpunit.xml
+/phpstan.neon
+/phpcs.xml
+/.php-cs-fixer.php
+
+# --- Tool caches and reports ---------------------------------------------------
 /.phpunit.cache/
 /.phpunit.result.cache
 /.phpcs-cache
+/.php-cs-fixer.cache
+/.php_cs.cache
+/.phpstan/
+/coverage/
 /build/
+/tmp/
 
-# Live sweep output (tool/live-sweep.php --dump)
+# --- Live sweep output (tool/live-sweep.php --dump=live-dump) -----------------
 /live-dump/
 
-# Local environment
+# --- Secrets and local environment (API keys stay out of git) ------------------
 .env
 .env.*
 !.env.example
+auth.json
 
-# OS / editor
-.DS_Store
+# --- Logs ---------------------------------------------------------------------
+*.log
+
+# --- Editors and IDEs ---------------------------------------------------------
 .idea/
 .vscode/
+*.sublime-project
+*.sublime-workspace
+.fleet/
 *.swp
+*.swo
+*~
+
+# --- OS files -----------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
