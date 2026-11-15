@@ -32,7 +32,7 @@ final class Geo
      * `GET /v1/geo/place/{id}`
      *
      * @param string $id
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -57,7 +57,7 @@ final class Geo
      * @param float $lat Latitude in decimal degrees.
      * @param float $lon Longitude in decimal degrees.
      * @param int|null $limit
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -88,7 +88,7 @@ final class Geo
      * @param string $q
      * @param int|null $limit
      * @param string|null $cc
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -117,7 +117,7 @@ final class Geo
      *
      * @param float $lat Latitude in decimal degrees.
      * @param float $lon Longitude in decimal degrees.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

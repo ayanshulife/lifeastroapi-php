@@ -45,7 +45,7 @@ final class Ashtakavarga
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -93,7 +93,7 @@ final class Ashtakavarga
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -136,7 +136,7 @@ final class Ashtakavarga
      * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -179,7 +179,7 @@ final class Ashtakavarga
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

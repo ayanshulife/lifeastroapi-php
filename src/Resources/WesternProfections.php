@@ -36,7 +36,7 @@ final class WesternProfections
      * @param string $birthDate Birth date (YYYY-MM-DD).
      * @param string $ascSign
      * @param string|null $refDate
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -68,7 +68,7 @@ final class WesternProfections
      * @param string $birthDate Birth date (YYYY-MM-DD).
      * @param string $ascSign
      * @param string|null $refDate
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -101,7 +101,7 @@ final class WesternProfections
      * @param string $birthDate Birth date (YYYY-MM-DD).
      * @param string $ascSign
      * @param string|null $refDate
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

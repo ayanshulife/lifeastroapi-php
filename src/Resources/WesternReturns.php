@@ -54,7 +54,7 @@ final class WesternReturns
      *     relocate_lat and relocate_lon must be provided together.
      * @param float|null $relocateLon Optional relocation longitude for relocated returns. Paired
      *     with relocate_lat.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -105,7 +105,7 @@ final class WesternReturns
      * @param string $from Start of the range.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -160,7 +160,7 @@ final class WesternReturns
      *     relocate_lat and relocate_lon must be provided together.
      * @param float|null $relocateLon Optional relocation longitude for relocated returns. Paired
      *     with relocate_lat.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -212,7 +212,7 @@ final class WesternReturns
      * @param int $returnYear
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -258,7 +258,7 @@ final class WesternReturns
      * @param int $year Calendar year for the solar return. Range [-1000, 5000].
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

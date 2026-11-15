@@ -35,7 +35,7 @@ final class WesternHoroscope
      *     response).
      * @param string $date Birth date (YYYY-MM-DD).
      * @param string|null $tone Editorial voice variant. Defaults to spiritual.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -68,7 +68,7 @@ final class WesternHoroscope
      *     response).
      * @param string $yearMonth Year-month in YYYY-MM format.
      * @param string|null $tone Editorial voice variant. Defaults to spiritual.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -102,7 +102,7 @@ final class WesternHoroscope
      * @param string $weekStart Any date in the target ISO week (YYYY-MM-DD); the handler resolves
      *     the week label internally.
      * @param string|null $tone Editorial voice variant. Defaults to spiritual.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

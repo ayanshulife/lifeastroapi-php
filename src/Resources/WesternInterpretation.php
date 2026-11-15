@@ -39,7 +39,7 @@ final class WesternInterpretation
      * @param string $aspect Aspect kind (Phase 1 catalog: major Ptolemaic only).
      * @param string|null $context Interpretive context. Phase 3a stub corpus typically authors only
      *     natal + transit; synastry / composite arrive with Phase 3b sourcing.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -75,7 +75,7 @@ final class WesternInterpretation
      *     Saturn-on-Sun is distinct from Sun-on-Saturn.
      * @param string $natalPlanet Body in the natal chart that is being aspected.
      * @param string $aspect Aspect kind (Phase 1 catalog: major Ptolemaic only).
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.0 (2026-11-15)
+
+- New `onResponse` hook, as a client argument (`new LifeAstro(onResponse: ...)`) and per call
+  (`new RequestOptions(onResponse: ...)`): receives a `ResponseInfo` with the request id,
+  `creditsRemaining`, the rate limit (`RateLimit` with `limit`, `remaining` and `resetAt`), the cache
+  result and the answer's language for every call, success or error. See "Credits, rate limit and
+  request id" in the README. Same as the Node.js SDK 0.10.0 `onResponse`.
+- The API (deployed separately) now sends the real balance in `X-Credits-Remaining` on a failed call
+  (it showed the balance with the failed call's cost still held), and no longer sends a misleading
+  `0` on free-tier accounts.
+
 ## 0.2.0 (2026-11-15)
 
 Branded PDF reports, made on your own server.

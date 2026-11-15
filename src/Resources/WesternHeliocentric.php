@@ -34,7 +34,7 @@ final class WesternHeliocentric
      * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

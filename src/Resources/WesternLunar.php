@@ -42,7 +42,7 @@ final class WesternLunar
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

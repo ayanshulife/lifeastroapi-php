@@ -45,7 +45,7 @@ final class Transit
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -87,7 +87,7 @@ final class Transit
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -126,7 +126,7 @@ final class Transit
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -167,7 +167,7 @@ final class Transit
      * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -216,7 +216,7 @@ final class Transit
      * @param int|null $years Span in calendar years after from. Default 25, max 60.
      * @param bool|null $includePast Also return windows from the birth moment up to from. Default
      *     false.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -258,7 +258,7 @@ final class Transit
      * @param string $tz Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -300,7 +300,7 @@ final class Transit
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -343,7 +343,7 @@ final class Transit
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -387,7 +387,7 @@ final class Transit
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -435,7 +435,7 @@ final class Transit
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param int|null $years Span in calendar years after from (per-planet default and max, see
      *     description).
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

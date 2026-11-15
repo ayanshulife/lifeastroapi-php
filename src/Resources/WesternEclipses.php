@@ -32,7 +32,7 @@ final class WesternEclipses
      * `GET /v1/western/eclipses/upcoming`
      *
      * @param int|null $months
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -62,7 +62,7 @@ final class WesternEclipses
      * @param float $lon Longitude in decimal degrees.
      * @param string $startDate First date of the range (YYYY-MM-DD).
      * @param string $endDate Last date of the range (YYYY-MM-DD).
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

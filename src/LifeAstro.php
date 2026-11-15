@@ -36,7 +36,7 @@ use Psr\Http\Message\RequestFactoryInterface;
 final class LifeAstro extends Resources
 {
     /** SDK version, sent in the `User-Agent` header. */
-    public const VERSION = '0.2.0';
+    public const VERSION = '0.3.0';
 
     public const DEFAULT_BASE_URL = 'https://api.lifeastroapi.com';
 
@@ -59,6 +59,9 @@ final class LifeAstro extends Resources
      * @param RequestFactoryInterface|null $requestFactory PSR-17 request factory for a PSR-18
      *     `transport`. Optional when the client is a factory itself (Symfony's `Psr18Client`).
      * @param array<string, string> $defaultHeaders Extra headers on every request.
+     * @param (callable(ResponseInfo): mixed)|null $onResponse Called with the {@see ResponseInfo} of
+     *     every call: request id, credits left, rate limit, cache and language. Use it to log usage
+     *     or warn when credits run low. Exceptions thrown inside it are ignored.
      *
      * @throws LifeAstroException With code `missing_api_key` when there is no key.
      * @throws \InvalidArgumentException When a PSR-18 client comes without a request factory.
@@ -71,6 +74,7 @@ final class LifeAstro extends Resources
         Transport|ClientInterface|null $transport = null,
         ?RequestFactoryInterface $requestFactory = null,
         array $defaultHeaders = [],
+        ?callable $onResponse = null,
     ) {
         $apiKey ??= self::keyFromEnvironment();
         if ($apiKey === null || trim($apiKey) === '') {
@@ -89,6 +93,7 @@ final class LifeAstro extends Resources
             self::resolveTransport($transport, $requestFactory),
             'lifeastroapi-php/' . self::VERSION,
             $defaultHeaders,
+            $onResponse === null ? null : \Closure::fromCallable($onResponse),
         );
         parent::__construct($this->http);
     }

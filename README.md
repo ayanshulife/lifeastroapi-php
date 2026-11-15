@@ -138,6 +138,7 @@ $client = new LifeAstro(
     timeout: 30.0,                            // seconds per request (default 30)
     maxRetries: 2,                            // retries on 429 / 5xx / network errors (default 2)
     defaultHeaders: ['X-Request-Source' => 'my-app'],  // extra headers on every request
+    onResponse: null,                         // see "Credits, rate limit and request id"
 );
 ```
 
@@ -341,7 +342,51 @@ $client->chart->planets(...$arjun, requestOptions: new RequestOptions(timeout: 5
 $client->request('/v1/panchang/tithi', [...], new RequestOptions(raw: true));
 ```
 
-`timeout` overrides the client timeout for one call; `raw` returns the body exactly as received.
+`timeout` overrides the client timeout for one call; `raw` returns the body exactly as received;
+`onResponse` is the hook below, for one call.
+
+## Credits, rate limit and request id
+
+Every response carries your credit balance, your plan's rate limit and a request id in its
+headers. `onResponse` hands them to you as a `ResponseInfo`, for every call (client argument) or
+for one call (`RequestOptions`):
+
+```php
+use LifeAstroApi\LifeAstro;
+use LifeAstroApi\RequestOptions;
+use LifeAstroApi\ResponseInfo;
+
+$client = new LifeAstro(onResponse: function (ResponseInfo $info): void {
+    if ($info->creditsRemaining !== null && $info->creditsRemaining < 5_000) {
+        error_log("LifeAstroAPI credits low: {$info->creditsRemaining}");
+    }
+});
+
+$client->panchang->basic(
+    lat: 19.076,
+    lon: 72.8777,
+    tz: 'Asia/Kolkata',
+    requestOptions: new RequestOptions(
+        onResponse: fn (ResponseInfo $info) => error_log($info->requestId . ' ' . $info->rateLimit?->remaining),
+    ),
+);
+```
+
+| Property | From header | Meaning |
+|---|---|---|
+| `status` | | HTTP status |
+| `path` | | Endpoint path, e.g. `/v1/panchang/basic` |
+| `requestId` | `X-Request-ID` | Quote it to support |
+| `creditsRemaining` | `X-Credits-Remaining` | Balance after the call; unchanged after a failed call (failed calls are free). Null on the free tier, whose allowance is daily/monthly rather than a balance |
+| `rateLimit` | `X-RateLimit-*` | `RateLimit` with `limit`, `remaining` and `resetAt` (a `DateTimeImmutable` in UTC), per minute for your plan |
+| `cache` | `X-Cache` | `HIT` when the API answered from its cache (billed the same) |
+| `language` | `Content-Language` | Language of the answer |
+
+A property is null when the API did not send its header. Any callable works as the hook (a
+closure, `[$logger, 'method']`, a first-class callable). It runs once per call with the final
+response, success or error (not for retried attempts or network failures); the client-level hook
+runs first, then the per-call one. An exception thrown inside it is ignored, so logging can never
+break a call.
 
 ## Escape hatch
 

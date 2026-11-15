@@ -77,7 +77,7 @@ final class Western
      *
      * @param string $birthDate Birth date (YYYY-MM-DD).
      * @param string|null $refDate
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -106,7 +106,7 @@ final class Western
      *
      * @param string $startDate First date of the range (YYYY-MM-DD).
      * @param string $endDate Last date of the range (YYYY-MM-DD).
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -136,7 +136,7 @@ final class Western
      * @param string $planet
      * @param string $startDate First date of the range (YYYY-MM-DD).
      * @param string $endDate Last date of the range (YYYY-MM-DD).
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

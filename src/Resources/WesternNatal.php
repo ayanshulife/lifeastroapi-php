@@ -41,7 +41,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -89,7 +89,7 @@ final class WesternNatal
      *     modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius,
      *     Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio,
      *     Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -134,7 +134,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -186,7 +186,7 @@ final class WesternNatal
      * @param float|null $orbTrine Orb (degrees) for trine detection. Range (0, 15]. Default 8°.
      * @param float|null $orbSquare Orb (degrees) for square detection. Range (0, 15]. Default 7°.
      * @param float|null $orbSextile Orb (degrees) for sextile detection. Range (0, 15]. Default 6°.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -239,7 +239,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -283,7 +283,7 @@ final class WesternNatal
      * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -325,7 +325,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -381,7 +381,7 @@ final class WesternNatal
      *     modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius,
      *     Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio,
      *     Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -436,7 +436,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -478,7 +478,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -522,7 +522,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -565,7 +565,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -609,7 +609,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -652,7 +652,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -698,7 +698,7 @@ final class WesternNatal
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
      * @param string|null $harmonics
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -747,7 +747,7 @@ final class WesternNatal
      *     modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius,
      *     Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio,
      *     Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -792,7 +792,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -835,7 +835,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -879,7 +879,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -927,7 +927,7 @@ final class WesternNatal
      *     modern (default) uses post-discovery rulers (Pluto-Scorpio, Uranus-Aquarius,
      *     Neptune-Pisces). traditional uses the classical 7-planet scheme (Mars-Scorpio,
      *     Saturn-Aquarius, Jupiter-Pisces) — outer planets are not assigned ruling signs.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -971,7 +971,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -1013,7 +1013,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -1057,7 +1057,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -1100,7 +1100,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -1144,7 +1144,7 @@ final class WesternNatal
      * @param HouseSystem|string|null $houseSystem House system. Phase 2c supports placidus
      *     (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically
      *     undefined inside polar circle); Whole Sign and Equal accept any latitude.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -1190,7 +1190,7 @@ final class WesternNatal
      * @param HouseSystem|string|null $houseSystem House system. Phase 2c supports placidus
      *     (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically
      *     undefined inside polar circle); Whole Sign and Equal accept any latitude.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -1233,7 +1233,7 @@ final class WesternNatal
      * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -1276,7 +1276,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -1318,7 +1318,7 @@ final class WesternNatal
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

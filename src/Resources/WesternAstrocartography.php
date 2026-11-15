@@ -45,7 +45,7 @@ final class WesternAstrocartography
      * @param float $observerLon
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -88,7 +88,7 @@ final class WesternAstrocartography
      * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param float|null $latStep
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

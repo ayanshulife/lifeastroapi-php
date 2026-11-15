@@ -40,7 +40,7 @@ final class Meta
      * @param string|null $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -69,7 +69,7 @@ final class Meta
      *
      * `GET /v1/meta/endpoints`
      *
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -88,7 +88,7 @@ final class Meta
      *
      * `GET /v1/meta/vedic/doshas`
      *
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -107,7 +107,7 @@ final class Meta
      *
      * `GET /v1/meta/vedic/locales`
      *
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -125,7 +125,7 @@ final class Meta
      *
      * `GET /v1/meta/vedic/narrative-axes`
      *
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -144,7 +144,7 @@ final class Meta
      *
      * `GET /v1/meta/vedic/yogas`
      *
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -162,7 +162,7 @@ final class Meta
      *
      * `GET /v1/meta/version`
      *
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

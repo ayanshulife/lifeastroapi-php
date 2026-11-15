@@ -7,11 +7,13 @@ namespace LifeAstroApi\Http;
 use LifeAstroApi\Exception\ConnectionException;
 use LifeAstroApi\Exception\LifeAstroException;
 use LifeAstroApi\RequestOptions;
+use LifeAstroApi\ResponseInfo;
 
 /**
  * The request pipeline behind every method: URL and query building, bearer auth, timeout, JSON
- * decoding, `{ data, meta }` envelope unwrapping, error mapping and bounded retries with
- * exponential backoff that honour `Retry-After`. A port of `src/http.ts` of the Node.js SDK.
+ * decoding, `{ data, meta }` envelope unwrapping, error mapping, bounded retries with
+ * exponential backoff that honour `Retry-After`, and the `onResponse` hook. A port of
+ * `src/http.ts` of the Node.js SDK.
  *
  * @internal Use {@see \LifeAstroApi\LifeAstro}.
  */
@@ -23,6 +25,8 @@ final class HttpClient
     /**
      * @param array<string, string> $defaultHeaders Extra headers on every request; they win over
      *     the SDK's own headers (case-insensitive).
+     * @param (\Closure(ResponseInfo): mixed)|null $onResponse Called with the {@see ResponseInfo} of
+     *     every final response, before a per-call hook.
      */
     public function __construct(
         #[\SensitiveParameter] private readonly string $apiKey,
@@ -32,6 +36,7 @@ final class HttpClient
         private readonly Transport $transport,
         private readonly string $userAgent,
         private readonly array $defaultHeaders = [],
+        private readonly ?\Closure $onResponse = null,
     ) {
     }
 
@@ -85,7 +90,8 @@ final class HttpClient
      */
     private function send(string $path, array $query, ?RequestOptions $options): array
     {
-        $url = $this->baseUrl . (str_starts_with($path, '/') ? $path : '/' . $path) . Query::encode($query);
+        $path = str_starts_with($path, '/') ? $path : '/' . $path;
+        $url = $this->baseUrl . $path . Query::encode($query);
         $timeout = $options->timeout ?? $this->timeout;
         $headers = $this->headers();
 
@@ -103,6 +109,7 @@ final class HttpClient
 
             $body = self::decode($response->body);
             if ($response->status >= 200 && $response->status < 300) {
+                $this->emit($response, $path, $options);
                 if ($options !== null && $options->raw) {
                     return [$response->status, $body];
                 }
@@ -122,7 +129,28 @@ final class HttpClient
                 continue;
             }
 
+            $this->emit($response, $path, $options);
             throw $error;
+        }
+    }
+
+    /**
+     * Call the client-level hook, then the per-call one, with the final response of a call. A hook
+     * that throws never breaks the call.
+     */
+    private function emit(TransportResponse $response, string $path, ?RequestOptions $options): void
+    {
+        $hooks = array_filter([$this->onResponse, $options?->onResponse]);
+        if ($hooks === []) {
+            return;
+        }
+        $info = ResponseInfo::fromResponse($response, $path);
+        foreach ($hooks as $hook) {
+            try {
+                $hook($info);
+            } catch (\Throwable) {
+                // A logging hook must never break the call.
+            }
         }
     }
 

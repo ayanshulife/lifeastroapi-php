@@ -54,7 +54,7 @@ final class WesternComposite
      * @param HouseSystem|string|null $houseSystem House system. Phase 2c supports placidus
      *     (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically
      *     undefined inside polar circle); Whole Sign and Equal accept any latitude.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -118,7 +118,7 @@ final class WesternComposite
      * @param HouseSystem|string|null $houseSystem House system. Phase 2c supports placidus
      *     (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically
      *     undefined inside polar circle); Whole Sign and Equal accept any latitude.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -176,7 +176,7 @@ final class WesternComposite
      * @param HouseSystem|string|null $houseSystem House system. Phase 2c supports placidus
      *     (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically
      *     undefined inside polar circle); Whole Sign and Equal accept any latitude.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -220,7 +220,7 @@ final class WesternComposite
      * @param HouseSystem|string|null $houseSystem House system. Phase 2c supports placidus
      *     (default), whole_sign, koch, equal. Placidus and Koch reject |lat| > 66° (geometrically
      *     undefined inside polar circle); Whole Sign and Equal accept any latitude.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

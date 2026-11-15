@@ -33,7 +33,7 @@ final class Tarot
      * `GET /v1/tarot/card/{id}`
      *
      * @param string $id
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -58,7 +58,7 @@ final class Tarot
      *
      * @param string|null $suit
      * @param string|null $search
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -85,7 +85,7 @@ final class Tarot
      * `GET /v1/tarot/daily`
      *
      * @param string|null $date Date (YYYY-MM-DD).
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -111,7 +111,7 @@ final class Tarot
      * @param string $type
      * @param string|null $topic
      * @param int|null $seed
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -140,7 +140,7 @@ final class Tarot
      * `GET /v1/tarot/yes-no`
      *
      * @param int|null $seed
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

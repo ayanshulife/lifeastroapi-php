@@ -474,7 +474,7 @@ function methodDoc(m, indent) {
       if (words.length) for (const l of wrapText(words.join(" "), DOC_WIDTH - pre.length - 4)) out.push(`${pre}    ${l}`);
     }
   }
-  out.push(`${pre}@param RequestOptions|null $requestOptions Per-call timeout or raw body.`);
+  out.push(`${pre}@param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.`);
   out.push(`${indent} *`);
   out.push(`${pre}@return array<mixed> The decoded JSON response.`);
   out.push(`${indent} *`);

@@ -37,7 +37,7 @@ final class WesternDignities
      * @param float $ascLon
      * @param string|null $diurnal
      * @param string|null $scheme
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -68,7 +68,7 @@ final class WesternDignities
      * @param float $lon Longitude in decimal degrees.
      * @param string|null $scheme
      * @param string|null $diurnal
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -99,7 +99,7 @@ final class WesternDignities
      * @param float $lon Longitude in decimal degrees.
      * @param string|null $scheme
      * @param string|null $diurnal
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -130,7 +130,7 @@ final class WesternDignities
      * @param float $lon Longitude in decimal degrees.
      * @param bool|null $diurnal
      * @param string|null $scheme
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -168,7 +168,7 @@ final class WesternDignities
      * @param float|null $mars
      * @param float|null $jupiter
      * @param float|null $saturn
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -207,7 +207,7 @@ final class WesternDignities
      * @param float $lon Longitude in decimal degrees.
      * @param string|null $scheme
      * @param string|null $diurnal
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

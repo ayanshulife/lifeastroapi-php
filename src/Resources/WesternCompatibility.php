@@ -37,7 +37,7 @@ final class WesternCompatibility
      *
      * @param string $signA
      * @param string $signB
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *

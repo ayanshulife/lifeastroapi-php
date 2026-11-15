@@ -45,7 +45,7 @@ final class WesternTransits
      * @param string $to End of the range.
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -99,7 +99,7 @@ final class WesternTransits
      * @param string $to End of search window (RFC3339 UTC). Window capped at 5 years.
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -145,7 +145,7 @@ final class WesternTransits
      * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
@@ -190,7 +190,7 @@ final class WesternTransits
      * @param float|null $orbTrine Orb (degrees) for trine detection. Range (0, 15]. Default 8°.
      * @param float|null $orbSquare Orb (degrees) for square detection. Range (0, 15]. Default 7°.
      * @param float|null $orbSextile Orb (degrees) for sextile detection. Range (0, 15]. Default 6°.
-     * @param RequestOptions|null $requestOptions Per-call timeout or raw body.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
      *
      * @return array<mixed> The decoded JSON response.
      *
