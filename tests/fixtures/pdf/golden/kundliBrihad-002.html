@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Brihad Kundli: T</title>
+<style>
+:root { --brand-primary: #1a1a1a; --brand-secondary: #666666; }
+
+* { box-sizing: border-box; }
+/* Form controls and headings do not always inherit font-family in print, so
+   the Indic stack is set on them explicitly too. */
+h1, h2, h3, h4, th, td, li, dt, dd, input, button { font-family: inherit; }
+html, body {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+  color: #1a1a1a;
+  font-size: 11pt;
+  line-height: 1.45;
+  margin: 0;
+}
+@page { size: A4; margin: 18mm 15mm 22mm 15mm; }
+/* Print the brand colours (table headers, cards) as designed. Chromium does so
+   with printBackground; the iOS and Android print engines drop backgrounds
+   unless the page asks for exact colours. */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h2 {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+  padding-bottom: 2mm;
+  font-size: 16pt;
+  margin-top: 8mm;
+}
+h3 { font-size: 12pt; margin: 6mm 0 2mm; }
+p { margin: 2mm 0; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+th, td { text-align: left; padding: 2mm 3mm; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+th { background: var(--brand-primary); color: #fff; font-weight: 600; font-size: 10pt; }
+.cover { page-break-after: always; text-align: center; padding: 40mm 0 0; }
+.cover img.logo { max-height: 24mm; max-width: 60mm; margin-bottom: 8mm; }
+.cover h1 { color: var(--brand-primary); font-size: 28pt; margin: 0 0 4mm; }
+.cover .company { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 16mm; }
+.cover .subject { font-size: 16pt; margin-bottom: 4mm; }
+.cover .meta { color: var(--brand-secondary); font-size: 11pt; }
+.cover .generated { margin-top: 32mm; color: var(--brand-secondary); font-size: 9pt; }
+.narrative-section { margin-top: 6mm; page-break-inside: avoid; }
+.narrative-section .body { margin: 2mm 0; white-space: pre-wrap; }
+.narrative-section ul { margin: 1mm 0 2mm 6mm; padding: 0; }
+.narrative-section .citations { color: var(--brand-secondary); font-size: 9pt; font-style: italic; }
+.cards { display: flex; gap: 4mm; margin: 4mm 0; flex-wrap: wrap; }
+.card { flex: 1 1 0; min-width: 40mm; border: 1px solid #e5e5e5; border-radius: 2mm; padding: 3mm; }
+.card .label { color: var(--brand-secondary); font-size: 9pt; text-transform: uppercase; letter-spacing: .04em; }
+.card .value { font-size: 14pt; color: var(--brand-primary); font-weight: 600; margin-top: 1mm; }
+/* On screen the footer is an ordinary block after the content. In print it
+   is hidden and the same text is drawn in the page's bottom margin instead
+   (see footerCss): a position:fixed footer is laid out against the page
+   CONTENT box, so it prints on top of the last lines of body text. */
+footer {
+  text-align: center; color: var(--brand-secondary); font-size: 8pt;
+  margin-top: 10mm;
+}
+@media print { footer { display: none; } }
+/* Telugu and Kannada stack vowel signs and conjuncts above and below the
+   line and Tamil has tall marks too, so their lines get a little more height
+   (Devanagari keeps the 1.45 it was tuned for). Letter-spacing and uppercase are Latin
+   typography; spacing splits Indic clusters apart, so drop it.
+   :where() keeps the specificity of a plain "body" rule, so a report's own
+   body line-height (Brihad sets 1.8) still wins. */
+:where(html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) body { line-height: 1.6; }
+:where(html:lang(hi), html:lang(mr), html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) * { letter-spacing: normal !important; }
+
+
+
+
+/* Brihad uses a Puppeteer running header/footer in the page margin. The
+   @page margin here MUST match the page.pdf margin (BRIHAD_PDF_MARGIN =
+   26mm/16mm top/bottom) so that whichever Chromium honours, body content
+   always stays inside the same safe box and never overlaps the header/footer
+   bands. (The old 18/22mm BASE_CSS margin let content ride up into the
+   header.) Drop the in-body fixed footer + watermark too. */
+@page { size: A4; margin: 26mm 0 16mm 0; }
+body > footer { display: none !important; }
+body::before { display: none !important; }
+/* Side gutters live on the body so the running header/footer can still bleed
+   to the page edges like the benchmark's page-number tab. */
+.section { padding-left: 14mm; padding-right: 14mm; }
+.cover { padding-left: 0; padding-right: 0; }
+
+/* ====================================================================
+   LifeAstro design system — "Royal Purple + Gold" (premium/luxe). A
+   DISTINCT identity, deliberately NOT the benchmark's teal/orange look:
+   royal-purple primaries + gold accents + soft-lavender backgrounds, and a
+   gold double-rule heading underline (not a slanted bar). The --as-* var
+   names are kept only so the rest of the CSS need not change.
+   ==================================================================== */
+:root {
+  /* LifeAstro "Hindu Spiritual / Saffron" palette — warm dharmic colours
+     (saffron, haldi-gold, sindoor-maroon) on cream. All accents are
+     dark/saturated enough to read clearly on white or the cream zebra. */
+  --as-teal:#c25e10;   /* deep saffron (primary)            */
+  --as-green:#a8451a;  /* burnt orange-brown                */
+  --as-amber:#b8860b;  /* haldi gold (readable on white)    */
+  --as-dorange:#9e2b25;/* sindoor maroon (heading accent)   */
+  --as-slate:#6b4a2f;  /* warm brown ink-2                  */
+  --as-olive:#9c6f1e;  /* antique gold                      */
+  --as-blue:#8a3324;   /* deep terracotta                   */
+  --as-lteal:#c0631e;  /* saffron-orange                    */
+  --as-salmon:#b5471f; /* rust                              */
+  --as-lamber:#9a7b1e; /* gold (readable)                   */
+  --as-gold:#8a5a00;   /* dark saffron-gold (cover)         */
+  --as-tab:#8a1f17;    /* deep maroon page accent           */
+  --as-zebra:#fcf3e3;  /* warm cream zebra (bg only)        */
+  --as-cardbg:#fffaf0; /* ivory card bg                     */
+  --as-ink:#3a2410;    /* deep warm-brown ink               */
+  /* Legacy "secondary" small-muted text → readable warm brown (gold is too
+     light as body text; gold stays for accents/borders). */
+  --brand-secondary:#7a5a3a;
+}
+/* Typography — airy density (~larger body + generous line-height) so the
+   report reads premium, not a wall of text. */
+body { color: var(--as-ink); font-size: 11.5pt; line-height: 1.8; }
+
+/* Section heading — purple title with a DISTINCT gold double-rule underline
+   (thick gold bar + thin purple hairline beneath) — a different signature
+   from the benchmark's slanted single bar. */
+.section > h2 {
+  color: var(--as-teal); font-size: 21.6pt; font-weight: 700;
+  border: none; padding: 0 0 2.5mm; margin: 0 0 5mm; position: relative;
+}
+.section > h2::after {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 1.6mm; width: 52mm;
+  background: var(--as-amber);
+  border-radius: 1mm;
+  box-shadow: 0 2.4mm 0 -0.9mm var(--as-teal); /* thin purple hairline below the gold bar */
+}
+.section:nth-of-type(2n) > h2 { color: var(--as-dorange); }
+.section:nth-of-type(3n) > h2 { color: var(--as-blue); }
+
+/* Tables — colored header row + zebra body. */
+.section table { border-collapse: separate; border-spacing: 0; margin: 4mm 0; width: 100%; }
+.section table thead th {
+  background: var(--as-teal); color: #fff; font-weight: 600; font-size: 10pt;
+  padding: 2.5mm 3mm; text-align: left; border: none;
+}
+.section table tbody td {
+  padding: 3mm 3.5mm; font-size: 10.5pt; border: none; border-bottom: 1px solid #eaeaea;
+  vertical-align: top;
+}
+.section table tbody tr:nth-child(odd) td { background: var(--as-zebra); }
+.section table tbody tr:nth-child(even) td { background: #ffffff; }
+/* Page-break hygiene: never split a row; keep header with its first rows;
+   don't strand a heading at the page bottom. */
+.section table tr { page-break-inside: avoid; }
+.section table thead { display: table-header-group; }
+.section h4 { page-break-after: avoid; }
+/* NOTE: h2/h3 do NOT use page-break-after:avoid — gluing a heading to a tall
+   following block (e.g. a 400px divisional chart) pushed the whole group to
+   the next page and left the forced section page nearly blank. */
+.yoga-block, .north-chart { page-break-inside: avoid; }
+/* The diamond chart stays atomic, and the chart+heading stick together, but
+   a divisional block as a whole may break (its table can flow) so a tall
+   first block doesn't orphan an entire blank page before it. */
+/* Keep ONLY the diamond atomic (.north-chart avoid-inside). Do NOT chain
+   the heading→chart with avoid-before/after — that built an unbreakable
+   group taller than a page, which orphaned a whole blank page before it. */
+
+/* Narrative-chapter section headings keep the same slanted-underline look but
+   the per-rule sub-headings (h3) are colored + tight. */
+/* Each per-rule block (h3 + body) gets card-like breathing room so a page
+   holds a few rich blocks, not a wall of text — matches the benchmark's
+   ~230 w/pp feel. */
+.narrative-chapter h3 {
+  color: var(--as-dorange); font-size: 13.5pt; font-weight: 700;
+  margin: 9mm 0 3mm; page-break-after: avoid;
+}
+.narrative-chapter h3:first-of-type { margin-top: 4mm; }
+.narrative-chapter p { margin: 0 0 5mm; text-align: justify; line-height: 1.85; }
+.narrative-chapter ul { margin: 0 0 5mm 7mm; }
+.narrative-chapter li { margin-bottom: 2.5mm; line-height: 1.7; }
+
+/* Sub-section h3 inside compute sections (e.g. KP significators, Maitri tables) */
+.section h3 { color: var(--as-teal); font-size: 12.5pt; font-weight: 700; margin: 6mm 0 2.5mm; page-break-after: avoid; }
+.section h4 { color: var(--as-slate); font-size: 11pt; font-weight: 700; margin: 4mm 0 2mm; }
+.section p { margin: 3mm 0; line-height: 1.7; }
+
+/* Intro paragraph right under a heading — muted. */
+.section > p:first-of-type { color: #555; }
+
+/* Table of contents (विषय-सूची) — teal banner + dotted-leader rows with
+   color-coded page numbers. */
+.toc-section { padding-top: 4mm; }
+.toc-banner {
+  background: var(--as-teal); color: #fff; font-size: 16pt; font-weight: 700;
+  text-align: center; padding: 3mm; border-radius: 4mm; margin: 0 0 6mm;
+}
+.toc-row { display: flex; align-items: baseline; margin: 2.4mm 0; font-size: 12pt; }
+.toc-row .toc-title { color: #444; white-space: nowrap; }
+.toc-row .toc-dots { flex: 1 1 auto; border-bottom: 1px dotted #bbb; margin: 0 2mm 1mm; }
+.toc-row .toc-page { font-weight: 700; font-size: 13pt; }
+/* 2-level TOC: Part rows bold (level 1), section rows indented (level 2). */
+.toc-row.toc-part { margin: 4mm 0 1.5mm; }
+.toc-row.toc-part .toc-title { color: var(--as-teal); font-weight: 700; font-size: 12.5pt; }
+.toc-row.toc-sub { margin-left: 7mm; }
+.toc-row.toc-sub .toc-title { color: #555; }
+
+/* Part banner — a level-1 grouping heading spliced to the TOP of the first
+ * section of each Part (NOT its own page, so there's no blank Part page). The
+ * host section already forces a page break, so the banner opens that page with
+ * the section's content flowing right below it. Rendered LARGER than ordinary
+ * section headings (24pt vs 21.6pt) so it reads as the top of the hierarchy
+ * and the outline/TOC level-detection by font-size works. */
+.part-banner { margin: 0 0 6mm; page-break-after: avoid; }
+.part-banner .part-h2 {
+  background: var(--as-teal); color: #fff; text-align: center;
+  padding: 6mm 4mm; border-radius: 3mm; font-size: 24pt; border-bottom: none;
+  margin: 0;
+}
+/* A merged-in sub-heading: the second piece's old top heading, demoted to a
+ * sub-heading when two same-topic sections fold into one. In-section divider. */
+h3.merged-sub {
+  font-size: 14pt; color: var(--as-teal); margin: 7mm 0 2mm;
+  padding-top: 3mm; border-top: 0.3mm solid #e3d9c0;
+}
+
+/* Graha Sthiti — planet cards grid with glyph images (3-up). */
+.graha-grid { display: flex; flex-wrap: wrap; gap: 4mm; margin: 5mm 0; }
+.graha-card {
+  flex: 0 0 calc(33.333% - 3mm); display: flex; align-items: center; gap: 3mm;
+  background: #fff; border: 1px solid #eee; border-radius: 2mm; padding: 3mm;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05); page-break-inside: avoid;
+}
+.graha-card .graha-glyph { flex: 0 0 auto; line-height: 0; }
+.graha-card .graha-name { font-weight: 700; font-size: 11pt; color: var(--as-ink); }
+.graha-card .graha-pos { font-size: 9.5pt; color: var(--as-teal); margin-top: 0.5mm; }
+.graha-card .graha-nak { font-size: 9pt; color: #777; }
+
+/* Rajyoga donut — pinned colors. */
+.rajyoga-power { text-align: center; margin: 6mm 0; }
+.rajyoga-power .rajyoga-pct {
+  display: inline-block; font-size: 30pt; font-weight: 700; color: var(--as-teal);
+  border: 5px solid var(--as-teal); border-radius: 50%; width: 36mm; height: 36mm;
+  line-height: 36mm; }
+.rajyoga-power .rajyoga-label { color: var(--as-slate); font-size: 11pt; margin-top: 2mm; }
+.cover h1 { font-size: 32pt; font-weight: 700; letter-spacing: 1pt; }
+.cover .subtitle { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 14mm; font-style: italic; }
+.cover .subject { font-size: 18pt; font-weight: 600; }
+/* Each top-level section starts on a fresh page for a clean opening. The
+   blank-page bug (a section heading chained avoid-together with a tall
+   440px chart into an unbreakable group) is fixed separately by NOT chaining
+   heading→chart, so this forced break no longer orphans empty pages. */
+.section { page-break-before: always; margin-top: 4mm; }
+.section.first { page-break-before: auto; }
+.planet-block, .house-block {
+  margin: 4mm 0; padding: 4mm 5mm; background: #fafafa;
+  border-left: 3px solid var(--brand-primary); page-break-inside: avoid;
+}
+.planet-block .meta, .house-block .meta {
+  color: var(--brand-secondary); font-size: 10pt; margin-bottom: 2mm;
+}
+/* Yoga blocks — each name becomes a numbered colored pill badge (rotating
+   palette like the benchmark). Counter drives the number. */
+/* Yoga blocks — a clean LifeAstro card (NOT the benchmark's garish rotating
+   pill): a numbered gold ✦ disc + maroon name on a cream card with a saffron
+   left rule. Single, consistent, elegant. */
+.section.yogas-section { counter-reset: yoga; }
+.yoga-block {
+  counter-increment: yoga; margin: 5mm 0; padding: 4mm 5mm 4mm 6mm;
+  background: var(--as-cardbg); border-left: 1mm solid var(--as-teal);
+  border-radius: 0 2mm 2mm 0; page-break-inside: avoid;
+}
+.yoga-block .name {
+  display: block; position: relative; padding-left: 11mm;
+  font-size: 13pt; font-weight: 700; color: var(--as-dorange);
+  margin-bottom: 1.5mm; line-height: 1.3;
+}
+.yoga-block .name::before {
+  content: counter(yoga); position: absolute; left: 0; top: -0.5mm;
+  width: 7.5mm; height: 7.5mm; border-radius: 50%;
+  background: var(--as-amber); color: #fff; font-size: 11pt; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.yoga-block .shloka { color: #9e2b25; font-style: italic; text-align: center; margin: 2mm 6mm; line-height: 1.55; }
+.yoga-block .body { text-align: justify; }
+.yoga-block .summary { font-weight: 700; color: var(--as-teal); text-align: center; margin: 2.5mm 4mm 0; }
+.yoga-block .source { color: var(--as-slate); font-size: 9pt; font-style: italic; margin-top: 2mm; }
+.dasha-block {
+  margin: 4mm 0; padding: 5mm; background: #f0fdf4;
+  border-left: 4px solid #16a34a; page-break-inside: avoid;
+}
+.dasha-block.upcoming { background: #fafafa; border-left-color: var(--brand-secondary); }
+.dasha-block .header-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2mm; }
+.dasha-block .lord { font-size: 14pt; font-weight: 700; color: var(--brand-primary); }
+.dasha-block .dates { color: var(--brand-secondary); font-size: 10pt; }
+.remedy-block {
+  margin: 3mm 0; padding: 3mm 5mm; background: #fafafa;
+  border-left: 3px solid var(--brand-secondary); page-break-inside: avoid;
+}
+.remedy-block .title { font-weight: 600; margin-bottom: 1mm; }
+.remedy-block .category {
+  display: inline-block; padding: 1mm 3mm; background: var(--brand-secondary);
+  color: #fff; font-size: 9pt; border-radius: 1mm; margin-left: 3mm; vertical-align: middle;
+}
+.empty-list { margin: 3mm 0; color: var(--brand-secondary); font-style: italic; }
+/* Mudda-Dasha month-wise timeline cards */
+.mudda-period {
+  margin: 4mm 0; padding: 3mm 5mm 3mm 5mm; background: var(--as-cardbg, #fffaf0);
+  border-left: 4px solid var(--as-teal, #c25e10); border-radius: 1mm;
+  page-break-inside: avoid;
+}
+.mudda-head {
+  font-size: 12pt; font-weight: 700; color: var(--as-dorange, #9e2b25);
+  margin: 0 0 1.5mm; padding-bottom: 1mm; border-bottom: 1px solid #eadcc0;
+}
+.mudda-summary { font-style: italic; color: var(--as-ink, #3a2410); margin: 0 0 2mm; }
+.mudda-area { margin: 1mm 0; font-size: 10.5pt; }
+.mudda-area strong { color: var(--as-teal, #c25e10); }
+.mudda-guidance {
+  margin: 2.5mm 0 0; padding: 2mm 3mm; background: #fff7e8;
+  border: 1px dashed var(--as-amber, #b8860b); border-radius: 1mm;
+}
+.mudda-guidance p { margin: 0.8mm 0; font-size: 10pt; }
+.mudda-guidance strong { color: var(--as-dorange, #9e2b25); }
+/* The whole divisional block must NOT be atomic — chart(110mm)+full table is
+   taller than the space left under a section heading, which orphaned a near-
+   blank page. Only the diamond (.north-chart) stays atomic; the table flows. */
+/* Keep each varga's chart + its table together on one page. The chart is
+   sized (300px ≈ 79mm) so the whole block stays under a page height, so this
+   never orphans a blank page (the earlier blank-page issue was at 400px). */
+.divisional-block { margin: 6mm 0; page-break-inside: avoid; }
+.divisional-block .vsubtitle { color: var(--brand-secondary); font-style: italic; font-size: 10pt; margin: 0 0 2mm; }
+.divisional-block .lagna-line { font-size: 10pt; margin-bottom: 2mm; }
+.dosha-block {
+  margin: 4mm 0; padding: 4mm 5mm; border-left: 4px solid #b91c1c;
+  background: #fef2f2; page-break-inside: avoid;
+}
+.dosha-block.cancelled { border-left-color: #16a34a; background: #f0fdf4; }
+.dosha-block.mild { border-left-color: #ca8a04; background: #fefce8; }
+.dosha-block .header-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2mm; }
+.dosha-block .name { font-size: 13pt; font-weight: 700; color: var(--brand-primary); }
+.dosha-block .severity {
+  display: inline-block; padding: 1mm 3mm; font-size: 9pt; font-weight: 600;
+  border-radius: 1mm; color: #fff; background: #b91c1c;
+}
+.dosha-block.cancelled .severity { background: #16a34a; }
+.dosha-block.mild .severity { background: #ca8a04; }
+.dosha-block .source { color: var(--brand-secondary); font-size: 9pt; font-style: italic; margin-top: 2mm; }
+.prediction-block {
+  margin: 4mm 0; padding: 4mm 5mm; background: #f5f3ff;
+  border-left: 3px solid #7c3aed; page-break-inside: avoid;
+}
+.prediction-block h3 { margin: 0 0 2mm; color: #5b21b6; }
+.citation-row { display: flex; gap: 4mm; padding: 2mm 0; border-bottom: 1px dotted #d4d4d4; font-size: 10pt; }
+.citation-row .topic { width: 38%; font-weight: 600; }
+.citation-row .source { width: 30%; font-style: italic; color: var(--brand-secondary); }
+.citation-row .note { flex: 1; color: var(--brand-secondary); }
+
+</style>
+</head>
+<body>
+<section class="cover">
+
+<h1>Brihad Kundli</h1>
+<div class="subtitle">A comprehensive Vedic astrology analysis</div>
+<div class="subject">T</div>
+<div class="meta">
+Born 1990-01-15 at 10:30<br>
+Mumbai
+</div>
+<div class="generated">
+Generated on 2026-06-30 00:00 UTC
+</div>
+</section>
+
+<section class="section first">
+<div class="part-banner"><h2 class="part-h2">Part 1: Foundations</h2></div>
+<h2>Birth Chart Summary</h2>
+<p>
+<strong>Ascendant:</strong>
+Sagittarius (25),
+Nakshatra: PurvaAshadha,
+Pada 4
+</p>
+<div style="display:flex;justify-content:center;gap:6mm;flex-wrap:wrap;margin:6mm 0;"><div class="north-chart" style="display:inline-block;text-align:center;margin:2mm 3mm;">
+<div style="font-size:10pt;font-weight:700;color:#1a1a1a;margin-bottom:1.5mm;">Lagna Chart</div>
+<svg viewBox="0 0 100 100" width="260" height="260" style="font-family:Noto Sans, Noto Sans Devanagari, Noto Sans Telugu, Noto Sans Tamil, Noto Sans Kannada, Noto Sans Bengali, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Malayalam, sans-serif;">
+
+    <rect x="1" y="1" width="98" height="98" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
+    <line x1="1" y1="1" x2="99" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <line x1="99" y1="1" x2="1" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <polygon points="50,1 99,50 50,99 1,50" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="50" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">9</text><text x="25" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">10</text><text x="9" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">11</text><text x="25" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">12</text><text x="9" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">1</text><text x="25" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">2</text><text x="50" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">3</text><text x="75" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">4</text><text x="91" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">5</text><text x="75" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">6</text><text x="91" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">7</text><text x="75" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">8</text>
+<text x="50" y="26.5" font-size="4.6" font-weight="bold" text-anchor="middle" dominant-baseline="middle"><tspan fill="#e05e18">Su</tspan></text>
+</svg>
+</div><div class="north-chart" style="display:inline-block;text-align:center;margin:2mm 3mm;">
+<div style="font-size:10pt;font-weight:700;color:#1a1a1a;margin-bottom:1.5mm;">Navamsa (D9)</div>
+<svg viewBox="0 0 100 100" width="260" height="260" style="font-family:Noto Sans, Noto Sans Devanagari, Noto Sans Telugu, Noto Sans Tamil, Noto Sans Kannada, Noto Sans Bengali, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Malayalam, sans-serif;">
+
+    <rect x="1" y="1" width="98" height="98" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
+    <line x1="1" y1="1" x2="99" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <line x1="99" y1="1" x2="1" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <polygon points="50,1 99,50 50,99 1,50" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="50" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">1</text><text x="25" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">2</text><text x="9" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">3</text><text x="25" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">4</text><text x="9" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">5</text><text x="25" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">6</text><text x="50" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">7</text><text x="75" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">8</text><text x="91" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">9</text><text x="75" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">10</text><text x="91" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">11</text><text x="75" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">12</text>
+
+</svg>
+</div></div>
+<table>
+<thead>
+<tr>
+<th>Planet</th>
+<th>Sign</th>
+<th>Degree</th>
+<th>House</th>
+<th>Nakshatra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sun</td>
+<td>Sagittarius</td>
+<td>10</td>
+<td>1</td>
+<td>Mula (1)</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section class="section graha-sthiti-section">
+<h2>Planetary Positions</h2>
+<div class="graha-grid"><div class="graha-card">
+  <div class="graha-glyph"><svg viewBox="0 0 48 48" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#e8821b" stroke-width="2" stroke-linecap="round">
+      <line x1="41.0" y1="24.0" x2="46.0" y2="24.0"/><line x1="38.7" y1="32.5" x2="43.1" y2="35.0"/><line x1="32.5" y1="38.7" x2="35.0" y2="43.1"/><line x1="24.0" y1="41.0" x2="24.0" y2="46.0"/><line x1="15.5" y1="38.7" x2="13.0" y2="43.1"/><line x1="9.3" y1="32.5" x2="4.9" y2="35.0"/><line x1="7.0" y1="24.0" x2="2.0" y2="24.0"/><line x1="9.3" y1="15.5" x2="4.9" y2="13.0"/><line x1="15.5" y1="9.3" x2="13.0" y2="4.9"/><line x1="24.0" y1="7.0" x2="24.0" y2="2.0"/><line x1="32.5" y1="9.3" x2="35.0" y2="4.9"/><line x1="38.7" y1="15.5" x2="43.1" y2="13.0"/>
+    </g>
+    <circle cx="24" cy="24" r="13" fill="#f6a623"/>
+    <circle cx="24" cy="24" r="13" fill="none" stroke="#e8821b" stroke-width="1.5"/></svg></div>
+  <div class="graha-info">
+    <div class="graha-name">Sun</div>
+    <div class="graha-pos">Sagittarius</div>
+    <div class="graha-nak">Mula</div>
+  </div>
+</div></div>
+</section>
+
+<section class="section narrative-chapter">
+<div class="part-banner"><h2 class="part-h2">Part 2: Your Life Reading</h2></div>
+<h2>Vistrit</h2>
+
+</section>
+
+<section class="section narrative-chapter">
+<h2>LagnaCh</h2>
+
+</section>
+
+<section class="section">
+<h2>Planetary Analysis</h2>
+<div class="planet-block">
+<h3>Sun</h3>
+<div class="meta">
+Sagittarius (10),
+House 1,
+Nakshatra: Mula
+</div>
+<p>Soul, vitality, authority, father, represents the core self and life force.</p>
+</div>
+</section>
+
+<section class="section">
+<h2>House Analysis</h2>
+<div class="house-block">
+<h3>House 1: Self, Lagna, Personality</h3>
+<div class="meta">
+Lord: Jupiter (in Aquarius)
+</div>
+<p>x</p>
+</div>
+
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">Part 3: Yogas &amp; Doshas</h2></div>
+<h2>Yogas Detected in the Chart</h2>
+<div class="yoga-block">
+<div class="name">BudhAditya</div>
+<p>good</p>
+</div>
+
+<h3 class="merged-sub">YogasCh</h3>
+
+
+</section>
+
+<section class="section">
+<h2>Doshas Detected</h2>
+<div class="dosha-block present">
+<div class="header-row">
+<span class="name">Kaal Sarp Dosha</span>
+<span class="severity">Present</span>
+</div>
+<p>x</p>
+</div>
+
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">Part 4: Dasha (Life Periods)</h2></div>
+<h2>Vimshottari Dasha, Life Periods</h2>
+<h3>Current Mahadasha</h3>
+<div class="dasha-block">
+<div class="header-row">
+<span class="lord"></span>
+<span class="dates">2020 &nbsp;to&nbsp; 2039 (19 years)</span>
+</div>
+<p>x</p>
+</div>
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">Part 5: Remedies &amp; Guidance</h2></div>
+<h2>Predictions by Life Area</h2>
+<div class="prediction-block">
+<h3>Career &amp; Profession</h3>
+<p>x</p>
+</div>
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">Part 6: Technical Tables</h2></div>
+<h2>Divisional Charts</h2>
+<p class="section-intro">The divisional charts (vargas) zoom into specific areas of life, each one refines the reading of a different domain, from wealth and siblings to marriage, career and spiritual growth.</p>
+<div class="divisional-block">
+<h3>D9: Navamsa</h3>
+<p class="vsubtitle">s</p>
+<div class="lagna-line">
+<strong>Lagna:</strong>
+Aries
+</div>
+<div style="text-align:center;margin:4mm 0;"><div class="north-chart" style="display:inline-block;text-align:center;margin:2mm 3mm;">
+<div style="font-size:10pt;font-weight:700;color:#1a1a1a;margin-bottom:1.5mm;">D9</div>
+<svg viewBox="0 0 100 100" width="300" height="300" style="font-family:Noto Sans, Noto Sans Devanagari, Noto Sans Telugu, Noto Sans Tamil, Noto Sans Kannada, Noto Sans Bengali, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Malayalam, sans-serif;">
+
+    <rect x="1" y="1" width="98" height="98" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
+    <line x1="1" y1="1" x2="99" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <line x1="99" y1="1" x2="1" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <polygon points="50,1 99,50 50,99 1,50" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="50" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">1</text><text x="25" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">2</text><text x="9" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">3</text><text x="25" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">4</text><text x="9" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">5</text><text x="25" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">6</text><text x="50" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">7</text><text x="75" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">8</text><text x="91" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">9</text><text x="75" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">10</text><text x="91" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">11</text><text x="75" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">12</text>
+
+</svg>
+</div></div>
+<table>
+<thead>
+<tr>
+<th>Planet</th>
+<th>Sign</th>
+<th>House</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+
+</section>
+
+<section class="section">
+<h2>Shadbala (Sixfold Strength)</h2>
+<p>Total Shadbala in Rupas, ranked from strongest to weakest planet.</p>
+<table>
+<thead><tr><th>Planet</th><th>Rupas</th><th>Rank</th></tr></thead>
+<tbody>
+<tr><td>Sun</td><td>0.00</td><td>1</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">Part 7: Varshaphal (Annual)</h2></div>
+<h2>Varshaphal (Annual Horoscope)</h2>
+<p>Annual solar-return analysis with Muntha, year-lord, Sahams and Panchavargeeya strength.</p>
+<h3>Year 2026</h3>
+<p><strong>Muntha:</strong>  (House ) &nbsp;
+<strong>Varsha Lord:</strong> </p>
+
+
+
+
+<h3 class="merged-sub">VarshaCh</h3>
+
+
+</section>
+<footer>Generated using LifeAstroAPI</footer>
+</body>
+</html>

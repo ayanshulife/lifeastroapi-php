@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="gu">
+<head>
+<meta charset="utf-8">
+<title>દશા વિશ્લેષણ, Subject</title>
+<style>
+:root { --brand-primary: #1a1a1a; --brand-secondary: #666666; }
+
+* { box-sizing: border-box; }
+/* Form controls and headings do not always inherit font-family in print, so
+   the Indic stack is set on them explicitly too. */
+h1, h2, h3, h4, th, td, li, dt, dd, input, button { font-family: inherit; }
+html, body {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+  color: #1a1a1a;
+  font-size: 11pt;
+  line-height: 1.45;
+  margin: 0;
+}
+@page { size: A4; margin: 18mm 15mm 22mm 15mm; }
+/* Print the brand colours (table headers, cards) as designed. Chromium does so
+   with printBackground; the iOS and Android print engines drop backgrounds
+   unless the page asks for exact colours. */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h2 {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+  padding-bottom: 2mm;
+  font-size: 16pt;
+  margin-top: 8mm;
+}
+h3 { font-size: 12pt; margin: 6mm 0 2mm; }
+p { margin: 2mm 0; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+th, td { text-align: left; padding: 2mm 3mm; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+th { background: var(--brand-primary); color: #fff; font-weight: 600; font-size: 10pt; }
+.cover { page-break-after: always; text-align: center; padding: 40mm 0 0; }
+.cover img.logo { max-height: 24mm; max-width: 60mm; margin-bottom: 8mm; }
+.cover h1 { color: var(--brand-primary); font-size: 28pt; margin: 0 0 4mm; }
+.cover .company { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 16mm; }
+.cover .subject { font-size: 16pt; margin-bottom: 4mm; }
+.cover .meta { color: var(--brand-secondary); font-size: 11pt; }
+.cover .generated { margin-top: 32mm; color: var(--brand-secondary); font-size: 9pt; }
+.narrative-section { margin-top: 6mm; page-break-inside: avoid; }
+.narrative-section .body { margin: 2mm 0; white-space: pre-wrap; }
+.narrative-section ul { margin: 1mm 0 2mm 6mm; padding: 0; }
+.narrative-section .citations { color: var(--brand-secondary); font-size: 9pt; font-style: italic; }
+.cards { display: flex; gap: 4mm; margin: 4mm 0; flex-wrap: wrap; }
+.card { flex: 1 1 0; min-width: 40mm; border: 1px solid #e5e5e5; border-radius: 2mm; padding: 3mm; }
+.card .label { color: var(--brand-secondary); font-size: 9pt; text-transform: uppercase; letter-spacing: .04em; }
+.card .value { font-size: 14pt; color: var(--brand-primary); font-weight: 600; margin-top: 1mm; }
+/* On screen the footer is an ordinary block after the content. In print it
+   is hidden and the same text is drawn in the page's bottom margin instead
+   (see footerCss): a position:fixed footer is laid out against the page
+   CONTENT box, so it prints on top of the last lines of body text. */
+footer {
+  text-align: center; color: var(--brand-secondary); font-size: 8pt;
+  margin-top: 10mm;
+}
+@media print { footer { display: none; } }
+/* Telugu and Kannada stack vowel signs and conjuncts above and below the
+   line and Tamil has tall marks too, so their lines get a little more height
+   (Devanagari keeps the 1.45 it was tuned for). Letter-spacing and uppercase are Latin
+   typography; spacing splits Indic clusters apart, so drop it.
+   :where() keeps the specificity of a plain "body" rule, so a report's own
+   body line-height (Brihad sets 1.8) still wins. */
+:where(html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) body { line-height: 1.6; }
+:where(html:lang(hi), html:lang(mr), html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) * { letter-spacing: normal !important; }
+
+
+
+@page {
+  @bottom-center {
+    content: "Generated using LifeAstroAPI";
+    font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+    font-size: 8pt;
+    color: #666666;
+  }
+}
+
+.cover h1 { font-size: 32pt; font-weight: 700; letter-spacing: 1pt; margin: 0 0 4mm; }
+.cover .subtitle { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 14mm; font-style: italic; }
+.cover .subject { font-size: 18pt; margin-bottom: 4mm; font-weight: 600; }
+.section { page-break-before: always; margin-top: 4mm; }
+.section.first { page-break-before: auto; }
+.stack-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 3mm 4mm; margin: 2mm 0; background: #f5f7fa;
+  border-left: 4px solid var(--brand-primary);
+}
+.stack-row.level-1 { background: #e0f2fe; border-left-color: #0369a1; }
+.stack-row.level-2 { background: #ecfccb; border-left-color: #65a30d; }
+.stack-row.level-3 { background: #fef9c3; border-left-color: #ca8a04; }
+.stack-row.level-4 { background: #fed7aa; border-left-color: #ea580c; }
+.stack-row.level-5 { background: #fecaca; border-left-color: #dc2626; }
+.stack-row .level-label { font-weight: 600; width: 30mm; flex-shrink: 0; }
+.stack-row .lord-name { font-weight: 700; font-size: 12pt; flex: 1; }
+.stack-row .dates { color: var(--brand-secondary); font-size: 10pt; text-align: right; }
+.prediction-block {
+  margin: 4mm 0; padding: 4mm 5mm; background: #f0fdf4;
+  border-left: 4px solid #16a34a; page-break-inside: avoid;
+}
+.prediction-block .lord-line { font-size: 13pt; font-weight: 700; color: var(--brand-primary); margin-bottom: 2mm; }
+.timeline-block {
+  margin: 3mm 0; padding: 3mm 4mm; background: #fafafa;
+  border-left: 3px solid var(--brand-secondary); page-break-inside: avoid;
+}
+.timeline-block.current { background: #f0fdf4; border-left-color: #16a34a; }
+.timeline-block .header { display: flex; justify-content: space-between; align-items: baseline; }
+.timeline-block .lord { font-weight: 700; font-size: 12pt; color: var(--brand-primary); }
+.timeline-block .dates { color: var(--brand-secondary); font-size: 10pt; }
+.timeline-block .body { margin-top: 1mm; font-size: 10pt; }
+.empty-list { margin: 3mm 0; color: var(--brand-secondary); font-style: italic; }
+
+</style>
+</head>
+<body>
+<section class="cover">
+
+  <h1>દશા વિશ્લેષણ</h1>
+  <div class="subtitle">વિંશોત્તરીનું વિસ્તૃત વિવરણ: ભૂત, વર્તમાન અને ભવિષ્યની દશાઓ</div>
+  <div class="subject">Subject</div>
+  <div class="meta">
+    જન્મ 1990-01-15 સમય 10:30 IST<br>
+    19.0760, 72.8777
+  </div>
+  <div class="generated">તૈયાર 2026-10-17 20:44 UTC</div>
+</section>
+<section class="section first">
+  <h2>હાલ સક્રિય દશા-સ્તર</h2>
+  <p>આ સમયે આ પાંચ દશા-સ્તર એકસાથે ચાલી રહ્યાં છે. બાહ્ય મહાદશા વ્યાપક ભાવ નક્કી કરે છે; દરેક આંતરિક સ્તર વધુ સૂક્ષ્મ સમય-નિર્ધારણ આપે છે.</p>
+<div class="stack-row level-1">
+  <span class="level-label">મહાદશા</span>
+  <span class="lord-name">રાહુ</span>
+  <span class="dates">2022-11-06 → 2040-11-06</span>
+</div>
+<div class="stack-row level-2">
+  <span class="level-label">અંતર્દશા</span>
+  <span class="lord-name">ગુરુ</span>
+  <span class="dates">2025-07-19 → 2027-12-13</span>
+</div>
+<div class="stack-row level-3">
+  <span class="level-label">પ્રત્યંતર દશા</span>
+  <span class="lord-name">શુક્ર</span>
+  <span class="dates">2026-09-23 → 2027-02-16</span>
+</div>
+<div class="stack-row level-4">
+  <span class="level-label">સૂક્ષ્મ દશા</span>
+  <span class="lord-name">શુક્ર</span>
+  <span class="dates">2026-09-23 → 2026-10-18</span>
+</div>
+<div class="stack-row level-5">
+  <span class="level-label">પ્રાણ દશા</span>
+  <span class="lord-name">કેતુ</span>
+  <span class="dates">2026-10-16 → 2026-10-18</span>
+</div>
+</section>
+<section class="section">
+  <h2>સક્રિય ઉપદશાઓ માટે ભવિષ્યકથન</h2>
+<div class="prediction-block">
+  <div class="lord-line">મહાદશા: રાહુ</div>
+  <p>Rahu&#39;s mahadasha amplifies worldly desires, foreign connections, and unconventional paths.</p>
+</div>
+<div class="prediction-block">
+  <div class="lord-line">અંતર્દશા: ગુરુ</div>
+  <p>Jupiter&#39;s mahadasha brings wisdom, fortune, children, dharmic activities, and growth.</p>
+</div>
+</section>
+<section class="section">
+  <h2>તમામ 9 મહાદશાઓ (120 વર્ષનું ચક્ર)</h2>
+  <table>
+  <thead>
+    <tr>
+      <th>સ્વામી</th>
+      <th>આરંભ</th>
+      <th>સમાપ્તિ</th>
+      <th>અવધિ</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>શુક્ર</td>
+  <td>1979-11-06</td>
+  <td>1999-11-06</td>
+  <td>20 વર્ષ</td>
+</tr>
+<tr>
+  <td>સૂર્ય</td>
+  <td>1999-11-06</td>
+  <td>2005-11-06</td>
+  <td>6 વર્ષ</td>
+</tr>
+  </tbody>
+</table>
+</section>
+<section class="section">
+  <h2>છેલ્લાં 20 વર્ષની સમીક્ષા</h2>
+  <p>છેલ્લાં 20 વર્ષમાં આવી ગયેલી મહાદશાઓ; પાછળ વળીને સમજવા માટે ઉપયોગી.</p>
+<div class="timeline-block">
+  <div class="header">
+    <span class="lord">ચંદ્ર</span>
+    <span class="dates">2005-11-06 → 2015-11-06</span>
+  </div>
+  <div class="body">Moon&#39;s mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression.</div>
+</div>
+<div class="timeline-block">
+  <div class="header">
+    <span class="lord">મંગળ</span>
+    <span class="dates">2015-11-06 → 2022-11-06</span>
+  </div>
+  <div class="body">Mars&#39;s mahadasha drives action, courage, property, siblings, and physical exertion.</div>
+</div>
+</section>
+<section class="section">
+  <h2>આગામી 10 વર્ષનું પૂર્વાવલોકન</h2>
+  <p>આગામી 10 વર્ષની અંતર્દશાઓ; નજીકના સમયના આયોજન માટે મહાદશા કરતાં વધુ સૂક્ષ્મ દૃષ્ટિ.</p>
+<div class="timeline-block">
+  <div class="header">
+    <span class="lord">ગુરુ</span>
+    <span class="dates">2025-07-19 → 2027-12-13</span>
+  </div>
+  <div class="body">Jupiter&#39;s mahadasha brings wisdom, fortune, children, dharmic activities, and growth.</div>
+</div>
+<div class="timeline-block">
+  <div class="header">
+    <span class="lord">શનિ</span>
+    <span class="dates">2027-12-13 → 2030-10-19</span>
+  </div>
+  <div class="body">Saturn&#39;s mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span.</div>
+</div>
+</section>
+<section class="section">
+  <h2>યોગિની દશા (દ્વિતીયક પદ્ધતિ)</h2>
+  <p>યોગિની દશા આઠ કાળવાળી દ્વિતીયક પદ્ધતિ છે, જેનો ઉપયોગ વિંશોત્તરી સાથે સમય-નિર્ધારણની પુષ્ટિ માટે થાય છે.</p>
+<table>
+  <thead>
+    <tr>
+      <th>સ્વામી</th>
+      <th>આરંભ</th>
+      <th>સમાપ્તિ</th>
+      <th>અવધિ</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>ઉલ્કા</td>
+  <td>1986-12-25</td>
+  <td>1992-12-25</td>
+  <td>6 વર્ષ</td>
+</tr>
+<tr>
+  <td>સિદ્ધા</td>
+  <td>1992-12-25</td>
+  <td>1999-12-25</td>
+  <td>7 વર્ષ</td>
+</tr>
+  </tbody>
+</table>
+</section>
+<footer>Generated using LifeAstroAPI</footer>
+</body>
+</html>

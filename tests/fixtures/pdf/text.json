@@ -1,0 +1,6134 @@
+[
+ {
+  "s": "",
+  "humanize": "",
+  "esc": "",
+  "clean": {
+   "en": "",
+   "hi": "",
+   "mr": "",
+   "te": "",
+   "gu": ""
+  }
+ },
+ {
+  "s": " – ",
+  "humanize": " – ",
+  "esc": " – ",
+  "clean": {
+   "en": "–",
+   "hi": "–",
+   "mr": "–",
+   "te": "–",
+   "gu": "–"
+  }
+ },
+ {
+  "s": "#111111",
+  "humanize": "#111111",
+  "esc": "#111111",
+  "clean": {
+   "en": "#111111",
+   "hi": "#111111",
+   "mr": "#111111",
+   "te": "#111111",
+   "gu": "#111111"
+  }
+ },
+ {
+  "s": "#12345",
+  "humanize": "#12345",
+  "esc": "#12345",
+  "clean": {
+   "en": "#12345",
+   "hi": "#12345",
+   "mr": "#12345",
+   "te": "#12345",
+   "gu": "#12345"
+  }
+ },
+ {
+  "s": "#1234567",
+  "humanize": "#1234567",
+  "esc": "#1234567",
+  "clean": {
+   "en": "#1234567",
+   "hi": "#1234567",
+   "mr": "#1234567",
+   "te": "#1234567",
+   "gu": "#1234567"
+  }
+ },
+ {
+  "s": "#1a1a1a",
+  "humanize": "#1a1a1a",
+  "esc": "#1a1a1a",
+  "clean": {
+   "en": "#1a1a1a",
+   "hi": "#1a1a1a",
+   "mr": "#1a1a1a",
+   "te": "#1a1a1a",
+   "gu": "#1a1a1a"
+  }
+ },
+ {
+  "s": "#222222",
+  "humanize": "#222222",
+  "esc": "#222222",
+  "clean": {
+   "en": "#222222",
+   "hi": "#222222",
+   "mr": "#222222",
+   "te": "#222222",
+   "gu": "#222222"
+  }
+ },
+ {
+  "s": "#666666",
+  "humanize": "#666666",
+  "esc": "#666666",
+  "clean": {
+   "en": "#666666",
+   "hi": "#666666",
+   "mr": "#666666",
+   "te": "#666666",
+   "gu": "#666666"
+  }
+ },
+ {
+  "s": "#6b21a8",
+  "humanize": "#6b21a8",
+  "esc": "#6b21a8",
+  "clean": {
+   "en": "#6b21a8",
+   "hi": "#6b21a8",
+   "mr": "#6b21a8",
+   "te": "#6b21a8",
+   "gu": "#6b21a8"
+  }
+ },
+ {
+  "s": "#9333ea",
+  "humanize": "#9333ea",
+  "esc": "#9333ea",
+  "clean": {
+   "en": "#9333ea",
+   "hi": "#9333ea",
+   "mr": "#9333ea",
+   "te": "#9333ea",
+   "gu": "#9333ea"
+  }
+ },
+ {
+  "s": "#abcd",
+  "humanize": "#abcd",
+  "esc": "#abcd",
+  "clean": {
+   "en": "#abcd",
+   "hi": "#abcd",
+   "mr": "#abcd",
+   "te": "#abcd",
+   "gu": "#abcd"
+  }
+ },
+ {
+  "s": "(, x ,)",
+  "humanize": "(x)",
+  "esc": "(x)",
+  "clean": {
+   "en": "(, x ,)",
+   "hi": "(, x ,)",
+   "mr": "(, x ,)",
+   "te": "(, x ,)",
+   "gu": "(, x ,)"
+  }
+ },
+ {
+  "s": "//cdn.x/logo.png",
+  "humanize": "//cdn.x/logo.png",
+  "esc": "//cdn.x/logo.png",
+  "clean": {
+   "en": "//cdn.x/logo.png",
+   "hi": "//cdn.x/logo.png",
+   "mr": "//cdn.x/logo.png",
+   "te": "//cdn.x/logo.png",
+   "gu": "//cdn.x/logo.png"
+  }
+ },
+ {
+  "s": "01°03'47\"",
+  "humanize": "01°03'47\"",
+  "esc": "01°03&#39;47&quot;",
+  "clean": {
+   "en": "01°03'47\"",
+   "hi": "01°03'47\"",
+   "mr": "01°03'47\"",
+   "te": "01°03'47\"",
+   "gu": "01°03'47\""
+  }
+ },
+ {
+  "s": "02°10'00\"",
+  "humanize": "02°10'00\"",
+  "esc": "02°10&#39;00&quot;",
+  "clean": {
+   "en": "02°10'00\"",
+   "hi": "02°10'00\"",
+   "mr": "02°10'00\"",
+   "te": "02°10'00\"",
+   "gu": "02°10'00\""
+  }
+ },
+ {
+  "s": "02°51'57\"",
+  "humanize": "02°51'57\"",
+  "esc": "02°51&#39;57&quot;",
+  "clean": {
+   "en": "02°51'57\"",
+   "hi": "02°51'57\"",
+   "mr": "02°51'57\"",
+   "te": "02°51'57\"",
+   "gu": "02°51'57\""
+  }
+ },
+ {
+  "s": "06:00-08:00",
+  "humanize": "06:00-08:00",
+  "esc": "06:00-08:00",
+  "clean": {
+   "en": "06:00-08:00",
+   "hi": "06:00-08:00",
+   "mr": "06:00-08:00",
+   "te": "06:00-08:00",
+   "gu": "06:00-08:00"
+  }
+ },
+ {
+  "s": "06:15",
+  "humanize": "06:15",
+  "esc": "06:15",
+  "clean": {
+   "en": "06:15",
+   "hi": "06:15",
+   "mr": "06:15",
+   "te": "06:15",
+   "gu": "06:15"
+  }
+ },
+ {
+  "s": "06:21",
+  "humanize": "06:21",
+  "esc": "06:21",
+  "clean": {
+   "en": "06:21",
+   "hi": "06:21",
+   "mr": "06:21",
+   "te": "06:21",
+   "gu": "06:21"
+  }
+ },
+ {
+  "s": "06°00'21\"",
+  "humanize": "06°00'21\"",
+  "esc": "06°00&#39;21&quot;",
+  "clean": {
+   "en": "06°00'21\"",
+   "hi": "06°00'21\"",
+   "mr": "06°00'21\"",
+   "te": "06°00'21\"",
+   "gu": "06°00'21\""
+  }
+ },
+ {
+  "s": "07:30-09:00",
+  "humanize": "07:30-09:00",
+  "esc": "07:30-09:00",
+  "clean": {
+   "en": "07:30-09:00",
+   "hi": "07:30-09:00",
+   "mr": "07:30-09:00",
+   "te": "07:30-09:00",
+   "gu": "07:30-09:00"
+  }
+ },
+ {
+  "s": "08:15 IST",
+  "humanize": "08:15 IST",
+  "esc": "08:15 IST",
+  "clean": {
+   "en": "08:15 IST",
+   "hi": "08:15 IST",
+   "mr": "08:15 IST",
+   "te": "08:15 IST",
+   "gu": "08:15 IST"
+  }
+ },
+ {
+  "s": "09°50'43\"",
+  "humanize": "09°50'43\"",
+  "esc": "09°50&#39;43&quot;",
+  "clean": {
+   "en": "09°50'43\"",
+   "hi": "09°50'43\"",
+   "mr": "09°50'43\"",
+   "te": "09°50'43\"",
+   "gu": "09°50'43\""
+  }
+ },
+ {
+  "s": "10",
+  "humanize": "10",
+  "esc": "10",
+  "clean": {
+   "en": "10",
+   "hi": "10",
+   "mr": "10",
+   "te": "10",
+   "gu": "10"
+  }
+ },
+ {
+  "s": "10:30",
+  "humanize": "10:30",
+  "esc": "10:30",
+  "clean": {
+   "en": "10:30",
+   "hi": "10:30",
+   "mr": "10:30",
+   "te": "10:30",
+   "gu": "10:30"
+  }
+ },
+ {
+  "s": "10:30 IST",
+  "humanize": "10:30 IST",
+  "esc": "10:30 IST",
+  "clean": {
+   "en": "10:30 IST",
+   "hi": "10:30 IST",
+   "mr": "10:30 IST",
+   "te": "10:30 IST",
+   "gu": "10:30 IST"
+  }
+ },
+ {
+  "s": "10°00'00\"",
+  "humanize": "10°00'00\"",
+  "esc": "10°00&#39;00&quot;",
+  "clean": {
+   "en": "10°00'00\"",
+   "hi": "10°00'00\"",
+   "mr": "10°00'00\"",
+   "te": "10°00'00\"",
+   "gu": "10°00'00\""
+  }
+ },
+ {
+  "s": "11:45-12:30",
+  "humanize": "11:45-12:30",
+  "esc": "11:45-12:30",
+  "clean": {
+   "en": "11:45-12:30",
+   "hi": "11:45-12:30",
+   "mr": "11:45-12:30",
+   "te": "11:45-12:30",
+   "gu": "11:45-12:30"
+  }
+ },
+ {
+  "s": "11°51'24\"",
+  "humanize": "11°51'24\"",
+  "esc": "11°51&#39;24&quot;",
+  "clean": {
+   "en": "11°51'24\"",
+   "hi": "11°51'24\"",
+   "mr": "11°51'24\"",
+   "te": "11°51'24\"",
+   "gu": "11°51'24\""
+  }
+ },
+ {
+  "s": "14°22'10\"",
+  "humanize": "14°22'10\"",
+  "esc": "14°22&#39;10&quot;",
+  "clean": {
+   "en": "14°22'10\"",
+   "hi": "14°22'10\"",
+   "mr": "14°22'10\"",
+   "te": "14°22'10\"",
+   "gu": "14°22'10\""
+  }
+ },
+ {
+  "s": "16°",
+  "humanize": "16°",
+  "esc": "16°",
+  "clean": {
+   "en": "16°",
+   "hi": "16°",
+   "mr": "16°",
+   "te": "16°",
+   "gu": "16°"
+  }
+ },
+ {
+  "s": "17:52",
+  "humanize": "17:52",
+  "esc": "17:52",
+  "clean": {
+   "en": "17:52",
+   "hi": "17:52",
+   "mr": "17:52",
+   "te": "17:52",
+   "gu": "17:52"
+  }
+ },
+ {
+  "s": "19.0760, 72.8777",
+  "humanize": "19.0760, 72.8777",
+  "esc": "19.0760, 72.8777",
+  "clean": {
+   "en": "19.0760, 72.8777",
+   "hi": "19.0760, 72.8777",
+   "mr": "19.0760, 72.8777",
+   "te": "19.0760, 72.8777",
+   "gu": "19.0760, 72.8777"
+  }
+ },
+ {
+  "s": "1979-11-06",
+  "humanize": "1979-11-06",
+  "esc": "1979-11-06",
+  "clean": {
+   "en": "1979-11-06",
+   "hi": "1979-11-06",
+   "mr": "1979-11-06",
+   "te": "1979-11-06",
+   "gu": "1979-11-06"
+  }
+ },
+ {
+  "s": "1986-12-25",
+  "humanize": "1986-12-25",
+  "esc": "1986-12-25",
+  "clean": {
+   "en": "1986-12-25",
+   "hi": "1986-12-25",
+   "mr": "1986-12-25",
+   "te": "1986-12-25",
+   "gu": "1986-12-25"
+  }
+ },
+ {
+  "s": "1990",
+  "humanize": "1990",
+  "esc": "1990",
+  "clean": {
+   "en": "1990",
+   "hi": "1990",
+   "mr": "1990",
+   "te": "1990",
+   "gu": "1990"
+  }
+ },
+ {
+  "s": "1990-01-15",
+  "humanize": "1990-01-15",
+  "esc": "1990-01-15",
+  "clean": {
+   "en": "1990-01-15",
+   "hi": "1990-01-15",
+   "mr": "1990-01-15",
+   "te": "1990-01-15",
+   "gu": "1990-01-15"
+  }
+ },
+ {
+  "s": "1992-03-02",
+  "humanize": "1992-03-02",
+  "esc": "1992-03-02",
+  "clean": {
+   "en": "1992-03-02",
+   "hi": "1992-03-02",
+   "mr": "1992-03-02",
+   "te": "1992-03-02",
+   "gu": "1992-03-02"
+  }
+ },
+ {
+  "s": "1992-03-20",
+  "humanize": "1992-03-20",
+  "esc": "1992-03-20",
+  "clean": {
+   "en": "1992-03-20",
+   "hi": "1992-03-20",
+   "mr": "1992-03-20",
+   "te": "1992-03-20",
+   "gu": "1992-03-20"
+  }
+ },
+ {
+  "s": "1992-12-25",
+  "humanize": "1992-12-25",
+  "esc": "1992-12-25",
+  "clean": {
+   "en": "1992-12-25",
+   "hi": "1992-12-25",
+   "mr": "1992-12-25",
+   "te": "1992-12-25",
+   "gu": "1992-12-25"
+  }
+ },
+ {
+  "s": "1999-11-06",
+  "humanize": "1999-11-06",
+  "esc": "1999-11-06",
+  "clean": {
+   "en": "1999-11-06",
+   "hi": "1999-11-06",
+   "mr": "1999-11-06",
+   "te": "1999-11-06",
+   "gu": "1999-11-06"
+  }
+ },
+ {
+  "s": "1999-12-25",
+  "humanize": "1999-12-25",
+  "esc": "1999-12-25",
+  "clean": {
+   "en": "1999-12-25",
+   "hi": "1999-12-25",
+   "mr": "1999-12-25",
+   "te": "1999-12-25",
+   "gu": "1999-12-25"
+  }
+ },
+ {
+  "s": "1°",
+  "humanize": "1°",
+  "esc": "1°",
+  "clean": {
+   "en": "1°",
+   "hi": "1°",
+   "mr": "1°",
+   "te": "1°",
+   "gu": "1°"
+  }
+ },
+ {
+  "s": "2005-11-06",
+  "humanize": "2005-11-06",
+  "esc": "2005-11-06",
+  "clean": {
+   "en": "2005-11-06",
+   "hi": "2005-11-06",
+   "mr": "2005-11-06",
+   "te": "2005-11-06",
+   "gu": "2005-11-06"
+  }
+ },
+ {
+  "s": "2006-10-17",
+  "humanize": "2006-10-17",
+  "esc": "2006-10-17",
+  "clean": {
+   "en": "2006-10-17",
+   "hi": "2006-10-17",
+   "mr": "2006-10-17",
+   "te": "2006-10-17",
+   "gu": "2006-10-17"
+  }
+ },
+ {
+  "s": "2011-11-20",
+  "humanize": "2011-11-20",
+  "esc": "2011-11-20",
+  "clean": {
+   "en": "2011-11-20",
+   "hi": "2011-11-20",
+   "mr": "2011-11-20",
+   "te": "2011-11-20",
+   "gu": "2011-11-20"
+  }
+ },
+ {
+  "s": "2012-06-17",
+  "humanize": "2012-06-17",
+  "esc": "2012-06-17",
+  "clean": {
+   "en": "2012-06-17",
+   "hi": "2012-06-17",
+   "mr": "2012-06-17",
+   "te": "2012-06-17",
+   "gu": "2012-06-17"
+  }
+ },
+ {
+  "s": "2012-08-16",
+  "humanize": "2012-08-16",
+  "esc": "2012-08-16",
+  "clean": {
+   "en": "2012-08-16",
+   "hi": "2012-08-16",
+   "mr": "2012-08-16",
+   "te": "2012-08-16",
+   "gu": "2012-08-16"
+  }
+ },
+ {
+  "s": "2015-11-06",
+  "humanize": "2015-11-06",
+  "esc": "2015-11-06",
+  "clean": {
+   "en": "2015-11-06",
+   "hi": "2015-11-06",
+   "mr": "2015-11-06",
+   "te": "2015-11-06",
+   "gu": "2015-11-06"
+  }
+ },
+ {
+  "s": "2020",
+  "humanize": "2020",
+  "esc": "2020",
+  "clean": {
+   "en": "2020",
+   "hi": "2020",
+   "mr": "2020",
+   "te": "2020",
+   "gu": "2020"
+  }
+ },
+ {
+  "s": "2020-01-01",
+  "humanize": "2020-01-01",
+  "esc": "2020-01-01",
+  "clean": {
+   "en": "2020-01-01",
+   "hi": "2020-01-01",
+   "mr": "2020-01-01",
+   "te": "2020-01-01",
+   "gu": "2020-01-01"
+  }
+ },
+ {
+  "s": "2022-11-06",
+  "humanize": "2022-11-06",
+  "esc": "2022-11-06",
+  "clean": {
+   "en": "2022-11-06",
+   "hi": "2022-11-06",
+   "mr": "2022-11-06",
+   "te": "2022-11-06",
+   "gu": "2022-11-06"
+  }
+ },
+ {
+  "s": "2025-03-29",
+  "humanize": "2025-03-29",
+  "esc": "2025-03-29",
+  "clean": {
+   "en": "2025-03-29",
+   "hi": "2025-03-29",
+   "mr": "2025-03-29",
+   "te": "2025-03-29",
+   "gu": "2025-03-29"
+  }
+ },
+ {
+  "s": "2025-07-19",
+  "humanize": "2025-07-19",
+  "esc": "2025-07-19",
+  "clean": {
+   "en": "2025-07-19",
+   "hi": "2025-07-19",
+   "mr": "2025-07-19",
+   "te": "2025-07-19",
+   "gu": "2025-07-19"
+  }
+ },
+ {
+  "s": "2026-01-01T00:00:00Z",
+  "humanize": "2026-01-01T00:00:00Z",
+  "esc": "2026-01-01T00:00:00Z",
+  "clean": {
+   "en": "2026-01-01T00:00:00Z",
+   "hi": "2026-01-01T00:00:00Z",
+   "mr": "2026-01-01T00:00:00Z",
+   "te": "2026-01-01T00:00:00Z",
+   "gu": "2026-01-01T00:00:00Z"
+  }
+ },
+ {
+  "s": "2026-01-15",
+  "humanize": "2026-01-15",
+  "esc": "2026-01-15",
+  "clean": {
+   "en": "2026-01-15",
+   "hi": "2026-01-15",
+   "mr": "2026-01-15",
+   "te": "2026-01-15",
+   "gu": "2026-01-15"
+  }
+ },
+ {
+  "s": "2026-01-15 03:12",
+  "humanize": "2026-01-15 03:12",
+  "esc": "2026-01-15 03:12",
+  "clean": {
+   "en": "2026-01-15 03:12",
+   "hi": "2026-01-15 03:12",
+   "mr": "2026-01-15 03:12",
+   "te": "2026-01-15 03:12",
+   "gu": "2026-01-15 03:12"
+  }
+ },
+ {
+  "s": "2026-02-02",
+  "humanize": "2026-02-02",
+  "esc": "2026-02-02",
+  "clean": {
+   "en": "2026-02-02",
+   "hi": "2026-02-02",
+   "mr": "2026-02-02",
+   "te": "2026-02-02",
+   "gu": "2026-02-02"
+  }
+ },
+ {
+  "s": "2026-06",
+  "humanize": "2026-06",
+  "esc": "2026-06",
+  "clean": {
+   "en": "2026-06",
+   "hi": "2026-06",
+   "mr": "2026-06",
+   "te": "2026-06",
+   "gu": "2026-06"
+  }
+ },
+ {
+  "s": "2026-06-07",
+  "humanize": "2026-06-07",
+  "esc": "2026-06-07",
+  "clean": {
+   "en": "2026-06-07",
+   "hi": "2026-06-07",
+   "mr": "2026-06-07",
+   "te": "2026-06-07",
+   "gu": "2026-06-07"
+  }
+ },
+ {
+  "s": "2026-06-20T10:00:00Z",
+  "humanize": "2026-06-20T10:00:00Z",
+  "esc": "2026-06-20T10:00:00Z",
+  "clean": {
+   "en": "2026-06-20T10:00:00Z",
+   "hi": "2026-06-20T10:00:00Z",
+   "mr": "2026-06-20T10:00:00Z",
+   "te": "2026-06-20T10:00:00Z",
+   "gu": "2026-06-20T10:00:00Z"
+  }
+ },
+ {
+  "s": "2026-06-30T00:00:00Z",
+  "humanize": "2026-06-30T00:00:00Z",
+  "esc": "2026-06-30T00:00:00Z",
+  "clean": {
+   "en": "2026-06-30T00:00:00Z",
+   "hi": "2026-06-30T00:00:00Z",
+   "mr": "2026-06-30T00:00:00Z",
+   "te": "2026-06-30T00:00:00Z",
+   "gu": "2026-06-30T00:00:00Z"
+  }
+ },
+ {
+  "s": "2026-09-23",
+  "humanize": "2026-09-23",
+  "esc": "2026-09-23",
+  "clean": {
+   "en": "2026-09-23",
+   "hi": "2026-09-23",
+   "mr": "2026-09-23",
+   "te": "2026-09-23",
+   "gu": "2026-09-23"
+  }
+ },
+ {
+  "s": "2026-10-16",
+  "humanize": "2026-10-16",
+  "esc": "2026-10-16",
+  "clean": {
+   "en": "2026-10-16",
+   "hi": "2026-10-16",
+   "mr": "2026-10-16",
+   "te": "2026-10-16",
+   "gu": "2026-10-16"
+  }
+ },
+ {
+  "s": "2026-10-17T20:44:06.53516Z",
+  "humanize": "2026-10-17T20:44:06.53516Z",
+  "esc": "2026-10-17T20:44:06.53516Z",
+  "clean": {
+   "en": "2026-10-17T20:44:06.53516Z",
+   "hi": "2026-10-17T20:44:06.53516Z",
+   "mr": "2026-10-17T20:44:06.53516Z",
+   "te": "2026-10-17T20:44:06.53516Z",
+   "gu": "2026-10-17T20:44:06.53516Z"
+  }
+ },
+ {
+  "s": "2026-10-17T20:44:11.839835Z",
+  "humanize": "2026-10-17T20:44:11.839835Z",
+  "esc": "2026-10-17T20:44:11.839835Z",
+  "clean": {
+   "en": "2026-10-17T20:44:11.839835Z",
+   "hi": "2026-10-17T20:44:11.839835Z",
+   "mr": "2026-10-17T20:44:11.839835Z",
+   "te": "2026-10-17T20:44:11.839835Z",
+   "gu": "2026-10-17T20:44:11.839835Z"
+  }
+ },
+ {
+  "s": "2026-10-17T20:44:17.116222Z",
+  "humanize": "2026-10-17T20:44:17.116222Z",
+  "esc": "2026-10-17T20:44:17.116222Z",
+  "clean": {
+   "en": "2026-10-17T20:44:17.116222Z",
+   "hi": "2026-10-17T20:44:17.116222Z",
+   "mr": "2026-10-17T20:44:17.116222Z",
+   "te": "2026-10-17T20:44:17.116222Z",
+   "gu": "2026-10-17T20:44:17.116222Z"
+  }
+ },
+ {
+  "s": "2026-10-17T20:44:22.712282Z",
+  "humanize": "2026-10-17T20:44:22.712282Z",
+  "esc": "2026-10-17T20:44:22.712282Z",
+  "clean": {
+   "en": "2026-10-17T20:44:22.712282Z",
+   "hi": "2026-10-17T20:44:22.712282Z",
+   "mr": "2026-10-17T20:44:22.712282Z",
+   "te": "2026-10-17T20:44:22.712282Z",
+   "gu": "2026-10-17T20:44:22.712282Z"
+  }
+ },
+ {
+  "s": "2026-10-17T20:44:36.06103Z",
+  "humanize": "2026-10-17T20:44:36.06103Z",
+  "esc": "2026-10-17T20:44:36.06103Z",
+  "clean": {
+   "en": "2026-10-17T20:44:36.06103Z",
+   "hi": "2026-10-17T20:44:36.06103Z",
+   "mr": "2026-10-17T20:44:36.06103Z",
+   "te": "2026-10-17T20:44:36.06103Z",
+   "gu": "2026-10-17T20:44:36.06103Z"
+  }
+ },
+ {
+  "s": "2026-10-17T20:44:42.02947Z",
+  "humanize": "2026-10-17T20:44:42.02947Z",
+  "esc": "2026-10-17T20:44:42.02947Z",
+  "clean": {
+   "en": "2026-10-17T20:44:42.02947Z",
+   "hi": "2026-10-17T20:44:42.02947Z",
+   "mr": "2026-10-17T20:44:42.02947Z",
+   "te": "2026-10-17T20:44:42.02947Z",
+   "gu": "2026-10-17T20:44:42.02947Z"
+  }
+ },
+ {
+  "s": "2026-10-17T20:44:47.351761Z",
+  "humanize": "2026-10-17T20:44:47.351761Z",
+  "esc": "2026-10-17T20:44:47.351761Z",
+  "clean": {
+   "en": "2026-10-17T20:44:47.351761Z",
+   "hi": "2026-10-17T20:44:47.351761Z",
+   "mr": "2026-10-17T20:44:47.351761Z",
+   "te": "2026-10-17T20:44:47.351761Z",
+   "gu": "2026-10-17T20:44:47.351761Z"
+  }
+ },
+ {
+  "s": "2026-10-17T20:44:58.531314Z",
+  "humanize": "2026-10-17T20:44:58.531314Z",
+  "esc": "2026-10-17T20:44:58.531314Z",
+  "clean": {
+   "en": "2026-10-17T20:44:58.531314Z",
+   "hi": "2026-10-17T20:44:58.531314Z",
+   "mr": "2026-10-17T20:44:58.531314Z",
+   "te": "2026-10-17T20:44:58.531314Z",
+   "gu": "2026-10-17T20:44:58.531314Z"
+  }
+ },
+ {
+  "s": "2026-10-18",
+  "humanize": "2026-10-18",
+  "esc": "2026-10-18",
+  "clean": {
+   "en": "2026-10-18",
+   "hi": "2026-10-18",
+   "mr": "2026-10-18",
+   "te": "2026-10-18",
+   "gu": "2026-10-18"
+  }
+ },
+ {
+  "s": "2026-10-31T06:40:00Z",
+  "humanize": "2026-10-31T06:40:00Z",
+  "esc": "2026-10-31T06:40:00Z",
+  "clean": {
+   "en": "2026-10-31T06:40:00Z",
+   "hi": "2026-10-31T06:40:00Z",
+   "mr": "2026-10-31T06:40:00Z",
+   "te": "2026-10-31T06:40:00Z",
+   "gu": "2026-10-31T06:40:00Z"
+  }
+ },
+ {
+  "s": "2026-W24",
+  "humanize": "2026-W24",
+  "esc": "2026-W24",
+  "clean": {
+   "en": "2026-W24",
+   "hi": "2026-W24",
+   "mr": "2026-W24",
+   "te": "2026-W24",
+   "gu": "2026-W24"
+  }
+ },
+ {
+  "s": "2026-W44",
+  "humanize": "2026-W44",
+  "esc": "2026-W44",
+  "clean": {
+   "en": "2026-W44",
+   "hi": "2026-W44",
+   "mr": "2026-W44",
+   "te": "2026-W44",
+   "gu": "2026-W44"
+  }
+ },
+ {
+  "s": "2027-01-15T16:39:17Z",
+  "humanize": "2027-01-15T16:39:17Z",
+  "esc": "2027-01-15T16:39:17Z",
+  "clean": {
+   "en": "2027-01-15T16:39:17Z",
+   "hi": "2027-01-15T16:39:17Z",
+   "mr": "2027-01-15T16:39:17Z",
+   "te": "2027-01-15T16:39:17Z",
+   "gu": "2027-01-15T16:39:17Z"
+  }
+ },
+ {
+  "s": "2027-02-16",
+  "humanize": "2027-02-16",
+  "esc": "2027-02-16",
+  "clean": {
+   "en": "2027-02-16",
+   "hi": "2027-02-16",
+   "mr": "2027-02-16",
+   "te": "2027-02-16",
+   "gu": "2027-02-16"
+  }
+ },
+ {
+  "s": "2027-12-13",
+  "humanize": "2027-12-13",
+  "esc": "2027-12-13",
+  "clean": {
+   "en": "2027-12-13",
+   "hi": "2027-12-13",
+   "mr": "2027-12-13",
+   "te": "2027-12-13",
+   "gu": "2027-12-13"
+  }
+ },
+ {
+  "s": "2030",
+  "humanize": "2030",
+  "esc": "2030",
+  "clean": {
+   "en": "2030",
+   "hi": "2030",
+   "mr": "2030",
+   "te": "2030",
+   "gu": "2030"
+  }
+ },
+ {
+  "s": "2030-10-19",
+  "humanize": "2030-10-19",
+  "esc": "2030-10-19",
+  "clean": {
+   "en": "2030-10-19",
+   "hi": "2030-10-19",
+   "mr": "2030-10-19",
+   "te": "2030-10-19",
+   "gu": "2030-10-19"
+  }
+ },
+ {
+  "s": "2032-06-02",
+  "humanize": "2032-06-02",
+  "esc": "2032-06-02",
+  "clean": {
+   "en": "2032-06-02",
+   "hi": "2032-06-02",
+   "mr": "2032-06-02",
+   "te": "2032-06-02",
+   "gu": "2032-06-02"
+  }
+ },
+ {
+  "s": "2034-07-22",
+  "humanize": "2034-07-22",
+  "esc": "2034-07-22",
+  "clean": {
+   "en": "2034-07-22",
+   "hi": "2034-07-22",
+   "mr": "2034-07-22",
+   "te": "2034-07-22",
+   "gu": "2034-07-22"
+  }
+ },
+ {
+  "s": "2039",
+  "humanize": "2039",
+  "esc": "2039",
+  "clean": {
+   "en": "2039",
+   "hi": "2039",
+   "mr": "2039",
+   "te": "2039",
+   "gu": "2039"
+  }
+ },
+ {
+  "s": "2039-01-01",
+  "humanize": "2039-01-01",
+  "esc": "2039-01-01",
+  "clean": {
+   "en": "2039-01-01",
+   "hi": "2039-01-01",
+   "mr": "2039-01-01",
+   "te": "2039-01-01",
+   "gu": "2039-01-01"
+  }
+ },
+ {
+  "s": "2040-11-06",
+  "humanize": "2040-11-06",
+  "esc": "2040-11-06",
+  "clean": {
+   "en": "2040-11-06",
+   "hi": "2040-11-06",
+   "mr": "2040-11-06",
+   "te": "2040-11-06",
+   "gu": "2040-11-06"
+  }
+ },
+ {
+  "s": "2041-01-16",
+  "humanize": "2041-01-16",
+  "esc": "2041-01-16",
+  "clean": {
+   "en": "2041-01-16",
+   "hi": "2041-01-16",
+   "mr": "2041-01-16",
+   "te": "2041-01-16",
+   "gu": "2041-01-16"
+  }
+ },
+ {
+  "s": "2041-03-17",
+  "humanize": "2041-03-17",
+  "esc": "2041-03-17",
+  "clean": {
+   "en": "2041-03-17",
+   "hi": "2041-03-17",
+   "mr": "2041-03-17",
+   "te": "2041-03-17",
+   "gu": "2041-03-17"
+  }
+ },
+ {
+  "s": "2041-10-13",
+  "humanize": "2041-10-13",
+  "esc": "2041-10-13",
+  "clean": {
+   "en": "2041-10-13",
+   "hi": "2041-10-13",
+   "mr": "2041-10-13",
+   "te": "2041-10-13",
+   "gu": "2041-10-13"
+  }
+ },
+ {
+  "s": "2046",
+  "humanize": "2046",
+  "esc": "2046",
+  "clean": {
+   "en": "2046",
+   "hi": "2046",
+   "mr": "2046",
+   "te": "2046",
+   "gu": "2046"
+  }
+ },
+ {
+  "s": "2056-11-06",
+  "humanize": "2056-11-06",
+  "esc": "2056-11-06",
+  "clean": {
+   "en": "2056-11-06",
+   "hi": "2056-11-06",
+   "mr": "2056-11-06",
+   "te": "2056-11-06",
+   "gu": "2056-11-06"
+  }
+ },
+ {
+  "s": "2075-11-06",
+  "humanize": "2075-11-06",
+  "esc": "2075-11-06",
+  "clean": {
+   "en": "2075-11-06",
+   "hi": "2075-11-06",
+   "mr": "2075-11-06",
+   "te": "2075-11-06",
+   "gu": "2075-11-06"
+  }
+ },
+ {
+  "s": "20°07'38\"",
+  "humanize": "20°07'38\"",
+  "esc": "20°07&#39;38&quot;",
+  "clean": {
+   "en": "20°07'38\"",
+   "hi": "20°07'38\"",
+   "mr": "20°07'38\"",
+   "te": "20°07'38\"",
+   "gu": "20°07'38\""
+  }
+ },
+ {
+  "s": "22°02'12\"",
+  "humanize": "22°02'12\"",
+  "esc": "22°02&#39;12&quot;",
+  "clean": {
+   "en": "22°02'12\"",
+   "hi": "22°02'12\"",
+   "mr": "22°02'12\"",
+   "te": "22°02'12\"",
+   "gu": "22°02'12\""
+  }
+ },
+ {
+  "s": "24°02'02\"",
+  "humanize": "24°02'02\"",
+  "esc": "24°02&#39;02&quot;",
+  "clean": {
+   "en": "24°02'02\"",
+   "hi": "24°02'02\"",
+   "mr": "24°02'02\"",
+   "te": "24°02'02\"",
+   "gu": "24°02'02\""
+  }
+ },
+ {
+  "s": "24°03'08\"",
+  "humanize": "24°03'08\"",
+  "esc": "24°03&#39;08&quot;",
+  "clean": {
+   "en": "24°03'08\"",
+   "hi": "24°03'08\"",
+   "mr": "24°03'08\"",
+   "te": "24°03'08\"",
+   "gu": "24°03'08\""
+  }
+ },
+ {
+  "s": "25",
+  "humanize": "25",
+  "esc": "25",
+  "clean": {
+   "en": "25",
+   "hi": "25",
+   "mr": "25",
+   "te": "25",
+   "gu": "25"
+  }
+ },
+ {
+  "s": "25°59'00\"",
+  "humanize": "25°59'00\"",
+  "esc": "25°59&#39;00&quot;",
+  "clean": {
+   "en": "25°59'00\"",
+   "hi": "25°59'00\"",
+   "mr": "25°59'00\"",
+   "te": "25°59'00\"",
+   "gu": "25°59'00\""
+  }
+ },
+ {
+  "s": "26°01'52\"",
+  "humanize": "26°01'52\"",
+  "esc": "26°01&#39;52&quot;",
+  "clean": {
+   "en": "26°01'52\"",
+   "hi": "26°01'52\"",
+   "mr": "26°01'52\"",
+   "te": "26°01'52\"",
+   "gu": "26°01'52\""
+  }
+ },
+ {
+  "s": "26°23'30\"",
+  "humanize": "26°23'30\"",
+  "esc": "26°23&#39;30&quot;",
+  "clean": {
+   "en": "26°23'30\"",
+   "hi": "26°23'30\"",
+   "mr": "26°23'30\"",
+   "te": "26°23'30\"",
+   "gu": "26°23'30\""
+  }
+ },
+ {
+  "s": "27°19'18\"",
+  "humanize": "27°19'18\"",
+  "esc": "27°19&#39;18&quot;",
+  "clean": {
+   "en": "27°19'18\"",
+   "hi": "27°19'18\"",
+   "mr": "27°19'18\"",
+   "te": "27°19'18\"",
+   "gu": "27°19'18\""
+  }
+ },
+ {
+  "s": "28.6139, 77.2090",
+  "humanize": "28.6139, 77.2090",
+  "esc": "28.6139, 77.2090",
+  "clean": {
+   "en": "28.6139, 77.2090",
+   "hi": "28.6139, 77.2090",
+   "mr": "28.6139, 77.2090",
+   "te": "28.6139, 77.2090",
+   "gu": "28.6139, 77.2090"
+  }
+ },
+ {
+  "s": "29°03'57\"",
+  "humanize": "29°03'57\"",
+  "esc": "29°03&#39;57&quot;",
+  "clean": {
+   "en": "29°03'57\"",
+   "hi": "29°03'57\"",
+   "mr": "29°03'57\"",
+   "te": "29°03'57\"",
+   "gu": "29°03'57\""
+  }
+ },
+ {
+  "s": "2°",
+  "humanize": "2°",
+  "esc": "2°",
+  "clean": {
+   "en": "2°",
+   "hi": "2°",
+   "mr": "2°",
+   "te": "2°",
+   "gu": "2°"
+  }
+ },
+ {
+  "s": "3, 8, 13",
+  "humanize": "3, 8, 13",
+  "esc": "3, 8, 13",
+  "clean": {
+   "en": "3, 8, 13",
+   "hi": "3, 8, 13",
+   "mr": "3, 8, 13",
+   "te": "3, 8, 13",
+   "gu": "3, 8, 13"
+  }
+ },
+ {
+  "s": "9th-house (Bhagya) lord",
+  "humanize": "9th-house (Bhagya) lord",
+  "esc": "9th-house (Bhagya) lord",
+  "clean": {
+   "en": "9th-house (Bhagya) lord",
+   "hi": "9th-house (Bhagya) lord",
+   "mr": "9th-house (Bhagya) lord",
+   "te": "9th-house (Bhagya) lord",
+   "gu": "9th-house (Bhagya) lord"
+  }
+ },
+ {
+  "s": "<img src=x onerror=alert(1)>",
+  "humanize": "<img src=x onerror=alert(1)>",
+  "esc": "&lt;img src=x onerror=alert(1)&gt;",
+  "clean": {
+   "en": "<img src=x onerror=alert(1)>",
+   "hi": "<img src=x onerror=alert(1)>",
+   "mr": "<img src=x onerror=alert(1)>",
+   "te": "<img src=x onerror=alert(1)>",
+   "gu": "<img src=x onerror=alert(1)>"
+  }
+ },
+ {
+  "s": "<script>alert(1)</script>",
+  "humanize": "<script>alert(1)</script>",
+  "esc": "&lt;script&gt;alert(1)&lt;/script&gt;",
+  "clean": {
+   "en": "<script>alert(1)</script>",
+   "hi": "<script>alert(1)</script>",
+   "mr": "<script>alert(1)</script>",
+   "te": "<script>alert(1)</script>",
+   "gu": "<script>alert(1)</script>"
+  }
+ },
+ {
+  "s": "<script>x</script>",
+  "humanize": "<script>x</script>",
+  "esc": "&lt;script&gt;x&lt;/script&gt;",
+  "clean": {
+   "en": "<script>x</script>",
+   "hi": "<script>x</script>",
+   "mr": "<script>x</script>",
+   "te": "<script>x</script>",
+   "gu": "<script>x</script>"
+  }
+ },
+ {
+  "s": "A",
+  "humanize": "A",
+  "esc": "A",
+  "clean": {
+   "en": "A",
+   "hi": "A",
+   "mr": "A",
+   "te": "A",
+   "gu": "A"
+  }
+ },
+ {
+  "s": "A conjunction of two planets, their significations blend and jointly colour the affairs of the house they occupy.",
+  "humanize": "A conjunction of two planets, their significations blend and jointly colour the affairs of the house they occupy.",
+  "esc": "A conjunction of two planets, their significations blend and jointly colour the affairs of the house they occupy.",
+  "clean": {
+   "en": "A conjunction of two planets, their significations blend and jointly colour the affairs of the house they occupy.",
+   "hi": "A conjunction of two planets, their significations blend and jointly colour the affairs of the house they occupy.",
+   "mr": "A conjunction of two planets, their significations blend and jointly colour the affairs of the house they occupy.",
+   "te": "A conjunction of two planets, their significations blend and jointly colour the affairs of the house they occupy.",
+   "gu": "A conjunction of two planets, their significations blend and jointly colour the affairs of the house they occupy."
+  }
+ },
+ {
+  "s": "A — B",
+  "humanize": "A, B",
+  "esc": "A, B",
+  "clean": {
+   "en": "A — B",
+   "hi": "A — B",
+   "mr": "A — B",
+   "te": "A — B",
+   "gu": "A — B"
+  }
+ },
+ {
+  "s": "A1",
+  "humanize": "A1",
+  "esc": "A1",
+  "clean": {
+   "en": "A1",
+   "hi": "A1",
+   "mr": "A1",
+   "te": "A1",
+   "gu": "A1"
+  }
+ },
+ {
+  "s": "A2",
+  "humanize": "A2",
+  "esc": "A2",
+  "clean": {
+   "en": "A2",
+   "hi": "A2",
+   "mr": "A2",
+   "te": "A2",
+   "gu": "A2"
+  }
+ },
+ {
+  "s": "Acme",
+  "humanize": "Acme",
+  "esc": "Acme",
+  "clean": {
+   "en": "Acme",
+   "hi": "Acme",
+   "mr": "Acme",
+   "te": "Acme",
+   "gu": "Acme"
+  }
+ },
+ {
+  "s": "Acme \"Astro\" · confidential",
+  "humanize": "Acme \"Astro\" · confidential",
+  "esc": "Acme &quot;Astro&quot; · confidential",
+  "clean": {
+   "en": "Acme \"Astro\" · confidential",
+   "hi": "Acme \"Astro\" · confidential",
+   "mr": "Acme \"Astro\" · confidential",
+   "te": "Acme \"Astro\" · confidential",
+   "gu": "Acme \"Astro\" · confidential"
+  }
+ },
+ {
+  "s": "Acme Astro",
+  "humanize": "Acme Astro",
+  "esc": "Acme Astro",
+  "clean": {
+   "en": "Acme Astro",
+   "hi": "Acme Astro",
+   "mr": "Acme Astro",
+   "te": "Acme Astro",
+   "gu": "Acme Astro"
+  }
+ },
+ {
+  "s": "Acme Astro · confidential",
+  "humanize": "Acme Astro · confidential",
+  "esc": "Acme Astro · confidential",
+  "clean": {
+   "en": "Acme Astro · confidential",
+   "hi": "Acme Astro · confidential",
+   "mr": "Acme Astro · confidential",
+   "te": "Acme Astro · confidential",
+   "gu": "Acme Astro · confidential"
+  }
+ },
+ {
+  "s": "Adhimitra",
+  "humanize": "Adhimitra",
+  "esc": "Adhimitra",
+  "clean": {
+   "en": "Adhimitra",
+   "hi": "Adhimitra",
+   "mr": "Adhimitra",
+   "te": "Adhimitra",
+   "gu": "Adhimitra"
+  }
+ },
+ {
+  "s": "Adhishatru",
+  "humanize": "Adhishatru",
+  "esc": "Adhishatru",
+  "clean": {
+   "en": "Adhishatru",
+   "hi": "Adhishatru",
+   "mr": "Adhishatru",
+   "te": "Adhishatru",
+   "gu": "Adhishatru"
+  }
+ },
+ {
+  "s": "Amatyakaraka",
+  "humanize": "Amatyakaraka",
+  "esc": "Amatyakaraka",
+  "clean": {
+   "en": "Amatyakaraka",
+   "hi": "Amatyakaraka",
+   "mr": "Amatyakaraka",
+   "te": "Amatyakaraka",
+   "gu": "Amatyakaraka"
+  }
+ },
+ {
+  "s": "Anuradha",
+  "humanize": "Anuradha",
+  "esc": "Anuradha",
+  "clean": {
+   "en": "Anuradha",
+   "hi": "Anuradha",
+   "mr": "Anuradha",
+   "te": "Anuradha",
+   "gu": "Anuradha"
+  }
+ },
+ {
+  "s": "Aquarius",
+  "humanize": "Aquarius",
+  "esc": "Aquarius",
+  "clean": {
+   "en": "Aquarius",
+   "hi": "Aquarius",
+   "mr": "Aquarius",
+   "te": "Aquarius",
+   "gu": "Aquarius"
+  }
+ },
+ {
+  "s": "Ardra",
+  "humanize": "Ardra",
+  "esc": "Ardra",
+  "clean": {
+   "en": "Ardra",
+   "hi": "Ardra",
+   "mr": "Ardra",
+   "te": "Ardra",
+   "gu": "Ardra"
+  }
+ },
+ {
+  "s": "Aries",
+  "humanize": "Aries",
+  "esc": "Aries",
+  "clean": {
+   "en": "Aries",
+   "hi": "Aries",
+   "mr": "Aries",
+   "te": "Aries",
+   "gu": "Aries"
+  }
+ },
+ {
+  "s": "Arjun Mehta",
+  "humanize": "Arjun Mehta",
+  "esc": "Arjun Mehta",
+  "clean": {
+   "en": "Arjun Mehta",
+   "hi": "Arjun Mehta",
+   "mr": "Arjun Mehta",
+   "te": "Arjun Mehta",
+   "gu": "Arjun Mehta"
+  }
+ },
+ {
+  "s": "Arudha Lagna",
+  "humanize": "Arudha Lagna",
+  "esc": "Arudha Lagna",
+  "clean": {
+   "en": "Arudha Lagna",
+   "hi": "Arudha Lagna",
+   "mr": "Arudha Lagna",
+   "te": "Arudha Lagna",
+   "gu": "Arudha Lagna"
+  }
+ },
+ {
+  "s": "Ashtakoota poor (9.0/36 points); Nadi Dosha present",
+  "humanize": "Ashtakoota poor (9.0/36 points); Nadi Dosha present",
+  "esc": "Ashtakoota poor (9.0/36 points); Nadi Dosha present",
+  "clean": {
+   "en": "Ashtakoota poor (9.0/36 points); Nadi Dosha present",
+   "hi": "Ashtakoota poor (9.0/36 points); Nadi Dosha present",
+   "mr": "Ashtakoota poor (9.0/36 points); Nadi Dosha present",
+   "te": "Ashtakoota poor (9.0/36 points); Nadi Dosha present",
+   "gu": "Ashtakoota poor (9.0/36 points); Nadi Dosha present"
+  }
+ },
+ {
+  "s": "Ashwini",
+  "humanize": "Ashwini",
+  "esc": "Ashwini",
+  "clean": {
+   "en": "Ashwini",
+   "hi": "Ashwini",
+   "mr": "Ashwini",
+   "te": "Ashwini",
+   "gu": "Ashwini"
+  }
+ },
+ {
+  "s": "Atmakaraka",
+  "humanize": "Atmakaraka",
+  "esc": "Atmakaraka",
+  "clean": {
+   "en": "Atmakaraka",
+   "hi": "Atmakaraka",
+   "mr": "Atmakaraka",
+   "te": "Atmakaraka",
+   "gu": "Atmakaraka"
+  }
+ },
+ {
+  "s": "B",
+  "humanize": "B",
+  "esc": "B",
+  "clean": {
+   "en": "B",
+   "hi": "B",
+   "mr": "B",
+   "te": "B",
+   "gu": "B"
+  }
+ },
+ {
+  "s": "BPHS",
+  "humanize": "BPHS",
+  "esc": "BPHS",
+  "clean": {
+   "en": "BPHS",
+   "hi": "BPHS",
+   "mr": "BPHS",
+   "te": "BPHS",
+   "gu": "BPHS"
+  }
+ },
+ {
+  "s": "BPHS Ch.80 v.47 (cancellation clause)",
+  "humanize": "BPHS Ch.80 v.47 (cancellation clause)",
+  "esc": "BPHS Ch.80 v.47 (cancellation clause)",
+  "clean": {
+   "en": "BPHS Ch.80 v.47 (cancellation clause)",
+   "hi": "BPHS Ch.80 v.47 (cancellation clause)",
+   "mr": "BPHS Ch.80 v.47 (cancellation clause)",
+   "te": "BPHS Ch.80 v.47 (cancellation clause)",
+   "gu": "BPHS Ch.80 v.47 (cancellation clause)"
+  }
+ },
+ {
+  "s": "Bava",
+  "humanize": "Bava",
+  "esc": "Bava",
+  "clean": {
+   "en": "Bava",
+   "hi": "Bava",
+   "mr": "Bava",
+   "te": "Bava",
+   "gu": "Bava"
+  }
+ },
+ {
+  "s": "Blue / Black",
+  "humanize": "Blue / Black",
+  "esc": "Blue / Black",
+  "clean": {
+   "en": "Blue / Black",
+   "hi": "Blue / Black",
+   "mr": "Blue / Black",
+   "te": "Blue / Black",
+   "gu": "Blue / Black"
+  }
+ },
+ {
+  "s": "Blue Sapphire",
+  "humanize": "Blue Sapphire",
+  "esc": "Blue Sapphire",
+  "clean": {
+   "en": "Blue Sapphire",
+   "hi": "Blue Sapphire",
+   "mr": "Blue Sapphire",
+   "te": "Blue Sapphire",
+   "gu": "Blue Sapphire"
+  }
+ },
+ {
+  "s": "Boy",
+  "humanize": "Boy",
+  "esc": "Boy",
+  "clean": {
+   "en": "Boy",
+   "hi": "Boy",
+   "mr": "Boy",
+   "te": "Boy",
+   "gu": "Boy"
+  }
+ },
+ {
+  "s": "Brihaspati / Vishnu",
+  "humanize": "Brihaspati / Vishnu",
+  "esc": "Brihaspati / Vishnu",
+  "clean": {
+   "en": "Brihaspati / Vishnu",
+   "hi": "Brihaspati / Vishnu",
+   "mr": "Brihaspati / Vishnu",
+   "te": "Brihaspati / Vishnu",
+   "gu": "Brihaspati / Vishnu"
+  }
+ },
+ {
+  "s": "Brown / Purple",
+  "humanize": "Brown / Purple",
+  "esc": "Brown / Purple",
+  "clean": {
+   "en": "Brown / Purple",
+   "hi": "Brown / Purple",
+   "mr": "Brown / Purple",
+   "te": "Brown / Purple",
+   "gu": "Brown / Purple"
+  }
+ },
+ {
+  "s": "BudhAditya",
+  "humanize": "BudhAditya",
+  "esc": "BudhAditya",
+  "clean": {
+   "en": "BudhAditya",
+   "hi": "BudhAditya",
+   "mr": "BudhAditya",
+   "te": "BudhAditya",
+   "gu": "BudhAditya"
+  }
+ },
+ {
+  "s": "Cancer",
+  "humanize": "Cancer",
+  "esc": "Cancer",
+  "clean": {
+   "en": "Cancer",
+   "hi": "Cancer",
+   "mr": "Cancer",
+   "te": "Cancer",
+   "gu": "Cancer"
+  }
+ },
+ {
+  "s": "Capricorn",
+  "humanize": "Capricorn",
+  "esc": "Capricorn",
+  "clean": {
+   "en": "Capricorn",
+   "hi": "Capricorn",
+   "mr": "Capricorn",
+   "te": "Capricorn",
+   "gu": "Capricorn"
+  }
+ },
+ {
+  "s": "Career suits engineering, defence, surgery, real-estate, or any high-energy execution discipline. Push through opposition rather than going around it.",
+  "humanize": "Career suits engineering, defence, surgery, real-estate, or any high-energy execution discipline. Push through opposition rather than going around it.",
+  "esc": "Career suits engineering, defence, surgery, real-estate, or any high-energy execution discipline. Push through opposition rather than going around it.",
+  "clean": {
+   "en": "Career suits engineering, defence, surgery, real-estate, or any high-energy execution discipline. Push through opposition rather than going around it.",
+   "hi": "Career suits engineering, defence, surgery, real-estate, or any high-energy execution discipline. Push through opposition rather than going around it.",
+   "mr": "Career suits engineering, defence, surgery, real-estate, or any high-energy execution discipline. Push through opposition rather than going around it.",
+   "te": "Career suits engineering, defence, surgery, real-estate, or any high-energy execution discipline. Push through opposition rather than going around it.",
+   "gu": "Career suits engineering, defence, surgery, real-estate, or any high-energy execution discipline. Push through opposition rather than going around it."
+  }
+ },
+ {
+  "s": "Cat's Eye",
+  "humanize": "Cat's Eye",
+  "esc": "Cat&#39;s Eye",
+  "clean": {
+   "en": "Cat's Eye",
+   "hi": "Cat's Eye",
+   "mr": "Cat's Eye",
+   "te": "Cat's Eye",
+   "gu": "Cat's Eye"
+  }
+ },
+ {
+  "s": "Chitra",
+  "humanize": "Chitra",
+  "esc": "Chitra",
+  "clean": {
+   "en": "Chitra",
+   "hi": "Chitra",
+   "mr": "Chitra",
+   "te": "Chitra",
+   "gu": "Chitra"
+  }
+ },
+ {
+  "s": "D2",
+  "humanize": "D2",
+  "esc": "D2",
+  "clean": {
+   "en": "D2",
+   "hi": "D2",
+   "mr": "D2",
+   "te": "D2",
+   "gu": "D2"
+  }
+ },
+ {
+  "s": "D3",
+  "humanize": "D3",
+  "esc": "D3",
+  "clean": {
+   "en": "D3",
+   "hi": "D3",
+   "mr": "D3",
+   "te": "D3",
+   "gu": "D3"
+  }
+ },
+ {
+  "s": "D9",
+  "humanize": "D9",
+  "esc": "D9",
+  "clean": {
+   "en": "D9",
+   "hi": "D9",
+   "mr": "D9",
+   "te": "D9",
+   "gu": "D9"
+  }
+ },
+ {
+  "s": "Dhana Pada",
+  "humanize": "Dhana Pada",
+  "esc": "Dhana Pada",
+  "clean": {
+   "en": "Dhana Pada",
+   "hi": "Dhana Pada",
+   "mr": "Dhana Pada",
+   "te": "Dhana Pada",
+   "gu": "Dhana Pada"
+  }
+ },
+ {
+  "s": "Dharmi Kundli",
+  "humanize": "Dharmi Kundli",
+  "esc": "Dharmi Kundli",
+  "clean": {
+   "en": "Dharmi Kundli",
+   "hi": "Dharmi Kundli",
+   "mr": "Dharmi Kundli",
+   "te": "Dharmi Kundli",
+   "gu": "Dharmi Kundli"
+  }
+ },
+ {
+  "s": "Dhriti",
+  "humanize": "Dhriti",
+  "esc": "Dhriti",
+  "clean": {
+   "en": "Dhriti",
+   "hi": "Dhriti",
+   "mr": "Dhriti",
+   "te": "Dhriti",
+   "gu": "Dhriti"
+  }
+ },
+ {
+  "s": "Diamond",
+  "humanize": "Diamond",
+  "esc": "Diamond",
+  "clean": {
+   "en": "Diamond",
+   "hi": "Diamond",
+   "mr": "Diamond",
+   "te": "Diamond",
+   "gu": "Diamond"
+  }
+ },
+ {
+  "s": "Donate black sesame",
+  "humanize": "Donate black sesame",
+  "esc": "Donate black sesame",
+  "clean": {
+   "en": "Donate black sesame",
+   "hi": "Donate black sesame",
+   "mr": "Donate black sesame",
+   "te": "Donate black sesame",
+   "gu": "Donate black sesame"
+  }
+ },
+ {
+  "s": "Donate black sesame, mustard oil, or iron on Saturdays.",
+  "humanize": "Donate black sesame, mustard oil, or iron on Saturdays.",
+  "esc": "Donate black sesame, mustard oil, or iron on Saturdays.",
+  "clean": {
+   "en": "Donate black sesame, mustard oil, or iron on Saturdays.",
+   "hi": "Donate black sesame, mustard oil, or iron on Saturdays.",
+   "mr": "Donate black sesame, mustard oil, or iron on Saturdays.",
+   "te": "Donate black sesame, mustard oil, or iron on Saturdays.",
+   "gu": "Donate black sesame, mustard oil, or iron on Saturdays."
+  }
+ },
+ {
+  "s": "Drekkana",
+  "humanize": "Drekkana",
+  "esc": "Drekkana",
+  "clean": {
+   "en": "Drekkana",
+   "hi": "Drekkana",
+   "mr": "Drekkana",
+   "te": "Drekkana",
+   "gu": "Drekkana"
+  }
+ },
+ {
+  "s": "Drekkana (D3) governs siblings, courage and initiative.",
+  "humanize": "Drekkana (D3) governs siblings, courage and initiative.",
+  "esc": "Drekkana (D3) governs siblings, courage and initiative.",
+  "clean": {
+   "en": "Drekkana (D3) governs siblings, courage and initiative.",
+   "hi": "Drekkana (D3) governs siblings, courage and initiative.",
+   "mr": "Drekkana (D3) governs siblings, courage and initiative.",
+   "te": "Drekkana (D3) governs siblings, courage and initiative.",
+   "gu": "Drekkana (D3) governs siblings, courage and initiative."
+  }
+ },
+ {
+  "s": "East",
+  "humanize": "East",
+  "esc": "East",
+  "clean": {
+   "en": "East",
+   "hi": "East",
+   "mr": "East",
+   "te": "East",
+   "gu": "East"
+  }
+ },
+ {
+  "s": "Favorable.",
+  "humanize": "Favorable.",
+  "esc": "Favorable.",
+  "clean": {
+   "en": "Favorable.",
+   "hi": "Favorable.",
+   "mr": "Favorable.",
+   "te": "Favorable.",
+   "gu": "Favorable."
+  }
+ },
+ {
+  "s": "Fortune Stone",
+  "humanize": "Fortune Stone",
+  "esc": "Fortune Stone",
+  "clean": {
+   "en": "Fortune Stone",
+   "hi": "Fortune Stone",
+   "mr": "Fortune Stone",
+   "te": "Fortune Stone",
+   "gu": "Fortune Stone"
+  }
+ },
+ {
+  "s": "Friday",
+  "humanize": "Friday",
+  "esc": "Friday",
+  "clean": {
+   "en": "Friday",
+   "hi": "Friday",
+   "mr": "Friday",
+   "te": "Friday",
+   "gu": "Friday"
+  }
+ },
+ {
+  "s": "G",
+  "humanize": "G",
+  "esc": "G",
+  "clean": {
+   "en": "G",
+   "hi": "G",
+   "mr": "G",
+   "te": "G",
+   "gu": "G"
+  }
+ },
+ {
+  "s": "Gajakesari Yoga",
+  "humanize": "Gajakesari Yoga",
+  "esc": "Gajakesari Yoga",
+  "clean": {
+   "en": "Gajakesari Yoga",
+   "hi": "Gajakesari Yoga",
+   "mr": "Gajakesari Yoga",
+   "te": "Gajakesari Yoga",
+   "gu": "Gajakesari Yoga"
+  }
+ },
+ {
+  "s": "Gemini",
+  "humanize": "Gemini",
+  "esc": "Gemini",
+  "clean": {
+   "en": "Gemini",
+   "hi": "Gemini",
+   "mr": "Gemini",
+   "te": "Gemini",
+   "gu": "Gemini"
+  }
+ },
+ {
+  "s": "Generated using LifeAstroAPI",
+  "humanize": "Generated using LifeAstroAPI",
+  "esc": "Generated using LifeAstroAPI",
+  "clean": {
+   "en": "Generated using LifeAstroAPI",
+   "hi": "Generated using LifeAstroAPI",
+   "mr": "Generated using LifeAstroAPI",
+   "te": "Generated using LifeAstroAPI",
+   "gu": "Generated using LifeAstroAPI"
+  }
+ },
+ {
+  "s": "Girl",
+  "humanize": "Girl",
+  "esc": "Girl",
+  "clean": {
+   "en": "Girl",
+   "hi": "Girl",
+   "mr": "Girl",
+   "te": "Girl",
+   "gu": "Girl"
+  }
+ },
+ {
+  "s": "Good day",
+  "humanize": "Good day",
+  "esc": "Good day",
+  "clean": {
+   "en": "Good day",
+   "hi": "Good day",
+   "mr": "Good day",
+   "te": "Good day",
+   "gu": "Good day"
+  }
+ },
+ {
+  "s": "Governs accumulated wealth, family, speech, food, and early upbringing, the resources and values one gathers. Its lord currently occupies house 5, channelling these themes there.",
+  "humanize": "Governs accumulated wealth, family, speech, food, and early upbringing, the resources and values one gathers. Its lord currently occupies house 5, channelling these themes there.",
+  "esc": "Governs accumulated wealth, family, speech, food, and early upbringing, the resources and values one gathers. Its lord currently occupies house 5, channelling these themes there.",
+  "clean": {
+   "en": "Governs accumulated wealth, family, speech, food, and early upbringing, the resources and values one gathers. Its lord currently occupies house 5, channelling these themes there.",
+   "hi": "Governs accumulated wealth, family, speech, food, and early upbringing, the resources and values one gathers. Its lord currently occupies house 5, channelling these themes there.",
+   "mr": "Governs accumulated wealth, family, speech, food, and early upbringing, the resources and values one gathers. Its lord currently occupies house 5, channelling these themes there.",
+   "te": "Governs accumulated wealth, family, speech, food, and early upbringing, the resources and values one gathers. Its lord currently occupies house 5, channelling these themes there.",
+   "gu": "Governs accumulated wealth, family, speech, food, and early upbringing, the resources and values one gathers. Its lord currently occupies house 5, channelling these themes there."
+  }
+ },
+ {
+  "s": "Hanuman Chalisa",
+  "humanize": "Hanuman Chalisa",
+  "esc": "Hanuman Chalisa",
+  "clean": {
+   "en": "Hanuman Chalisa",
+   "hi": "Hanuman Chalisa",
+   "mr": "Hanuman Chalisa",
+   "te": "Hanuman Chalisa",
+   "gu": "Hanuman Chalisa"
+  }
+ },
+ {
+  "s": "Hessonite",
+  "humanize": "Hessonite",
+  "esc": "Hessonite",
+  "clean": {
+   "en": "Hessonite",
+   "hi": "Hessonite",
+   "mr": "Hessonite",
+   "te": "Hessonite",
+   "gu": "Hessonite"
+  }
+ },
+ {
+  "s": "Hora",
+  "humanize": "Hora",
+  "esc": "Hora",
+  "clean": {
+   "en": "Hora",
+   "hi": "Hora",
+   "mr": "Hora",
+   "te": "Hora",
+   "gu": "Hora"
+  }
+ },
+ {
+  "s": "Hora (D2) governs wealth and prosperity.",
+  "humanize": "Hora (D2) governs wealth and prosperity.",
+  "esc": "Hora (D2) governs wealth and prosperity.",
+  "clean": {
+   "en": "Hora (D2) governs wealth and prosperity.",
+   "hi": "Hora (D2) governs wealth and prosperity.",
+   "mr": "Hora (D2) governs wealth and prosperity.",
+   "te": "Hora (D2) governs wealth and prosperity.",
+   "gu": "Hora (D2) governs wealth and prosperity."
+  }
+ },
+ {
+  "s": "In Vedic astrology the chart is read on three levels: birth, dasha and transit. It is about guidance.",
+  "humanize": "In Vedic astrology the chart is read on three levels: birth, dasha and transit. It is about guidance.",
+  "esc": "In Vedic astrology the chart is read on three levels: birth, dasha and transit. It is about guidance.",
+  "clean": {
+   "en": "",
+   "hi": "",
+   "mr": "",
+   "te": "",
+   "gu": ""
+  }
+ },
+ {
+  "s": "JsonCo",
+  "humanize": "JsonCo",
+  "esc": "JsonCo",
+  "clean": {
+   "en": "JsonCo",
+   "hi": "JsonCo",
+   "mr": "JsonCo",
+   "te": "JsonCo",
+   "gu": "JsonCo"
+  }
+ },
+ {
+  "s": "Jupiter",
+  "humanize": "Jupiter",
+  "esc": "Jupiter",
+  "clean": {
+   "en": "Jupiter",
+   "hi": "Jupiter",
+   "mr": "Jupiter",
+   "te": "Jupiter",
+   "gu": "Jupiter"
+  }
+ },
+ {
+  "s": "Jupiter in 7th cancels Dosha",
+  "humanize": "Jupiter in 7th cancels Dosha",
+  "esc": "Jupiter in 7th cancels Dosha",
+  "clean": {
+   "en": "Jupiter in 7th cancels Dosha",
+   "hi": "Jupiter in 7th cancels Dosha",
+   "mr": "Jupiter in 7th cancels Dosha",
+   "te": "Jupiter in 7th cancels Dosha",
+   "gu": "Jupiter in 7th cancels Dosha"
+  }
+ },
+ {
+  "s": "Jupiter transit",
+  "humanize": "Jupiter transit",
+  "esc": "Jupiter transit",
+  "clean": {
+   "en": "Jupiter transit",
+   "hi": "Jupiter transit",
+   "mr": "Jupiter transit",
+   "te": "Jupiter transit",
+   "gu": "Jupiter transit"
+  }
+ },
+ {
+  "s": "Jupiter's mahadasha brings wisdom, fortune, children, dharmic activities, and growth.",
+  "humanize": "Jupiter's mahadasha brings wisdom, fortune, children, dharmic activities, and growth.",
+  "esc": "Jupiter&#39;s mahadasha brings wisdom, fortune, children, dharmic activities, and growth.",
+  "clean": {
+   "en": "Jupiter's mahadasha brings wisdom, fortune, children, dharmic activities, and growth.",
+   "hi": "Jupiter's mahadasha brings wisdom, fortune, children, dharmic activities, and growth.",
+   "mr": "Jupiter's mahadasha brings wisdom, fortune, children, dharmic activities, and growth.",
+   "te": "Jupiter's mahadasha brings wisdom, fortune, children, dharmic activities, and growth.",
+   "gu": "Jupiter's mahadasha brings wisdom, fortune, children, dharmic activities, and growth."
+  }
+ },
+ {
+  "s": "Jyeshtha",
+  "humanize": "Jyeshtha",
+  "esc": "Jyeshtha",
+  "clean": {
+   "en": "Jyeshtha",
+   "hi": "Jyeshtha",
+   "mr": "Jyeshtha",
+   "te": "Jyeshtha",
+   "gu": "Jyeshtha"
+  }
+ },
+ {
+  "s": "Kaal Sarp Dosha",
+  "humanize": "Kaal Sarp Dosha",
+  "esc": "Kaal Sarp Dosha",
+  "clean": {
+   "en": "Kaal Sarp Dosha",
+   "hi": "Kaal Sarp Dosha",
+   "mr": "Kaal Sarp Dosha",
+   "te": "Kaal Sarp Dosha",
+   "gu": "Kaal Sarp Dosha"
+  }
+ },
+ {
+  "s": "KaalSarp",
+  "humanize": "KaalSarp",
+  "esc": "KaalSarp",
+  "clean": {
+   "en": "KaalSarp",
+   "hi": "KaalSarp",
+   "mr": "KaalSarp",
+   "te": "KaalSarp",
+   "gu": "KaalSarp"
+  }
+ },
+ {
+  "s": "Kaulava",
+  "humanize": "Kaulava",
+  "esc": "Kaulava",
+  "clean": {
+   "en": "Kaulava",
+   "hi": "Kaulava",
+   "mr": "Kaulava",
+   "te": "Kaulava",
+   "gu": "Kaulava"
+  }
+ },
+ {
+  "s": "Ketu",
+  "humanize": "Ketu",
+  "esc": "Ketu",
+  "clean": {
+   "en": "Ketu",
+   "hi": "Ketu",
+   "mr": "Ketu",
+   "te": "Ketu",
+   "gu": "Ketu"
+  }
+ },
+ {
+  "s": "Ketu / Ganesha",
+  "humanize": "Ketu / Ganesha",
+  "esc": "Ketu / Ganesha",
+  "clean": {
+   "en": "Ketu / Ganesha",
+   "hi": "Ketu / Ganesha",
+   "mr": "Ketu / Ganesha",
+   "te": "Ketu / Ganesha",
+   "gu": "Ketu / Ganesha"
+  }
+ },
+ {
+  "s": "Kshatriya",
+  "humanize": "Kshatriya",
+  "esc": "Kshatriya",
+  "clean": {
+   "en": "Kshatriya",
+   "hi": "Kshatriya",
+   "mr": "Kshatriya",
+   "te": "Kshatriya",
+   "gu": "Kshatriya"
+  }
+ },
+ {
+  "s": "Kshatriya / Vaishya",
+  "humanize": "Kshatriya / Vaishya",
+  "esc": "Kshatriya / Vaishya",
+  "clean": {
+   "en": "Kshatriya / Vaishya",
+   "hi": "Kshatriya / Vaishya",
+   "mr": "Kshatriya / Vaishya",
+   "te": "Kshatriya / Vaishya",
+   "gu": "Kshatriya / Vaishya"
+  }
+ },
+ {
+  "s": "LH",
+  "humanize": "LH",
+  "esc": "LH",
+  "clean": {
+   "en": "LH",
+   "hi": "LH",
+   "mr": "LH",
+   "te": "LH",
+   "gu": "LH"
+  }
+ },
+ {
+  "s": "LOCAL_DASHA_LORD",
+  "humanize": "LOCAL_DASHA_LORD",
+  "esc": "LOCAL_DASHA_LORD",
+  "clean": {
+   "en": "LOCAL_DASHA_LORD",
+   "hi": "LOCAL_DASHA_LORD",
+   "mr": "LOCAL_DASHA_LORD",
+   "te": "LOCAL_DASHA_LORD",
+   "gu": "LOCAL_DASHA_LORD"
+  }
+ },
+ {
+  "s": "LOCAL_DOSHA",
+  "humanize": "LOCAL_DOSHA",
+  "esc": "LOCAL_DOSHA",
+  "clean": {
+   "en": "LOCAL_DOSHA",
+   "hi": "LOCAL_DOSHA",
+   "mr": "LOCAL_DOSHA",
+   "te": "LOCAL_DOSHA",
+   "gu": "LOCAL_DOSHA"
+  }
+ },
+ {
+  "s": "LOCAL_HOUSE_LORD",
+  "humanize": "LOCAL_HOUSE_LORD",
+  "esc": "LOCAL_HOUSE_LORD",
+  "clean": {
+   "en": "LOCAL_HOUSE_LORD",
+   "hi": "LOCAL_HOUSE_LORD",
+   "mr": "LOCAL_HOUSE_LORD",
+   "te": "LOCAL_HOUSE_LORD",
+   "gu": "LOCAL_HOUSE_LORD"
+  }
+ },
+ {
+  "s": "LOCAL_Jupiter",
+  "humanize": "LOCAL_Jupiter",
+  "esc": "LOCAL_Jupiter",
+  "clean": {
+   "en": "LOCAL_Jupiter",
+   "hi": "LOCAL_Jupiter",
+   "mr": "LOCAL_Jupiter",
+   "te": "LOCAL_Jupiter",
+   "gu": "LOCAL_Jupiter"
+  }
+ },
+ {
+  "s": "LOCAL_Mangala",
+  "humanize": "LOCAL_Mangala",
+  "esc": "LOCAL_Mangala",
+  "clean": {
+   "en": "LOCAL_Mangala",
+   "hi": "LOCAL_Mangala",
+   "mr": "LOCAL_Mangala",
+   "te": "LOCAL_Mangala",
+   "gu": "LOCAL_Mangala"
+  }
+ },
+ {
+  "s": "LOCAL_Mercury",
+  "humanize": "LOCAL_Mercury",
+  "esc": "LOCAL_Mercury",
+  "clean": {
+   "en": "LOCAL_Mercury",
+   "hi": "LOCAL_Mercury",
+   "mr": "LOCAL_Mercury",
+   "te": "LOCAL_Mercury",
+   "gu": "LOCAL_Mercury"
+  }
+ },
+ {
+  "s": "LOCAL_Moon",
+  "humanize": "LOCAL_Moon",
+  "esc": "LOCAL_Moon",
+  "clean": {
+   "en": "LOCAL_Moon",
+   "hi": "LOCAL_Moon",
+   "mr": "LOCAL_Moon",
+   "te": "LOCAL_Moon",
+   "gu": "LOCAL_Moon"
+  }
+ },
+ {
+  "s": "LOCAL_Rahu",
+  "humanize": "LOCAL_Rahu",
+  "esc": "LOCAL_Rahu",
+  "clean": {
+   "en": "LOCAL_Rahu",
+   "hi": "LOCAL_Rahu",
+   "mr": "LOCAL_Rahu",
+   "te": "LOCAL_Rahu",
+   "gu": "LOCAL_Rahu"
+  }
+ },
+ {
+  "s": "LOCAL_Saturn",
+  "humanize": "LOCAL_Saturn",
+  "esc": "LOCAL_Saturn",
+  "clean": {
+   "en": "LOCAL_Saturn",
+   "hi": "LOCAL_Saturn",
+   "mr": "LOCAL_Saturn",
+   "te": "LOCAL_Saturn",
+   "gu": "LOCAL_Saturn"
+  }
+ },
+ {
+  "s": "LOCAL_YOGA",
+  "humanize": "LOCAL_YOGA",
+  "esc": "LOCAL_YOGA",
+  "clean": {
+   "en": "LOCAL_YOGA",
+   "hi": "LOCAL_YOGA",
+   "mr": "LOCAL_YOGA",
+   "te": "LOCAL_YOGA",
+   "gu": "LOCAL_YOGA"
+  }
+ },
+ {
+  "s": "Lagna (1st-house) lord",
+  "humanize": "Lagna (1st-house) lord",
+  "esc": "Lagna (1st-house) lord",
+  "clean": {
+   "en": "Lagna (1st-house) lord",
+   "hi": "Lagna (1st-house) lord",
+   "mr": "Lagna (1st-house) lord",
+   "te": "Lagna (1st-house) lord",
+   "gu": "Lagna (1st-house) lord"
+  }
+ },
+ {
+  "s": "Lagna lord",
+  "humanize": "Lagna lord",
+  "esc": "Lagna lord",
+  "clean": {
+   "en": "Lagna lord",
+   "hi": "Lagna lord",
+   "mr": "Lagna lord",
+   "te": "Lagna lord",
+   "gu": "Lagna lord"
+  }
+ },
+ {
+  "s": "LagnaCh",
+  "humanize": "LagnaCh",
+  "esc": "LagnaCh",
+  "clean": {
+   "en": "LagnaCh",
+   "hi": "LagnaCh",
+   "mr": "LagnaCh",
+   "te": "LagnaCh",
+   "gu": "LagnaCh"
+  }
+ },
+ {
+  "s": "Leadership",
+  "humanize": "Leadership",
+  "esc": "Leadership",
+  "clean": {
+   "en": "Leadership",
+   "hi": "Leadership",
+   "mr": "Leadership",
+   "te": "Leadership",
+   "gu": "Leadership"
+  }
+ },
+ {
+  "s": "Leo",
+  "humanize": "Leo",
+  "esc": "Leo",
+  "clean": {
+   "en": "Leo",
+   "hi": "Leo",
+   "mr": "Leo",
+   "te": "Leo",
+   "gu": "Leo"
+  }
+ },
+ {
+  "s": "Leo Lagna",
+  "humanize": "Leo Lagna",
+  "esc": "Leo Lagna",
+  "clean": {
+   "en": "Leo Lagna",
+   "hi": "Leo Lagna",
+   "mr": "Leo Lagna",
+   "te": "Leo Lagna",
+   "gu": "Leo Lagna"
+  }
+ },
+ {
+  "s": "Libra",
+  "humanize": "Libra",
+  "esc": "Libra",
+  "clean": {
+   "en": "Libra",
+   "hi": "Libra",
+   "mr": "Libra",
+   "te": "Libra",
+   "gu": "Libra"
+  }
+ },
+ {
+  "s": "Life Stone",
+  "humanize": "Life Stone",
+  "esc": "Life Stone",
+  "clean": {
+   "en": "Life Stone",
+   "hi": "Life Stone",
+   "mr": "Life Stone",
+   "te": "Life Stone",
+   "gu": "Life Stone"
+  }
+ },
+ {
+  "s": "Madhya",
+  "humanize": "Madhya",
+  "esc": "Madhya",
+  "clean": {
+   "en": "Madhya",
+   "hi": "Madhya",
+   "mr": "Madhya",
+   "te": "Madhya",
+   "gu": "Madhya"
+  }
+ },
+ {
+  "s": "Magha",
+  "humanize": "Magha",
+  "esc": "Magha",
+  "clean": {
+   "en": "Magha",
+   "hi": "Magha",
+   "mr": "Magha",
+   "te": "Magha",
+   "gu": "Magha"
+  }
+ },
+ {
+  "s": "Mangal Dosha",
+  "humanize": "Mangal Dosha",
+  "esc": "Mangal Dosha",
+  "clean": {
+   "en": "Mangal Dosha",
+   "hi": "Mangal Dosha",
+   "mr": "Mangal Dosha",
+   "te": "Mangal Dosha",
+   "gu": "Mangal Dosha"
+  }
+ },
+ {
+  "s": "Mangala",
+  "humanize": "Mangala",
+  "esc": "Mangala",
+  "clean": {
+   "en": "Mangala",
+   "hi": "Mangala",
+   "mr": "Mangala",
+   "te": "Mangala",
+   "gu": "Mangala"
+  }
+ },
+ {
+  "s": "Manushya",
+  "humanize": "Manushya",
+  "esc": "Manushya",
+  "clean": {
+   "en": "Manushya",
+   "hi": "Manushya",
+   "mr": "Manushya",
+   "te": "Manushya",
+   "gu": "Manushya"
+  }
+ },
+ {
+  "s": "Mars",
+  "humanize": "Mars",
+  "esc": "Mars",
+  "clean": {
+   "en": "Mars",
+   "hi": "Mars",
+   "mr": "Mars",
+   "te": "Mars",
+   "gu": "Mars"
+  }
+ },
+ {
+  "s": "Mars in own sign",
+  "humanize": "Mars in own sign",
+  "esc": "Mars in own sign",
+  "clean": {
+   "en": "Mars in own sign",
+   "hi": "Mars in own sign",
+   "mr": "Mars in own sign",
+   "te": "Mars in own sign",
+   "gu": "Mars in own sign"
+  }
+ },
+ {
+  "s": "Mars sits in house 10 from the Lagna in a position that classically triggers Manglik, BUT the dosha is cancelled, own/exalted placement or benefic cancellation removes the affliction.",
+  "humanize": "Mars sits in house 10 from the Lagna in a position that classically triggers Manglik, BUT the dosha is cancelled, own/exalted placement or benefic cancellation removes the affliction.",
+  "esc": "Mars sits in house 10 from the Lagna in a position that classically triggers Manglik, BUT the dosha is cancelled, own/exalted placement or benefic cancellation removes the affliction.",
+  "clean": {
+   "en": "Mars sits in house 10 from the Lagna in a position that classically triggers Manglik, BUT the dosha is cancelled, own/exalted placement or benefic cancellation removes the affliction.",
+   "hi": "Mars sits in house 10 from the Lagna in a position that classically triggers Manglik, BUT the dosha is cancelled, own/exalted placement or benefic cancellation removes the affliction.",
+   "mr": "Mars sits in house 10 from the Lagna in a position that classically triggers Manglik, BUT the dosha is cancelled, own/exalted placement or benefic cancellation removes the affliction.",
+   "te": "Mars sits in house 10 from the Lagna in a position that classically triggers Manglik, BUT the dosha is cancelled, own/exalted placement or benefic cancellation removes the affliction.",
+   "gu": "Mars sits in house 10 from the Lagna in a position that classically triggers Manglik, BUT the dosha is cancelled, own/exalted placement or benefic cancellation removes the affliction."
+  }
+ },
+ {
+  "s": "Mars's mahadasha drives action, courage, property, siblings, and physical exertion.",
+  "humanize": "Mars's mahadasha drives action, courage, property, siblings, and physical exertion.",
+  "esc": "Mars&#39;s mahadasha drives action, courage, property, siblings, and physical exertion.",
+  "clean": {
+   "en": "Mars's mahadasha drives action, courage, property, siblings, and physical exertion.",
+   "hi": "Mars's mahadasha drives action, courage, property, siblings, and physical exertion.",
+   "mr": "Mars's mahadasha drives action, courage, property, siblings, and physical exertion.",
+   "te": "Mars's mahadasha drives action, courage, property, siblings, and physical exertion.",
+   "gu": "Mars's mahadasha drives action, courage, property, siblings, and physical exertion."
+  }
+ },
+ {
+  "s": "Mercury",
+  "humanize": "Mercury",
+  "esc": "Mercury",
+  "clean": {
+   "en": "Mercury",
+   "hi": "Mercury",
+   "mr": "Mercury",
+   "te": "Mercury",
+   "gu": "Mercury"
+  }
+ },
+ {
+  "s": "Mercury-Saturn Conjunction",
+  "humanize": "Mercury-Saturn Conjunction",
+  "esc": "Mercury-Saturn Conjunction",
+  "clean": {
+   "en": "Mercury-Saturn Conjunction",
+   "hi": "Mercury-Saturn Conjunction",
+   "mr": "Mercury-Saturn Conjunction",
+   "te": "Mercury-Saturn Conjunction",
+   "gu": "Mercury-Saturn Conjunction"
+  }
+ },
+ {
+  "s": "Mitra",
+  "humanize": "Mitra",
+  "esc": "Mitra",
+  "clean": {
+   "en": "Mitra",
+   "hi": "Mitra",
+   "mr": "Mitra",
+   "te": "Mitra",
+   "gu": "Mitra"
+  }
+ },
+ {
+  "s": "Monday",
+  "humanize": "Monday",
+  "esc": "Monday",
+  "clean": {
+   "en": "Monday",
+   "hi": "Monday",
+   "mr": "Monday",
+   "te": "Monday",
+   "gu": "Monday"
+  }
+ },
+ {
+  "s": "Moon",
+  "humanize": "Moon",
+  "esc": "Moon",
+  "clean": {
+   "en": "Moon",
+   "hi": "Moon",
+   "mr": "Moon",
+   "te": "Moon",
+   "gu": "Moon"
+  }
+ },
+ {
+  "s": "Moon's mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression.",
+  "humanize": "Moon's mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression.",
+  "esc": "Moon&#39;s mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression.",
+  "clean": {
+   "en": "Moon's mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression.",
+   "hi": "Moon's mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression.",
+   "mr": "Moon's mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression.",
+   "te": "Moon's mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression.",
+   "gu": "Moon's mahadasha brings emotional depth, public visibility, mother-related matters, and creative expression."
+  }
+ },
+ {
+  "s": "Mrita",
+  "humanize": "Mrita",
+  "esc": "Mrita",
+  "clean": {
+   "en": "Mrita",
+   "hi": "Mrita",
+   "mr": "Mrita",
+   "te": "Mrita",
+   "gu": "Mrita"
+  }
+ },
+ {
+  "s": "Mula",
+  "humanize": "Mula",
+  "esc": "Mula",
+  "clean": {
+   "en": "Mula",
+   "hi": "Mula",
+   "mr": "Mula",
+   "te": "Mula",
+   "gu": "Mula"
+  }
+ },
+ {
+  "s": "Mumbai",
+  "humanize": "Mumbai",
+  "esc": "Mumbai",
+  "clean": {
+   "en": "Mumbai",
+   "hi": "Mumbai",
+   "mr": "Mumbai",
+   "te": "Mumbai",
+   "gu": "Mumbai"
+  }
+ },
+ {
+  "s": "Mushaka",
+  "humanize": "Mushaka",
+  "esc": "Mushaka",
+  "clean": {
+   "en": "Mushaka",
+   "hi": "Mushaka",
+   "mr": "Mushaka",
+   "te": "Mushaka",
+   "gu": "Mushaka"
+  }
+ },
+ {
+  "s": "Navamsa",
+  "humanize": "Navamsa",
+  "esc": "Navamsa",
+  "clean": {
+   "en": "Navamsa",
+   "hi": "Navamsa",
+   "mr": "Navamsa",
+   "te": "Navamsa",
+   "gu": "Navamsa"
+  }
+ },
+ {
+  "s": "Northeast",
+  "humanize": "Northeast",
+  "esc": "Northeast",
+  "clean": {
+   "en": "Northeast",
+   "hi": "Northeast",
+   "mr": "Northeast",
+   "te": "Northeast",
+   "gu": "Northeast"
+  }
+ },
+ {
+  "s": "Northwest",
+  "humanize": "Northwest",
+  "esc": "Northwest",
+  "clean": {
+   "en": "Northwest",
+   "hi": "Northwest",
+   "mr": "Northwest",
+   "te": "Northwest",
+   "gu": "Northwest"
+  }
+ },
+ {
+  "s": "OverrideCo",
+  "humanize": "OverrideCo",
+  "esc": "OverrideCo",
+  "clean": {
+   "en": "OverrideCo",
+   "hi": "OverrideCo",
+   "mr": "OverrideCo",
+   "te": "OverrideCo",
+   "gu": "OverrideCo"
+  }
+ },
+ {
+  "s": "Panchami",
+  "humanize": "Panchami",
+  "esc": "Panchami",
+  "clean": {
+   "en": "Panchami",
+   "hi": "Panchami",
+   "mr": "Panchami",
+   "te": "Panchami",
+   "gu": "Panchami"
+  }
+ },
+ {
+  "s": "Partnership benefits from a confident, public-facing spouse. Watch the tendency to dominate decisions; share the spotlight.",
+  "humanize": "Partnership benefits from a confident, public-facing spouse. Watch the tendency to dominate decisions; share the spotlight.",
+  "esc": "Partnership benefits from a confident, public-facing spouse. Watch the tendency to dominate decisions; share the spotlight.",
+  "clean": {
+   "en": "Partnership benefits from a confident, public-facing spouse. Watch the tendency to dominate decisions; share the spotlight.",
+   "hi": "Partnership benefits from a confident, public-facing spouse. Watch the tendency to dominate decisions; share the spotlight.",
+   "mr": "Partnership benefits from a confident, public-facing spouse. Watch the tendency to dominate decisions; share the spotlight.",
+   "te": "Partnership benefits from a confident, public-facing spouse. Watch the tendency to dominate decisions; share the spotlight.",
+   "gu": "Partnership benefits from a confident, public-facing spouse. Watch the tendency to dominate decisions; share the spotlight."
+  }
+ },
+ {
+  "s": "Pisces",
+  "humanize": "Pisces",
+  "esc": "Pisces",
+  "clean": {
+   "en": "Pisces",
+   "hi": "Pisces",
+   "mr": "Pisces",
+   "te": "Pisces",
+   "gu": "Pisces"
+  }
+ },
+ {
+  "s": "Pitru Rin",
+  "humanize": "Pitru Rin",
+  "esc": "Pitru Rin",
+  "clean": {
+   "en": "Pitru Rin",
+   "hi": "Pitru Rin",
+   "mr": "Pitru Rin",
+   "te": "Pitru Rin",
+   "gu": "Pitru Rin"
+  }
+ },
+ {
+  "s": "Pramudita",
+  "humanize": "Pramudita",
+  "esc": "Pramudita",
+  "clean": {
+   "en": "Pramudita",
+   "hi": "Pramudita",
+   "mr": "Pramudita",
+   "te": "Pramudita",
+   "gu": "Pramudita"
+  }
+ },
+ {
+  "s": "Prithvi",
+  "humanize": "Prithvi",
+  "esc": "Prithvi",
+  "clean": {
+   "en": "Prithvi",
+   "hi": "Prithvi",
+   "mr": "Prithvi",
+   "te": "Prithvi",
+   "gu": "Prithvi"
+  }
+ },
+ {
+  "s": "Priya Sharma",
+  "humanize": "Priya Sharma",
+  "esc": "Priya Sharma",
+  "clean": {
+   "en": "Priya Sharma",
+   "hi": "Priya Sharma",
+   "mr": "Priya Sharma",
+   "te": "Priya Sharma",
+   "gu": "Priya Sharma"
+  }
+ },
+ {
+  "s": "Punya",
+  "humanize": "Punya",
+  "esc": "Punya",
+  "clean": {
+   "en": "Punya",
+   "hi": "Punya",
+   "mr": "Punya",
+   "te": "Punya",
+   "gu": "Punya"
+  }
+ },
+ {
+  "s": "Purva Bhadrapada",
+  "humanize": "Purva Bhadrapada",
+  "esc": "Purva Bhadrapada",
+  "clean": {
+   "en": "Purva Bhadrapada",
+   "hi": "Purva Bhadrapada",
+   "mr": "Purva Bhadrapada",
+   "te": "Purva Bhadrapada",
+   "gu": "Purva Bhadrapada"
+  }
+ },
+ {
+  "s": "Purva Phalguni",
+  "humanize": "Purva Phalguni",
+  "esc": "Purva Phalguni",
+  "clean": {
+   "en": "Purva Phalguni",
+   "hi": "Purva Phalguni",
+   "mr": "Purva Phalguni",
+   "te": "Purva Phalguni",
+   "gu": "Purva Phalguni"
+  }
+ },
+ {
+  "s": "PurvaAshadha",
+  "humanize": "PurvaAshadha",
+  "esc": "PurvaAshadha",
+  "clean": {
+   "en": "PurvaAshadha",
+   "hi": "PurvaAshadha",
+   "mr": "PurvaAshadha",
+   "te": "PurvaAshadha",
+   "gu": "PurvaAshadha"
+  }
+ },
+ {
+  "s": "Rahu",
+  "humanize": "Rahu",
+  "esc": "Rahu",
+  "clean": {
+   "en": "Rahu",
+   "hi": "Rahu",
+   "mr": "Rahu",
+   "te": "Rahu",
+   "gu": "Rahu"
+  }
+ },
+ {
+  "s": "Rahu / Saraswati",
+  "humanize": "Rahu / Saraswati",
+  "esc": "Rahu / Saraswati",
+  "clean": {
+   "en": "Rahu / Saraswati",
+   "hi": "Rahu / Saraswati",
+   "mr": "Rahu / Saraswati",
+   "te": "Rahu / Saraswati",
+   "gu": "Rahu / Saraswati"
+  }
+ },
+ {
+  "s": "Rahu's mahadasha amplifies worldly desires, foreign connections, and unconventional paths.",
+  "humanize": "Rahu's mahadasha amplifies worldly desires, foreign connections, and unconventional paths.",
+  "esc": "Rahu&#39;s mahadasha amplifies worldly desires, foreign connections, and unconventional paths.",
+  "clean": {
+   "en": "Rahu's mahadasha amplifies worldly desires, foreign connections, and unconventional paths.",
+   "hi": "Rahu's mahadasha amplifies worldly desires, foreign connections, and unconventional paths.",
+   "mr": "Rahu's mahadasha amplifies worldly desires, foreign connections, and unconventional paths.",
+   "te": "Rahu's mahadasha amplifies worldly desires, foreign connections, and unconventional paths.",
+   "gu": "Rahu's mahadasha amplifies worldly desires, foreign connections, and unconventional paths."
+  }
+ },
+ {
+  "s": "Rakshasa",
+  "humanize": "Rakshasa",
+  "esc": "Rakshasa",
+  "clean": {
+   "en": "Rakshasa",
+   "hi": "Rakshasa",
+   "mr": "Rakshasa",
+   "te": "Rakshasa",
+   "gu": "Rakshasa"
+  }
+ },
+ {
+  "s": "Ratandh Kundli",
+  "humanize": "Ratandh Kundli",
+  "esc": "Ratandh Kundli",
+  "clean": {
+   "en": "Ratandh Kundli",
+   "hi": "Ratandh Kundli",
+   "mr": "Ratandh Kundli",
+   "te": "Ratandh Kundli",
+   "gu": "Ratandh Kundli"
+  }
+ },
+ {
+  "s": "Recite Hanuman Chalisa on Saturdays.",
+  "humanize": "Recite Hanuman Chalisa on Saturdays.",
+  "esc": "Recite Hanuman Chalisa on Saturdays.",
+  "clean": {
+   "en": "Recite Hanuman Chalisa on Saturdays.",
+   "hi": "Recite Hanuman Chalisa on Saturdays.",
+   "mr": "Recite Hanuman Chalisa on Saturdays.",
+   "te": "Recite Hanuman Chalisa on Saturdays.",
+   "gu": "Recite Hanuman Chalisa on Saturdays."
+  }
+ },
+ {
+  "s": "Red",
+  "humanize": "Red",
+  "esc": "Red",
+  "clean": {
+   "en": "Red",
+   "hi": "Red",
+   "mr": "Red",
+   "te": "Red",
+   "gu": "Red"
+  }
+ },
+ {
+  "s": "Revati",
+  "humanize": "Revati",
+  "esc": "Revati",
+  "clean": {
+   "en": "Revati",
+   "hi": "Revati",
+   "mr": "Revati",
+   "te": "Revati",
+   "gu": "Revati"
+  }
+ },
+ {
+  "s": "SAMPLE",
+  "humanize": "SAMPLE",
+  "esc": "SAMPLE",
+  "clean": {
+   "en": "SAMPLE",
+   "hi": "SAMPLE",
+   "mr": "SAMPLE",
+   "te": "SAMPLE",
+   "gu": "SAMPLE"
+  }
+ },
+ {
+  "s": "Sagittarius",
+  "humanize": "Sagittarius",
+  "esc": "Sagittarius",
+  "clean": {
+   "en": "Sagittarius",
+   "hi": "Sagittarius",
+   "mr": "Sagittarius",
+   "te": "Sagittarius",
+   "gu": "Sagittarius"
+  }
+ },
+ {
+  "s": "Sama",
+  "humanize": "Sama",
+  "esc": "Sama",
+  "clean": {
+   "en": "Sama",
+   "hi": "Sama",
+   "mr": "Sama",
+   "te": "Sama",
+   "gu": "Sama"
+  }
+ },
+ {
+  "s": "Saturday",
+  "humanize": "Saturday",
+  "esc": "Saturday",
+  "clean": {
+   "en": "Saturday",
+   "hi": "Saturday",
+   "mr": "Saturday",
+   "te": "Saturday",
+   "gu": "Saturday"
+  }
+ },
+ {
+  "s": "Saturn",
+  "humanize": "Saturn",
+  "esc": "Saturn",
+  "clean": {
+   "en": "Saturn",
+   "hi": "Saturn",
+   "mr": "Saturn",
+   "te": "Saturn",
+   "gu": "Saturn"
+  }
+ },
+ {
+  "s": "Saturn's mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span.",
+  "humanize": "Saturn's mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span.",
+  "esc": "Saturn&#39;s mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span.",
+  "clean": {
+   "en": "Saturn's mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span.",
+   "hi": "Saturn's mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span.",
+   "mr": "Saturn's mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span.",
+   "te": "Saturn's mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span.",
+   "gu": "Saturn's mahadasha emphasizes discipline, slow growth, hard work, and karmic lessons over its 19-year span."
+  }
+ },
+ {
+  "s": "Saubhagya",
+  "humanize": "Saubhagya",
+  "esc": "Saubhagya",
+  "clean": {
+   "en": "Saubhagya",
+   "hi": "Saubhagya",
+   "mr": "Saubhagya",
+   "te": "Saubhagya",
+   "gu": "Saubhagya"
+  }
+ },
+ {
+  "s": "Scorpio",
+  "humanize": "Scorpio",
+  "esc": "Scorpio",
+  "clean": {
+   "en": "Scorpio",
+   "hi": "Scorpio",
+   "mr": "Scorpio",
+   "te": "Scorpio",
+   "gu": "Scorpio"
+  }
+ },
+ {
+  "s": "Shani / Hanuman",
+  "humanize": "Shani / Hanuman",
+  "esc": "Shani / Hanuman",
+  "clean": {
+   "en": "Shani / Hanuman",
+   "hi": "Shani / Hanuman",
+   "mr": "Shani / Hanuman",
+   "te": "Shani / Hanuman",
+   "gu": "Shani / Hanuman"
+  }
+ },
+ {
+  "s": "Shatru",
+  "humanize": "Shatru",
+  "esc": "Shatru",
+  "clean": {
+   "en": "Shatru",
+   "hi": "Shatru",
+   "mr": "Shatru",
+   "te": "Shatru",
+   "gu": "Shatru"
+  }
+ },
+ {
+  "s": "Shiva",
+  "humanize": "Shiva",
+  "esc": "Shiva",
+  "clean": {
+   "en": "Shiva",
+   "hi": "Shiva",
+   "mr": "Shiva",
+   "te": "Shiva",
+   "gu": "Shiva"
+  }
+ },
+ {
+  "s": "Shukla Ekadashi",
+  "humanize": "Shukla Ekadashi",
+  "esc": "Shukla Ekadashi",
+  "clean": {
+   "en": "Shukla Ekadashi",
+   "hi": "Shukla Ekadashi",
+   "mr": "Shukla Ekadashi",
+   "te": "Shukla Ekadashi",
+   "gu": "Shukla Ekadashi"
+  }
+ },
+ {
+  "s": "Shukla Tritiya",
+  "humanize": "Shukla Tritiya",
+  "esc": "Shukla Tritiya",
+  "clean": {
+   "en": "Shukla Tritiya",
+   "hi": "Shukla Tritiya",
+   "mr": "Shukla Tritiya",
+   "te": "Shukla Tritiya",
+   "gu": "Shukla Tritiya"
+  }
+ },
+ {
+  "s": "Shukra / Lakshmi",
+  "humanize": "Shukra / Lakshmi",
+  "esc": "Shukra / Lakshmi",
+  "clean": {
+   "en": "Shukra / Lakshmi",
+   "hi": "Shukra / Lakshmi",
+   "mr": "Shukra / Lakshmi",
+   "te": "Shukra / Lakshmi",
+   "gu": "Shukra / Lakshmi"
+  }
+ },
+ {
+  "s": "Siddha",
+  "humanize": "Siddha",
+  "esc": "Siddha",
+  "clean": {
+   "en": "Siddha",
+   "hi": "Siddha",
+   "mr": "Siddha",
+   "te": "Siddha",
+   "gu": "Siddha"
+  }
+ },
+ {
+  "s": "Silver",
+  "humanize": "Silver",
+  "esc": "Silver",
+  "clean": {
+   "en": "Silver",
+   "hi": "Silver",
+   "mr": "Silver",
+   "te": "Silver",
+   "gu": "Silver"
+  }
+ },
+ {
+  "s": "Smoky Gray / Indigo",
+  "humanize": "Smoky Gray / Indigo",
+  "esc": "Smoky Gray / Indigo",
+  "clean": {
+   "en": "Smoky Gray / Indigo",
+   "hi": "Smoky Gray / Indigo",
+   "mr": "Smoky Gray / Indigo",
+   "te": "Smoky Gray / Indigo",
+   "gu": "Smoky Gray / Indigo"
+  }
+ },
+ {
+  "s": "Southeast",
+  "humanize": "Southeast",
+  "esc": "Southeast",
+  "clean": {
+   "en": "Southeast",
+   "hi": "Southeast",
+   "mr": "Southeast",
+   "te": "Southeast",
+   "gu": "Southeast"
+  }
+ },
+ {
+  "s": "Southwest",
+  "humanize": "Southwest",
+  "esc": "Southwest",
+  "clean": {
+   "en": "Southwest",
+   "hi": "Southwest",
+   "mr": "Southwest",
+   "te": "Southwest",
+   "gu": "Southwest"
+  }
+ },
+ {
+  "s": "Subject",
+  "humanize": "Subject",
+  "esc": "Subject",
+  "clean": {
+   "en": "Subject",
+   "hi": "Subject",
+   "mr": "Subject",
+   "te": "Subject",
+   "gu": "Subject"
+  }
+ },
+ {
+  "s": "Sukarma",
+  "humanize": "Sukarma",
+  "esc": "Sukarma",
+  "clean": {
+   "en": "Sukarma",
+   "hi": "Sukarma",
+   "mr": "Sukarma",
+   "te": "Sukarma",
+   "gu": "Sukarma"
+  }
+ },
+ {
+  "s": "Sun",
+  "humanize": "Sun",
+  "esc": "Sun",
+  "clean": {
+   "en": "Sun",
+   "hi": "Sun",
+   "mr": "Sun",
+   "te": "Sun",
+   "gu": "Sun"
+  }
+ },
+ {
+  "s": "Sun-Venus Conjunction",
+  "humanize": "Sun-Venus Conjunction",
+  "esc": "Sun-Venus Conjunction",
+  "clean": {
+   "en": "Sun-Venus Conjunction",
+   "hi": "Sun-Venus Conjunction",
+   "mr": "Sun-Venus Conjunction",
+   "te": "Sun-Venus Conjunction",
+   "gu": "Sun-Venus Conjunction"
+  }
+ },
+ {
+  "s": "Sun-led temperament.",
+  "humanize": "Sun-led temperament.",
+  "esc": "Sun-led temperament.",
+  "clean": {
+   "en": "Sun-led temperament.",
+   "hi": "Sun-led temperament.",
+   "mr": "Sun-led temperament.",
+   "te": "Sun-led temperament.",
+   "gu": "Sun-led temperament."
+  }
+ },
+ {
+  "s": "Sunday (with caution)",
+  "humanize": "Sunday (with caution)",
+  "esc": "Sunday (with caution)",
+  "clean": {
+   "en": "Sunday (with caution)",
+   "hi": "Sunday (with caution)",
+   "mr": "Sunday (with caution)",
+   "te": "Sunday (with caution)",
+   "gu": "Sunday (with caution)"
+  }
+ },
+ {
+  "s": "Sushupta",
+  "humanize": "Sushupta",
+  "esc": "Sushupta",
+  "clean": {
+   "en": "Sushupta",
+   "hi": "Sushupta",
+   "mr": "Sushupta",
+   "te": "Sushupta",
+   "gu": "Sushupta"
+  }
+ },
+ {
+  "s": "Swapna",
+  "humanize": "Swapna",
+  "esc": "Swapna",
+  "clean": {
+   "en": "Swapna",
+   "hi": "Swapna",
+   "mr": "Swapna",
+   "te": "Swapna",
+   "gu": "Swapna"
+  }
+ },
+ {
+  "s": "Swayam Rin",
+  "humanize": "Swayam Rin",
+  "esc": "Swayam Rin",
+  "clean": {
+   "en": "Swayam Rin",
+   "hi": "Swayam Rin",
+   "mr": "Swayam Rin",
+   "te": "Swayam Rin",
+   "gu": "Swayam Rin"
+  }
+ },
+ {
+  "s": "T",
+  "humanize": "T",
+  "esc": "T",
+  "clean": {
+   "en": "T",
+   "hi": "T",
+   "mr": "T",
+   "te": "T",
+   "gu": "T"
+  }
+ },
+ {
+  "s": "Taitila",
+  "humanize": "Taitila",
+  "esc": "Taitila",
+  "clean": {
+   "en": "Taitila",
+   "hi": "Taitila",
+   "mr": "Taitila",
+   "te": "Taitila",
+   "gu": "Taitila"
+  }
+ },
+ {
+  "s": "Taurus",
+  "humanize": "Taurus",
+  "esc": "Taurus",
+  "clean": {
+   "en": "Taurus",
+   "hi": "Taurus",
+   "mr": "Taurus",
+   "te": "Taurus",
+   "gu": "Taurus"
+  }
+ },
+ {
+  "s": "TempEnemy",
+  "humanize": "TempEnemy",
+  "esc": "TempEnemy",
+  "clean": {
+   "en": "TempEnemy",
+   "hi": "TempEnemy",
+   "mr": "TempEnemy",
+   "te": "TempEnemy",
+   "gu": "TempEnemy"
+  }
+ },
+ {
+  "s": "TempFriend",
+  "humanize": "TempFriend",
+  "esc": "TempFriend",
+  "clean": {
+   "en": "TempFriend",
+   "hi": "TempFriend",
+   "mr": "TempFriend",
+   "te": "TempFriend",
+   "gu": "TempFriend"
+  }
+ },
+ {
+  "s": "Test",
+  "humanize": "Test",
+  "esc": "Test",
+  "clean": {
+   "en": "Test",
+   "hi": "Test",
+   "mr": "Test",
+   "te": "Test",
+   "gu": "Test"
+  }
+ },
+ {
+  "s": "Test Native",
+  "humanize": "Test Native",
+  "esc": "Test Native",
+  "clean": {
+   "en": "Test Native",
+   "hi": "Test Native",
+   "mr": "Test Native",
+   "te": "Test Native",
+   "gu": "Test Native"
+  }
+ },
+ {
+  "s": "The ascendant governs the self, body, temperament, and overall vitality, the lens through which the whole chart expresses. Its lord currently occupies house 11, channelling these themes there.",
+  "humanize": "The ascendant governs the self, body, temperament, and overall vitality, the lens through which the whole chart expresses. Its lord currently occupies house 11, channelling these themes there.",
+  "esc": "The ascendant governs the self, body, temperament, and overall vitality, the lens through which the whole chart expresses. Its lord currently occupies house 11, channelling these themes there.",
+  "clean": {
+   "en": "The ascendant governs the self, body, temperament, and overall vitality, the lens through which the whole chart expresses. Its lord currently occupies house 11, channelling these themes there.",
+   "hi": "The ascendant governs the self, body, temperament, and overall vitality, the lens through which the whole chart expresses. Its lord currently occupies house 11, channelling these themes there.",
+   "mr": "The ascendant governs the self, body, temperament, and overall vitality, the lens through which the whole chart expresses. Its lord currently occupies house 11, channelling these themes there.",
+   "te": "The ascendant governs the self, body, temperament, and overall vitality, the lens through which the whole chart expresses. Its lord currently occupies house 11, channelling these themes there.",
+   "gu": "The ascendant governs the self, body, temperament, and overall vitality, the lens through which the whole chart expresses. Its lord currently occupies house 11, channelling these themes there."
+  }
+ },
+ {
+  "s": "Thursday",
+  "humanize": "Thursday",
+  "esc": "Thursday",
+  "clean": {
+   "en": "Thursday",
+   "hi": "Thursday",
+   "mr": "Thursday",
+   "te": "Thursday",
+   "gu": "Thursday"
+  }
+ },
+ {
+  "s": "Tuesday (calm)",
+  "humanize": "Tuesday (calm)",
+  "esc": "Tuesday (calm)",
+  "clean": {
+   "en": "Tuesday (calm)",
+   "hi": "Tuesday (calm)",
+   "mr": "Tuesday (calm)",
+   "te": "Tuesday (calm)",
+   "gu": "Tuesday (calm)"
+  }
+ },
+ {
+  "s": "Ulka",
+  "humanize": "Ulka",
+  "esc": "Ulka",
+  "clean": {
+   "en": "Ulka",
+   "hi": "Ulka",
+   "mr": "Ulka",
+   "te": "Ulka",
+   "gu": "Ulka"
+  }
+ },
+ {
+  "s": "Uttara Ashadha",
+  "humanize": "Uttara Ashadha",
+  "esc": "Uttara Ashadha",
+  "clean": {
+   "en": "Uttara Ashadha",
+   "hi": "Uttara Ashadha",
+   "mr": "Uttara Ashadha",
+   "te": "Uttara Ashadha",
+   "gu": "Uttara Ashadha"
+  }
+ },
+ {
+  "s": "VH",
+  "humanize": "VH",
+  "esc": "VH",
+  "clean": {
+   "en": "VH",
+   "hi": "VH",
+   "mr": "VH",
+   "te": "VH",
+   "gu": "VH"
+  }
+ },
+ {
+  "s": "Vajra",
+  "humanize": "Vajra",
+  "esc": "Vajra",
+  "clean": {
+   "en": "Vajra",
+   "hi": "Vajra",
+   "mr": "Vajra",
+   "te": "Vajra",
+   "gu": "Vajra"
+  }
+ },
+ {
+  "s": "Vanchar",
+  "humanize": "Vanchar",
+  "esc": "Vanchar",
+  "clean": {
+   "en": "Vanchar",
+   "hi": "Vanchar",
+   "mr": "Vanchar",
+   "te": "Vanchar",
+   "gu": "Vanchar"
+  }
+ },
+ {
+  "s": "Vanchar / Manushya",
+  "humanize": "Vanchar / Manushya",
+  "esc": "Vanchar / Manushya",
+  "clean": {
+   "en": "Vanchar / Manushya",
+   "hi": "Vanchar / Manushya",
+   "mr": "Vanchar / Manushya",
+   "te": "Vanchar / Manushya",
+   "gu": "Vanchar / Manushya"
+  }
+ },
+ {
+  "s": "Varna",
+  "humanize": "Varna",
+  "esc": "Varna",
+  "clean": {
+   "en": "Varna",
+   "hi": "Varna",
+   "mr": "Varna",
+   "te": "Varna",
+   "gu": "Varna"
+  }
+ },
+ {
+  "s": "VarshaCh",
+  "humanize": "VarshaCh",
+  "esc": "VarshaCh",
+  "clean": {
+   "en": "VarshaCh",
+   "hi": "VarshaCh",
+   "mr": "VarshaCh",
+   "te": "VarshaCh",
+   "gu": "VarshaCh"
+  }
+ },
+ {
+  "s": "Vashya",
+  "humanize": "Vashya",
+  "esc": "Vashya",
+  "clean": {
+   "en": "Vashya",
+   "hi": "Vashya",
+   "mr": "Vashya",
+   "te": "Vashya",
+   "gu": "Vashya"
+  }
+ },
+ {
+  "s": "Venus",
+  "humanize": "Venus",
+  "esc": "Venus",
+  "clean": {
+   "en": "Venus",
+   "hi": "Venus",
+   "mr": "Venus",
+   "te": "Venus",
+   "gu": "Venus"
+  }
+ },
+ {
+  "s": "Vidya",
+  "humanize": "Vidya",
+  "esc": "Vidya",
+  "clean": {
+   "en": "Vidya",
+   "hi": "Vidya",
+   "mr": "Vidya",
+   "te": "Vidya",
+   "gu": "Vidya"
+  }
+ },
+ {
+  "s": "Vikala",
+  "humanize": "Vikala",
+  "esc": "Vikala",
+  "clean": {
+   "en": "Vikala",
+   "hi": "Vikala",
+   "mr": "Vikala",
+   "te": "Vikala",
+   "gu": "Vikala"
+  }
+ },
+ {
+  "s": "Virgo",
+  "humanize": "Virgo",
+  "esc": "Virgo",
+  "clean": {
+   "en": "Virgo",
+   "hi": "Virgo",
+   "mr": "Virgo",
+   "te": "Virgo",
+   "gu": "Virgo"
+  }
+ },
+ {
+  "s": "Virgo / Cancer",
+  "humanize": "Virgo / Cancer",
+  "esc": "Virgo / Cancer",
+  "clean": {
+   "en": "Virgo / Cancer",
+   "hi": "Virgo / Cancer",
+   "mr": "Virgo / Cancer",
+   "te": "Virgo / Cancer",
+   "gu": "Virgo / Cancer"
+  }
+ },
+ {
+  "s": "Vistrit",
+  "humanize": "Vistrit",
+  "esc": "Vistrit",
+  "clean": {
+   "en": "Vistrit",
+   "hi": "Vistrit",
+   "mr": "Vistrit",
+   "te": "Vistrit",
+   "gu": "Vistrit"
+  }
+ },
+ {
+  "s": "Vriddha",
+  "humanize": "Vriddha",
+  "esc": "Vriddha",
+  "clean": {
+   "en": "Vriddha",
+   "hi": "Vriddha",
+   "mr": "Vriddha",
+   "te": "Vriddha",
+   "gu": "Vriddha"
+  }
+ },
+ {
+  "s": "WH",
+  "humanize": "WH",
+  "esc": "WH",
+  "clean": {
+   "en": "WH",
+   "hi": "WH",
+   "mr": "WH",
+   "te": "WH",
+   "gu": "WH"
+  }
+ },
+ {
+  "s": "West",
+  "humanize": "West",
+  "esc": "West",
+  "clean": {
+   "en": "West",
+   "hi": "West",
+   "mr": "West",
+   "te": "West",
+   "gu": "West"
+  }
+ },
+ {
+  "s": "White / Sky Blue",
+  "humanize": "White / Sky Blue",
+  "esc": "White / Sky Blue",
+  "clean": {
+   "en": "White / Sky Blue",
+   "hi": "White / Sky Blue",
+   "mr": "White / Sky Blue",
+   "te": "White / Sky Blue",
+   "gu": "White / Sky Blue"
+  }
+ },
+ {
+  "s": "X\"\\</style><b>",
+  "humanize": "X\"\\</style><b>",
+  "esc": "X&quot;\\&lt;/style&gt;&lt;b&gt;",
+  "clean": {
+   "en": "X\"\\</style><b>",
+   "hi": "X\"\\</style><b>",
+   "mr": "X\"\\</style><b>",
+   "te": "X\"\\</style><b>",
+   "gu": "X\"\\</style><b>"
+  }
+ },
+ {
+  "s": "YH",
+  "humanize": "YH",
+  "esc": "YH",
+  "clean": {
+   "en": "YH",
+   "hi": "YH",
+   "mr": "YH",
+   "te": "YH",
+   "gu": "YH"
+  }
+ },
+ {
+  "s": "Yellow",
+  "humanize": "Yellow",
+  "esc": "Yellow",
+  "clean": {
+   "en": "Yellow",
+   "hi": "Yellow",
+   "mr": "Yellow",
+   "te": "Yellow",
+   "gu": "Yellow"
+  }
+ },
+ {
+  "s": "Yellow Sapphire",
+  "humanize": "Yellow Sapphire",
+  "esc": "Yellow Sapphire",
+  "clean": {
+   "en": "Yellow Sapphire",
+   "hi": "Yellow Sapphire",
+   "mr": "Yellow Sapphire",
+   "te": "Yellow Sapphire",
+   "gu": "Yellow Sapphire"
+  }
+ },
+ {
+  "s": "YogasCh",
+  "humanize": "YogasCh",
+  "esc": "YogasCh",
+  "clean": {
+   "en": "YogasCh",
+   "hi": "YogasCh",
+   "mr": "YogasCh",
+   "te": "YogasCh",
+   "gu": "YogasCh"
+  }
+ },
+ {
+  "s": "a , , b",
+  "humanize": "a,  b",
+  "esc": "a,  b",
+  "clean": {
+   "en": "a , , b",
+   "hi": "a , , b",
+   "mr": "a , , b",
+   "te": "a , , b",
+   "gu": "a , , b"
+  }
+ },
+ {
+  "s": "a -> b => c",
+  "humanize": "a, b, c",
+  "esc": "a, b, c",
+  "clean": {
+   "en": "a -> b => c",
+   "hi": "a -> b => c",
+   "mr": "a -> b => c",
+   "te": "a -> b => c",
+   "gu": "a -> b => c"
+  }
+ },
+ {
+  "s": "aries",
+  "humanize": "aries",
+  "esc": "aries",
+  "clean": {
+   "en": "aries",
+   "hi": "aries",
+   "mr": "aries",
+   "te": "aries",
+   "gu": "aries"
+  }
+ },
+ {
+  "s": "b",
+  "humanize": "b",
+  "esc": "b",
+  "clean": {
+   "en": "b",
+   "hi": "b",
+   "mr": "b",
+   "te": "b",
+   "gu": "b"
+  }
+ },
+ {
+  "s": "blob:http://x",
+  "humanize": "blob:http://x",
+  "esc": "blob:http://x",
+  "clean": {
+   "en": "blob:http://x",
+   "hi": "blob:http://x",
+   "mr": "blob:http://x",
+   "te": "blob:http://x",
+   "gu": "blob:http://x"
+  }
+ },
+ {
+  "s": "blue;} @import url(http://evil)",
+  "humanize": "blue;} @import url(http://evil)",
+  "esc": "blue;} @import url(http://evil)",
+  "clean": {
+   "en": "blue;} @import url(http://evil)",
+   "hi": "blue;} @import url(http://evil)",
+   "mr": "blue;} @import url(http://evil)",
+   "te": "blue;} @import url(http://evil)",
+   "gu": "blue;} @import url(http://evil)"
+  }
+ },
+ {
+  "s": "bn",
+  "humanize": "bn",
+  "esc": "bn",
+  "clean": {
+   "en": "bn",
+   "hi": "bn",
+   "mr": "bn",
+   "te": "bn",
+   "gu": "bn"
+  }
+ },
+ {
+  "s": "cancelled",
+  "humanize": "cancelled",
+  "esc": "cancelled",
+  "clean": {
+   "en": "cancelled",
+   "hi": "cancelled",
+   "mr": "cancelled",
+   "te": "cancelled",
+   "gu": "cancelled"
+  }
+ },
+ {
+  "s": "career",
+  "humanize": "career",
+  "esc": "career",
+  "clean": {
+   "en": "career",
+   "hi": "career",
+   "mr": "career",
+   "te": "career",
+   "gu": "career"
+  }
+ },
+ {
+  "s": "clear",
+  "humanize": "clear",
+  "esc": "clear",
+  "clean": {
+   "en": "clear",
+   "hi": "clear",
+   "mr": "clear",
+   "te": "clear",
+   "gu": "clear"
+  }
+ },
+ {
+  "s": "daily",
+  "humanize": "daily",
+  "esc": "daily",
+  "clean": {
+   "en": "daily",
+   "hi": "daily",
+   "mr": "daily",
+   "te": "daily",
+   "gu": "daily"
+  }
+ },
+ {
+  "s": "data:image/png;base64,iVBORw0",
+  "humanize": "data:image/png;base64,iVBORw0",
+  "esc": "data:image/png;base64,iVBORw0",
+  "clean": {
+   "en": "data:image/png;base64,iVBORw0",
+   "hi": "data:image/png;base64,iVBORw0",
+   "mr": "data:image/png;base64,iVBORw0",
+   "te": "data:image/png;base64,iVBORw0",
+   "gu": "data:image/png;base64,iVBORw0"
+  }
+ },
+ {
+  "s": "data:text/html,<script>",
+  "humanize": "data:text/html,<script>",
+  "esc": "data:text/html,&lt;script&gt;",
+  "clean": {
+   "en": "data:text/html,<script>",
+   "hi": "data:text/html,<script>",
+   "mr": "data:text/html,<script>",
+   "te": "data:text/html,<script>",
+   "gu": "data:text/html,<script>"
+  }
+ },
+ {
+  "s": "donation",
+  "humanize": "donation",
+  "esc": "donation",
+  "clean": {
+   "en": "donation",
+   "hi": "donation",
+   "mr": "donation",
+   "te": "donation",
+   "gu": "donation"
+  }
+ },
+ {
+  "s": "en",
+  "humanize": "en",
+  "esc": "en",
+  "clean": {
+   "en": "en",
+   "hi": "en",
+   "mr": "en",
+   "te": "en",
+   "gu": "en"
+  }
+ },
+ {
+  "s": "family",
+  "humanize": "family",
+  "esc": "family",
+  "clean": {
+   "en": "family",
+   "hi": "family",
+   "mr": "family",
+   "te": "family",
+   "gu": "family"
+  }
+ },
+ {
+  "s": "file:///etc/passwd",
+  "humanize": "file:///etc/passwd",
+  "esc": "file:///etc/passwd",
+  "clean": {
+   "en": "file:///etc/passwd",
+   "hi": "file:///etc/passwd",
+   "mr": "file:///etc/passwd",
+   "te": "file:///etc/passwd",
+   "gu": "file:///etc/passwd"
+  }
+ },
+ {
+  "s": "good",
+  "humanize": "good",
+  "esc": "good",
+  "clean": {
+   "en": "good",
+   "hi": "good",
+   "mr": "good",
+   "te": "good",
+   "gu": "good"
+  }
+ },
+ {
+  "s": "gu",
+  "humanize": "gu",
+  "esc": "gu",
+  "clean": {
+   "en": "gu",
+   "hi": "gu",
+   "mr": "gu",
+   "te": "gu",
+   "gu": "gu"
+  }
+ },
+ {
+  "s": "hi",
+  "humanize": "hi",
+  "esc": "hi",
+  "clean": {
+   "en": "hi",
+   "hi": "hi",
+   "mr": "hi",
+   "te": "hi",
+   "gu": "hi"
+  }
+ },
+ {
+  "s": "high",
+  "humanize": "high",
+  "esc": "high",
+  "clean": {
+   "en": "high",
+   "hi": "high",
+   "mr": "high",
+   "te": "high",
+   "gu": "high"
+  }
+ },
+ {
+  "s": "https://cdn.example/acme/logo.png",
+  "humanize": "https://cdn.example/acme/logo.png",
+  "esc": "https://cdn.example/acme/logo.png",
+  "clean": {
+   "en": "https://cdn.example/acme/logo.png",
+   "hi": "https://cdn.example/acme/logo.png",
+   "mr": "https://cdn.example/acme/logo.png",
+   "te": "https://cdn.example/acme/logo.png",
+   "gu": "https://cdn.example/acme/logo.png"
+  }
+ },
+ {
+  "s": "https://cdn.x/logo.png",
+  "humanize": "https://cdn.x/logo.png",
+  "esc": "https://cdn.x/logo.png",
+  "clean": {
+   "en": "https://cdn.x/logo.png",
+   "hi": "https://cdn.x/logo.png",
+   "mr": "https://cdn.x/logo.png",
+   "te": "https://cdn.x/logo.png",
+   "gu": "https://cdn.x/logo.png"
+  }
+ },
+ {
+  "s": "https://j/l.png",
+  "humanize": "https://j/l.png",
+  "esc": "https://j/l.png",
+  "clean": {
+   "en": "https://j/l.png",
+   "hi": "https://j/l.png",
+   "mr": "https://j/l.png",
+   "te": "https://j/l.png",
+   "gu": "https://j/l.png"
+  }
+ },
+ {
+  "s": "javascript:alert(1)",
+  "humanize": "javascript:alert(1)",
+  "esc": "javascript:alert(1)",
+  "clean": {
+   "en": "javascript:alert(1)",
+   "hi": "javascript:alert(1)",
+   "mr": "javascript:alert(1)",
+   "te": "javascript:alert(1)",
+   "gu": "javascript:alert(1)"
+  }
+ },
+ {
+  "s": "kn",
+  "humanize": "kn",
+  "esc": "kn",
+  "clean": {
+   "en": "kn",
+   "hi": "kn",
+   "mr": "kn",
+   "te": "kn",
+   "gu": "kn"
+  }
+ },
+ {
+  "s": "lagna",
+  "humanize": "lagna",
+  "esc": "lagna",
+  "clean": {
+   "en": "lagna",
+   "hi": "lagna",
+   "mr": "lagna",
+   "te": "lagna",
+   "gu": "lagna"
+  }
+ },
+ {
+  "s": "mantra",
+  "humanize": "mantra",
+  "esc": "mantra",
+  "clean": {
+   "en": "mantra",
+   "hi": "mantra",
+   "mr": "mantra",
+   "te": "mantra",
+   "gu": "mantra"
+  }
+ },
+ {
+  "s": "marriage",
+  "humanize": "marriage",
+  "esc": "marriage",
+  "clean": {
+   "en": "marriage",
+   "hi": "marriage",
+   "mr": "marriage",
+   "te": "marriage",
+   "gu": "marriage"
+  }
+ },
+ {
+  "s": "mild",
+  "humanize": "mild",
+  "esc": "mild",
+  "clean": {
+   "en": "mild",
+   "hi": "mild",
+   "mr": "mild",
+   "te": "mild",
+   "gu": "mild"
+  }
+ },
+ {
+  "s": "ml",
+  "humanize": "ml",
+  "esc": "ml",
+  "clean": {
+   "en": "ml",
+   "hi": "ml",
+   "mr": "ml",
+   "te": "ml",
+   "gu": "ml"
+  }
+ },
+ {
+  "s": "monthly",
+  "humanize": "monthly",
+  "esc": "monthly",
+  "clean": {
+   "en": "monthly",
+   "hi": "monthly",
+   "mr": "monthly",
+   "te": "monthly",
+   "gu": "monthly"
+  }
+ },
+ {
+  "s": "mr",
+  "humanize": "mr",
+  "esc": "mr",
+  "clean": {
+   "en": "mr",
+   "hi": "mr",
+   "mr": "mr",
+   "te": "mr",
+   "gu": "mr"
+  }
+ },
+ {
+  "s": "none",
+  "humanize": "none",
+  "esc": "none",
+  "clean": {
+   "en": "none",
+   "hi": "none",
+   "mr": "none",
+   "te": "none",
+   "gu": "none"
+  }
+ },
+ {
+  "s": "not-a-date",
+  "humanize": "not-a-date",
+  "esc": "not-a-date",
+  "clean": {
+   "en": "not-a-date",
+   "hi": "not-a-date",
+   "mr": "not-a-date",
+   "te": "not-a-date",
+   "gu": "not-a-date"
+  }
+ },
+ {
+  "s": "pa",
+  "humanize": "pa",
+  "esc": "pa",
+  "clean": {
+   "en": "pa",
+   "hi": "pa",
+   "mr": "pa",
+   "te": "pa",
+   "gu": "pa"
+  }
+ },
+ {
+  "s": "peak",
+  "humanize": "peak",
+  "esc": "peak",
+  "clean": {
+   "en": "peak",
+   "hi": "peak",
+   "mr": "peak",
+   "te": "peak",
+   "gu": "peak"
+  }
+ },
+ {
+  "s": "poor",
+  "humanize": "poor",
+  "esc": "poor",
+  "clean": {
+   "en": "poor",
+   "hi": "poor",
+   "mr": "poor",
+   "te": "poor",
+   "gu": "poor"
+  }
+ },
+ {
+  "s": "present",
+  "humanize": "present",
+  "esc": "present",
+  "clean": {
+   "en": "present",
+   "hi": "present",
+   "mr": "present",
+   "te": "present",
+   "gu": "present"
+  }
+ },
+ {
+  "s": "purn",
+  "humanize": "purn",
+  "esc": "purn",
+  "clean": {
+   "en": "purn",
+   "hi": "purn",
+   "mr": "purn",
+   "te": "purn",
+   "gu": "purn"
+  }
+ },
+ {
+  "s": "rebeccapurple",
+  "humanize": "rebeccapurple",
+  "esc": "rebeccapurple",
+  "clean": {
+   "en": "rebeccapurple",
+   "hi": "rebeccapurple",
+   "mr": "rebeccapurple",
+   "te": "rebeccapurple",
+   "gu": "rebeccapurple"
+  }
+ },
+ {
+  "s": "red}body{display:none}*{color:red",
+  "humanize": "red}body{display:none}*{color:red",
+  "esc": "red}body{display:none}*{color:red",
+  "clean": {
+   "en": "red}body{display:none}*{color:red",
+   "hi": "red}body{display:none}*{color:red",
+   "mr": "red}body{display:none}*{color:red",
+   "te": "red}body{display:none}*{color:red",
+   "gu": "red}body{display:none}*{color:red"
+  }
+ },
+ {
+  "s": "rgb(107, 33, 168)",
+  "humanize": "rgb(107, 33, 168)",
+  "esc": "rgb(107, 33, 168)",
+  "clean": {
+   "en": "rgb(107, 33, 168)",
+   "hi": "rgb(107, 33, 168)",
+   "mr": "rgb(107, 33, 168)",
+   "te": "rgb(107, 33, 168)",
+   "gu": "rgb(107, 33, 168)"
+  }
+ },
+ {
+  "s": "rising",
+  "humanize": "rising",
+  "esc": "rising",
+  "clean": {
+   "en": "rising",
+   "hi": "rising",
+   "mr": "rising",
+   "te": "rising",
+   "gu": "rising"
+  }
+ },
+ {
+  "s": "s",
+  "humanize": "s",
+  "esc": "s",
+  "clean": {
+   "en": "s",
+   "hi": "s",
+   "mr": "s",
+   "te": "s",
+   "gu": "s"
+  }
+ },
+ {
+  "s": "setting",
+  "humanize": "setting",
+  "esc": "setting",
+  "clean": {
+   "en": "setting",
+   "hi": "setting",
+   "mr": "setting",
+   "te": "setting",
+   "gu": "setting"
+  }
+ },
+ {
+  "s": "ta",
+  "humanize": "ta",
+  "esc": "ta",
+  "clean": {
+   "en": "ta",
+   "hi": "ta",
+   "mr": "ta",
+   "te": "ta",
+   "gu": "ta"
+  }
+ },
+ {
+  "s": "te",
+  "humanize": "te",
+  "esc": "te",
+  "clean": {
+   "en": "te",
+   "hi": "te",
+   "mr": "te",
+   "te": "te",
+   "gu": "te"
+  }
+ },
+ {
+  "s": "the native's career; The native is calm; native's luck; native",
+  "humanize": "the native's career; The native is calm; native's luck; native",
+  "esc": "the native&#39;s career; The native is calm; native&#39;s luck; native",
+  "clean": {
+   "en": "your career; You is calm; your luck; you",
+   "hi": "the native's career; The native is calm; native's luck; native",
+   "mr": "the native's career; The native is calm; native's luck; native",
+   "te": "the native's career; The native is calm; native's luck; native",
+   "gu": "the native's career; The native is calm; native's luck; native"
+  }
+ },
+ {
+  "s": "varshaphal",
+  "humanize": "varshaphal",
+  "esc": "varshaphal",
+  "clean": {
+   "en": "varshaphal",
+   "hi": "varshaphal",
+   "mr": "varshaphal",
+   "te": "varshaphal",
+   "gu": "varshaphal"
+  }
+ },
+ {
+  "s": "vistrit_bhavishya",
+  "humanize": "vistrit_bhavishya",
+  "esc": "vistrit_bhavishya",
+  "clean": {
+   "en": "vistrit_bhavishya",
+   "hi": "vistrit_bhavishya",
+   "mr": "vistrit_bhavishya",
+   "te": "vistrit_bhavishya",
+   "gu": "vistrit_bhavishya"
+  }
+ },
+ {
+  "s": "weekly",
+  "humanize": "weekly",
+  "esc": "weekly",
+  "clean": {
+   "en": "weekly",
+   "hi": "weekly",
+   "mr": "weekly",
+   "te": "weekly",
+   "gu": "weekly"
+  }
+ },
+ {
+  "s": "word —",
+  "humanize": "word",
+  "esc": "word",
+  "clean": {
+   "en": "word —",
+   "hi": "word —",
+   "mr": "word —",
+   "te": "word —",
+   "gu": "word —"
+  }
+ },
+ {
+  "s": "x",
+  "humanize": "x",
+  "esc": "x",
+  "clean": {
+   "en": "x",
+   "hi": "x",
+   "mr": "x",
+   "te": "x",
+   "gu": "x"
+  }
+ },
+ {
+  "s": "x – y",
+  "humanize": "x, y",
+  "esc": "x, y",
+  "clean": {
+   "en": "x – y",
+   "hi": "x – y",
+   "mr": "x – y",
+   "te": "x – y",
+   "gu": "x – y"
+  }
+ },
+ {
+  "s": "yogas",
+  "humanize": "yogas",
+  "esc": "yogas",
+  "clean": {
+   "en": "yogas",
+   "hi": "yogas",
+   "mr": "yogas",
+   "te": "yogas",
+   "gu": "yogas"
+  }
+ },
+ {
+  "s": "उल्का",
+  "humanize": "उल्का",
+  "esc": "उल्का",
+  "clean": {
+   "en": "उल्का",
+   "hi": "उल्का",
+   "mr": "उल्का",
+   "te": "उल्का",
+   "gu": "उल्का"
+  }
+ },
+ {
+  "s": "काल सर्प दोष",
+  "humanize": "काल सर्प दोष",
+  "esc": "काल सर्प दोष",
+  "clean": {
+   "en": "काल सर्प दोष",
+   "hi": "काल सर्प दोष",
+   "mr": "काल सर्प दोष",
+   "te": "काल सर्प दोष",
+   "gu": "काल सर्प दोष"
+  }
+ },
+ {
+  "s": "केतु",
+  "humanize": "केतु",
+  "esc": "केतु",
+  "clean": {
+   "en": "केतु",
+   "hi": "केतु",
+   "mr": "केतु",
+   "te": "केतु",
+   "gu": "केतु"
+  }
+ },
+ {
+  "s": "गजकेसरी योग",
+  "humanize": "गजकेसरी योग",
+  "esc": "गजकेसरी योग",
+  "clean": {
+   "en": "गजकेसरी योग",
+   "hi": "गजकेसरी योग",
+   "mr": "गजकेसरी योग",
+   "te": "गजकेसरी योग",
+   "gu": "गजकेसरी योग"
+  }
+ },
+ {
+  "s": "गुरु",
+  "humanize": "गुरु",
+  "esc": "गुरु",
+  "clean": {
+   "en": "गुरु",
+   "hi": "गुरु",
+   "mr": "गुरु",
+   "te": "गुरु",
+   "gu": "गुरु"
+  }
+ },
+ {
+  "s": "चंद्र",
+  "humanize": "चंद्र",
+  "esc": "चंद्र",
+  "clean": {
+   "en": "चंद्र",
+   "hi": "चंद्र",
+   "mr": "चंद्र",
+   "te": "चंद्र",
+   "gu": "चंद्र"
+  }
+ },
+ {
+  "s": "जातक की कुंडली में जातक को लाभ। जातक",
+  "humanize": "जातक की कुंडली में जातक को लाभ। जातक",
+  "esc": "जातक की कुंडली में जातक को लाभ। जातक",
+  "clean": {
+   "en": "जातक की कुंडली में जातक को लाभ। जातक",
+   "hi": "आपकी कुंडली में आपको लाभ। आप",
+   "mr": "तुम्ही की कुंडली में तुम्ही को लाभ। तुम्ही",
+   "te": "जातक की कुंडली में जातक को लाभ। जातक",
+   "gu": "जातक की कुंडली में जातक को लाभ। जातक"
+  }
+ },
+ {
+  "s": "जातकाच्या जीवनात जातकाला यश जातक",
+  "humanize": "जातकाच्या जीवनात जातकाला यश जातक",
+  "esc": "जातकाच्या जीवनात जातकाला यश जातक",
+  "clean": {
+   "en": "जातकाच्या जीवनात जातकाला यश जातक",
+   "hi": "आपाच्या जीवनात आपाला यश आप",
+   "mr": "तुमच्या जीवनात तुम्हाला यश तुम्ही",
+   "te": "जातकाच्या जीवनात जातकाला यश जातक",
+   "gu": "जातकाच्या जीवनात जातकाला यश जातक"
+  }
+ },
+ {
+  "s": "बुध-शनि युति",
+  "humanize": "बुध-शनि युति",
+  "esc": "बुध-शनि युति",
+  "clean": {
+   "en": "बुध-शनि युति",
+   "hi": "बुध-शनि युति",
+   "mr": "बुध-शनि युति",
+   "te": "बुध-शनि युति",
+   "gu": "बुध-शनि युति"
+  }
+ },
+ {
+  "s": "मंगल",
+  "humanize": "मंगल",
+  "esc": "मंगल",
+  "clean": {
+   "en": "मंगल",
+   "hi": "मंगल",
+   "mr": "मंगल",
+   "te": "मंगल",
+   "gu": "मंगल"
+  }
+ },
+ {
+  "s": "मंगल दोष",
+  "humanize": "मंगल दोष",
+  "esc": "मंगल दोष",
+  "clean": {
+   "en": "मंगल दोष",
+   "hi": "मंगल दोष",
+   "mr": "मंगल दोष",
+   "te": "मंगल दोष",
+   "gu": "मंगल दोष"
+  }
+ },
+ {
+  "s": "मंगला",
+  "humanize": "मंगला",
+  "esc": "मंगला",
+  "clean": {
+   "en": "मंगला",
+   "hi": "मंगला",
+   "mr": "मंगला",
+   "te": "मंगला",
+   "gu": "मंगला"
+  }
+ },
+ {
+  "s": "राहु",
+  "humanize": "राहु",
+  "esc": "राहु",
+  "clean": {
+   "en": "राहु",
+   "hi": "राहु",
+   "mr": "राहु",
+   "te": "राहु",
+   "gu": "राहु"
+  }
+ },
+ {
+  "s": "शनि",
+  "humanize": "शनि",
+  "esc": "शनि",
+  "clean": {
+   "en": "शनि",
+   "hi": "शनि",
+   "mr": "शनि",
+   "te": "शनि",
+   "gu": "शनि"
+  }
+ },
+ {
+  "s": "शुक्र",
+  "humanize": "शुक्र",
+  "esc": "शुक्र",
+  "clean": {
+   "en": "शुक्र",
+   "hi": "शुक्र",
+   "mr": "शुक्र",
+   "te": "शुक्र",
+   "gu": "शुक्र"
+  }
+ },
+ {
+  "s": "सिद्धा",
+  "humanize": "सिद्धा",
+  "esc": "सिद्धा",
+  "clean": {
+   "en": "सिद्धा",
+   "hi": "सिद्धा",
+   "mr": "सिद्धा",
+   "te": "सिद्धा",
+   "gu": "सिद्धा"
+  }
+ },
+ {
+  "s": "सूर्य",
+  "humanize": "सूर्य",
+  "esc": "सूर्य",
+  "clean": {
+   "en": "सूर्य",
+   "hi": "सूर्य",
+   "mr": "सूर्य",
+   "te": "सूर्य",
+   "gu": "सूर्य"
+  }
+ },
+ {
+  "s": "सूर्य-शुक्र युति",
+  "humanize": "सूर्य-शुक्र युति",
+  "esc": "सूर्य-शुक्र युति",
+  "clean": {
+   "en": "सूर्य-शुक्र युति",
+   "hi": "सूर्य-शुक्र युति",
+   "mr": "सूर्य-शुक्र युति",
+   "te": "सूर्य-शुक्र युति",
+   "gu": "सूर्य-शुक्र युति"
+  }
+ },
+ {
+  "s": "অশ্বিনী",
+  "humanize": "অশ্বিনী",
+  "esc": "অশ্বিনী",
+  "clean": {
+   "en": "অশ্বিনী",
+   "hi": "অশ্বিনী",
+   "mr": "অশ্বিনী",
+   "te": "অশ্বিনী",
+   "gu": "অশ্বিনী"
+  }
+ },
+ {
+  "s": "কন্যা",
+  "humanize": "কন্যা",
+  "esc": "কন্যা",
+  "clean": {
+   "en": "কন্যা",
+   "hi": "কন্যা",
+   "mr": "কন্যা",
+   "te": "কন্যা",
+   "gu": "কন্যা"
+  }
+ },
+ {
+  "s": "কর্কট",
+  "humanize": "কর্কট",
+  "esc": "কর্কট",
+  "clean": {
+   "en": "কর্কট",
+   "hi": "কর্কট",
+   "mr": "কর্কট",
+   "te": "কর্কট",
+   "gu": "কর্কট"
+  }
+ },
+ {
+  "s": "কুম্ভ",
+  "humanize": "কুম্ভ",
+  "esc": "কুম্ভ",
+  "clean": {
+   "en": "কুম্ভ",
+   "hi": "কুম্ভ",
+   "mr": "কুম্ভ",
+   "te": "কুম্ভ",
+   "gu": "কুম্ভ"
+  }
+ },
+ {
+  "s": "কেতু",
+  "humanize": "কেতু",
+  "esc": "কেতু",
+  "clean": {
+   "en": "কেতু",
+   "hi": "কেতু",
+   "mr": "কেতু",
+   "te": "কেতু",
+   "gu": "কেতু"
+  }
+ },
+ {
+  "s": "গজকেশরী যোগ",
+  "humanize": "গজকেশরী যোগ",
+  "esc": "গজকেশরী যোগ",
+  "clean": {
+   "en": "গজকেশরী যোগ",
+   "hi": "গজকেশরী যোগ",
+   "mr": "গজকেশরী যোগ",
+   "te": "গজকেশরী যোগ",
+   "gu": "গজকেশরী যোগ"
+  }
+ },
+ {
+  "s": "চন্দ্র",
+  "humanize": "চন্দ্র",
+  "esc": "চন্দ্র",
+  "clean": {
+   "en": "চন্দ্র",
+   "hi": "চন্দ্র",
+   "mr": "চন্দ্র",
+   "te": "চন্দ্র",
+   "gu": "চন্দ্র"
+  }
+ },
+ {
+  "s": "তুলা",
+  "humanize": "তুলা",
+  "esc": "তুলা",
+  "clean": {
+   "en": "তুলা",
+   "hi": "তুলা",
+   "mr": "তুলা",
+   "te": "তুলা",
+   "gu": "তুলা"
+  }
+ },
+ {
+  "s": "নমুনা বাক্য।",
+  "humanize": "নমুনা বাক্য।",
+  "esc": "নমুনা বাক্য।",
+  "clean": {
+   "en": "নমুনা বাক্য।",
+   "hi": "নমুনা বাক্য।",
+   "mr": "নমুনা বাক্য।",
+   "te": "নমুনা বাক্য।",
+   "gu": "নমুনা বাক্য।"
+  }
+ },
+ {
+  "s": "বৃশ্চিক",
+  "humanize": "বৃশ্চিক",
+  "esc": "বৃশ্চিক",
+  "clean": {
+   "en": "বৃশ্চিক",
+   "hi": "বৃশ্চিক",
+   "mr": "বৃশ্চিক",
+   "te": "বৃশ্চিক",
+   "gu": "বৃশ্চিক"
+  }
+ },
+ {
+  "s": "বৃষ",
+  "humanize": "বৃষ",
+  "esc": "বৃষ",
+  "clean": {
+   "en": "বৃষ",
+   "hi": "বৃষ",
+   "mr": "বৃষ",
+   "te": "বৃষ",
+   "gu": "বৃষ"
+  }
+ },
+ {
+  "s": "বৃহস্পতি",
+  "humanize": "বৃহস্পতি",
+  "esc": "বৃহস্পতি",
+  "clean": {
+   "en": "বৃহস্পতি",
+   "hi": "বৃহস্পতি",
+   "mr": "বৃহস্পতি",
+   "te": "বৃহস্পতি",
+   "gu": "বৃহস্পতি"
+  }
+ },
+ {
+  "s": "মঘা",
+  "humanize": "মঘা",
+  "esc": "মঘা",
+  "clean": {
+   "en": "মঘা",
+   "hi": "মঘা",
+   "mr": "মঘা",
+   "te": "মঘা",
+   "gu": "মঘা"
+  }
+ },
+ {
+  "s": "মঙ্গল",
+  "humanize": "মঙ্গল",
+  "esc": "মঙ্গল",
+  "clean": {
+   "en": "মঙ্গল",
+   "hi": "মঙ্গল",
+   "mr": "মঙ্গল",
+   "te": "মঙ্গল",
+   "gu": "মঙ্গল"
+  }
+ },
+ {
+  "s": "মিথুন",
+  "humanize": "মিথুন",
+  "esc": "মিথুন",
+  "clean": {
+   "en": "মিথুন",
+   "hi": "মিথুন",
+   "mr": "মিথুন",
+   "te": "মিথুন",
+   "gu": "মিথুন"
+  }
+ },
+ {
+  "s": "মীন",
+  "humanize": "মীন",
+  "esc": "মীন",
+  "clean": {
+   "en": "মীন",
+   "hi": "মীন",
+   "mr": "মীন",
+   "te": "মীন",
+   "gu": "মীন"
+  }
+ },
+ {
+  "s": "মেষ",
+  "humanize": "মেষ",
+  "esc": "মেষ",
+  "clean": {
+   "en": "মেষ",
+   "hi": "মেষ",
+   "mr": "মেষ",
+   "te": "মেষ",
+   "gu": "মেষ"
+  }
+ },
+ {
+  "s": "শনি",
+  "humanize": "শনি",
+  "esc": "শনি",
+  "clean": {
+   "en": "শনি",
+   "hi": "শনি",
+   "mr": "শনি",
+   "te": "শনি",
+   "gu": "শনি"
+  }
+ },
+ {
+  "s": "শুক্র",
+  "humanize": "শুক্র",
+  "esc": "শুক্র",
+  "clean": {
+   "en": "শুক্র",
+   "hi": "শুক্র",
+   "mr": "শুক্র",
+   "te": "শুক্র",
+   "gu": "শুক্র"
+  }
+ },
+ {
+  "s": "সিংহ",
+  "humanize": "সিংহ",
+  "esc": "সিংহ",
+  "clean": {
+   "en": "সিংহ",
+   "hi": "সিংহ",
+   "mr": "সিংহ",
+   "te": "সিংহ",
+   "gu": "সিংহ"
+  }
+ },
+ {
+  "s": "সূর্য",
+  "humanize": "সূর্য",
+  "esc": "সূর্য",
+  "clean": {
+   "en": "সূর্য",
+   "hi": "সূর্য",
+   "mr": "সূর্য",
+   "te": "সূর্য",
+   "gu": "সূর্য"
+  }
+ },
+ {
+  "s": "અશ્વિની",
+  "humanize": "અશ્વિની",
+  "esc": "અશ્વિની",
+  "clean": {
+   "en": "અશ્વિની",
+   "hi": "અશ્વિની",
+   "mr": "અશ્વિની",
+   "te": "અશ્વિની",
+   "gu": "અશ્વિની"
+  }
+ },
+ {
+  "s": "કન્યા",
+  "humanize": "કન્યા",
+  "esc": "કન્યા",
+  "clean": {
+   "en": "કન્યા",
+   "hi": "કન્યા",
+   "mr": "કન્યા",
+   "te": "કન્યા",
+   "gu": "કન્યા"
+  }
+ },
+ {
+  "s": "કર્ક",
+  "humanize": "કર્ક",
+  "esc": "કર્ક",
+  "clean": {
+   "en": "કર્ક",
+   "hi": "કર્ક",
+   "mr": "કર્ક",
+   "te": "કર્ક",
+   "gu": "કર્ક"
+  }
+ },
+ {
+  "s": "કુંભ",
+  "humanize": "કુંભ",
+  "esc": "કુંભ",
+  "clean": {
+   "en": "કુંભ",
+   "hi": "કુંભ",
+   "mr": "કુંભ",
+   "te": "કુંભ",
+   "gu": "કુંભ"
+  }
+ },
+ {
+  "s": "કેતુ",
+  "humanize": "કેતુ",
+  "esc": "કેતુ",
+  "clean": {
+   "en": "કેતુ",
+   "hi": "કેતુ",
+   "mr": "કેતુ",
+   "te": "કેતુ",
+   "gu": "કેતુ"
+  }
+ },
+ {
+  "s": "ગજકેસરી યોગ",
+  "humanize": "ગજકેસરી યોગ",
+  "esc": "ગજકેસરી યોગ",
+  "clean": {
+   "en": "ગજકેસરી યોગ",
+   "hi": "ગજકેસરી યોગ",
+   "mr": "ગજકેસરી યોગ",
+   "te": "ગજકેસરી યોગ",
+   "gu": "ગજકેસરી યોગ"
+  }
+ },
+ {
+  "s": "ગુરુ",
+  "humanize": "ગુરુ",
+  "esc": "ગુરુ",
+  "clean": {
+   "en": "ગુરુ",
+   "hi": "ગુરુ",
+   "mr": "ગુરુ",
+   "te": "ગુરુ",
+   "gu": "ગુરુ"
+  }
+ },
+ {
+  "s": "ચંદ્ર",
+  "humanize": "ચંદ્ર",
+  "esc": "ચંદ્ર",
+  "clean": {
+   "en": "ચંદ્ર",
+   "hi": "ચંદ્ર",
+   "mr": "ચંદ્ર",
+   "te": "ચંદ્ર",
+   "gu": "ચંદ્ર"
+  }
+ },
+ {
+  "s": "તુલા",
+  "humanize": "તુલા",
+  "esc": "તુલા",
+  "clean": {
+   "en": "તુલા",
+   "hi": "તુલા",
+   "mr": "તુલા",
+   "te": "તુલા",
+   "gu": "તુલા"
+  }
+ },
+ {
+  "s": "નમૂનાનું વાક્ય.",
+  "humanize": "નમૂનાનું વાક્ય.",
+  "esc": "નમૂનાનું વાક્ય.",
+  "clean": {
+   "en": "નમૂનાનું વાક્ય.",
+   "hi": "નમૂનાનું વાક્ય.",
+   "mr": "નમૂનાનું વાક્ય.",
+   "te": "નમૂનાનું વાક્ય.",
+   "gu": "નમૂનાનું વાક્ય."
+  }
+ },
+ {
+  "s": "મંગળ",
+  "humanize": "મંગળ",
+  "esc": "મંગળ",
+  "clean": {
+   "en": "મંગળ",
+   "hi": "મંગળ",
+   "mr": "મંગળ",
+   "te": "મંગળ",
+   "gu": "મંગળ"
+  }
+ },
+ {
+  "s": "મઘા",
+  "humanize": "મઘા",
+  "esc": "મઘા",
+  "clean": {
+   "en": "મઘા",
+   "hi": "મઘા",
+   "mr": "મઘા",
+   "te": "મઘા",
+   "gu": "મઘા"
+  }
+ },
+ {
+  "s": "મિથુન",
+  "humanize": "મિથુન",
+  "esc": "મિથુન",
+  "clean": {
+   "en": "મિથુન",
+   "hi": "મિથુન",
+   "mr": "મિથુન",
+   "te": "મિથુન",
+   "gu": "મિથુન"
+  }
+ },
+ {
+  "s": "મીન",
+  "humanize": "મીન",
+  "esc": "મીન",
+  "clean": {
+   "en": "મીન",
+   "hi": "મીન",
+   "mr": "મીન",
+   "te": "મીન",
+   "gu": "મીન"
+  }
+ },
+ {
+  "s": "મેષ",
+  "humanize": "મેષ",
+  "esc": "મેષ",
+  "clean": {
+   "en": "મેષ",
+   "hi": "મેષ",
+   "mr": "મેષ",
+   "te": "મેષ",
+   "gu": "મેષ"
+  }
+ },
+ {
+  "s": "વૃશ્ચિક",
+  "humanize": "વૃશ્ચિક",
+  "esc": "વૃશ્ચિક",
+  "clean": {
+   "en": "વૃશ્ચિક",
+   "hi": "વૃશ્ચિક",
+   "mr": "વૃશ્ચિક",
+   "te": "વૃશ્ચિક",
+   "gu": "વૃશ્ચિક"
+  }
+ },
+ {
+  "s": "વૃષભ",
+  "humanize": "વૃષભ",
+  "esc": "વૃષભ",
+  "clean": {
+   "en": "વૃષભ",
+   "hi": "વૃષભ",
+   "mr": "વૃષભ",
+   "te": "વૃષભ",
+   "gu": "વૃષભ"
+  }
+ },
+ {
+  "s": "શનિ",
+  "humanize": "શનિ",
+  "esc": "શનિ",
+  "clean": {
+   "en": "શનિ",
+   "hi": "શનિ",
+   "mr": "શનિ",
+   "te": "શનિ",
+   "gu": "શનિ"
+  }
+ },
+ {
+  "s": "શુક્ર",
+  "humanize": "શુક્ર",
+  "esc": "શુક્ર",
+  "clean": {
+   "en": "શુક્ર",
+   "hi": "શુક્ર",
+   "mr": "શુક્ર",
+   "te": "શુક્ર",
+   "gu": "શુક્ર"
+  }
+ },
+ {
+  "s": "સિંહ",
+  "humanize": "સિંહ",
+  "esc": "સિંહ",
+  "clean": {
+   "en": "સિંહ",
+   "hi": "સિંહ",
+   "mr": "સિંહ",
+   "te": "સિંહ",
+   "gu": "સિંહ"
+  }
+ },
+ {
+  "s": "સૂર્ય",
+  "humanize": "સૂર્ય",
+  "esc": "સૂર્ય",
+  "clean": {
+   "en": "સૂર્ય",
+   "hi": "સૂર્ય",
+   "mr": "સૂર્ય",
+   "te": "સૂર્ય",
+   "gu": "સૂર્ય"
+  }
+ },
+ {
+  "s": "அசுவினி",
+  "humanize": "அசுவினி",
+  "esc": "அசுவினி",
+  "clean": {
+   "en": "அசுவினி",
+   "hi": "அசுவினி",
+   "mr": "அசுவினி",
+   "te": "அசுவினி",
+   "gu": "அசுவினி"
+  }
+ },
+ {
+  "s": "கஜகேசரி யோகம்",
+  "humanize": "கஜகேசரி யோகம்",
+  "esc": "கஜகேசரி யோகம்",
+  "clean": {
+   "en": "கஜகேசரி யோகம்",
+   "hi": "கஜகேசரி யோகம்",
+   "mr": "கஜகேசரி யோகம்",
+   "te": "கஜகேசரி யோகம்",
+   "gu": "கஜகேசரி யோகம்"
+  }
+ },
+ {
+  "s": "கடகம்",
+  "humanize": "கடகம்",
+  "esc": "கடகம்",
+  "clean": {
+   "en": "கடகம்",
+   "hi": "கடகம்",
+   "mr": "கடகம்",
+   "te": "கடகம்",
+   "gu": "கடகம்"
+  }
+ },
+ {
+  "s": "கன்னி",
+  "humanize": "கன்னி",
+  "esc": "கன்னி",
+  "clean": {
+   "en": "கன்னி",
+   "hi": "கன்னி",
+   "mr": "கன்னி",
+   "te": "கன்னி",
+   "gu": "கன்னி"
+  }
+ },
+ {
+  "s": "கும்பம்",
+  "humanize": "கும்பம்",
+  "esc": "கும்பம்",
+  "clean": {
+   "en": "கும்பம்",
+   "hi": "கும்பம்",
+   "mr": "கும்பம்",
+   "te": "கும்பம்",
+   "gu": "கும்பம்"
+  }
+ },
+ {
+  "s": "குரு",
+  "humanize": "குரு",
+  "esc": "குரு",
+  "clean": {
+   "en": "குரு",
+   "hi": "குரு",
+   "mr": "குரு",
+   "te": "குரு",
+   "gu": "குரு"
+  }
+ },
+ {
+  "s": "கேது",
+  "humanize": "கேது",
+  "esc": "கேது",
+  "clean": {
+   "en": "கேது",
+   "hi": "கேது",
+   "mr": "கேது",
+   "te": "கேது",
+   "gu": "கேது"
+  }
+ },
+ {
+  "s": "சந்திரன்",
+  "humanize": "சந்திரன்",
+  "esc": "சந்திரன்",
+  "clean": {
+   "en": "சந்திரன்",
+   "hi": "சந்திரன்",
+   "mr": "சந்திரன்",
+   "te": "சந்திரன்",
+   "gu": "சந்திரன்"
+  }
+ },
+ {
+  "s": "சனி",
+  "humanize": "சனி",
+  "esc": "சனி",
+  "clean": {
+   "en": "சனி",
+   "hi": "சனி",
+   "mr": "சனி",
+   "te": "சனி",
+   "gu": "சனி"
+  }
+ },
+ {
+  "s": "சிம்மம்",
+  "humanize": "சிம்மம்",
+  "esc": "சிம்மம்",
+  "clean": {
+   "en": "சிம்மம்",
+   "hi": "சிம்மம்",
+   "mr": "சிம்மம்",
+   "te": "சிம்மம்",
+   "gu": "சிம்மம்"
+  }
+ },
+ {
+  "s": "சுக்கிரன்",
+  "humanize": "சுக்கிரன்",
+  "esc": "சுக்கிரன்",
+  "clean": {
+   "en": "சுக்கிரன்",
+   "hi": "சுக்கிரன்",
+   "mr": "சுக்கிரன்",
+   "te": "சுக்கிரன்",
+   "gu": "சுக்கிரன்"
+  }
+ },
+ {
+  "s": "சூரியன்",
+  "humanize": "சூரியன்",
+  "esc": "சூரியன்",
+  "clean": {
+   "en": "சூரியன்",
+   "hi": "சூரியன்",
+   "mr": "சூரியன்",
+   "te": "சூரியன்",
+   "gu": "சூரியன்"
+  }
+ },
+ {
+  "s": "செவ்வாய்",
+  "humanize": "செவ்வாய்",
+  "esc": "செவ்வாய்",
+  "clean": {
+   "en": "செவ்வாய்",
+   "hi": "செவ்வாய்",
+   "mr": "செவ்வாய்",
+   "te": "செவ்வாய்",
+   "gu": "செவ்வாய்"
+  }
+ },
+ {
+  "s": "துலாம்",
+  "humanize": "துலாம்",
+  "esc": "துலாம்",
+  "clean": {
+   "en": "துலாம்",
+   "hi": "துலாம்",
+   "mr": "துலாம்",
+   "te": "துலாம்",
+   "gu": "துலாம்"
+  }
+ },
+ {
+  "s": "மகம்",
+  "humanize": "மகம்",
+  "esc": "மகம்",
+  "clean": {
+   "en": "மகம்",
+   "hi": "மகம்",
+   "mr": "மகம்",
+   "te": "மகம்",
+   "gu": "மகம்"
+  }
+ },
+ {
+  "s": "மாதிரி வாக்கியம்.",
+  "humanize": "மாதிரி வாக்கியம்.",
+  "esc": "மாதிரி வாக்கியம்.",
+  "clean": {
+   "en": "மாதிரி வாக்கியம்.",
+   "hi": "மாதிரி வாக்கியம்.",
+   "mr": "மாதிரி வாக்கியம்.",
+   "te": "மாதிரி வாக்கியம்.",
+   "gu": "மாதிரி வாக்கியம்."
+  }
+ },
+ {
+  "s": "மிதுனம்",
+  "humanize": "மிதுனம்",
+  "esc": "மிதுனம்",
+  "clean": {
+   "en": "மிதுனம்",
+   "hi": "மிதுனம்",
+   "mr": "மிதுனம்",
+   "te": "மிதுனம்",
+   "gu": "மிதுனம்"
+  }
+ },
+ {
+  "s": "மீனம்",
+  "humanize": "மீனம்",
+  "esc": "மீனம்",
+  "clean": {
+   "en": "மீனம்",
+   "hi": "மீனம்",
+   "mr": "மீனம்",
+   "te": "மீனம்",
+   "gu": "மீனம்"
+  }
+ },
+ {
+  "s": "மேஷம்",
+  "humanize": "மேஷம்",
+  "esc": "மேஷம்",
+  "clean": {
+   "en": "மேஷம்",
+   "hi": "மேஷம்",
+   "mr": "மேஷம்",
+   "te": "மேஷம்",
+   "gu": "மேஷம்"
+  }
+ },
+ {
+  "s": "ரிஷபம்",
+  "humanize": "ரிஷபம்",
+  "esc": "ரிஷபம்",
+  "clean": {
+   "en": "ரிஷபம்",
+   "hi": "ரிஷபம்",
+   "mr": "ரிஷபம்",
+   "te": "ரிஷபம்",
+   "gu": "ரிஷபம்"
+  }
+ },
+ {
+  "s": "விருச்சிகம்",
+  "humanize": "விருச்சிகம்",
+  "esc": "விருச்சிகம்",
+  "clean": {
+   "en": "விருச்சிகம்",
+   "hi": "விருச்சிகம்",
+   "mr": "விருச்சிகம்",
+   "te": "விருச்சிகம்",
+   "gu": "விருச்சிகம்"
+  }
+ },
+ {
+  "s": "అశ్విని",
+  "humanize": "అశ్విని",
+  "esc": "అశ్విని",
+  "clean": {
+   "en": "అశ్విని",
+   "hi": "అశ్విని",
+   "mr": "అశ్విని",
+   "te": "అశ్విని",
+   "gu": "అశ్విని"
+  }
+ },
+ {
+  "s": "కన్య",
+  "humanize": "కన్య",
+  "esc": "కన్య",
+  "clean": {
+   "en": "కన్య",
+   "hi": "కన్య",
+   "mr": "కన్య",
+   "te": "కన్య",
+   "gu": "కన్య"
+  }
+ },
+ {
+  "s": "కర్కాటకం",
+  "humanize": "కర్కాటకం",
+  "esc": "కర్కాటకం",
+  "clean": {
+   "en": "కర్కాటకం",
+   "hi": "కర్కాటకం",
+   "mr": "కర్కాటకం",
+   "te": "కర్కాటకం",
+   "gu": "కర్కాటకం"
+  }
+ },
+ {
+  "s": "కుంభం",
+  "humanize": "కుంభం",
+  "esc": "కుంభం",
+  "clean": {
+   "en": "కుంభం",
+   "hi": "కుంభం",
+   "mr": "కుంభం",
+   "te": "కుంభం",
+   "gu": "కుంభం"
+  }
+ },
+ {
+  "s": "కుజుడు",
+  "humanize": "కుజుడు",
+  "esc": "కుజుడు",
+  "clean": {
+   "en": "కుజుడు",
+   "hi": "కుజుడు",
+   "mr": "కుజుడు",
+   "te": "కుజుడు",
+   "gu": "కుజుడు"
+  }
+ },
+ {
+  "s": "కేతువు",
+  "humanize": "కేతువు",
+  "esc": "కేతువు",
+  "clean": {
+   "en": "కేతువు",
+   "hi": "కేతువు",
+   "mr": "కేతువు",
+   "te": "కేతువు",
+   "gu": "కేతువు"
+  }
+ },
+ {
+  "s": "గజకేసరి యోగం",
+  "humanize": "గజకేసరి యోగం",
+  "esc": "గజకేసరి యోగం",
+  "clean": {
+   "en": "గజకేసరి యోగం",
+   "hi": "గజకేసరి యోగం",
+   "mr": "గజకేసరి యోగం",
+   "te": "గజకేసరి యోగం",
+   "gu": "గజకేసరి యోగం"
+  }
+ },
+ {
+  "s": "గురువు",
+  "humanize": "గురువు",
+  "esc": "గురువు",
+  "clean": {
+   "en": "గురువు",
+   "hi": "గురువు",
+   "mr": "గురువు",
+   "te": "గురువు",
+   "gu": "గురువు"
+  }
+ },
+ {
+  "s": "చంద్రుడు",
+  "humanize": "చంద్రుడు",
+  "esc": "చంద్రుడు",
+  "clean": {
+   "en": "చంద్రుడు",
+   "hi": "చంద్రుడు",
+   "mr": "చంద్రుడు",
+   "te": "చంద్రుడు",
+   "gu": "చంద్రుడు"
+  }
+ },
+ {
+  "s": "తుల",
+  "humanize": "తుల",
+  "esc": "తుల",
+  "clean": {
+   "en": "తుల",
+   "hi": "తుల",
+   "mr": "తుల",
+   "te": "తుల",
+   "gu": "తుల"
+  }
+ },
+ {
+  "s": "నమూనా వాక్యం.",
+  "humanize": "నమూనా వాక్యం.",
+  "esc": "నమూనా వాక్యం.",
+  "clean": {
+   "en": "నమూనా వాక్యం.",
+   "hi": "నమూనా వాక్యం.",
+   "mr": "నమూనా వాక్యం.",
+   "te": "నమూనా వాక్యం.",
+   "gu": "నమూనా వాక్యం."
+  }
+ },
+ {
+  "s": "మఖ",
+  "humanize": "మఖ",
+  "esc": "మఖ",
+  "clean": {
+   "en": "మఖ",
+   "hi": "మఖ",
+   "mr": "మఖ",
+   "te": "మఖ",
+   "gu": "మఖ"
+  }
+ },
+ {
+  "s": "మిథునం",
+  "humanize": "మిథునం",
+  "esc": "మిథునం",
+  "clean": {
+   "en": "మిథునం",
+   "hi": "మిథునం",
+   "mr": "మిథునం",
+   "te": "మిథునం",
+   "gu": "మిథునం"
+  }
+ },
+ {
+  "s": "మీనం",
+  "humanize": "మీనం",
+  "esc": "మీనం",
+  "clean": {
+   "en": "మీనం",
+   "hi": "మీనం",
+   "mr": "మీనం",
+   "te": "మీనం",
+   "gu": "మీనం"
+  }
+ },
+ {
+  "s": "మేషం",
+  "humanize": "మేషం",
+  "esc": "మేషం",
+  "clean": {
+   "en": "మేషం",
+   "hi": "మేషం",
+   "mr": "మేషం",
+   "te": "మేషం",
+   "gu": "మేషం"
+  }
+ },
+ {
+  "s": "వృశ్చికం",
+  "humanize": "వృశ్చికం",
+  "esc": "వృశ్చికం",
+  "clean": {
+   "en": "వృశ్చికం",
+   "hi": "వృశ్చికం",
+   "mr": "వృశ్చికం",
+   "te": "వృశ్చికం",
+   "gu": "వృశ్చికం"
+  }
+ },
+ {
+  "s": "వృషభం",
+  "humanize": "వృషభం",
+  "esc": "వృషభం",
+  "clean": {
+   "en": "వృషభం",
+   "hi": "వృషభం",
+   "mr": "వృషభం",
+   "te": "వృషభం",
+   "gu": "వృషభం"
+  }
+ },
+ {
+  "s": "శని",
+  "humanize": "శని",
+  "esc": "శని",
+  "clean": {
+   "en": "శని",
+   "hi": "శని",
+   "mr": "శని",
+   "te": "శని",
+   "gu": "శని"
+  }
+ },
+ {
+  "s": "శుక్రుడు",
+  "humanize": "శుక్రుడు",
+  "esc": "శుక్రుడు",
+  "clean": {
+   "en": "శుక్రుడు",
+   "hi": "శుక్రుడు",
+   "mr": "శుక్రుడు",
+   "te": "శుక్రుడు",
+   "gu": "శుక్రుడు"
+  }
+ },
+ {
+  "s": "సింహం",
+  "humanize": "సింహం",
+  "esc": "సింహం",
+  "clean": {
+   "en": "సింహం",
+   "hi": "సింహం",
+   "mr": "సింహం",
+   "te": "సింహం",
+   "gu": "సింహం"
+  }
+ },
+ {
+  "s": "సూర్యుడు",
+  "humanize": "సూర్యుడు",
+  "esc": "సూర్యుడు",
+  "clean": {
+   "en": "సూర్యుడు",
+   "hi": "సూర్యుడు",
+   "mr": "సూర్యుడు",
+   "te": "సూర్యుడు",
+   "gu": "సూర్యుడు"
+  }
+ },
+ {
+  "s": "ಅಶ್ವಿನಿ",
+  "humanize": "ಅಶ್ವಿನಿ",
+  "esc": "ಅಶ್ವಿನಿ",
+  "clean": {
+   "en": "ಅಶ್ವಿನಿ",
+   "hi": "ಅಶ್ವಿನಿ",
+   "mr": "ಅಶ್ವಿನಿ",
+   "te": "ಅಶ್ವಿನಿ",
+   "gu": "ಅಶ್ವಿನಿ"
+  }
+ },
+ {
+  "s": "ಕನ್ಯಾ",
+  "humanize": "ಕನ್ಯಾ",
+  "esc": "ಕನ್ಯಾ",
+  "clean": {
+   "en": "ಕನ್ಯಾ",
+   "hi": "ಕನ್ಯಾ",
+   "mr": "ಕನ್ಯಾ",
+   "te": "ಕನ್ಯಾ",
+   "gu": "ಕನ್ಯಾ"
+  }
+ },
+ {
+  "s": "ಕರ್ಕಾಟಕ",
+  "humanize": "ಕರ್ಕಾಟಕ",
+  "esc": "ಕರ್ಕಾಟಕ",
+  "clean": {
+   "en": "ಕರ್ಕಾಟಕ",
+   "hi": "ಕರ್ಕಾಟಕ",
+   "mr": "ಕರ್ಕಾಟಕ",
+   "te": "ಕರ್ಕಾಟಕ",
+   "gu": "ಕರ್ಕಾಟಕ"
+  }
+ },
+ {
+  "s": "ಕುಂಭ",
+  "humanize": "ಕುಂಭ",
+  "esc": "ಕುಂಭ",
+  "clean": {
+   "en": "ಕುಂಭ",
+   "hi": "ಕುಂಭ",
+   "mr": "ಕುಂಭ",
+   "te": "ಕುಂಭ",
+   "gu": "ಕುಂಭ"
+  }
+ },
+ {
+  "s": "ಕೇತು",
+  "humanize": "ಕೇತು",
+  "esc": "ಕೇತು",
+  "clean": {
+   "en": "ಕೇತು",
+   "hi": "ಕೇತು",
+   "mr": "ಕೇತು",
+   "te": "ಕೇತು",
+   "gu": "ಕೇತು"
+  }
+ },
+ {
+  "s": "ಗಜಕೇಸರಿ ಯೋಗ",
+  "humanize": "ಗಜಕೇಸರಿ ಯೋಗ",
+  "esc": "ಗಜಕೇಸರಿ ಯೋಗ",
+  "clean": {
+   "en": "ಗಜಕೇಸರಿ ಯೋಗ",
+   "hi": "ಗಜಕೇಸರಿ ಯೋಗ",
+   "mr": "ಗಜಕೇಸರಿ ಯೋಗ",
+   "te": "ಗಜಕೇಸರಿ ಯೋಗ",
+   "gu": "ಗಜಕೇಸರಿ ಯೋಗ"
+  }
+ },
+ {
+  "s": "ಗುರು",
+  "humanize": "ಗುರು",
+  "esc": "ಗುರು",
+  "clean": {
+   "en": "ಗುರು",
+   "hi": "ಗುರು",
+   "mr": "ಗುರು",
+   "te": "ಗುರು",
+   "gu": "ಗುರು"
+  }
+ },
+ {
+  "s": "ಚಂದ್ರ",
+  "humanize": "ಚಂದ್ರ",
+  "esc": "ಚಂದ್ರ",
+  "clean": {
+   "en": "ಚಂದ್ರ",
+   "hi": "ಚಂದ್ರ",
+   "mr": "ಚಂದ್ರ",
+   "te": "ಚಂದ್ರ",
+   "gu": "ಚಂದ್ರ"
+  }
+ },
+ {
+  "s": "ತುಲಾ",
+  "humanize": "ತುಲಾ",
+  "esc": "ತುಲಾ",
+  "clean": {
+   "en": "ತುಲಾ",
+   "hi": "ತುಲಾ",
+   "mr": "ತುಲಾ",
+   "te": "ತುಲಾ",
+   "gu": "ತುಲಾ"
+  }
+ },
+ {
+  "s": "ಮಂಗಳ",
+  "humanize": "ಮಂಗಳ",
+  "esc": "ಮಂಗಳ",
+  "clean": {
+   "en": "ಮಂಗಳ",
+   "hi": "ಮಂಗಳ",
+   "mr": "ಮಂಗಳ",
+   "te": "ಮಂಗಳ",
+   "gu": "ಮಂಗಳ"
+  }
+ },
+ {
+  "s": "ಮಖ",
+  "humanize": "ಮಖ",
+  "esc": "ಮಖ",
+  "clean": {
+   "en": "ಮಖ",
+   "hi": "ಮಖ",
+   "mr": "ಮಖ",
+   "te": "ಮಖ",
+   "gu": "ಮಖ"
+  }
+ },
+ {
+  "s": "ಮಾದರಿ ವಾಕ್ಯ.",
+  "humanize": "ಮಾದರಿ ವಾಕ್ಯ.",
+  "esc": "ಮಾದರಿ ವಾಕ್ಯ.",
+  "clean": {
+   "en": "ಮಾದರಿ ವಾಕ್ಯ.",
+   "hi": "ಮಾದರಿ ವಾಕ್ಯ.",
+   "mr": "ಮಾದರಿ ವಾಕ್ಯ.",
+   "te": "ಮಾದರಿ ವಾಕ್ಯ.",
+   "gu": "ಮಾದರಿ ವಾಕ್ಯ."
+  }
+ },
+ {
+  "s": "ಮಿಥುನ",
+  "humanize": "ಮಿಥುನ",
+  "esc": "ಮಿಥುನ",
+  "clean": {
+   "en": "ಮಿಥುನ",
+   "hi": "ಮಿಥುನ",
+   "mr": "ಮಿಥುನ",
+   "te": "ಮಿಥುನ",
+   "gu": "ಮಿಥುನ"
+  }
+ },
+ {
+  "s": "ಮೀನ",
+  "humanize": "ಮೀನ",
+  "esc": "ಮೀನ",
+  "clean": {
+   "en": "ಮೀನ",
+   "hi": "ಮೀನ",
+   "mr": "ಮೀನ",
+   "te": "ಮೀನ",
+   "gu": "ಮೀನ"
+  }
+ },
+ {
+  "s": "ಮೇಷ",
+  "humanize": "ಮೇಷ",
+  "esc": "ಮೇಷ",
+  "clean": {
+   "en": "ಮೇಷ",
+   "hi": "ಮೇಷ",
+   "mr": "ಮೇಷ",
+   "te": "ಮೇಷ",
+   "gu": "ಮೇಷ"
+  }
+ },
+ {
+  "s": "ವೃಶ್ಚಿಕ",
+  "humanize": "ವೃಶ್ಚಿಕ",
+  "esc": "ವೃಶ್ಚಿಕ",
+  "clean": {
+   "en": "ವೃಶ್ಚಿಕ",
+   "hi": "ವೃಶ್ಚಿಕ",
+   "mr": "ವೃಶ್ಚಿಕ",
+   "te": "ವೃಶ್ಚಿಕ",
+   "gu": "ವೃಶ್ಚಿಕ"
+  }
+ },
+ {
+  "s": "ವೃಷಭ",
+  "humanize": "ವೃಷಭ",
+  "esc": "ವೃಷಭ",
+  "clean": {
+   "en": "ವೃಷಭ",
+   "hi": "ವೃಷಭ",
+   "mr": "ವೃಷಭ",
+   "te": "ವೃಷಭ",
+   "gu": "ವೃಷಭ"
+  }
+ },
+ {
+  "s": "ಶನಿ",
+  "humanize": "ಶನಿ",
+  "esc": "ಶನಿ",
+  "clean": {
+   "en": "ಶನಿ",
+   "hi": "ಶನಿ",
+   "mr": "ಶನಿ",
+   "te": "ಶನಿ",
+   "gu": "ಶನಿ"
+  }
+ },
+ {
+  "s": "ಶುಕ್ರ",
+  "humanize": "ಶುಕ್ರ",
+  "esc": "ಶುಕ್ರ",
+  "clean": {
+   "en": "ಶುಕ್ರ",
+   "hi": "ಶುಕ್ರ",
+   "mr": "ಶುಕ್ರ",
+   "te": "ಶುಕ್ರ",
+   "gu": "ಶುಕ್ರ"
+  }
+ },
+ {
+  "s": "ಸಿಂಹ",
+  "humanize": "ಸಿಂಹ",
+  "esc": "ಸಿಂಹ",
+  "clean": {
+   "en": "ಸಿಂಹ",
+   "hi": "ಸಿಂಹ",
+   "mr": "ಸಿಂಹ",
+   "te": "ಸಿಂಹ",
+   "gu": "ಸಿಂಹ"
+  }
+ },
+ {
+  "s": "ಸೂರ್ಯ",
+  "humanize": "ಸೂರ್ಯ",
+  "esc": "ಸೂರ್ಯ",
+  "clean": {
+   "en": "ಸೂರ್ಯ",
+   "hi": "ಸೂರ್ಯ",
+   "mr": "ಸೂರ್ಯ",
+   "te": "ಸೂರ್ಯ",
+   "gu": "ಸೂರ್ಯ"
+  }
+ },
+ {
+  "s": "അശ്വതി",
+  "humanize": "അശ്വതി",
+  "esc": "അശ്വതി",
+  "clean": {
+   "en": "അശ്വതി",
+   "hi": "അശ്വതി",
+   "mr": "അശ്വതി",
+   "te": "അശ്വതി",
+   "gu": "അശ്വതി"
+  }
+ },
+ {
+  "s": "ഇടവം",
+  "humanize": "ഇടവം",
+  "esc": "ഇടവം",
+  "clean": {
+   "en": "ഇടവം",
+   "hi": "ഇടവം",
+   "mr": "ഇടവം",
+   "te": "ഇടവം",
+   "gu": "ഇടവം"
+  }
+ },
+ {
+  "s": "കന്നി",
+  "humanize": "കന്നി",
+  "esc": "കന്നി",
+  "clean": {
+   "en": "കന്നി",
+   "hi": "കന്നി",
+   "mr": "കന്നി",
+   "te": "കന്നി",
+   "gu": "കന്നി"
+  }
+ },
+ {
+  "s": "കുംഭം",
+  "humanize": "കുംഭം",
+  "esc": "കുംഭം",
+  "clean": {
+   "en": "കുംഭം",
+   "hi": "കുംഭം",
+   "mr": "കുംഭം",
+   "te": "കുംഭം",
+   "gu": "കുംഭം"
+  }
+ },
+ {
+  "s": "കേതു",
+  "humanize": "കേതു",
+  "esc": "കേതു",
+  "clean": {
+   "en": "കേതു",
+   "hi": "കേതു",
+   "mr": "കേതു",
+   "te": "കേതു",
+   "gu": "കേതു"
+  }
+ },
+ {
+  "s": "കർക്കടകം",
+  "humanize": "കർക്കടകം",
+  "esc": "കർക്കടകം",
+  "clean": {
+   "en": "കർക്കടകം",
+   "hi": "കർക്കടകം",
+   "mr": "കർക്കടകം",
+   "te": "കർക്കടകം",
+   "gu": "കർക്കടകം"
+  }
+ },
+ {
+  "s": "ഗജകേസരി യോഗം",
+  "humanize": "ഗജകേസരി യോഗം",
+  "esc": "ഗജകേസരി യോഗം",
+  "clean": {
+   "en": "ഗജകേസരി യോഗം",
+   "hi": "ഗജകേസരി യോഗം",
+   "mr": "ഗജകേസരി യോഗം",
+   "te": "ഗജകേസരി യോഗം",
+   "gu": "ഗജകേസരി യോഗം"
+  }
+ },
+ {
+  "s": "ചന്ദ്രൻ",
+  "humanize": "ചന്ദ്രൻ",
+  "esc": "ചന്ദ്രൻ",
+  "clean": {
+   "en": "ചന്ദ്രൻ",
+   "hi": "ചന്ദ്രൻ",
+   "mr": "ചന്ദ്രൻ",
+   "te": "ചന്ദ്രൻ",
+   "gu": "ചന്ദ്രൻ"
+  }
+ },
+ {
+  "s": "ചിങ്ങം",
+  "humanize": "ചിങ്ങം",
+  "esc": "ചിങ്ങം",
+  "clean": {
+   "en": "ചിങ്ങം",
+   "hi": "ചിങ്ങം",
+   "mr": "ചിങ്ങം",
+   "te": "ചിങ്ങം",
+   "gu": "ചിങ്ങം"
+  }
+ },
+ {
+  "s": "ചൊവ്വ",
+  "humanize": "ചൊവ്വ",
+  "esc": "ചൊവ്വ",
+  "clean": {
+   "en": "ചൊവ്വ",
+   "hi": "ചൊവ്വ",
+   "mr": "ചൊവ്വ",
+   "te": "ചൊവ്വ",
+   "gu": "ചൊവ്വ"
+  }
+ },
+ {
+  "s": "തുലാം",
+  "humanize": "തുലാം",
+  "esc": "തുലാം",
+  "clean": {
+   "en": "തുലാം",
+   "hi": "തുലാം",
+   "mr": "തുലാം",
+   "te": "തുലാം",
+   "gu": "തുലാം"
+  }
+ },
+ {
+  "s": "മകം",
+  "humanize": "മകം",
+  "esc": "മകം",
+  "clean": {
+   "en": "മകം",
+   "hi": "മകം",
+   "mr": "മകം",
+   "te": "മകം",
+   "gu": "മകം"
+  }
+ },
+ {
+  "s": "മാതൃകാ വാക്യം.",
+  "humanize": "മാതൃകാ വാക്യം.",
+  "esc": "മാതൃകാ വാക്യം.",
+  "clean": {
+   "en": "മാതൃകാ വാക്യം.",
+   "hi": "മാതൃകാ വാക്യം.",
+   "mr": "മാതൃകാ വാക്യം.",
+   "te": "മാതൃകാ വാക്യം.",
+   "gu": "മാതൃകാ വാക്യം."
+  }
+ },
+ {
+  "s": "മിഥുനം",
+  "humanize": "മിഥുനം",
+  "esc": "മിഥുനം",
+  "clean": {
+   "en": "മിഥുനം",
+   "hi": "മിഥുനം",
+   "mr": "മിഥുനം",
+   "te": "മിഥുനം",
+   "gu": "മിഥുനം"
+  }
+ },
+ {
+  "s": "മീനം",
+  "humanize": "മീനം",
+  "esc": "മീനം",
+  "clean": {
+   "en": "മീനം",
+   "hi": "മീനം",
+   "mr": "മീനം",
+   "te": "മീനം",
+   "gu": "മീനം"
+  }
+ },
+ {
+  "s": "മേടം",
+  "humanize": "മേടം",
+  "esc": "മേടം",
+  "clean": {
+   "en": "മേടം",
+   "hi": "മേടം",
+   "mr": "മേടം",
+   "te": "മേടം",
+   "gu": "മേടം"
+  }
+ },
+ {
+  "s": "വൃശ്ചികം",
+  "humanize": "വൃശ്ചികം",
+  "esc": "വൃശ്ചികം",
+  "clean": {
+   "en": "വൃശ്ചികം",
+   "hi": "വൃശ്ചികം",
+   "mr": "വൃശ്ചികം",
+   "te": "വൃശ്ചികം",
+   "gu": "വൃശ്ചികം"
+  }
+ },
+ {
+  "s": "വ്യാഴം",
+  "humanize": "വ്യാഴം",
+  "esc": "വ്യാഴം",
+  "clean": {
+   "en": "വ്യാഴം",
+   "hi": "വ്യാഴം",
+   "mr": "വ്യാഴം",
+   "te": "വ്യാഴം",
+   "gu": "വ്യാഴം"
+  }
+ },
+ {
+  "s": "ശനി",
+  "humanize": "ശനി",
+  "esc": "ശനി",
+  "clean": {
+   "en": "ശനി",
+   "hi": "ശനി",
+   "mr": "ശനി",
+   "te": "ശനി",
+   "gu": "ശനി"
+  }
+ },
+ {
+  "s": "ശുക്രൻ",
+  "humanize": "ശുക്രൻ",
+  "esc": "ശുക്രൻ",
+  "clean": {
+   "en": "ശുക്രൻ",
+   "hi": "ശുക്രൻ",
+   "mr": "ശുക്രൻ",
+   "te": "ശുക്രൻ",
+   "gu": "ശുക്രൻ"
+  }
+ },
+ {
+  "s": "സൂര്യൻ",
+  "humanize": "സൂര്യൻ",
+  "esc": "സൂര്യൻ",
+  "clean": {
+   "en": "സൂര്യൻ",
+   "hi": "സൂര്യൻ",
+   "mr": "സൂര്യൻ",
+   "te": "സൂര്യൻ",
+   "gu": "സൂര്യൻ"
+  }
+ },
+ {
+  "s": "—",
+  "humanize": "—",
+  "esc": "—",
+  "clean": {
+   "en": "—",
+   "hi": "—",
+   "mr": "—",
+   "te": "—",
+   "gu": "—"
+  }
+ },
+ {
+  "s": "— word",
+  "humanize": "word",
+  "esc": "word",
+  "clean": {
+   "en": "— word",
+   "hi": "— word",
+   "mr": "— word",
+   "te": "— word",
+   "gu": "— word"
+  }
+ },
+ {
+  "s": "•",
+  "humanize": "•",
+  "esc": "•",
+  "clean": {
+   "en": "•",
+   "hi": "•",
+   "mr": "•",
+   "te": "•",
+   "gu": "•"
+  }
+ }
+]

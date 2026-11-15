@@ -1,6 +1,6 @@
 {
     "name": "lifeastroapi/lifeastroapi",
-    "description": "Official PHP SDK for LifeAstroAPI: Vedic astrology and Hindu calendar API (panchang, festivals, kundli, dasha, kundli matching, muhurat, horoscopes, numerology, tarot, Western astrology) in 10 languages.",
+    "description": "Official PHP SDK for LifeAstroAPI: Vedic astrology and Hindu calendar API (panchang, festivals, kundli, dasha, kundli matching, muhurat, horoscopes, numerology, tarot, Western astrology) in 10 languages, with branded PDF reports.",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -40,6 +40,7 @@
         "php": "^8.1",
         "ext-curl": "*",
         "ext-json": "*",
+        "ext-mbstring": "*",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0"
     },
@@ -67,6 +68,7 @@
     "scripts": {
         "generate": "node tool/generate.mjs",
         "goldens": "node tool/node-goldens.mjs",
+        "pdf-goldens": "node tool/pdf-goldens.mjs",
         "test": "phpunit",
         "analyse": "phpstan analyse --memory-limit=1G",
         "cs": "phpcs",
@@ -81,6 +83,7 @@
     "scripts-descriptions": {
         "generate": "Regenerate src/Resources from the Node SDK's endpoint manifest (needs node).",
         "goldens": "Record the Node SDK's request URLs for every method into tests/fixtures (needs node).",
+        "pdf-goldens": "Record the Node SDK's report HTML for every PDF test case into tests/fixtures/pdf (needs node).",
         "test": "Run the unit tests (mock transport, no network).",
         "analyse": "Run PHPStan at level max.",
         "cs": "Check PSR-12 code style.",

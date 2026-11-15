@@ -49,3 +49,7 @@ auth.json
 ._*
 Thumbs.db
 desktop.ini
+
+# Output of examples/pdf.php
+/examples/kundli-lite.pdf
+/examples/kundli-lite.html

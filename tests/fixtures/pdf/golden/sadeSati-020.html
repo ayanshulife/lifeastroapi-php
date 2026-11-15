@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sade Sati Report</title>
+<style>
+:root { --brand-primary: #6b21a8; --brand-secondary: #9333ea; }
+
+* { box-sizing: border-box; }
+/* Form controls and headings do not always inherit font-family in print, so
+   the Indic stack is set on them explicitly too. */
+h1, h2, h3, h4, th, td, li, dt, dd, input, button { font-family: inherit; }
+html, body {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+  color: #1a1a1a;
+  font-size: 11pt;
+  line-height: 1.45;
+  margin: 0;
+}
+@page { size: A4; margin: 18mm 15mm 22mm 15mm; }
+/* Print the brand colours (table headers, cards) as designed. Chromium does so
+   with printBackground; the iOS and Android print engines drop backgrounds
+   unless the page asks for exact colours. */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h2 {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+  padding-bottom: 2mm;
+  font-size: 16pt;
+  margin-top: 8mm;
+}
+h3 { font-size: 12pt; margin: 6mm 0 2mm; }
+p { margin: 2mm 0; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+th, td { text-align: left; padding: 2mm 3mm; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+th { background: var(--brand-primary); color: #fff; font-weight: 600; font-size: 10pt; }
+.cover { page-break-after: always; text-align: center; padding: 40mm 0 0; }
+.cover img.logo { max-height: 24mm; max-width: 60mm; margin-bottom: 8mm; }
+.cover h1 { color: var(--brand-primary); font-size: 28pt; margin: 0 0 4mm; }
+.cover .company { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 16mm; }
+.cover .subject { font-size: 16pt; margin-bottom: 4mm; }
+.cover .meta { color: var(--brand-secondary); font-size: 11pt; }
+.cover .generated { margin-top: 32mm; color: var(--brand-secondary); font-size: 9pt; }
+.narrative-section { margin-top: 6mm; page-break-inside: avoid; }
+.narrative-section .body { margin: 2mm 0; white-space: pre-wrap; }
+.narrative-section ul { margin: 1mm 0 2mm 6mm; padding: 0; }
+.narrative-section .citations { color: var(--brand-secondary); font-size: 9pt; font-style: italic; }
+.cards { display: flex; gap: 4mm; margin: 4mm 0; flex-wrap: wrap; }
+.card { flex: 1 1 0; min-width: 40mm; border: 1px solid #e5e5e5; border-radius: 2mm; padding: 3mm; }
+.card .label { color: var(--brand-secondary); font-size: 9pt; text-transform: uppercase; letter-spacing: .04em; }
+.card .value { font-size: 14pt; color: var(--brand-primary); font-weight: 600; margin-top: 1mm; }
+/* On screen the footer is an ordinary block after the content. In print it
+   is hidden and the same text is drawn in the page's bottom margin instead
+   (see footerCss): a position:fixed footer is laid out against the page
+   CONTENT box, so it prints on top of the last lines of body text. */
+footer {
+  text-align: center; color: var(--brand-secondary); font-size: 8pt;
+  margin-top: 10mm;
+}
+@media print { footer { display: none; } }
+/* Telugu and Kannada stack vowel signs and conjuncts above and below the
+   line and Tamil has tall marks too, so their lines get a little more height
+   (Devanagari keeps the 1.45 it was tuned for). Letter-spacing and uppercase are Latin
+   typography; spacing splits Indic clusters apart, so drop it.
+   :where() keeps the specificity of a plain "body" rule, so a report's own
+   body line-height (Brihad sets 1.8) still wins. */
+:where(html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) body { line-height: 1.6; }
+:where(html:lang(hi), html:lang(mr), html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) * { letter-spacing: normal !important; }
+
+
+body::before {
+  content: "SAMPLE";
+  position: fixed; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 80pt; color: rgba(0,0,0,0.06); font-weight: 700;
+  pointer-events: none; z-index: 0;
+}
+
+@page {
+  @bottom-center {
+    content: "Acme Astro · confidential";
+    font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+    font-size: 8pt;
+    color: #9333ea;
+  }
+}
+
+.cover .moon-sign-badge {
+  display: inline-block;
+  margin-top: 8mm;
+  padding: 3mm 8mm;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 14pt;
+  border-radius: 2mm;
+}
+.status-card {
+  margin: 4mm 0;
+  padding: 5mm;
+  border-radius: 2mm;
+  border-left: 4px solid;
+}
+.status-card.peak    { background: #fef2f2; border-left-color: #dc2626; }
+.status-card.rising  { background: #fff7ed; border-left-color: #ea580c; }
+.status-card.setting { background: #fefce8; border-left-color: #ca8a04; }
+.status-card.clear   { background: #f0fdf4; border-left-color: #16a34a; }
+.status-card .label {
+  text-transform: uppercase;
+  font-size: 9pt;
+  letter-spacing: 0.5pt;
+  color: var(--brand-secondary);
+  margin-bottom: 1mm;
+}
+.status-card .value { font-size: 18pt; font-weight: 700; margin-bottom: 2mm; }
+.status-card .detail { font-size: 10pt; }
+tr.current-window td { background: #fff7ed; font-weight: 600; }
+.remedies {
+  margin-top: 6mm;
+  padding: 5mm;
+  background: #fafafa;
+  border-left: 3px solid var(--brand-secondary);
+}
+.remedies ul { margin: 2mm 0 0 6mm; padding: 0; }
+.empty-list { margin: 3mm 0; color: var(--brand-secondary); font-style: italic; }
+
+</style>
+</head>
+<body>
+<section class="cover">
+  <img src="https://cdn.example/acme/logo.png" alt="" class="logo"><div class="company">Acme Astro</div>
+  <h1>Sade Sati Report</h1>
+  <div class="subject">Subject</div>
+  <div class="meta">
+    Born 1990-01-15 at 10:30 IST<br>
+    19.0760, 72.8777
+  </div>
+  <div class="moon-sign-badge">
+    Moon Sign: Leo
+  </div>
+  <div class="generated">
+    Generated on 2026-10-17 20:44 UTC
+  </div>
+</section>
+
+<h2>Current Status</h2>
+<div class="status-card clear">
+  <div class="label">Current Phase</div>
+  <div class="value">Clear (no Sade Sati)</div>
+  <div class="detail">You are currently clear of Sade Sati. Saturn (Pisces) is not in the cluster around your moon sign (Leo).</div>
+</div>
+
+<h2>Past Sade Sati Windows</h2>
+<table>
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Duration</th>
+      <th>Signs Traversed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+  <td>2006-10-17</td>
+  <td>2011-11-20</td>
+  <td>approx 5.1 years</td>
+  <td>Cancer, Leo</td>
+</tr>
+    <tr>
+  <td>2012-06-17</td>
+  <td>2012-08-16</td>
+  <td>approx 0.2 years</td>
+  <td>Virgo</td>
+</tr>
+  </tbody>
+</table>
+
+<h2>Upcoming Windows</h2>
+<table>
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Duration</th>
+      <th>Signs Traversed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+  <td>2034-07-22</td>
+  <td>2041-01-16</td>
+  <td>approx 6.5 years</td>
+  <td>Cancer, Leo</td>
+</tr>
+    <tr>
+  <td>2041-03-17</td>
+  <td>2041-10-13</td>
+  <td>approx 0.6 years</td>
+  <td>Virgo</td>
+</tr>
+  </tbody>
+</table>
+
+<h2>Recommended Remedies</h2>
+<div class="remedies">
+  <p>These traditional remedies are commonly recommended during Sade Sati phases. Check your full chart before adopting any:</p>
+  <ul>
+    <li>Recite Hanuman Chalisa daily, especially on Tuesdays and Saturdays.</li>
+    <li>Donate black sesame seeds, mustard oil, or iron items on Saturdays.</li>
+    <li>Worship Lord Shani with til oil and blue flowers.</li>
+    <li>Wear a blue sapphire only after checking the chart, Saturn&#39;s gemstone is not for everyone.</li>
+    <li>Maintain disciplined routine, ethical conduct, and minimize unnecessary expenditure.</li>
+  </ul>
+</div>
+<footer>Acme Astro · confidential</footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<title>मंगल दोष रिपोर्ट</title>
+<style>
+:root { --brand-primary: #1a1a1a; --brand-secondary: #666666; }
+
+* { box-sizing: border-box; }
+/* Form controls and headings do not always inherit font-family in print, so
+   the Indic stack is set on them explicitly too. */
+h1, h2, h3, h4, th, td, li, dt, dd, input, button { font-family: inherit; }
+html, body {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+  color: #1a1a1a;
+  font-size: 11pt;
+  line-height: 1.45;
+  margin: 0;
+}
+@page { size: A4; margin: 18mm 15mm 22mm 15mm; }
+/* Print the brand colours (table headers, cards) as designed. Chromium does so
+   with printBackground; the iOS and Android print engines drop backgrounds
+   unless the page asks for exact colours. */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h2 {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+  padding-bottom: 2mm;
+  font-size: 16pt;
+  margin-top: 8mm;
+}
+h3 { font-size: 12pt; margin: 6mm 0 2mm; }
+p { margin: 2mm 0; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+th, td { text-align: left; padding: 2mm 3mm; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+th { background: var(--brand-primary); color: #fff; font-weight: 600; font-size: 10pt; }
+.cover { page-break-after: always; text-align: center; padding: 40mm 0 0; }
+.cover img.logo { max-height: 24mm; max-width: 60mm; margin-bottom: 8mm; }
+.cover h1 { color: var(--brand-primary); font-size: 28pt; margin: 0 0 4mm; }
+.cover .company { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 16mm; }
+.cover .subject { font-size: 16pt; margin-bottom: 4mm; }
+.cover .meta { color: var(--brand-secondary); font-size: 11pt; }
+.cover .generated { margin-top: 32mm; color: var(--brand-secondary); font-size: 9pt; }
+.narrative-section { margin-top: 6mm; page-break-inside: avoid; }
+.narrative-section .body { margin: 2mm 0; white-space: pre-wrap; }
+.narrative-section ul { margin: 1mm 0 2mm 6mm; padding: 0; }
+.narrative-section .citations { color: var(--brand-secondary); font-size: 9pt; font-style: italic; }
+.cards { display: flex; gap: 4mm; margin: 4mm 0; flex-wrap: wrap; }
+.card { flex: 1 1 0; min-width: 40mm; border: 1px solid #e5e5e5; border-radius: 2mm; padding: 3mm; }
+.card .label { color: var(--brand-secondary); font-size: 9pt; text-transform: uppercase; letter-spacing: .04em; }
+.card .value { font-size: 14pt; color: var(--brand-primary); font-weight: 600; margin-top: 1mm; }
+/* On screen the footer is an ordinary block after the content. In print it
+   is hidden and the same text is drawn in the page's bottom margin instead
+   (see footerCss): a position:fixed footer is laid out against the page
+   CONTENT box, so it prints on top of the last lines of body text. */
+footer {
+  text-align: center; color: var(--brand-secondary); font-size: 8pt;
+  margin-top: 10mm;
+}
+@media print { footer { display: none; } }
+/* Telugu and Kannada stack vowel signs and conjuncts above and below the
+   line and Tamil has tall marks too, so their lines get a little more height
+   (Devanagari keeps the 1.45 it was tuned for). Letter-spacing and uppercase are Latin
+   typography; spacing splits Indic clusters apart, so drop it.
+   :where() keeps the specificity of a plain "body" rule, so a report's own
+   body line-height (Brihad sets 1.8) still wins. */
+:where(html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) body { line-height: 1.6; }
+:where(html:lang(hi), html:lang(mr), html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) * { letter-spacing: normal !important; }
+
+
+
+@page {
+  @bottom-center {
+    content: "Generated using LifeAstroAPI";
+    font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+    font-size: 8pt;
+    color: #666666;
+  }
+}
+
+.cover .status-badge {
+  display: inline-block; margin-top: 10mm; padding: 4mm 10mm;
+  font-size: 18pt; font-weight: 700; border-radius: 2mm;
+}
+.cover .status-badge.purn      { background: #fef2f2; color: #dc2626; border: 2px solid #dc2626; }
+.cover .status-badge.mild      { background: #fff7ed; color: #ea580c; border: 2px solid #ea580c; }
+.cover .status-badge.none      { background: #f0fdf4; color: #16a34a; border: 2px solid #16a34a; }
+.cover .status-badge.cancelled { background: #fefce8; color: #ca8a04; border: 2px solid #ca8a04; }
+.diagnostic {
+  margin: 4mm 0; padding: 5mm; background: #fafafa; border-left: 3px solid var(--brand-primary);
+}
+.diagnostic dl { margin: 0; }
+.diagnostic dt {
+  font-weight: 600; color: var(--brand-secondary); font-size: 10pt;
+  text-transform: uppercase; letter-spacing: 0.5pt; margin-top: 2mm;
+}
+.diagnostic dd { margin: 0 0 2mm; font-size: 11pt; }
+.cancellation {
+  margin: 4mm 0; padding: 5mm; background: #fefce8; border-left: 3px solid #ca8a04;
+}
+.cancellation ul { margin: 2mm 0 0 6mm; padding: 0; }
+.remedies {
+  margin: 4mm 0; padding: 5mm; background: #fafafa; border-left: 3px solid var(--brand-secondary);
+}
+.remedies ul { margin: 2mm 0 0 6mm; padding: 0; }
+
+</style>
+</head>
+<body>
+<section class="cover">
+  
+  <h1>मंगल दोष रिपोर्ट</h1>
+  <div class="subject">Test Native</div>
+  <div class="meta">
+    जन्म 1990-01-15 समय 10:30 IST<br>
+    Mumbai<br>
+    लग्न: Leo
+  </div>
+  <div class="status-badge purn">पूर्ण मंगल दोष</div>
+  <div class="generated">तैयार 2026-06-20 10:00 UTC</div>
+</section>
+
+<h2>विश्लेषण</h2>
+<div class="diagnostic">
+  <dl>
+    <dt>मंगल राशि</dt>
+    <dd>Scorpio (14°22&#39;10&quot;)</dd>
+    <dt>मंगल नक्षत्र</dt>
+    <dd>Anuradha, पाद 2</dd>
+    <dt>मंगल भाव</dt>
+    <dd>लग्न से 1, 4, 7, 8</dd>
+    <dt>निदान</dt>
+    <dd>मंगल Scorpio राशि में स्थित है तथा लग्न से 1, 4, 7, 8 भाव में है, यह मंगल दोष का पूर्ण रूप है।</dd>
+  </dl>
+</div>
+
+<h2>विवाह प्रभाव</h2>
+<p>पूर्ण मंगल दोष विवाह सम्बन्धों में चुनौतियाँ ला सकता है। पारंपरिक रूप से अनुशंसित है कि साथी की कुंडली में भी मंगल दोष हो (या समान भारता हो), जिससे प्रभाव संतुलित हो जाए। दोनों कुंडलियों की सावधानीपूर्वक जाँच एवं उचित मेल मिलान महत्वपूर्ण है।</p>
+
+<h2>अनुशंसित उपाय</h2>
+<div class="remedies">
+  <p>मंगल दोष के लिए सामान्यतः अनुशंसित पारंपरिक उपाय निम्नलिखित हैं। कोई भी उपाय अपनाने से पूर्व अपनी कुंडली को पूरी तरह जाँच लीजिए:</p>
+  <ul>
+    <li>प्रतिदिन हनुमान चालीसा का पाठ कीजिए, विशेषकर मंगलवार को।</li>
+    <li>प्रत्येक मंगलवार को हनुमान मंदिर जाकर लाल पुष्प एवं सिंदूर अर्पित कीजिए।</li>
+    <li>मंगलवार को मसूर दाल, गुड़ अथवा लाल वस्त्र का दान कीजिए।</li>
+    <li>मंगलवार का व्रत रखिए, केवल फल एवं दूध का सेवन कीजिए।</li>
+    <li>मंगलवार को घर पर हनुमान जी के सामने दीपक जलाकर &#39;ॐ अं अंगारकाय नमः&#39; का 108 बार जप कीजिए और सुखी विवाह की प्रार्थना कीजिए; परंपरा में कुंभ विवाह (पीपल अथवा कुंभ से प्रतीकात्मक विवाह) का भी उल्लेख मिलता है।</li>
+    <li>मूँगा रत्न कुंडली की जाँच के पश्चात ही धारण कीजिए, सभी के लिए उपयुक्त नहीं।</li>
+  </ul>
+</div>
+<footer>Generated using LifeAstroAPI</footer>
+</body>
+</html>

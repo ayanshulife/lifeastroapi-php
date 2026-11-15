@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dasha Analysis, T</title>
+<style>
+:root { --brand-primary: #6b21a8; --brand-secondary: #9333ea; }
+
+* { box-sizing: border-box; }
+/* Form controls and headings do not always inherit font-family in print, so
+   the Indic stack is set on them explicitly too. */
+h1, h2, h3, h4, th, td, li, dt, dd, input, button { font-family: inherit; }
+html, body {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+  color: #1a1a1a;
+  font-size: 11pt;
+  line-height: 1.45;
+  margin: 0;
+}
+@page { size: A4; margin: 18mm 15mm 22mm 15mm; }
+/* Print the brand colours (table headers, cards) as designed. Chromium does so
+   with printBackground; the iOS and Android print engines drop backgrounds
+   unless the page asks for exact colours. */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h2 {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+  padding-bottom: 2mm;
+  font-size: 16pt;
+  margin-top: 8mm;
+}
+h3 { font-size: 12pt; margin: 6mm 0 2mm; }
+p { margin: 2mm 0; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+th, td { text-align: left; padding: 2mm 3mm; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+th { background: var(--brand-primary); color: #fff; font-weight: 600; font-size: 10pt; }
+.cover { page-break-after: always; text-align: center; padding: 40mm 0 0; }
+.cover img.logo { max-height: 24mm; max-width: 60mm; margin-bottom: 8mm; }
+.cover h1 { color: var(--brand-primary); font-size: 28pt; margin: 0 0 4mm; }
+.cover .company { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 16mm; }
+.cover .subject { font-size: 16pt; margin-bottom: 4mm; }
+.cover .meta { color: var(--brand-secondary); font-size: 11pt; }
+.cover .generated { margin-top: 32mm; color: var(--brand-secondary); font-size: 9pt; }
+.narrative-section { margin-top: 6mm; page-break-inside: avoid; }
+.narrative-section .body { margin: 2mm 0; white-space: pre-wrap; }
+.narrative-section ul { margin: 1mm 0 2mm 6mm; padding: 0; }
+.narrative-section .citations { color: var(--brand-secondary); font-size: 9pt; font-style: italic; }
+.cards { display: flex; gap: 4mm; margin: 4mm 0; flex-wrap: wrap; }
+.card { flex: 1 1 0; min-width: 40mm; border: 1px solid #e5e5e5; border-radius: 2mm; padding: 3mm; }
+.card .label { color: var(--brand-secondary); font-size: 9pt; text-transform: uppercase; letter-spacing: .04em; }
+.card .value { font-size: 14pt; color: var(--brand-primary); font-weight: 600; margin-top: 1mm; }
+/* On screen the footer is an ordinary block after the content. In print it
+   is hidden and the same text is drawn in the page's bottom margin instead
+   (see footerCss): a position:fixed footer is laid out against the page
+   CONTENT box, so it prints on top of the last lines of body text. */
+footer {
+  text-align: center; color: var(--brand-secondary); font-size: 8pt;
+  margin-top: 10mm;
+}
+@media print { footer { display: none; } }
+/* Telugu and Kannada stack vowel signs and conjuncts above and below the
+   line and Tamil has tall marks too, so their lines get a little more height
+   (Devanagari keeps the 1.45 it was tuned for). Letter-spacing and uppercase are Latin
+   typography; spacing splits Indic clusters apart, so drop it.
+   :where() keeps the specificity of a plain "body" rule, so a report's own
+   body line-height (Brihad sets 1.8) still wins. */
+:where(html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) body { line-height: 1.6; }
+:where(html:lang(hi), html:lang(mr), html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) * { letter-spacing: normal !important; }
+
+
+body::before {
+  content: "SAMPLE";
+  position: fixed; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 80pt; color: rgba(0,0,0,0.06); font-weight: 700;
+  pointer-events: none; z-index: 0;
+}
+
+@page {
+  @bottom-center {
+    content: "Acme Astro · confidential";
+    font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+    font-size: 8pt;
+    color: #9333ea;
+  }
+}
+
+.cover h1 { font-size: 32pt; font-weight: 700; letter-spacing: 1pt; margin: 0 0 4mm; }
+.cover .subtitle { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 14mm; font-style: italic; }
+.cover .subject { font-size: 18pt; margin-bottom: 4mm; font-weight: 600; }
+.section { page-break-before: always; margin-top: 4mm; }
+.section.first { page-break-before: auto; }
+.stack-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 3mm 4mm; margin: 2mm 0; background: #f5f7fa;
+  border-left: 4px solid var(--brand-primary);
+}
+.stack-row.level-1 { background: #e0f2fe; border-left-color: #0369a1; }
+.stack-row.level-2 { background: #ecfccb; border-left-color: #65a30d; }
+.stack-row.level-3 { background: #fef9c3; border-left-color: #ca8a04; }
+.stack-row.level-4 { background: #fed7aa; border-left-color: #ea580c; }
+.stack-row.level-5 { background: #fecaca; border-left-color: #dc2626; }
+.stack-row .level-label { font-weight: 600; width: 30mm; flex-shrink: 0; }
+.stack-row .lord-name { font-weight: 700; font-size: 12pt; flex: 1; }
+.stack-row .dates { color: var(--brand-secondary); font-size: 10pt; text-align: right; }
+.prediction-block {
+  margin: 4mm 0; padding: 4mm 5mm; background: #f0fdf4;
+  border-left: 4px solid #16a34a; page-break-inside: avoid;
+}
+.prediction-block .lord-line { font-size: 13pt; font-weight: 700; color: var(--brand-primary); margin-bottom: 2mm; }
+.timeline-block {
+  margin: 3mm 0; padding: 3mm 4mm; background: #fafafa;
+  border-left: 3px solid var(--brand-secondary); page-break-inside: avoid;
+}
+.timeline-block.current { background: #f0fdf4; border-left-color: #16a34a; }
+.timeline-block .header { display: flex; justify-content: space-between; align-items: baseline; }
+.timeline-block .lord { font-weight: 700; font-size: 12pt; color: var(--brand-primary); }
+.timeline-block .dates { color: var(--brand-secondary); font-size: 10pt; }
+.timeline-block .body { margin-top: 1mm; font-size: 10pt; }
+.empty-list { margin: 3mm 0; color: var(--brand-secondary); font-style: italic; }
+
+</style>
+</head>
+<body>
+<section class="cover">
+<img src="https://cdn.example/acme/logo.png" alt="" class="logo"><div class="company">Acme Astro</div>
+  <h1>Dasha Analysis</h1>
+  <div class="subtitle">Vimshottari deep-dive, past, present, and future periods</div>
+  <div class="subject">T</div>
+  <div class="meta">
+    Born  at <br>
+    
+  </div>
+  
+</section>
+<section class="section first">
+  <h2>Currently Active Dasha Stack</h2>
+  <p class="empty-list">The active dasha stack is not available for this chart configuration.</p>
+</section>
+<section class="section">
+  <h2>All 9 Mahadashas (120-year cycle)</h2>
+  <table>
+  <thead>
+    <tr>
+      <th>Lord</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>Ketu</td>
+  <td>1990</td>
+  <td></td>
+  <td>7 years</td>
+</tr>
+  </tbody>
+</table>
+</section>
+<section class="section">
+  <h2>Past 20-Year Review</h2>
+  <p class="empty-list">No Mahadasha period from the last 20 years is available for this chart.</p>
+</section>
+<section class="section">
+  <h2>Next 10-Year Preview</h2>
+  <p class="empty-list">No future dasha periods are available for the next 10 years.</p>
+</section>
+<footer>Acme Astro · confidential</footer>
+</body>
+</html>

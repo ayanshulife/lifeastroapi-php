@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<title>బృహత్ జాతకం: Arjun Mehta</title>
+<style>
+:root { --brand-primary: #1a1a1a; --brand-secondary: #666666; }
+
+* { box-sizing: border-box; }
+/* Form controls and headings do not always inherit font-family in print, so
+   the Indic stack is set on them explicitly too. */
+h1, h2, h3, h4, th, td, li, dt, dd, input, button { font-family: inherit; }
+html, body {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+  color: #1a1a1a;
+  font-size: 11pt;
+  line-height: 1.45;
+  margin: 0;
+}
+@page { size: A4; margin: 18mm 15mm 22mm 15mm; }
+/* Print the brand colours (table headers, cards) as designed. Chromium does so
+   with printBackground; the iOS and Android print engines drop backgrounds
+   unless the page asks for exact colours. */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h2 {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+  padding-bottom: 2mm;
+  font-size: 16pt;
+  margin-top: 8mm;
+}
+h3 { font-size: 12pt; margin: 6mm 0 2mm; }
+p { margin: 2mm 0; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+th, td { text-align: left; padding: 2mm 3mm; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+th { background: var(--brand-primary); color: #fff; font-weight: 600; font-size: 10pt; }
+.cover { page-break-after: always; text-align: center; padding: 40mm 0 0; }
+.cover img.logo { max-height: 24mm; max-width: 60mm; margin-bottom: 8mm; }
+.cover h1 { color: var(--brand-primary); font-size: 28pt; margin: 0 0 4mm; }
+.cover .company { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 16mm; }
+.cover .subject { font-size: 16pt; margin-bottom: 4mm; }
+.cover .meta { color: var(--brand-secondary); font-size: 11pt; }
+.cover .generated { margin-top: 32mm; color: var(--brand-secondary); font-size: 9pt; }
+.narrative-section { margin-top: 6mm; page-break-inside: avoid; }
+.narrative-section .body { margin: 2mm 0; white-space: pre-wrap; }
+.narrative-section ul { margin: 1mm 0 2mm 6mm; padding: 0; }
+.narrative-section .citations { color: var(--brand-secondary); font-size: 9pt; font-style: italic; }
+.cards { display: flex; gap: 4mm; margin: 4mm 0; flex-wrap: wrap; }
+.card { flex: 1 1 0; min-width: 40mm; border: 1px solid #e5e5e5; border-radius: 2mm; padding: 3mm; }
+.card .label { color: var(--brand-secondary); font-size: 9pt; text-transform: uppercase; letter-spacing: .04em; }
+.card .value { font-size: 14pt; color: var(--brand-primary); font-weight: 600; margin-top: 1mm; }
+/* On screen the footer is an ordinary block after the content. In print it
+   is hidden and the same text is drawn in the page's bottom margin instead
+   (see footerCss): a position:fixed footer is laid out against the page
+   CONTENT box, so it prints on top of the last lines of body text. */
+footer {
+  text-align: center; color: var(--brand-secondary); font-size: 8pt;
+  margin-top: 10mm;
+}
+@media print { footer { display: none; } }
+/* Telugu and Kannada stack vowel signs and conjuncts above and below the
+   line and Tamil has tall marks too, so their lines get a little more height
+   (Devanagari keeps the 1.45 it was tuned for). Letter-spacing and uppercase are Latin
+   typography; spacing splits Indic clusters apart, so drop it.
+   :where() keeps the specificity of a plain "body" rule, so a report's own
+   body line-height (Brihad sets 1.8) still wins. */
+:where(html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) body { line-height: 1.6; }
+:where(html:lang(hi), html:lang(mr), html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) * { letter-spacing: normal !important; }
+
+
+
+
+/* Brihad uses a Puppeteer running header/footer in the page margin. The
+   @page margin here MUST match the page.pdf margin (BRIHAD_PDF_MARGIN =
+   26mm/16mm top/bottom) so that whichever Chromium honours, body content
+   always stays inside the same safe box and never overlaps the header/footer
+   bands. (The old 18/22mm BASE_CSS margin let content ride up into the
+   header.) Drop the in-body fixed footer + watermark too. */
+@page { size: A4; margin: 26mm 0 16mm 0; }
+body > footer { display: none !important; }
+body::before { display: none !important; }
+/* Side gutters live on the body so the running header/footer can still bleed
+   to the page edges like the benchmark's page-number tab. */
+.section { padding-left: 14mm; padding-right: 14mm; }
+.cover { padding-left: 0; padding-right: 0; }
+
+/* ====================================================================
+   LifeAstro design system — "Royal Purple + Gold" (premium/luxe). A
+   DISTINCT identity, deliberately NOT the benchmark's teal/orange look:
+   royal-purple primaries + gold accents + soft-lavender backgrounds, and a
+   gold double-rule heading underline (not a slanted bar). The --as-* var
+   names are kept only so the rest of the CSS need not change.
+   ==================================================================== */
+:root {
+  /* LifeAstro "Hindu Spiritual / Saffron" palette — warm dharmic colours
+     (saffron, haldi-gold, sindoor-maroon) on cream. All accents are
+     dark/saturated enough to read clearly on white or the cream zebra. */
+  --as-teal:#c25e10;   /* deep saffron (primary)            */
+  --as-green:#a8451a;  /* burnt orange-brown                */
+  --as-amber:#b8860b;  /* haldi gold (readable on white)    */
+  --as-dorange:#9e2b25;/* sindoor maroon (heading accent)   */
+  --as-slate:#6b4a2f;  /* warm brown ink-2                  */
+  --as-olive:#9c6f1e;  /* antique gold                      */
+  --as-blue:#8a3324;   /* deep terracotta                   */
+  --as-lteal:#c0631e;  /* saffron-orange                    */
+  --as-salmon:#b5471f; /* rust                              */
+  --as-lamber:#9a7b1e; /* gold (readable)                   */
+  --as-gold:#8a5a00;   /* dark saffron-gold (cover)         */
+  --as-tab:#8a1f17;    /* deep maroon page accent           */
+  --as-zebra:#fcf3e3;  /* warm cream zebra (bg only)        */
+  --as-cardbg:#fffaf0; /* ivory card bg                     */
+  --as-ink:#3a2410;    /* deep warm-brown ink               */
+  /* Legacy "secondary" small-muted text → readable warm brown (gold is too
+     light as body text; gold stays for accents/borders). */
+  --brand-secondary:#7a5a3a;
+}
+/* Typography — airy density (~larger body + generous line-height) so the
+   report reads premium, not a wall of text. */
+body { color: var(--as-ink); font-size: 11.5pt; line-height: 1.8; }
+
+/* Section heading — purple title with a DISTINCT gold double-rule underline
+   (thick gold bar + thin purple hairline beneath) — a different signature
+   from the benchmark's slanted single bar. */
+.section > h2 {
+  color: var(--as-teal); font-size: 21.6pt; font-weight: 700;
+  border: none; padding: 0 0 2.5mm; margin: 0 0 5mm; position: relative;
+}
+.section > h2::after {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 1.6mm; width: 52mm;
+  background: var(--as-amber);
+  border-radius: 1mm;
+  box-shadow: 0 2.4mm 0 -0.9mm var(--as-teal); /* thin purple hairline below the gold bar */
+}
+.section:nth-of-type(2n) > h2 { color: var(--as-dorange); }
+.section:nth-of-type(3n) > h2 { color: var(--as-blue); }
+
+/* Tables — colored header row + zebra body. */
+.section table { border-collapse: separate; border-spacing: 0; margin: 4mm 0; width: 100%; }
+.section table thead th {
+  background: var(--as-teal); color: #fff; font-weight: 600; font-size: 10pt;
+  padding: 2.5mm 3mm; text-align: left; border: none;
+}
+.section table tbody td {
+  padding: 3mm 3.5mm; font-size: 10.5pt; border: none; border-bottom: 1px solid #eaeaea;
+  vertical-align: top;
+}
+.section table tbody tr:nth-child(odd) td { background: var(--as-zebra); }
+.section table tbody tr:nth-child(even) td { background: #ffffff; }
+/* Page-break hygiene: never split a row; keep header with its first rows;
+   don't strand a heading at the page bottom. */
+.section table tr { page-break-inside: avoid; }
+.section table thead { display: table-header-group; }
+.section h4 { page-break-after: avoid; }
+/* NOTE: h2/h3 do NOT use page-break-after:avoid — gluing a heading to a tall
+   following block (e.g. a 400px divisional chart) pushed the whole group to
+   the next page and left the forced section page nearly blank. */
+.yoga-block, .north-chart { page-break-inside: avoid; }
+/* The diamond chart stays atomic, and the chart+heading stick together, but
+   a divisional block as a whole may break (its table can flow) so a tall
+   first block doesn't orphan an entire blank page before it. */
+/* Keep ONLY the diamond atomic (.north-chart avoid-inside). Do NOT chain
+   the heading→chart with avoid-before/after — that built an unbreakable
+   group taller than a page, which orphaned a whole blank page before it. */
+
+/* Narrative-chapter section headings keep the same slanted-underline look but
+   the per-rule sub-headings (h3) are colored + tight. */
+/* Each per-rule block (h3 + body) gets card-like breathing room so a page
+   holds a few rich blocks, not a wall of text — matches the benchmark's
+   ~230 w/pp feel. */
+.narrative-chapter h3 {
+  color: var(--as-dorange); font-size: 13.5pt; font-weight: 700;
+  margin: 9mm 0 3mm; page-break-after: avoid;
+}
+.narrative-chapter h3:first-of-type { margin-top: 4mm; }
+.narrative-chapter p { margin: 0 0 5mm; text-align: justify; line-height: 1.85; }
+.narrative-chapter ul { margin: 0 0 5mm 7mm; }
+.narrative-chapter li { margin-bottom: 2.5mm; line-height: 1.7; }
+
+/* Sub-section h3 inside compute sections (e.g. KP significators, Maitri tables) */
+.section h3 { color: var(--as-teal); font-size: 12.5pt; font-weight: 700; margin: 6mm 0 2.5mm; page-break-after: avoid; }
+.section h4 { color: var(--as-slate); font-size: 11pt; font-weight: 700; margin: 4mm 0 2mm; }
+.section p { margin: 3mm 0; line-height: 1.7; }
+
+/* Intro paragraph right under a heading — muted. */
+.section > p:first-of-type { color: #555; }
+
+/* Table of contents (विषय-सूची) — teal banner + dotted-leader rows with
+   color-coded page numbers. */
+.toc-section { padding-top: 4mm; }
+.toc-banner {
+  background: var(--as-teal); color: #fff; font-size: 16pt; font-weight: 700;
+  text-align: center; padding: 3mm; border-radius: 4mm; margin: 0 0 6mm;
+}
+.toc-row { display: flex; align-items: baseline; margin: 2.4mm 0; font-size: 12pt; }
+.toc-row .toc-title { color: #444; white-space: nowrap; }
+.toc-row .toc-dots { flex: 1 1 auto; border-bottom: 1px dotted #bbb; margin: 0 2mm 1mm; }
+.toc-row .toc-page { font-weight: 700; font-size: 13pt; }
+/* 2-level TOC: Part rows bold (level 1), section rows indented (level 2). */
+.toc-row.toc-part { margin: 4mm 0 1.5mm; }
+.toc-row.toc-part .toc-title { color: var(--as-teal); font-weight: 700; font-size: 12.5pt; }
+.toc-row.toc-sub { margin-left: 7mm; }
+.toc-row.toc-sub .toc-title { color: #555; }
+
+/* Part banner — a level-1 grouping heading spliced to the TOP of the first
+ * section of each Part (NOT its own page, so there's no blank Part page). The
+ * host section already forces a page break, so the banner opens that page with
+ * the section's content flowing right below it. Rendered LARGER than ordinary
+ * section headings (24pt vs 21.6pt) so it reads as the top of the hierarchy
+ * and the outline/TOC level-detection by font-size works. */
+.part-banner { margin: 0 0 6mm; page-break-after: avoid; }
+.part-banner .part-h2 {
+  background: var(--as-teal); color: #fff; text-align: center;
+  padding: 6mm 4mm; border-radius: 3mm; font-size: 24pt; border-bottom: none;
+  margin: 0;
+}
+/* A merged-in sub-heading: the second piece's old top heading, demoted to a
+ * sub-heading when two same-topic sections fold into one. In-section divider. */
+h3.merged-sub {
+  font-size: 14pt; color: var(--as-teal); margin: 7mm 0 2mm;
+  padding-top: 3mm; border-top: 0.3mm solid #e3d9c0;
+}
+
+/* Graha Sthiti — planet cards grid with glyph images (3-up). */
+.graha-grid { display: flex; flex-wrap: wrap; gap: 4mm; margin: 5mm 0; }
+.graha-card {
+  flex: 0 0 calc(33.333% - 3mm); display: flex; align-items: center; gap: 3mm;
+  background: #fff; border: 1px solid #eee; border-radius: 2mm; padding: 3mm;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05); page-break-inside: avoid;
+}
+.graha-card .graha-glyph { flex: 0 0 auto; line-height: 0; }
+.graha-card .graha-name { font-weight: 700; font-size: 11pt; color: var(--as-ink); }
+.graha-card .graha-pos { font-size: 9.5pt; color: var(--as-teal); margin-top: 0.5mm; }
+.graha-card .graha-nak { font-size: 9pt; color: #777; }
+
+/* Rajyoga donut — pinned colors. */
+.rajyoga-power { text-align: center; margin: 6mm 0; }
+.rajyoga-power .rajyoga-pct {
+  display: inline-block; font-size: 30pt; font-weight: 700; color: var(--as-teal);
+  border: 5px solid var(--as-teal); border-radius: 50%; width: 36mm; height: 36mm;
+  line-height: 36mm; }
+.rajyoga-power .rajyoga-label { color: var(--as-slate); font-size: 11pt; margin-top: 2mm; }
+.cover h1 { font-size: 32pt; font-weight: 700; letter-spacing: 1pt; }
+.cover .subtitle { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 14mm; font-style: italic; }
+.cover .subject { font-size: 18pt; font-weight: 600; }
+/* Each top-level section starts on a fresh page for a clean opening. The
+   blank-page bug (a section heading chained avoid-together with a tall
+   440px chart into an unbreakable group) is fixed separately by NOT chaining
+   heading→chart, so this forced break no longer orphans empty pages. */
+.section { page-break-before: always; margin-top: 4mm; }
+.section.first { page-break-before: auto; }
+.planet-block, .house-block {
+  margin: 4mm 0; padding: 4mm 5mm; background: #fafafa;
+  border-left: 3px solid var(--brand-primary); page-break-inside: avoid;
+}
+.planet-block .meta, .house-block .meta {
+  color: var(--brand-secondary); font-size: 10pt; margin-bottom: 2mm;
+}
+/* Yoga blocks — each name becomes a numbered colored pill badge (rotating
+   palette like the benchmark). Counter drives the number. */
+/* Yoga blocks — a clean LifeAstro card (NOT the benchmark's garish rotating
+   pill): a numbered gold ✦ disc + maroon name on a cream card with a saffron
+   left rule. Single, consistent, elegant. */
+.section.yogas-section { counter-reset: yoga; }
+.yoga-block {
+  counter-increment: yoga; margin: 5mm 0; padding: 4mm 5mm 4mm 6mm;
+  background: var(--as-cardbg); border-left: 1mm solid var(--as-teal);
+  border-radius: 0 2mm 2mm 0; page-break-inside: avoid;
+}
+.yoga-block .name {
+  display: block; position: relative; padding-left: 11mm;
+  font-size: 13pt; font-weight: 700; color: var(--as-dorange);
+  margin-bottom: 1.5mm; line-height: 1.3;
+}
+.yoga-block .name::before {
+  content: counter(yoga); position: absolute; left: 0; top: -0.5mm;
+  width: 7.5mm; height: 7.5mm; border-radius: 50%;
+  background: var(--as-amber); color: #fff; font-size: 11pt; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.yoga-block .shloka { color: #9e2b25; font-style: italic; text-align: center; margin: 2mm 6mm; line-height: 1.55; }
+.yoga-block .body { text-align: justify; }
+.yoga-block .summary { font-weight: 700; color: var(--as-teal); text-align: center; margin: 2.5mm 4mm 0; }
+.yoga-block .source { color: var(--as-slate); font-size: 9pt; font-style: italic; margin-top: 2mm; }
+.dasha-block {
+  margin: 4mm 0; padding: 5mm; background: #f0fdf4;
+  border-left: 4px solid #16a34a; page-break-inside: avoid;
+}
+.dasha-block.upcoming { background: #fafafa; border-left-color: var(--brand-secondary); }
+.dasha-block .header-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2mm; }
+.dasha-block .lord { font-size: 14pt; font-weight: 700; color: var(--brand-primary); }
+.dasha-block .dates { color: var(--brand-secondary); font-size: 10pt; }
+.remedy-block {
+  margin: 3mm 0; padding: 3mm 5mm; background: #fafafa;
+  border-left: 3px solid var(--brand-secondary); page-break-inside: avoid;
+}
+.remedy-block .title { font-weight: 600; margin-bottom: 1mm; }
+.remedy-block .category {
+  display: inline-block; padding: 1mm 3mm; background: var(--brand-secondary);
+  color: #fff; font-size: 9pt; border-radius: 1mm; margin-left: 3mm; vertical-align: middle;
+}
+.empty-list { margin: 3mm 0; color: var(--brand-secondary); font-style: italic; }
+/* Mudda-Dasha month-wise timeline cards */
+.mudda-period {
+  margin: 4mm 0; padding: 3mm 5mm 3mm 5mm; background: var(--as-cardbg, #fffaf0);
+  border-left: 4px solid var(--as-teal, #c25e10); border-radius: 1mm;
+  page-break-inside: avoid;
+}
+.mudda-head {
+  font-size: 12pt; font-weight: 700; color: var(--as-dorange, #9e2b25);
+  margin: 0 0 1.5mm; padding-bottom: 1mm; border-bottom: 1px solid #eadcc0;
+}
+.mudda-summary { font-style: italic; color: var(--as-ink, #3a2410); margin: 0 0 2mm; }
+.mudda-area { margin: 1mm 0; font-size: 10.5pt; }
+.mudda-area strong { color: var(--as-teal, #c25e10); }
+.mudda-guidance {
+  margin: 2.5mm 0 0; padding: 2mm 3mm; background: #fff7e8;
+  border: 1px dashed var(--as-amber, #b8860b); border-radius: 1mm;
+}
+.mudda-guidance p { margin: 0.8mm 0; font-size: 10pt; }
+.mudda-guidance strong { color: var(--as-dorange, #9e2b25); }
+/* The whole divisional block must NOT be atomic — chart(110mm)+full table is
+   taller than the space left under a section heading, which orphaned a near-
+   blank page. Only the diamond (.north-chart) stays atomic; the table flows. */
+/* Keep each varga's chart + its table together on one page. The chart is
+   sized (300px ≈ 79mm) so the whole block stays under a page height, so this
+   never orphans a blank page (the earlier blank-page issue was at 400px). */
+.divisional-block { margin: 6mm 0; page-break-inside: avoid; }
+.divisional-block .vsubtitle { color: var(--brand-secondary); font-style: italic; font-size: 10pt; margin: 0 0 2mm; }
+.divisional-block .lagna-line { font-size: 10pt; margin-bottom: 2mm; }
+.dosha-block {
+  margin: 4mm 0; padding: 4mm 5mm; border-left: 4px solid #b91c1c;
+  background: #fef2f2; page-break-inside: avoid;
+}
+.dosha-block.cancelled { border-left-color: #16a34a; background: #f0fdf4; }
+.dosha-block.mild { border-left-color: #ca8a04; background: #fefce8; }
+.dosha-block .header-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2mm; }
+.dosha-block .name { font-size: 13pt; font-weight: 700; color: var(--brand-primary); }
+.dosha-block .severity {
+  display: inline-block; padding: 1mm 3mm; font-size: 9pt; font-weight: 600;
+  border-radius: 1mm; color: #fff; background: #b91c1c;
+}
+.dosha-block.cancelled .severity { background: #16a34a; }
+.dosha-block.mild .severity { background: #ca8a04; }
+.dosha-block .source { color: var(--brand-secondary); font-size: 9pt; font-style: italic; margin-top: 2mm; }
+.prediction-block {
+  margin: 4mm 0; padding: 4mm 5mm; background: #f5f3ff;
+  border-left: 3px solid #7c3aed; page-break-inside: avoid;
+}
+.prediction-block h3 { margin: 0 0 2mm; color: #5b21b6; }
+.citation-row { display: flex; gap: 4mm; padding: 2mm 0; border-bottom: 1px dotted #d4d4d4; font-size: 10pt; }
+.citation-row .topic { width: 38%; font-weight: 600; }
+.citation-row .source { width: 30%; font-style: italic; color: var(--brand-secondary); }
+.citation-row .note { flex: 1; color: var(--brand-secondary); }
+
+</style>
+</head>
+<body>
+<section class="cover">
+
+<h1>బృహత్ జాతకం</h1>
+<div class="subtitle">సమగ్ర వైదిక జ్యోతిష విశ్లేషణ</div>
+<div class="subject">Arjun Mehta</div>
+<div class="meta">
+జననం 1990-01-15 సమయం 10:30<br>
+నమూనా వాక్యం.
+</div>
+<div class="generated">
+రూపొందించిన తేదీ 2026-10-31 06:40 UTC
+</div>
+</section>
+
+<section class="section first">
+<div class="part-banner"><h2 class="part-h2">భాగం 1: పునాదులు</h2></div>
+<h2>జన్మ జాతక సారాంశం</h2>
+<p>
+<strong>లగ్నం:</strong>
+సింహం (06°00&#39;21&quot;),
+నక్షత్రం: మఖ,
+పాదం 2
+</p>
+<div style="display:flex;justify-content:center;gap:6mm;flex-wrap:wrap;margin:6mm 0;"><div class="north-chart" style="display:inline-block;text-align:center;margin:2mm 3mm;">
+<div style="font-size:10pt;font-weight:700;color:#1a1a1a;margin-bottom:1.5mm;">లగ్న చక్రం</div>
+<svg viewBox="0 0 100 100" width="260" height="260" style="font-family:Noto Sans, Noto Sans Devanagari, Noto Sans Telugu, Noto Sans Tamil, Noto Sans Kannada, Noto Sans Bengali, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Malayalam, sans-serif;">
+
+    <rect x="1" y="1" width="98" height="98" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
+    <line x1="1" y1="1" x2="99" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <line x1="99" y1="1" x2="1" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <polygon points="50,1 99,50 50,99 1,50" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="50" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">5</text><text x="25" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">6</text><text x="9" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">7</text><text x="25" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">8</text><text x="9" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">9</text><text x="25" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">10</text><text x="50" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">11</text><text x="75" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">12</text><text x="91" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">1</text><text x="75" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">2</text><text x="91" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">3</text><text x="75" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">4</text>
+<text x="50" y="26.5" font-size="4.6" font-weight="bold" text-anchor="middle" dominant-baseline="middle"><tspan fill="#e05e18">సూ</tspan></text><text x="25" y="17" font-size="4.6" font-weight="bold" text-anchor="middle" dominant-baseline="middle"><tspan fill="#3a7bd5">చం</tspan></text><text x="9" y="26.5" font-size="4.6" font-weight="bold" text-anchor="middle" dominant-baseline="middle"><tspan fill="#c0392b">కు</tspan></text><text x="25" y="51.5" font-size="4.6" font-weight="bold" text-anchor="middle" dominant-baseline="middle"><tspan fill="#2c3e50">శ</tspan></text>
+</svg>
+</div><div class="north-chart" style="display:inline-block;text-align:center;margin:2mm 3mm;">
+<div style="font-size:10pt;font-weight:700;color:#1a1a1a;margin-bottom:1.5mm;">నవాంశ చక్రం</div>
+<svg viewBox="0 0 100 100" width="260" height="260" style="font-family:Noto Sans, Noto Sans Devanagari, Noto Sans Telugu, Noto Sans Tamil, Noto Sans Kannada, Noto Sans Bengali, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Malayalam, sans-serif;">
+
+    <rect x="1" y="1" width="98" height="98" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
+    <line x1="1" y1="1" x2="99" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <line x1="99" y1="1" x2="1" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <polygon points="50,1 99,50 50,99 1,50" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="50" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">1</text><text x="25" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">2</text><text x="9" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">3</text><text x="25" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">4</text><text x="9" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">5</text><text x="25" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">6</text><text x="50" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">7</text><text x="75" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">8</text><text x="91" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">9</text><text x="75" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">10</text><text x="91" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">11</text><text x="75" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">12</text>
+<text x="25" y="51.5" font-size="4.6" font-weight="bold" text-anchor="middle" dominant-baseline="middle"><tspan fill="#e05e18">సూ</tspan></text>
+</svg>
+</div></div>
+<table>
+<thead>
+<tr>
+<th>గ్రహం</th>
+<th>రాశి</th>
+<th>భాగలు</th>
+<th>భావం</th>
+<th>నక్షత్రం</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>సూర్యుడు</td>
+<td>సింహం</td>
+<td>06°00&#39;21&quot;</td>
+<td>1</td>
+<td>మఖ (2)</td>
+</tr>
+<tr>
+<td>చంద్రుడు</td>
+<td>కన్య</td>
+<td>06°00&#39;21&quot;</td>
+<td>2</td>
+<td>మఖ (2)</td>
+</tr>
+<tr>
+<td>కుజుడు</td>
+<td>తుల</td>
+<td>06°00&#39;21&quot;</td>
+<td>3</td>
+<td>మఖ (2)</td>
+</tr>
+<tr>
+<td>శని (R)</td>
+<td>వృశ్చికం</td>
+<td>06°00&#39;21&quot;</td>
+<td>4</td>
+<td>మఖ (2)</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section class="section graha-sthiti-section">
+<h2>గ్రహ స్థితి</h2>
+<div class="graha-grid"><div class="graha-card">
+  <div class="graha-glyph"><svg viewBox="0 0 48 48" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#e8821b" stroke-width="2" stroke-linecap="round">
+      <line x1="41.0" y1="24.0" x2="46.0" y2="24.0"/><line x1="38.7" y1="32.5" x2="43.1" y2="35.0"/><line x1="32.5" y1="38.7" x2="35.0" y2="43.1"/><line x1="24.0" y1="41.0" x2="24.0" y2="46.0"/><line x1="15.5" y1="38.7" x2="13.0" y2="43.1"/><line x1="9.3" y1="32.5" x2="4.9" y2="35.0"/><line x1="7.0" y1="24.0" x2="2.0" y2="24.0"/><line x1="9.3" y1="15.5" x2="4.9" y2="13.0"/><line x1="15.5" y1="9.3" x2="13.0" y2="4.9"/><line x1="24.0" y1="7.0" x2="24.0" y2="2.0"/><line x1="32.5" y1="9.3" x2="35.0" y2="4.9"/><line x1="38.7" y1="15.5" x2="43.1" y2="13.0"/>
+    </g>
+    <circle cx="24" cy="24" r="13" fill="#f6a623"/>
+    <circle cx="24" cy="24" r="13" fill="none" stroke="#e8821b" stroke-width="1.5"/></svg></div>
+  <div class="graha-info">
+    <div class="graha-name">సూర్యుడు</div>
+    <div class="graha-pos">సింహం</div>
+    <div class="graha-nak">మఖ</div>
+  </div>
+</div>
+<div class="graha-card">
+  <div class="graha-glyph"><svg viewBox="0 0 48 48" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="24" r="15" fill="#d7dbe0"/>
+    <circle cx="29" cy="24" r="13" fill="#ffffff"/>
+    <circle cx="19" cy="20" r="2" fill="#c2c8d0"/><circle cx="17" cy="27" r="1.4" fill="#c2c8d0"/></svg></div>
+  <div class="graha-info">
+    <div class="graha-name">చంద్రుడు</div>
+    <div class="graha-pos">కన్య</div>
+    <div class="graha-nak">మఖ</div>
+  </div>
+</div>
+<div class="graha-card">
+  <div class="graha-glyph"><svg viewBox="0 0 48 48" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="24" r="15" fill="#c0392b"/>
+    <ellipse cx="20" cy="20" rx="6" ry="3" fill="#a93226" transform="rotate(-20 20 20)"/>
+    <ellipse cx="28" cy="29" rx="5" ry="2.5" fill="#e06352"/></svg></div>
+  <div class="graha-info">
+    <div class="graha-name">కుజుడు</div>
+    <div class="graha-pos">తుల</div>
+    <div class="graha-nak">మఖ</div>
+  </div>
+</div>
+<div class="graha-card">
+  <div class="graha-glyph"><svg viewBox="0 0 48 48" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="24" cy="24" rx="22" ry="7" fill="none" stroke="#b0884a" stroke-width="2.4" transform="rotate(-18 24 24)"/>
+    <circle cx="24" cy="24" r="12" fill="#cdb06b"/></svg></div>
+  <div class="graha-info">
+    <div class="graha-name">శని <span style="color:#c0392b;">(R)</span></div>
+    <div class="graha-pos">వృశ్చికం</div>
+    <div class="graha-nak">మఖ</div>
+  </div>
+</div></div>
+</section>
+
+<section class="section">
+<h2>అవకహడ చక్రం (జన్మ వివరాలు)</h2>
+<table><tbody><tr><td><strong>పాయ</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>వర్ణం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>వశ్యం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>యోని</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>గణం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>నాడి</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>తత్త్వం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>నక్షత్రాధిపతి</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>రాశ్యధిపతి</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>లగ్నాధిపతి</strong></td><td>నమూనా వాక్యం.</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>జన్మ సమయ పంచాంగం</h2>
+<p>మీ జనన సమయంలోని పంచాంగం: తిథి, వారం, నక్షత్రం, యోగం మరియు కరణం.</p>
+<table><tbody><tr><td><strong>తిథి</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>వారం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>నక్షత్రం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>యోగం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>కరణం</strong></td><td>నమూనా వాక్యం.</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>ఘాత చక్రం (అశుభ అంశాలు)</h2>
+<p>ఘాత చక్రం మీకు అశుభమైన వారం, తిథి, మాసం మరియు నక్షత్రాన్ని సూచిస్తుంది.</p>
+<table><tbody><tr><td><strong>అశుభ వారం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>తిథి</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>మాసం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>నక్షత్రం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>యోగం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>కరణం</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>జాము</strong></td><td>2</td></tr>
+<tr><td><strong>ఘాత రాశి</strong></td><td>వృషభం</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>భావ చలితం (భావ సంధి చక్రం)</h2>
+<p>చలిత చక్రం గ్రహాలను ఖచ్చితమైన భావ సంధుల (శ్రీపతి పద్ధతి) ప్రకారం ఉంచుతుంది, దీనివల్ల రాశి చక్రంలో కనిపించని భావ మార్పులు బయటపడతాయి.</p>
+<table>
+<thead><tr><th>భావం</th><th>ప్రారంభం</th><th>మధ్యం</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>సింహం 1°</td><td>సింహం 16°</td></tr>
+</tbody>
+</table>
+<h3>గ్రహాల భావ మార్పులు</h3>
+<table>
+<thead><tr><th>గ్రహం</th><th>రాశి భావం</th><th>చలిత భావం</th><th>మారింది</th></tr></thead>
+<tbody>
+<tr><td>సూర్యుడు</td><td>1</td><td>2</td><td>✓</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section narrative-chapter">
+<div class="part-banner"><h2 class="part-h2">భాగం 2: మీ జీవన ఫలితాలు</h2></div>
+<h2>నమూనా వాక్యం.</h2>
+<h3>నమూనా వాక్యం.</h3><p>నమూనా వాక్యం.</p>
+</section>
+
+<section class="section narrative-chapter">
+<h2>నమూనా వాక్యం.</h2>
+<h3>నమూనా వాక్యం.</h3><p>నమూనా వాక్యం.</p><ul><li>నమూనా వాక్యం.</li></ul>
+</section>
+
+<section class="section">
+<h2>గ్రహ విశ్లేషణ</h2>
+<div class="planet-block">
+<h3>సూర్యుడు</h3>
+<div class="meta">
+సింహం (06°00&#39;21&quot;),
+భావం 1,
+నక్షత్రం: మఖ
+</div>
+<p>ఆత్మ, తేజస్సు, అధికారం, తండ్రి. మీ అంతరంగ స్వభావాన్ని, ప్రాణశక్తిని సూచిస్తాడు.</p>
+</div>
+<div class="planet-block">
+<h3>చంద్రుడు</h3>
+<div class="meta">
+కన్య (06°00&#39;21&quot;),
+భావం 2,
+నక్షత్రం: మఖ
+</div>
+<p>మనస్సు, భావాలు, తల్లి, ప్రజలు. మానసిక శ్రేయస్సుకు, అంతర్దృష్టికి అధిపతి.</p>
+</div>
+<div class="planet-block">
+<h3>కుజుడు</h3>
+<div class="meta">
+తుల (06°00&#39;21&quot;),
+భావం 3,
+నక్షత్రం: మఖ
+</div>
+<p>శక్తి, ధైర్యం, కర్మ, తోబుట్టువులు. చొరవను, శారీరక బలాన్ని నడిపిస్తాడు.</p>
+</div>
+<div class="planet-block">
+<h3>శని</h3>
+<div class="meta">
+వృశ్చికం (06°00&#39;21&quot;),
+భావం 4,
+నక్షత్రం: మఖ
+</div>
+<p>క్రమశిక్షణ, ఆయుష్షు, కర్మ, కష్టం. నెమ్మదిగా, క్రమంగా, శాశ్వతంగా నిలిచే పాఠాలు నేర్పుతాడు.</p>
+</div>
+</section>
+
+<section class="section">
+<h2>భావ విశ్లేషణ</h2>
+<div class="house-block">
+<h3>భావం 1: స్వభావం, లగ్నం, వ్యక్తిత్వం</h3>
+<div class="meta">
+అధిపతి: సూర్యుడు (స్థానం: సింహం)
+</div>
+<p>నమూనా వాక్యం.</p>
+</div>
+
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">భాగం 3: యోగాలు మరియు దోషాలు</h2></div>
+<h2>జాతకంలోని యోగాలు</h2>
+<div class="yoga-block">
+<div class="name">గజకేసరి యోగం</div>
+<p>నమూనా వాక్యం.</p>
+</div>
+
+<h3 class="merged-sub">నమూనా వాక్యం.</h3>
+<h3>నమూనా వాక్యం.</h3><p>నమూనా వాక్యం.</p>
+
+</section>
+
+<section class="section">
+<h2>రాజయోగ బలం మరియు స్వర్ణ కాలాలు</h2>
+<div class="rajyoga-power">
+<div class="rajyoga-pct">62%</div>
+<div class="rajyoga-label">రాజయోగ బలం</div>
+</div>
+<p>యోగకారక గ్రహాలు: గురువు</p>
+<h3>స్వర్ణ కాలాలు</h3><table>
+<thead><tr><th>గ్రహం</th><th>నుండి</th><th>వరకు</th></tr></thead>
+<tbody>
+<tr><td>గురువు</td><td>2030</td><td>2046</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<h2>దోష విశ్లేషణ</h2>
+<div class="dosha-block present">
+<div class="header-row">
+<span class="name">కుజ దోషం</span>
+<span class="severity">ఉంది</span>
+</div>
+<p>నమూనా వాక్యం.</p>
+</div><div class="dosha-block mild">
+<div class="header-row">
+<span class="name">కాలసర్ప దోషం</span>
+<span class="severity">స్వల్పం</span>
+</div>
+<p>నమూనా వాక్యం.</p>
+</div>
+
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">భాగం 4: దశా ఫలితాలు</h2></div>
+<h2>వింశోత్తరి దశ: జీవన కాలాలు</h2>
+<h3>ప్రస్తుత మహాదశ</h3>
+<div class="dasha-block">
+<div class="header-row">
+<span class="lord">శని</span>
+<span class="dates">2020-01-01 &nbsp;నుండి&nbsp; 2039-01-01 (19 సంవత్సరాలు)</span>
+</div>
+<p>నమూనా వాక్యం.</p>
+</div>
+<h3>రాబోయే మహాదశలు</h3>
+<div class="dasha-block upcoming">
+<div class="header-row">
+<span class="lord">బుధుడు</span>
+<span class="dates">2020-01-01 &nbsp;నుండి&nbsp; 2039-01-01 (19 సంవత్సరాలు)</span>
+</div>
+<p>నమూనా వాక్యం.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">భాగం 5: పరిహారాలు మరియు మార్గదర్శనం</h2></div>
+<h2>జీవిత రంగాల వారీగా ఫలితాలు</h2>
+<div class="prediction-block">
+<h3>వృత్తి మరియు వ్యాపారం</h3>
+<p>నమూనా వాక్యం.</p>
+</div>
+<div class="prediction-block">
+<h3>కుటుంబం మరియు ఇల్లు</h3>
+<p>నమూనా వాక్యం.</p>
+</div>
+</section>
+
+<section class="section">
+<h2>ఇష్ట దేవత</h2>
+<p>ఇష్ట దేవత ఆధ్యాత్మిక పురోగతికి మీ వ్యక్తిగత దైవం; కారకాంశ నుండి పన్నెండవ భావం ద్వారా తెలుస్తుంది.</p>
+<p><strong>దేవత:</strong> నమూనా వాక్యం.<br>
+<strong>కారకాంశ నుండి 12వ రాశి:</strong> కన్య &nbsp;
+<strong>నిర్ణయించే గ్రహం:</strong> శుక్రుడు</p>
+<p>నమూనా వాక్యం.</p>
+</section>
+
+<section class="section">
+<h2>లాల్ కితాబ్ విశ్లేషణ</h2>
+<p>లాల్ కితాబ్ భావాలు, పితృ ఋణాలు మరియు తేవా వర్గీకరణ.</p>
+<h3>గ్రహ స్థితి</h3><table>
+<thead><tr><th>గ్రహం</th><th>భావం</th><th>రాశి</th></tr></thead>
+<tbody>
+<tr><td>సూర్యుడు</td><td>1</td><td>మేషం</td></tr>
+</tbody>
+</table>
+<h3>పితృ ఋణాలు</h3><table>
+<thead><tr><th>ఋణం</th><th>స్థితి</th></tr></thead>
+<tbody>
+<tr><td>నమూనా వాక్యం.</td><td>ఉంది</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<h2>సూచించిన పరిహారాలు</h2>
+<div class="remedy-block">
+<span class="title">నమూనా వాక్యం.</span>
+<span class="category">మంత్రం</span>
+<p>నమూనా వాక్యం.</p>
+</div>
+</section>
+
+<section class="section">
+<h2>రత్న సూచన</h2>
+<p>మీ జాతకంలో అత్యంత శుభ భావాల (లగ్నం మరియు త్రికోణాలు) అధిపతులకు బలాన్నిచ్చే రత్నాలు.</p>
+<table><thead><tr>
+<th>రకం</th><th>రత్నం</th>
+<th>గ్రహం</th><th>ఆధారం</th>
+</tr></thead><tbody><tr><td><strong>నమూనా వాక్యం.</strong></td><td>నమూనా వాక్యం.</td><td>సూర్యుడు</td><td>నమూనా వాక్యం.</td></tr></tbody></table>
+<p class="gems-note">మీ జాతకాన్ని పూర్తిగా పరిశీలించిన తర్వాతే రత్నాన్ని ధరించండి; సరైన బరువు, లోహం మరియు ధరించే రోజు ముఖ్యం.</p>
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">భాగం 6: సాంకేతిక పట్టికలు</h2></div>
+<h2>వర్గ చక్రాలు</h2>
+<p class="section-intro">వర్గ చక్రాలు జీవితంలోని ప్రత్యేక రంగాలను లోతుగా చూపిస్తాయి; ప్రతి చక్రం ఒక్కో అంశాన్ని సూక్ష్మంగా విశ్లేషిస్తుంది, ఉదాహరణకు ధనం, తోబుట్టువులు, వివాహం, వృత్తి మరియు ఆధ్యాత్మిక పురోగతి.</p>
+<div class="divisional-block">
+<h3>D9: నమూనా వాక్యం.</h3>
+<p class="vsubtitle">నమూనా వాక్యం.</p>
+<div class="lagna-line">
+<strong>లగ్నం:</strong>
+మేషం
+</div>
+<div style="text-align:center;margin:4mm 0;"><div class="north-chart" style="display:inline-block;text-align:center;margin:2mm 3mm;">
+<div style="font-size:10pt;font-weight:700;color:#1a1a1a;margin-bottom:1.5mm;">D9</div>
+<svg viewBox="0 0 100 100" width="300" height="300" style="font-family:Noto Sans, Noto Sans Devanagari, Noto Sans Telugu, Noto Sans Tamil, Noto Sans Kannada, Noto Sans Bengali, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Malayalam, sans-serif;">
+
+    <rect x="1" y="1" width="98" height="98" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
+    <line x1="1" y1="1" x2="99" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <line x1="99" y1="1" x2="1" y2="99" stroke="#1a1a1a" stroke-width="0.5"/>
+    <polygon points="50,1 99,50 50,99 1,50" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="50" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">1</text><text x="25" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">2</text><text x="9" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">3</text><text x="25" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">4</text><text x="9" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">5</text><text x="25" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">6</text><text x="50" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">7</text><text x="75" y="86" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">8</text><text x="91" y="69" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">9</text><text x="75" y="44" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">10</text><text x="91" y="19" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">11</text><text x="75" y="10.5" font-size="4.4" fill="#5a5a5a" font-weight="600" text-anchor="middle" dominant-baseline="middle">12</text>
+<text x="25" y="51.5" font-size="4.6" font-weight="bold" text-anchor="middle" dominant-baseline="middle"><tspan fill="#e05e18">సూ</tspan></text>
+</svg>
+</div></div>
+<table>
+<thead>
+<tr>
+<th>గ్రహం</th>
+<th>రాశి</th>
+<th>భావం</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>సూర్యుడు</td>
+<td>కర్కాటకం</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</section>
+
+<section class="section">
+<h2>షడ్బలం (ఆరు విధాల బలం)</h2>
+<p>రూపాలలో మొత్తం షడ్బలం, అత్యంత బలమైన గ్రహం నుండి బలహీనమైన గ్రహం వరకు క్రమంలో.</p>
+<table>
+<thead><tr><th>గ్రహం</th><th>రూపాలు</th><th>క్రమం</th></tr></thead>
+<tbody>
+<tr><td>సూర్యుడు</td><td>7.20</td><td>1</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<h2>భావ బలం (భావాల శక్తి)</h2>
+<p>పన్నెండు భావాలలో ప్రతి దాని బలం: భావాధిపతి బలం, దిగ్బలం మరియు దృష్టి బలం.</p>
+<table>
+<thead><tr><th>భావం</th><th>భావాధిపతి బలం</th><th>దిగ్బలం</th><th>దృష్టి బలం</th><th>మొత్తం</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>1.00</td><td>1.00</td><td>1.00</td><td>3.00</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<h2>అష్టకవర్గ</h2>
+<p>ప్రతి రాశికి సర్వాష్టకవర్గ (SAV) శుభ బిందువుల మొత్తం, మరియు గ్రహాల వారీగా భిన్నాష్టకవర్గ.</p>
+<table><thead><tr><th>రాశి</th><th>1</th><th>2</th><th>3</th></tr></thead>
+<tbody><tr><td><strong>బిందువులు</strong></td><td>28</td><td>30</td><td>25</td></tr>
+<tr><td colspan="4">మొత్తం: <strong>83</strong></td></tr></tbody></table>
+<h3>గ్రహాల వారీ మొత్తం</h3><table>
+<thead><tr><th>గ్రహం</th><th>మొత్తం బిందువులు</th></tr></thead>
+<tbody>
+<tr><td>సూర్యుడు</td><td>48</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<h2>మైత్రీ చక్రం (గ్రహ మైత్రి)</h2>
+<p>గ్రహాల మధ్య నైసర్గిక, తాత్కాలిక మరియు పంచధా (సంయుక్త) మైత్రీ సంబంధాలు.</p>
+<h3>నైసర్గిక (సహజ)</h3><table><thead><tr><th></th><th>సూర్యుడు</th></tr></thead><tbody><tr><td><strong>చంద్రుడు</strong></td><td>నమూనా వాక్యం.</td></tr></tbody></table>
+<h3>తాత్కాలిక</h3><table><thead><tr><th></th><th>సూర్యుడు</th></tr></thead><tbody><tr><td><strong>చంద్రుడు</strong></td><td>నమూనా వాక్యం.</td></tr></tbody></table>
+<h3>పంచధా (సంయుక్త)</h3><table><thead><tr><th></th><th>సూర్యుడు</th></tr></thead><tbody><tr><td><strong>చంద్రుడు</strong></td><td>నమూనా వాక్యం.</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>గ్రహ అవస్థలు</h2>
+<p>బాలాది, జాగ్రదాది మరియు దీప్తాది పద్ధతుల ప్రకారం ప్రతి గ్రహపు అవస్థలు.</p>
+<table>
+<thead><tr><th>గ్రహం</th><th>బాలాది</th><th>జాగ్రదాది</th><th>దీప్తాది</th></tr></thead>
+<tbody>
+<tr><td>సూర్యుడు</td><td>నమూనా వాక్యం.</td><td>నమూనా వాక్యం.</td><td>నమూనా వాక్యం.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<h2>కేపీ పద్ధతి (కృష్ణమూర్తి పద్ధతి)</h2>
+<p>కేపీ నక్షత్ర పద్ధతి ప్రకారం భావ సంధి ఉప అధిపతులు మరియు గ్రహ కారకాలు.</p>
+<table>
+<thead><tr><th>భావం</th><th>రాశి</th><th>నక్షత్రాధిపతి</th><th>ఉప అధిపతి</th><th>ఉప ఉప అధిపతి</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>సింహం 1°</td><td>నమూనా వాక్యం.</td><td>నమూనా వాక్యం.</td><td>నమూనా వాక్యం.</td></tr>
+</tbody>
+</table>
+<h3>గ్రహ కారకాలు</h3>
+<table>
+<thead><tr><th>గ్రహం</th><th>సూచించే భావాలు</th></tr></thead>
+<tbody>
+<tr><td>సూర్యుడు</td><td>1, 5</td></tr>
+</tbody>
+</table>
+<h3>పాలక గ్రహాలు</h3><table>
+<thead><tr><th>పాత్ర</th><th>గ్రహం</th></tr></thead>
+<tbody>
+<tr><td><strong>లగ్న నక్షత్రాధిపతి</strong></td><td>నమూనా వాక్యం.</td></tr>
+<tr><td><strong>వారాధిపతి</strong></td><td>నమూనా వాక్యం.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<h2>జైమిని పద్ధతి</h2>
+<h3>చర కారకాలు</h3><table>
+<thead><tr><th>కారకుడు</th><th>గ్రహం</th></tr></thead>
+<tbody>
+<tr><td>నమూనా వాక్యం.</td><td>సూర్యుడు</td></tr>
+</tbody>
+</table>
+<p><strong>కారకాంశ:</strong> మిథునం &nbsp; <strong>స్వాంశ:</strong> మిథునం</p>
+<h3>ఆరూఢ పదాలు</h3><table>
+<thead><tr><th>పదం</th><th>రాశి</th><th>భావం</th></tr></thead>
+<tbody>
+<tr><td>A1 (నమూనా వాక్యం.)</td><td>కర్కాటకం</td><td>4</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section">
+<div class="part-banner"><h2 class="part-h2">భాగం 7: వర్షఫలం (వార్షిక)</h2></div>
+<h2>వర్షఫలం (వార్షిక జాతకం)</h2>
+<p>ముంథా, వర్షాధిపతి, సహమలు మరియు పంచవర్గీయ బలంతో కూడిన వార్షిక సౌర పునరాగమన విశ్లేషణ.</p>
+<h3>సంవత్సరం 2026</h3>
+<p><strong>ముంథా:</strong> తుల (భావం 7) &nbsp;
+<strong>వర్షాధిపతి:</strong> కుజుడు</p>
+<p>నమూనా వాక్యం.</p>
+<h4>సహమలు (సున్నిత బిందువులు)</h4><table>
+<thead><tr><th>సహమం</th><th>రాశి</th><th>అధిపతి</th></tr></thead>
+<tbody>
+<tr><td>నమూనా వాక్యం.</td><td>వృషభం 2°</td><td>శుక్రుడు</td></tr>
+</tbody>
+</table>
+<h4>పంచవర్గీయ బలం</h4><table>
+<thead><tr><th>గ్రహం</th><th>విశ్వ</th></tr></thead>
+<tbody>
+<tr><td>సూర్యుడు</td><td>12.50</td></tr>
+</tbody>
+</table>
+
+<h3 class="merged-sub">నమూనా వాక్యం.</h3>
+<h3>నమూనా వాక్యం.</h3><p>నమూనా వాక్యం.</p>
+
+</section>
+
+<section class="section mudda-section">
+<h2>మాసవారీ ఫలితాలు (ముద్దా దశ) 2026</h2>
+<div class="mudda-period">
+<h3 class="mudda-head">2026-01-15 నుండి 2026-02-02 &nbsp;·&nbsp; సూర్యుడు</h3>
+<p class="mudda-summary">నమూనా వాక్యం.</p>
+<p class="mudda-area"><strong>నమూనా వాక్యం.:</strong> నమూనా వాక్యం.</p>
+<div class="mudda-guidance">
+<p><strong>నమూనా వాక్యం.:</strong> నమూనా వాక్యం.</p>
+
+
+</div>
+</div>
+</section>
+<footer>Generated using LifeAstroAPI</footer>
+</body>
+</html>

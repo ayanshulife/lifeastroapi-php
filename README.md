@@ -379,8 +379,158 @@ retries, `Retry-After` and error mapping work the same. You can also implement
 
 ## PDF reports
 
-The `reports->*` methods return the report JSON. Branded PDF rendering of those reports, which
-the Node SDK offers in `lifeastroapi/pdf`, is planned for a later version of this package.
+Turn the JSON of any `reports->*` method into a branded, print-ready PDF (kundli, match making,
+mangal dosha, sade sati, varshaphal, numerology, dasha analysis, horoscopes), in every language the
+report was requested in.
+
+**Where the PDF is made.** On your own server, by this package. LifeAstroAPI only returns the
+report JSON (that call costs the report's credits); turning it into HTML and PDF costs nothing and
+sends nothing to LifeAstroAPI.
+
+```php
+use LifeAstroApi\Lang;
+use LifeAstroApi\Pdf\Reports;
+
+$report = $client->reports->kundliDetailed(...$arjun, name: 'Arjun Mehta', place: 'Mumbai', lang: Lang::Hi);
+
+$pdf = Reports::kundliDetailedPdf($report, ['companyName' => 'Acme Astro', 'logoUrl' => 'https://acme.example/logo.png']);
+file_put_contents('kundli.pdf', $pdf);
+```
+
+### Two layers
+
+| Layer | Methods | Needs |
+|-------|---------|-------|
+| **HTML** | `Reports::render*Html($report, $branding)` | Nothing: plain PHP. The HTML is a complete, self-contained document (the same bytes as the Node.js SDK). |
+| **PDF** | `Reports::*Pdf($report, $branding, $options, $engine)`, `Reports::htmlToPdf($html)` | A PDF engine: a headless Chrome / Chromium / Edge on your server, or a Gotenberg service. |
+
+| Report (`$client->reports->...`) | HTML | PDF |
+|--------|------|-----|
+| `kundliLite` | `renderKundliLiteHtml` | `kundliLitePdf` |
+| `kundliDetailed` | `renderKundliDetailedHtml` | `kundliDetailedPdf` |
+| `kundliBrihad` | `renderKundliBrihadHtml` | `kundliBrihadPdf` (table of contents, running header, bookmarks) |
+| `matchMaking` | `renderMatchMakingHtml` | `matchMakingPdf` |
+| `mangalDosha` | `renderMangalDoshaHtml` | `mangalDoshaPdf` |
+| `sadeSati` | `renderSadeSatiHtml` | `sadeSatiPdf` |
+| `varshaphal` | `renderVarshaphalHtml` | `varshaphalPdf` |
+| `numerology` | `renderNumerologyHtml` | `numerologyPdf` |
+| `dashaAnalysis` | `renderDashaAnalysisHtml` | `dashaAnalysisPdf` |
+| `horoscopeDaily`, `horoscopeWeekly`, `horoscopeMonthly` | `renderHoroscopeHtml` | `horoscopePdf` |
+
+The report's language is the `lang` you requested it in; the PDF needs nothing extra for it.
+
+### Choose a PDF engine
+
+**1. Chrome on your server (default).** With no engine given, `*Pdf()` starts a headless Chrome,
+Chromium or Edge for that one call. Only the browser is needed, no Node.js or Composer package:
+
+```bash
+# Debian / Ubuntu (also in a php:8.x Docker image): the browser and fonts for every Indic script
+apt-get install -y chromium fonts-noto-core
+# macOS / Windows: an installed Google Chrome or Edge is found automatically
+```
+
+The browser is looked up in `LIFEASTRO_CHROME`, `CHROME_PATH`, `PUPPETEER_EXECUTABLE_PATH`, then the
+usual install locations. Starting it takes about a second, so for more than one PDF start it once
+and pass it to every call:
+
+```php
+use LifeAstroApi\Pdf\Engine\ChromePdfEngine;
+
+$engine = ChromePdfEngine::launch();          // or launch(executablePath: '/usr/bin/chromium')
+try {
+    foreach ($reports as $id => $report) {
+        file_put_contents("{$id}.pdf", Reports::kundliLitePdf($report, engine: $engine));
+    }
+} finally {
+    $engine->close();
+}
+```
+
+When PHP runs as root (a Docker container), Chrome needs `--no-sandbox`; the SDK adds it then.
+`ChromePdfEngine::connect('ws://...')` uses a browser that is already running (for example a
+`chromedp/headless-shell` container).
+
+**2. Gotenberg (no browser on your PHP server).** On shared hosting or a small container, run
+[Gotenberg](https://gotenberg.dev) anywhere you control and print through it:
+
+```bash
+docker run --rm -p 3000:3000 gotenberg/gotenberg:8
+```
+
+```php
+use LifeAstroApi\Pdf\Engine\GotenbergPdfEngine;
+
+$engine = new GotenbergPdfEngine('http://localhost:3000');   // optional: headers for basic auth
+$pdf = Reports::matchMakingPdf($report, engine: $engine);
+```
+
+**3. HTML only.** If you cannot run either, send the HTML to the browser and let your user save it
+as PDF (`window.print()` → "Save as PDF"), or convert it with any tool you already use. The HTML
+sets A4 pages and margins in its own CSS.
+
+```php
+return response(Reports::renderKundliLiteHtml($report))->header('Content-Type', 'text/html; charset=utf-8');
+```
+
+### Branding
+
+Every field is optional; what you pass wins over the branding inside the report JSON.
+
+```php
+use LifeAstroApi\Pdf\Branding;
+
+$branding = new Branding(
+    companyName: 'Acme Astro',
+    logoUrl: 'https://acme.example/logo.png',   // or a data:image/... URI
+    primaryColor: '#6b21a8',                    // headings, table headers
+    secondaryColor: '#9333ea',                  // meta text, footer
+    footerText: 'Acme Astro · www.acme.example',
+    watermarkText: 'SAMPLE',
+);
+// An array with the same keys works too: ['companyName' => 'Acme Astro', ...]
+```
+
+### Options
+
+```php
+use LifeAstroApi\Pdf\Engine\PaperFormat;
+use LifeAstroApi\Pdf\Engine\PdfMargin;
+use LifeAstroApi\Pdf\Engine\PdfOptions;
+
+Reports::numerologyPdf($report, options: new PdfOptions(
+    format: PaperFormat::A4,      // A3, A4, A5, Letter, Legal, Tabloid
+    margin: new PdfMargin(top: '18mm', bottom: '22mm'),
+    timeout: 60,                  // seconds to load and print
+));
+```
+
+### Laravel: a PDF download
+
+```php
+public function kundli(Request $request, LifeAstro $astro)
+{
+    $report = $astro->reports->kundliLite(...$request->validated(), lang: 'hi');
+    $pdf = Reports::kundliLitePdf($report, ['companyName' => config('app.name')]);
+
+    return response($pdf, 200, [
+        'Content-Type' => 'application/pdf',
+        'Content-Disposition' => 'attachment; filename="kundli.pdf"',
+    ]);
+}
+```
+
+Brihad kundli PDFs are long (100+ pages) and print twice (the second time with the exact page of
+every section in the table of contents): make them in a queued job, not in the web request.
+
+### Good to know
+
+- **Fonts.** Indic text needs the Noto fonts on the machine that prints (`fonts-noto-core` above).
+  Missing fonts show as empty boxes.
+- **Logo URL.** The browser fetches it while printing. Use your own HTTPS URL or a `data:image/...`
+  URI. Only `http(s)`, `data:image` and relative URLs are used; anything else is dropped.
+- **Time.** With a running engine, a kundli or match-making PDF takes well under a second; starting
+  the browser takes about one more.
 
 ## Development
 
@@ -388,6 +538,7 @@ the Node SDK offers in `lifeastroapi/pdf`, is planned for a later version of thi
 composer install
 composer generate      # regenerate src/Resources from the Node SDK's manifest (needs node)
 composer goldens       # record the Node SDK's request for every method (needs node)
+composer pdf-goldens   # record the Node SDK's report HTML for every PDF test case (needs node)
 composer test          # PHPUnit: mock transport, a local cURL server, Node parity for all methods
 composer analyse       # PHPStan, level max, checked against PHP 8.1
 composer cs            # PSR-12 (composer cs-fix to fix)
@@ -399,6 +550,12 @@ its `scripts/manifest.mjs`), so the SDKs always have the same methods, names and
 `GET /v1/meta/endpoints`. After regenerating, run `composer goldens` and `composer test`:
 `tests/NodeParityTest.php` checks that every method sends the same path and query string as the
 Node SDK.
+
+The PDF templates in `src/Pdf/Templates/` are a port of the Node SDK's `src/pdf/templates/`.
+`composer pdf-goldens` renders 313 cases (every report, every language, with and without branding)
+with the Node sources; `tests/Pdf/PdfGoldenTest.php` checks that the PHP output is the same, byte for
+byte. After a template changes in the Node SDK, port the change, rerun `composer pdf-goldens` and
+the tests. `tests/Pdf/PdfEngineTest.php` prints real PDFs and is skipped when no Chrome is found.
 
 `tool/live-sweep.php` calls every method once against a real server and lists the calls the API
 rejects. It spends credits (one call per endpoint) and has no default URL:

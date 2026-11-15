@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<title>திசா பகுப்பாய்வு, Arjun Mehta</title>
+<style>
+:root { --brand-primary: #1a1a1a; --brand-secondary: #666666; }
+
+* { box-sizing: border-box; }
+/* Form controls and headings do not always inherit font-family in print, so
+   the Indic stack is set on them explicitly too. */
+h1, h2, h3, h4, th, td, li, dt, dd, input, button { font-family: inherit; }
+html, body {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+  color: #1a1a1a;
+  font-size: 11pt;
+  line-height: 1.45;
+  margin: 0;
+}
+@page { size: A4; margin: 18mm 15mm 22mm 15mm; }
+/* Print the brand colours (table headers, cards) as designed. Chromium does so
+   with printBackground; the iOS and Android print engines drop backgrounds
+   unless the page asks for exact colours. */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h2 {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+  padding-bottom: 2mm;
+  font-size: 16pt;
+  margin-top: 8mm;
+}
+h3 { font-size: 12pt; margin: 6mm 0 2mm; }
+p { margin: 2mm 0; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+th, td { text-align: left; padding: 2mm 3mm; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+th { background: var(--brand-primary); color: #fff; font-weight: 600; font-size: 10pt; }
+.cover { page-break-after: always; text-align: center; padding: 40mm 0 0; }
+.cover img.logo { max-height: 24mm; max-width: 60mm; margin-bottom: 8mm; }
+.cover h1 { color: var(--brand-primary); font-size: 28pt; margin: 0 0 4mm; }
+.cover .company { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 16mm; }
+.cover .subject { font-size: 16pt; margin-bottom: 4mm; }
+.cover .meta { color: var(--brand-secondary); font-size: 11pt; }
+.cover .generated { margin-top: 32mm; color: var(--brand-secondary); font-size: 9pt; }
+.narrative-section { margin-top: 6mm; page-break-inside: avoid; }
+.narrative-section .body { margin: 2mm 0; white-space: pre-wrap; }
+.narrative-section ul { margin: 1mm 0 2mm 6mm; padding: 0; }
+.narrative-section .citations { color: var(--brand-secondary); font-size: 9pt; font-style: italic; }
+.cards { display: flex; gap: 4mm; margin: 4mm 0; flex-wrap: wrap; }
+.card { flex: 1 1 0; min-width: 40mm; border: 1px solid #e5e5e5; border-radius: 2mm; padding: 3mm; }
+.card .label { color: var(--brand-secondary); font-size: 9pt; text-transform: uppercase; letter-spacing: .04em; }
+.card .value { font-size: 14pt; color: var(--brand-primary); font-weight: 600; margin-top: 1mm; }
+/* On screen the footer is an ordinary block after the content. In print it
+   is hidden and the same text is drawn in the page's bottom margin instead
+   (see footerCss): a position:fixed footer is laid out against the page
+   CONTENT box, so it prints on top of the last lines of body text. */
+footer {
+  text-align: center; color: var(--brand-secondary); font-size: 8pt;
+  margin-top: 10mm;
+}
+@media print { footer { display: none; } }
+/* Telugu and Kannada stack vowel signs and conjuncts above and below the
+   line and Tamil has tall marks too, so their lines get a little more height
+   (Devanagari keeps the 1.45 it was tuned for). Letter-spacing and uppercase are Latin
+   typography; spacing splits Indic clusters apart, so drop it.
+   :where() keeps the specificity of a plain "body" rule, so a report's own
+   body line-height (Brihad sets 1.8) still wins. */
+:where(html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) body { line-height: 1.6; }
+:where(html:lang(hi), html:lang(mr), html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) * { letter-spacing: normal !important; }
+
+
+
+@page {
+  @bottom-center {
+    content: "Generated using LifeAstroAPI";
+    font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+    font-size: 8pt;
+    color: #666666;
+  }
+}
+
+.cover h1 { font-size: 32pt; font-weight: 700; letter-spacing: 1pt; margin: 0 0 4mm; }
+.cover .subtitle { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 14mm; font-style: italic; }
+.cover .subject { font-size: 18pt; margin-bottom: 4mm; font-weight: 600; }
+.section { page-break-before: always; margin-top: 4mm; }
+.section.first { page-break-before: auto; }
+.stack-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 3mm 4mm; margin: 2mm 0; background: #f5f7fa;
+  border-left: 4px solid var(--brand-primary);
+}
+.stack-row.level-1 { background: #e0f2fe; border-left-color: #0369a1; }
+.stack-row.level-2 { background: #ecfccb; border-left-color: #65a30d; }
+.stack-row.level-3 { background: #fef9c3; border-left-color: #ca8a04; }
+.stack-row.level-4 { background: #fed7aa; border-left-color: #ea580c; }
+.stack-row.level-5 { background: #fecaca; border-left-color: #dc2626; }
+.stack-row .level-label { font-weight: 600; width: 30mm; flex-shrink: 0; }
+.stack-row .lord-name { font-weight: 700; font-size: 12pt; flex: 1; }
+.stack-row .dates { color: var(--brand-secondary); font-size: 10pt; text-align: right; }
+.prediction-block {
+  margin: 4mm 0; padding: 4mm 5mm; background: #f0fdf4;
+  border-left: 4px solid #16a34a; page-break-inside: avoid;
+}
+.prediction-block .lord-line { font-size: 13pt; font-weight: 700; color: var(--brand-primary); margin-bottom: 2mm; }
+.timeline-block {
+  margin: 3mm 0; padding: 3mm 4mm; background: #fafafa;
+  border-left: 3px solid var(--brand-secondary); page-break-inside: avoid;
+}
+.timeline-block.current { background: #f0fdf4; border-left-color: #16a34a; }
+.timeline-block .header { display: flex; justify-content: space-between; align-items: baseline; }
+.timeline-block .lord { font-weight: 700; font-size: 12pt; color: var(--brand-primary); }
+.timeline-block .dates { color: var(--brand-secondary); font-size: 10pt; }
+.timeline-block .body { margin-top: 1mm; font-size: 10pt; }
+.empty-list { margin: 3mm 0; color: var(--brand-secondary); font-style: italic; }
+
+</style>
+</head>
+<body>
+<section class="cover">
+
+  <h1>திசா பகுப்பாய்வு</h1>
+  <div class="subtitle">விம்சோத்தரி ஆழ்ந்த விளக்கம்: கடந்த, நடப்பு, வரவிருக்கும் திசைகள்</div>
+  <div class="subject">Arjun Mehta</div>
+  <div class="meta">
+    பிறப்பு 1990-01-15 நேரம் 10:30<br>
+    மாதிரி வாக்கியம்.
+  </div>
+  <div class="generated">தயாரித்த நாள் 2026-10-31 06:40 UTC</div>
+</section>
+<section class="section first">
+  <h2>தற்போது நடக்கும் திசை நிலைகள்</h2>
+  <p>இந்த ஐந்து திசை நிலைகளும் இப்போது ஒரே நேரத்தில் நடக்கின்றன. வெளியே உள்ள திசை பொதுவான போக்கை அமைக்கிறது; உள்ளே உள்ள ஒவ்வொரு நிலையும் இன்னும் நுட்பமான கால அறிகுறியைத் தருகிறது.</p>
+<div class="stack-row level-1">
+  <span class="level-label">திசை</span>
+  <span class="lord-name">சனி</span>
+  <span class="dates">2020-01-01 → 2039-01-01</span>
+</div>
+<div class="stack-row level-2">
+  <span class="level-label">புக்தி</span>
+  <span class="lord-name">புதன்</span>
+  <span class="dates">2020-01-01 → 2039-01-01</span>
+</div>
+<div class="stack-row level-3">
+  <span class="level-label">அந்தரம்</span>
+  <span class="lord-name">கேது</span>
+  <span class="dates">2020-01-01 → 2039-01-01</span>
+</div>
+<div class="stack-row level-4">
+  <span class="level-label">சூட்சுமம்</span>
+  <span class="lord-name">சுக்கிரன்</span>
+  <span class="dates">2020-01-01 → 2039-01-01</span>
+</div>
+<div class="stack-row level-5">
+  <span class="level-label">பிராணம்</span>
+  <span class="lord-name">சூரியன்</span>
+  <span class="dates">2020-01-01 → 2039-01-01</span>
+</div>
+</section>
+<section class="section">
+  <h2>நடக்கும் உப காலங்களுக்கான பலன்கள்</h2>
+<div class="prediction-block">
+  <div class="lord-line">திசை: சனி</div>
+  <p>மாதிரி வாக்கியம்.</p>
+</div>
+<div class="prediction-block">
+  <div class="lord-line">புக்தி: புதன்</div>
+  <p>மாதிரி வாக்கியம்.</p>
+</div>
+</section>
+<section class="section">
+  <h2>அனைத்து 9 திசைகள் (120 ஆண்டு சுழற்சி)</h2>
+  <table>
+  <thead>
+    <tr>
+      <th>அதிபதி</th>
+      <th>தொடக்கம்</th>
+      <th>முடிவு</th>
+      <th>காலம்</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>ராகு</td>
+  <td>2020-01-01</td>
+  <td>2039-01-01</td>
+  <td>19 ஆண்டுகள்</td>
+</tr>
+  </tbody>
+</table>
+</section>
+<section class="section">
+  <h2>கடந்த 20 ஆண்டுகளின் மீளாய்வு</h2>
+  <p>கடந்த 20 ஆண்டுகளில் நடந்த திசைகள்; திரும்பிப் பார்த்துப் புரிந்துகொள்ள உதவும்.</p>
+<div class="timeline-block">
+  <div class="header">
+    <span class="lord">குரு</span>
+    <span class="dates">2020-01-01 → 2039-01-01</span>
+  </div>
+  <div class="body">மாதிரி வாக்கியம்.</div>
+</div>
+</section>
+<section class="section">
+  <h2>அடுத்த 10 ஆண்டுகளின் முன்னோட்டம்</h2>
+  <p>அடுத்த 10 ஆண்டுகளில் வரும் புக்திகள்; அருகிலுள்ள காலத் திட்டமிடலுக்கு திசையை விட நுட்பமான பார்வை.</p>
+<div class="timeline-block">
+  <div class="header">
+    <span class="lord">சந்திரன்</span>
+    <span class="dates">2020-01-01 → 2039-01-01</span>
+  </div>
+  <div class="body">மாதிரி வாக்கியம்.</div>
+</div>
+</section>
+<section class="section">
+  <h2>யோகினி திசை (இரண்டாம் முறை)</h2>
+  <p>யோகினி திசை எட்டு காலங்கள் கொண்ட இரண்டாம் முறை; கால நிர்ணயத்தை உறுதிப்படுத்த விம்சோத்தரியுடன் சேர்த்துப் பயன்படுத்தப்படுகிறது.</p>
+<table>
+  <thead>
+    <tr>
+      <th>அதிபதி</th>
+      <th>தொடக்கம்</th>
+      <th>முடிவு</th>
+      <th>காலம்</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>மங்களா</td>
+  <td>2020-01-01</td>
+  <td>2039-01-01</td>
+  <td>19 ஆண்டுகள்</td>
+</tr>
+  </tbody>
+</table>
+</section>
+<footer>Generated using LifeAstroAPI</footer>
+</body>
+</html>

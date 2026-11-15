@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<title>సంఖ్యాశాస్త్ర నివేదిక, Arjun Mehta</title>
+<style>
+:root { --brand-primary: #1a1a1a; --brand-secondary: #666666; }
+
+* { box-sizing: border-box; }
+/* Form controls and headings do not always inherit font-family in print, so
+   the Indic stack is set on them explicitly too. */
+h1, h2, h3, h4, th, td, li, dt, dd, input, button { font-family: inherit; }
+html, body {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+  color: #1a1a1a;
+  font-size: 11pt;
+  line-height: 1.45;
+  margin: 0;
+}
+@page { size: A4; margin: 18mm 15mm 22mm 15mm; }
+/* Print the brand colours (table headers, cards) as designed. Chromium does so
+   with printBackground; the iOS and Android print engines drop backgrounds
+   unless the page asks for exact colours. */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h2 {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+  padding-bottom: 2mm;
+  font-size: 16pt;
+  margin-top: 8mm;
+}
+h3 { font-size: 12pt; margin: 6mm 0 2mm; }
+p { margin: 2mm 0; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+th, td { text-align: left; padding: 2mm 3mm; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+th { background: var(--brand-primary); color: #fff; font-weight: 600; font-size: 10pt; }
+.cover { page-break-after: always; text-align: center; padding: 40mm 0 0; }
+.cover img.logo { max-height: 24mm; max-width: 60mm; margin-bottom: 8mm; }
+.cover h1 { color: var(--brand-primary); font-size: 28pt; margin: 0 0 4mm; }
+.cover .company { color: var(--brand-secondary); font-size: 14pt; margin-bottom: 16mm; }
+.cover .subject { font-size: 16pt; margin-bottom: 4mm; }
+.cover .meta { color: var(--brand-secondary); font-size: 11pt; }
+.cover .generated { margin-top: 32mm; color: var(--brand-secondary); font-size: 9pt; }
+.narrative-section { margin-top: 6mm; page-break-inside: avoid; }
+.narrative-section .body { margin: 2mm 0; white-space: pre-wrap; }
+.narrative-section ul { margin: 1mm 0 2mm 6mm; padding: 0; }
+.narrative-section .citations { color: var(--brand-secondary); font-size: 9pt; font-style: italic; }
+.cards { display: flex; gap: 4mm; margin: 4mm 0; flex-wrap: wrap; }
+.card { flex: 1 1 0; min-width: 40mm; border: 1px solid #e5e5e5; border-radius: 2mm; padding: 3mm; }
+.card .label { color: var(--brand-secondary); font-size: 9pt; text-transform: uppercase; letter-spacing: .04em; }
+.card .value { font-size: 14pt; color: var(--brand-primary); font-weight: 600; margin-top: 1mm; }
+/* On screen the footer is an ordinary block after the content. In print it
+   is hidden and the same text is drawn in the page's bottom margin instead
+   (see footerCss): a position:fixed footer is laid out against the page
+   CONTENT box, so it prints on top of the last lines of body text. */
+footer {
+  text-align: center; color: var(--brand-secondary); font-size: 8pt;
+  margin-top: 10mm;
+}
+@media print { footer { display: none; } }
+/* Telugu and Kannada stack vowel signs and conjuncts above and below the
+   line and Tamil has tall marks too, so their lines get a little more height
+   (Devanagari keeps the 1.45 it was tuned for). Letter-spacing and uppercase are Latin
+   typography; spacing splits Indic clusters apart, so drop it.
+   :where() keeps the specificity of a plain "body" rule, so a report's own
+   body line-height (Brihad sets 1.8) still wins. */
+:where(html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) body { line-height: 1.6; }
+:where(html:lang(hi), html:lang(mr), html:lang(te), html:lang(ta), html:lang(kn), html:lang(ml)) * { letter-spacing: normal !important; }
+
+
+
+@page {
+  @bottom-center {
+    content: "Generated using LifeAstroAPI";
+    font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Malayalam', sans-serif;
+    font-size: 8pt;
+    color: #666666;
+  }
+}
+
+.cover .summary {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4mm;
+  margin: 12mm 0;
+  padding: 0 8mm;
+}
+.summary-card {
+  padding: 5mm;
+  background: var(--brand-primary);
+  color: #fff;
+  border-radius: 2mm;
+  text-align: center;
+}
+.summary-card .number { font-size: 22pt; font-weight: 700; line-height: 1; }
+.summary-card .label {
+  font-size: 9pt;
+  margin-top: 2mm;
+  letter-spacing: 0.3pt;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.number-block { margin: 6mm 0; page-break-inside: avoid; }
+.number-block .header-row { display: flex; align-items: baseline; gap: 4mm; margin-bottom: 3mm; }
+.number-block .number {
+  display: inline-block;
+  padding: 2mm 5mm;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 20pt;
+  font-weight: 700;
+  border-radius: 1.5mm;
+}
+.number-block .name { font-size: 14pt; color: var(--brand-primary); }
+.number-block .meaning { margin: 2mm 0 4mm; }
+.factors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2mm 6mm;
+  padding: 4mm;
+  background: #fafafa;
+  border-left: 3px solid var(--brand-secondary);
+}
+.factors-grid dt {
+  font-size: 9pt;
+  color: var(--brand-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+}
+.factors-grid dd { margin: 0 0 2mm; font-size: 11pt; font-weight: 600; }
+.compatibility {
+  margin: 6mm 0;
+  padding: 5mm;
+  background: #fafafa;
+  border-left: 3px solid var(--brand-primary);
+}
+.compatibility .label {
+  font-size: 9pt;
+  color: var(--brand-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  margin-bottom: 2mm;
+}
+.compatibility .numbers { display: flex; gap: 3mm; flex-wrap: wrap; }
+.compatibility .num-chip {
+  display: inline-block;
+  padding: 2mm 5mm;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 600;
+  border-radius: 1.5mm;
+}
+
+</style>
+</head>
+<body>
+<section class="cover">
+  
+  <h1>సంఖ్యాశాస్త్ర నివేదిక</h1>
+  <div class="subject">Arjun Mehta</div>
+  <div class="meta">జననం 1990-01-15</div>
+  <div class="summary">
+    <div class="summary-card"><div class="number">6</div><div class="label">మూలాంకం</div></div>
+    <div class="summary-card"><div class="number">8</div><div class="label">భాగ్యాంకం</div></div>
+    <div class="summary-card"><div class="number">3</div><div class="label">అంతరాత్మ సంఖ్య</div></div>
+    <div class="summary-card"><div class="number">5</div><div class="label">వ్యక్తిత్వ సంఖ్య</div></div>
+    <div class="summary-card"><div class="number">11</div><div class="label">నామ సంఖ్య</div></div>
+  </div>
+  <div class="generated">రూపొందించిన తేదీ 2026-10-31 06:40 UTC</div>
+</section>
+<h2>మూలాంకం</h2>
+<div class="number-block">
+  <div class="header-row">
+    <span class="number">6</span>
+    <span class="name">మూలాంకం (జన్మ తేదీ సంఖ్య)</span>
+  </div>
+  <p class="meaning">బాధ్యత, సామరస్యం, కుటుంబం. పోషించే స్వభావం; ఇతరుల సంరక్షణలో, సౌందర్య సృష్టిలో మీరు జీవిత లక్ష్యాన్ని కనుగొంటారు.</p>
+  <dl class="factors-grid">
+  <dt>గ్రహం</dt><dd>శుక్రుడు</dd>
+  <dt>వారం</dt><dd>శుక్రవారం</dd>
+  <dt>రంగు</dt><dd>నమూనా వాక్యం.</dd>
+  <dt>రత్నం</dt><dd>నమూనా వాక్యం.</dd>
+  <dt>దేవత</dt><dd>నమూనా వాక్యం.</dd>
+  <dt>దిశ</dt><dd>నమూనా వాక్యం.</dd>
+</dl>
+</div>
+<h2>భాగ్యాంకం</h2>
+<div class="number-block">
+  <div class="header-row">
+    <span class="number">8</span>
+    <span class="name">భాగ్యాంకం (జీవన మార్గం)</span>
+  </div>
+  <p class="meaning">శక్తి, ఆకాంక్ష, భౌతిక నైపుణ్యం. విజయం కోసం బలమైన తపన; సంపదను, సంస్థలను నిర్మించి నిర్వహించగల సామర్థ్యం.</p>
+  
+</div>
+<h2>అంతరాత్మ సంఖ్య</h2>
+<div class="number-block">
+  <div class="header-row">
+    <span class="number">3</span>
+    <span class="name">అంతరాత్మ సంఖ్య</span>
+  </div>
+  <p class="meaning">వ్యక్తీకరణ, సృజనాత్మకత, ఆశావాదం. సంభాషణ, అభ్యాసం మీకు సహజ బలాలు; బోధన, రచన, కళలు అనుకూలం.</p>
+  
+</div>
+<h2>వ్యక్తిత్వ సంఖ్య</h2>
+<div class="number-block">
+  <div class="header-row">
+    <span class="number">5</span>
+    <span class="name">వ్యక్తిత్వ సంఖ్య</span>
+  </div>
+  <p class="meaning">స్వేచ్ఛ, మార్పు, బహుముఖ ప్రతిభ. జిజ్ఞాస, సాహసం, వేగంగా నేర్చుకునే గుణం; ఆసక్తి నిలవాలంటే మీకు వైవిధ్యం అవసరం.</p>
+  
+</div>
+<h2>నామ సంఖ్య</h2>
+<div class="number-block">
+  <div class="header-row">
+    <span class="number">11</span>
+    <span class="name">నామ సంఖ్య</span>
+  </div>
+  <p class="meaning">మాస్టర్ అంతర్దర్శి: ఉన్నత ఆధ్యాత్మిక సున్నితత్వం. సంఖ్య 2 శక్తికి విస్తరించిన రూపం; దూరదృష్టితో పాటు నరాల తీవ్రత కూడా ఉంటుంది.</p>
+  
+</div>
+<h2>అనుకూల సంఖ్యలు</h2>
+<div class="compatibility">
+  <div class="label">మీ మూలాంకంతో అనుకూలమైన సంఖ్యలు</div>
+  <div class="numbers">
+      <span class="num-chip">1</span>
+      <span class="num-chip">5</span>
+      <span class="num-chip">6</span>
+  </div>
+</div>
+<footer>Generated using LifeAstroAPI</footer>
+</body>
+</html>

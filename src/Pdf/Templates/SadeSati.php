@@ -1,0 +1,635 @@
+<?php
+
+declare(strict_types=1);
+
+namespace LifeAstroApi\Pdf\Templates;
+
+use LifeAstroApi\Pdf\Branding;
+use LifeAstroApi\Pdf\Js;
+use LifeAstroApi\Pdf\Shared;
+
+/**
+ * Sade Sati report -> HTML. A port of the Node.js SDK's src/pdf/templates/sadeSati.ts
+ * (byte-identical output, golden-tested).
+ *
+ * @internal Use {@see \LifeAstroApi\Pdf\Reports::renderSadeSatiHtml()}.
+ */
+final class SadeSati
+{
+    private const LABELS = [
+        'en' => [
+            'title_sade' => 'Sade Sati Report',
+            'born' => 'Born',
+            'at' => 'at',
+            'generated' => 'Generated on',
+            'moon_sign' => 'Moon Sign',
+            'section_current' => 'Current Status',
+            'section_past' => 'Past Sade Sati Windows',
+            'section_active_window' => 'Active Window Now',
+            'section_future' => 'Upcoming Windows',
+            'section_remedies' => 'Recommended Remedies',
+            'current_phase' => 'Current Phase',
+            'from' => 'From',
+            'to' => 'To',
+            'duration' => 'Duration',
+            'signs_traversed' => 'Signs Traversed',
+            'no_past' => 'No past Sade Sati windows recorded in the searched range.',
+            'no_future' => 'No upcoming Sade Sati windows in the searched range.',
+            'remedies_intro' => 'These traditional remedies are commonly recommended during Sade Sati phases. Check your full chart before adopting any:',
+        ],
+        'hi' => [
+            'title_sade' => 'साढ़े साती रिपोर्ट',
+            'born' => 'जन्म',
+            'at' => 'समय',
+            'generated' => 'तैयार',
+            'moon_sign' => 'चंद्र राशि',
+            'section_current' => 'वर्तमान स्थिति',
+            'section_past' => 'पूर्ववर्ती साढ़े साती चरण',
+            'section_active_window' => 'वर्तमान चरण',
+            'section_future' => 'आगामी चरण',
+            'section_remedies' => 'अनुशंसित उपाय',
+            'current_phase' => 'वर्तमान चरण',
+            'from' => 'प्रारंभ',
+            'to' => 'समाप्ति',
+            'duration' => 'अवधि',
+            'signs_traversed' => 'गोचर राशियाँ',
+            'no_past' => 'खोज सीमा में कोई पूर्व साढ़े साती चरण नहीं मिला।',
+            'no_future' => 'खोज सीमा में कोई आगामी साढ़े साती चरण नहीं है।',
+            'remedies_intro' => 'साढ़े साती के दौरान प्रचलित पारंपरिक उपाय निम्नलिखित हैं। किसी भी उपाय को अपनाने से पूर्व अपनी कुंडली को पूरी तरह जाँच लीजिए:',
+        ],
+        'mr' => [
+            'title_sade' => 'साडेसाती अहवाल',
+            'born' => 'जन्म',
+            'at' => 'वेळ',
+            'generated' => 'तयार',
+            'moon_sign' => 'चंद्र राशी',
+            'section_current' => 'वर्तमान स्थिती',
+            'section_past' => 'मागील साडेसाती कालखंड',
+            'section_active_window' => 'वर्तमान कालखंड',
+            'section_future' => 'आगामी कालखंड',
+            'section_remedies' => 'शिफारस केलेले उपाय',
+            'current_phase' => 'वर्तमान चरण',
+            'from' => 'पासून',
+            'to' => 'पर्यंत',
+            'duration' => 'कालावधी',
+            'signs_traversed' => 'गोचर राशी',
+            'no_past' => 'शोध मर्यादेत कोणताही मागील साडेसाती कालखंड आढळला नाही.',
+            'no_future' => 'शोध मर्यादेत कोणताही आगामी साडेसाती कालखंड नाही.',
+            'remedies_intro' => 'साडेसाती कालखंडात सामान्यतः शिफारस केले जाणारे पारंपरिक उपाय खालील आहेत. कोणताही उपाय अंगीकारण्यापूर्वी आपली कुंडली पूर्णपणे तपासून घ्या:',
+        ],
+        'te' => [
+            'title_sade' => 'ఏలినాటి శని నివేదిక',
+            'born' => 'జననం',
+            'at' => 'సమయం',
+            'generated' => 'రూపొందించిన తేదీ',
+            'moon_sign' => 'చంద్ర రాశి',
+            'section_current' => 'ప్రస్తుత స్థితి',
+            'section_past' => 'గత ఏలినాటి శని కాలాలు',
+            'section_active_window' => 'ప్రస్తుత కాలం',
+            'section_future' => 'రాబోయే కాలాలు',
+            'section_remedies' => 'సూచించిన పరిహారాలు',
+            'current_phase' => 'ప్రస్తుత ఘట్టం',
+            'from' => 'ప్రారంభం',
+            'to' => 'ముగింపు',
+            'duration' => 'కాలవ్యవధి',
+            'signs_traversed' => 'గోచార రాశులు',
+            'no_past' => 'శోధించిన కాల పరిధిలో గత ఏలినాటి శని కాలాలు ఏవీ కనిపించలేదు.',
+            'no_future' => 'శోధించిన కాల పరిధిలో రాబోయే ఏలినాటి శని కాలాలు లేవు.',
+            'remedies_intro' => 'ఏలినాటి శని సమయంలో సాధారణంగా పాటించే సంప్రదాయ పరిహారాలు ఇవి. ఏ పరిహారాన్నైనా మొదలుపెట్టే ముందు మీ జాతకాన్ని పూర్తిగా పరిశీలించుకోండి:',
+        ],
+        'ta' => [
+            'title_sade' => 'ஏழரைச் சனி அறிக்கை',
+            'born' => 'பிறப்பு',
+            'at' => 'நேரம்',
+            'generated' => 'தயாரித்த நாள்',
+            'moon_sign' => 'சந்திர ராசி',
+            'section_current' => 'தற்போதைய நிலை',
+            'section_past' => 'கடந்த ஏழரைச் சனி காலங்கள்',
+            'section_active_window' => 'நடப்புக் காலம்',
+            'section_future' => 'வரவிருக்கும் காலங்கள்',
+            'section_remedies' => 'பரிந்துரைக்கப்பட்ட பரிகாரங்கள்',
+            'current_phase' => 'நடப்புக் கட்டம்',
+            'from' => 'தொடக்கம்',
+            'to' => 'முடிவு',
+            'duration' => 'காலம்',
+            'signs_traversed' => 'கோசார ராசிகள்',
+            'no_past' => 'தேடிய கால வரம்பில் கடந்த ஏழரைச் சனி காலம் எதுவும் காணப்படவில்லை.',
+            'no_future' => 'தேடிய கால வரம்பில் வரவிருக்கும் ஏழரைச் சனி காலம் எதுவும் இல்லை.',
+            'remedies_intro' => 'ஏழரைச் சனி காலத்தில் வழக்கமாகக் கடைப்பிடிக்கப்படும் பாரம்பரியப் பரிகாரங்கள் இவை. எந்தப் பரிகாரத்தையும் தொடங்கும் முன் உங்கள் ஜாதகத்தை முழுமையாகச் சரிபார்த்துக்கொள்ளுங்கள்:',
+        ],
+        'kn' => [
+            'title_sade' => 'ಸಾಡೇಸಾತಿ ವರದಿ',
+            'born' => 'ಜನನ',
+            'at' => 'ಸಮಯ',
+            'generated' => 'ತಯಾರಿಸಿದ ದಿನಾಂಕ',
+            'moon_sign' => 'ಚಂದ್ರ ರಾಶಿ',
+            'section_current' => 'ಪ್ರಸ್ತುತ ಸ್ಥಿತಿ',
+            'section_past' => 'ಹಿಂದಿನ ಸಾಡೇಸಾತಿ ಕಾಲಗಳು',
+            'section_active_window' => 'ಪ್ರಸ್ತುತ ಕಾಲ',
+            'section_future' => 'ಮುಂಬರುವ ಕಾಲಗಳು',
+            'section_remedies' => 'ಶಿಫಾರಸು ಮಾಡಿದ ಪರಿಹಾರಗಳು',
+            'current_phase' => 'ಪ್ರಸ್ತುತ ಹಂತ',
+            'from' => 'ಆರಂಭ',
+            'to' => 'ಅಂತ್ಯ',
+            'duration' => 'ಅವಧಿ',
+            'signs_traversed' => 'ಗೋಚರ ರಾಶಿಗಳು',
+            'no_past' => 'ಹುಡುಕಿದ ಕಾಲಮಿತಿಯಲ್ಲಿ ಹಿಂದಿನ ಸಾಡೇಸಾತಿ ಕಾಲ ಕಂಡುಬಂದಿಲ್ಲ.',
+            'no_future' => 'ಹುಡುಕಿದ ಕಾಲಮಿತಿಯಲ್ಲಿ ಮುಂಬರುವ ಸಾಡೇಸಾತಿ ಕಾಲ ಇಲ್ಲ.',
+            'remedies_intro' => 'ಸಾಡೇಸಾತಿಯ ಸಮಯದಲ್ಲಿ ಸಾಮಾನ್ಯವಾಗಿ ಪಾಲಿಸುವ ಸಾಂಪ್ರದಾಯಿಕ ಪರಿಹಾರಗಳು ಇವು. ಯಾವುದೇ ಪರಿಹಾರವನ್ನು ಆರಂಭಿಸುವ ಮೊದಲು ನಿಮ್ಮ ಜಾತಕವನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಪರಿಶೀಲಿಸಿಕೊಳ್ಳಿ:',
+        ],
+        'ml' => [
+            'title_sade' => 'ഏഴരശ്ശനി റിപ്പോർട്ട്',
+            'born' => 'ജനനം',
+            'at' => 'സമയം',
+            'generated' => 'തയ്യാറാക്കിയ തീയതി',
+            'moon_sign' => 'ചന്ദ്രരാശി',
+            'section_current' => 'നിലവിലെ സ്ഥിതി',
+            'section_past' => 'മുൻ ഏഴരശ്ശനി കാലങ്ങൾ',
+            'section_active_window' => 'നിലവിലെ കാലം',
+            'section_future' => 'വരാനിരിക്കുന്ന കാലങ്ങൾ',
+            'section_remedies' => 'നിർദ്ദേശിക്കുന്ന പരിഹാരങ്ങൾ',
+            'current_phase' => 'നിലവിലെ ഘട്ടം',
+            'from' => 'ആരംഭം',
+            'to' => 'അവസാനം',
+            'duration' => 'കാലയളവ്',
+            'signs_traversed' => 'ഗോചാര രാശികൾ',
+            'no_past' => 'പരിശോധിച്ച കാലപരിധിയിൽ മുൻ ഏഴരശ്ശനി കാലങ്ങളൊന്നും കണ്ടെത്തിയില്ല.',
+            'no_future' => 'പരിശോധിച്ച കാലപരിധിയിൽ വരാനിരിക്കുന്ന ഏഴരശ്ശനി കാലങ്ങളൊന്നുമില്ല.',
+            'remedies_intro' => 'ഏഴരശ്ശനിക്കാലത്ത് സാധാരണയായി അനുഷ്ഠിക്കുന്ന പരമ്പരാഗത പരിഹാരങ്ങൾ ഇവയാണ്. ഏതു പരിഹാരവും തുടങ്ങുന്നതിനു മുമ്പ് നിങ്ങളുടെ ജാതകം പൂർണമായി പരിശോധിക്കുക:',
+        ],
+        'gu' => [
+            'title_sade' => 'સાડાસાતી પનોતી રિપોર્ટ',
+            'born' => 'જન્મ',
+            'at' => 'સમય',
+            'generated' => 'તૈયાર',
+            'moon_sign' => 'ચંદ્ર રાશિ',
+            'section_current' => 'વર્તમાન સ્થિતિ',
+            'section_past' => 'અગાઉના સાડાસાતી પનોતીના તબક્કા',
+            'section_active_window' => 'વર્તમાન તબક્કો',
+            'section_future' => 'આગામી તબક્કા',
+            'section_remedies' => 'સૂચવેલા ઉપાયો',
+            'current_phase' => 'વર્તમાન તબક્કો',
+            'from' => 'આરંભ',
+            'to' => 'સમાપ્તિ',
+            'duration' => 'અવધિ',
+            'signs_traversed' => 'ગોચર રાશિઓ',
+            'no_past' => 'શોધની મર્યાદામાં સાડાસાતી પનોતીનો કોઈ અગાઉનો તબક્કો મળ્યો નથી.',
+            'no_future' => 'શોધની મર્યાદામાં સાડાસાતી પનોતીનો કોઈ આગામી તબક્કો નથી.',
+            'remedies_intro' => 'સાડાસાતી પનોતી દરમિયાન પ્રચલિત પરંપરાગત ઉપાયો નીચે મુજબ છે. કોઈ પણ ઉપાય અપનાવતાં પહેલાં આપની કુંડળીને પૂરેપૂરી તપાસી લેજો:',
+        ],
+        'bn' => [
+            'title_sade' => 'শনির সাড়েসাতি রিপোর্ট',
+            'born' => 'জন্ম',
+            'at' => 'সময়',
+            'generated' => 'তৈরি',
+            'moon_sign' => 'চন্দ্র রাশি',
+            'section_current' => 'বর্তমান অবস্থা',
+            'section_past' => 'আগের সাড়েসাতির পর্যায়গুলো',
+            'section_active_window' => 'বর্তমান পর্যায়',
+            'section_future' => 'আগামী পর্যায়',
+            'section_remedies' => 'প্রস্তাবিত প্রতিকার',
+            'current_phase' => 'বর্তমান পর্যায়',
+            'from' => 'শুরু',
+            'to' => 'শেষ',
+            'duration' => 'সময়কাল',
+            'signs_traversed' => 'গোচরের রাশি',
+            'no_past' => 'খোঁজার সময়সীমায় আগের কোনো সাড়েসাতির পর্যায় পাওয়া যায়নি।',
+            'no_future' => 'খোঁজার সময়সীমায় আগামী কোনো সাড়েসাতির পর্যায় নেই।',
+            'remedies_intro' => 'শনির সাড়েসাতির সময় প্রচলিত প্রথাগত প্রতিকারগুলো নিচে দেওয়া হলো। কোনো প্রতিকার শুরু করার আগে নিজের কুণ্ডলী ভালো করে দেখে নেবেন:',
+        ],
+    ];
+
+    private const STATUS_LABELS = [
+        'en' => [
+            'rising' => 'Rising',
+            'peak' => 'Peak',
+            'setting' => 'Setting',
+            'clear' => 'Clear (no Sade Sati)',
+        ],
+        'hi' => [
+            'rising' => 'आरंभ',
+            'peak' => 'शिखर',
+            'setting' => 'अंत',
+            'clear' => 'मुक्त (साढ़े साती नहीं)',
+        ],
+        'mr' => [
+            'rising' => 'प्रारंभ',
+            'peak' => 'शिखर',
+            'setting' => 'अंत',
+            'clear' => 'मुक्त (साडेसाती नाही)',
+        ],
+        'te' => [
+            'rising' => 'ప్రారంభ ఘట్టం',
+            'peak' => 'శిఖర ఘట్టం',
+            'setting' => 'చివరి ఘట్టం',
+            'clear' => 'విముక్తం (ఏలినాటి శని లేదు)',
+        ],
+        'ta' => [
+            'rising' => 'தொடக்கக் கட்டம் (விரயச் சனி)',
+            'peak' => 'உச்சக் கட்டம் (ஜென்மச் சனி)',
+            'setting' => 'இறுதிக் கட்டம் (பாதச் சனி)',
+            'clear' => 'விடுபட்டது (ஏழரைச் சனி இல்லை)',
+        ],
+        'kn' => [
+            'rising' => 'ಆರಂಭ ಹಂತ',
+            'peak' => 'ಶಿಖರ ಹಂತ',
+            'setting' => 'ಅಂತಿಮ ಹಂತ',
+            'clear' => 'ಮುಕ್ತ (ಸಾಡೇಸಾತಿ ಇಲ್ಲ)',
+        ],
+        'ml' => [
+            'rising' => 'ആരംഭഘട്ടം',
+            'peak' => 'പാരമ്യഘട്ടം',
+            'setting' => 'അന്തിമഘട്ടം',
+            'clear' => 'മുക്തം (ഏഴരശ്ശനി ഇല്ല)',
+        ],
+        'gu' => [
+            'rising' => 'આરંભ',
+            'peak' => 'શિખર',
+            'setting' => 'અંત',
+            'clear' => 'મુક્ત (સાડાસાતી પનોતી નથી)',
+        ],
+        'bn' => [
+            'rising' => 'আরম্ভ (প্রথম পর্যায়)',
+            'peak' => 'শীর্ষ (দ্বিতীয় পর্যায়)',
+            'setting' => 'শেষ (তৃতীয় পর্যায়)',
+            'clear' => 'মুক্ত (সাড়েসাতি নেই)',
+        ],
+    ];
+
+    private const REMEDIES = [
+        'en' => [
+            'Recite Hanuman Chalisa daily, especially on Tuesdays and Saturdays.',
+            'Donate black sesame seeds, mustard oil, or iron items on Saturdays.',
+            'Worship Lord Shani with til oil and blue flowers.',
+            'Wear a blue sapphire only after checking the chart — Saturn\'s gemstone is not for everyone.',
+            'Maintain disciplined routine, ethical conduct, and minimize unnecessary expenditure.',
+        ],
+        'hi' => [
+            'प्रतिदिन हनुमान चालीसा का पाठ कीजिए, विशेषकर मंगलवार एवं शनिवार को।',
+            'शनिवार को काले तिल, सरसों का तेल अथवा लोहे की वस्तुओं का दान कीजिए।',
+            'शनि देव की पूजा तिल के तेल एवं नीले पुष्पों से कीजिए।',
+            'नीलम कुंडली की जाँच के पश्चात ही धारण कीजिए — शनि का रत्न सभी के लिए उपयुक्त नहीं होता।',
+            'अनुशासित दिनचर्या रखिए, नैतिक आचरण कीजिए एवं अनावश्यक व्यय से बचिए।',
+        ],
+        'mr' => [
+            'दररोज हनुमान चालीसाचे पठण करा, विशेषतः मंगळवार आणि शनिवारी.',
+            'शनिवारी काळे तीळ, मोहरीचे तेल किंवा लोखंडी वस्तूंचे दान करा.',
+            'शनिदेवाची तिळाच्या तेलाने आणि निळ्या फुलांनी पूजा करा.',
+            'नीलम कुंडलीची तपासणी केल्यानंतरच धारण करा — शनीचे रत्न सर्वांसाठी योग्य नसते.',
+            'शिस्तबद्ध दिनचर्या ठेवा, नैतिक आचरण करा आणि अनावश्यक खर्च टाळा.',
+        ],
+        'te' => [
+            'ప్రతిరోజూ హనుమాన్ చాలీసా పఠించండి, ముఖ్యంగా మంగళవారం, శనివారం.',
+            'శనివారం నల్ల నువ్వులు, ఆవనూనె లేదా ఇనుప వస్తువులు దానం చేయండి.',
+            'నువ్వుల నూనె, నీలి పూలతో శనిదేవుని పూజించండి.',
+            'నీలమణిని జాతక పరిశీలన తర్వాతే ధరించండి; శని రత్నం అందరికీ సరిపడదు.',
+            'క్రమశిక్షణతో కూడిన దినచర్య పాటించండి, నైతికంగా నడుచుకోండి, అనవసర ఖర్చులు తగ్గించండి.',
+        ],
+        'ta' => [
+            'தினமும் ஹனுமான் சாலிசா பாராயணம் செய்யுங்கள், குறிப்பாகச் செவ்வாய், சனிக்கிழமைகளில்.',
+            'சனிக்கிழமை கருப்பு எள், கடுகு எண்ணெய் அல்லது இரும்புப் பொருட்களைத் தானம் செய்யுங்கள்.',
+            'நல்லெண்ணெயும் நீல மலர்களும் கொண்டு சனி பகவானை வழிபடுங்கள்.',
+            'நீலக்கல்லை ஜாதகச் சரிபார்ப்புக்குப் பிறகே அணியுங்கள்; சனியின் ரத்தினம் எல்லோருக்கும் பொருந்தாது.',
+            'ஒழுங்கான தினசரி வழக்கத்தைக் கடைப்பிடியுங்கள், நேர்மையாக நடந்துகொள்ளுங்கள், தேவையற்ற செலவைத் தவிருங்கள்.',
+        ],
+        'kn' => [
+            'ಪ್ರತಿದಿನ ಹನುಮಾನ್ ಚಾಲೀಸಾ ಪಠಿಸಿ, ವಿಶೇಷವಾಗಿ ಮಂಗಳವಾರ ಮತ್ತು ಶನಿವಾರ.',
+            'ಶನಿವಾರ ಕಪ್ಪು ಎಳ್ಳು, ಸಾಸಿವೆ ಎಣ್ಣೆ ಅಥವಾ ಕಬ್ಬಿಣದ ವಸ್ತುಗಳನ್ನು ದಾನ ಮಾಡಿ.',
+            'ಎಳ್ಳೆಣ್ಣೆ ಮತ್ತು ನೀಲಿ ಹೂವುಗಳಿಂದ ಶನಿದೇವರನ್ನು ಪೂಜಿಸಿ.',
+            'ನೀಲಮಣಿಯನ್ನು ಜಾತಕ ಪರಿಶೀಲನೆಯ ನಂತರವೇ ಧರಿಸಿ; ಶನಿಯ ರತ್ನ ಎಲ್ಲರಿಗೂ ಹೊಂದುವುದಿಲ್ಲ.',
+            'ಶಿಸ್ತಿನ ದಿನಚರಿ ಪಾಲಿಸಿ, ನೈತಿಕವಾಗಿ ನಡೆದುಕೊಳ್ಳಿ ಮತ್ತು ಅನಗತ್ಯ ಖರ್ಚನ್ನು ತಪ್ಪಿಸಿ.',
+        ],
+        'ml' => [
+            'ദിവസവും ഹനുമാൻ ചാലീസ ജപിക്കുക, പ്രത്യേകിച്ച് ചൊവ്വാഴ്ചയും ശനിയാഴ്ചയും.',
+            'ശനിയാഴ്ച കറുത്ത എള്ള്, എള്ളെണ്ണ അല്ലെങ്കിൽ ഇരുമ്പുസാധനങ്ങൾ ദാനം ചെയ്യുക.',
+            'എള്ളെണ്ണയും നീലപ്പൂക്കളും കൊണ്ട് ശനിദേവനെ ആരാധിക്കുക.',
+            'ഇന്ദ്രനീലം ജാതകപരിശോധനയ്ക്കു ശേഷം മാത്രം ധരിക്കുക; ശനിയുടെ രത്നം എല്ലാവർക്കും യോജിക്കില്ല.',
+            'ചിട്ടയായ ദിനചര്യ പാലിക്കുക, ധാർമികമായി പെരുമാറുക, അനാവശ്യ ചെലവുകൾ ഒഴിവാക്കുക.',
+        ],
+        'gu' => [
+            'દરરોજ હનુમાન ચાલીસાનો પાઠ કરજો, ખાસ કરીને મંગળવારે અને શનિવારે.',
+            'શનિવારે કાળા તલ, સરસવનું તેલ અથવા લોખંડની વસ્તુઓનું દાન કરજો.',
+            'શનિદેવની પૂજા તલના તેલ અને વાદળી ફૂલોથી કરજો.',
+            'નીલમ કુંડળીની તપાસ પછી જ ધારણ કરજો; શનિનું રત્ન બધા માટે યોગ્ય હોતું નથી.',
+            'અનુશાસિત દિનચર્યા રાખજો, નૈતિક આચરણ કરજો અને બિનજરૂરી ખર્ચ ટાળજો.',
+        ],
+        'bn' => [
+            'প্রতিদিন হনুমান চালিসা পাঠ করুন, বিশেষ করে মঙ্গলবার আর শনিবারে।',
+            'শনিবারে কালো তিল, সর্ষের তেল বা লোহার জিনিস দান করুন।',
+            'শনিদেবের পূজা সর্ষের তেলের প্রদীপ আর নীল ফুল দিয়ে করুন।',
+            'কুণ্ডলী ভালো করে যাচাই না করে নীলা ধারণ করবেন না; শনির রত্ন সবার জন্য উপযুক্ত নয়।',
+            'নিয়মমাফিক দিনচর্যা রাখুন, সৎ আচরণ করুন আর অপ্রয়োজনীয় খরচ এড়িয়ে চলবেন।',
+        ],
+    ];
+
+    private const EXTRA_CSS = '
+.cover .moon-sign-badge {
+  display: inline-block;
+  margin-top: 8mm;
+  padding: 3mm 8mm;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 14pt;
+  border-radius: 2mm;
+}
+.status-card {
+  margin: 4mm 0;
+  padding: 5mm;
+  border-radius: 2mm;
+  border-left: 4px solid;
+}
+.status-card.peak    { background: #fef2f2; border-left-color: #dc2626; }
+.status-card.rising  { background: #fff7ed; border-left-color: #ea580c; }
+.status-card.setting { background: #fefce8; border-left-color: #ca8a04; }
+.status-card.clear   { background: #f0fdf4; border-left-color: #16a34a; }
+.status-card .label {
+  text-transform: uppercase;
+  font-size: 9pt;
+  letter-spacing: 0.5pt;
+  color: var(--brand-secondary);
+  margin-bottom: 1mm;
+}
+.status-card .value { font-size: 18pt; font-weight: 700; margin-bottom: 2mm; }
+.status-card .detail { font-size: 10pt; }
+tr.current-window td { background: #fff7ed; font-weight: 600; }
+.remedies {
+  margin-top: 6mm;
+  padding: 5mm;
+  background: #fafafa;
+  border-left: 3px solid var(--brand-secondary);
+}
+.remedies ul { margin: 2mm 0 0 6mm; padding: 0; }
+.empty-list { margin: 3mm 0; color: var(--brand-secondary); font-style: italic; }
+';
+
+    private function __construct()
+    {
+    }
+
+    /** Narrow a request locale to one we have labels for, else "en". */
+    private static function pickLocale(string $loc): string
+    {
+        return $loc !== '' && isset(self::LABELS[$loc]) ? $loc : 'en';
+    }
+
+    private static function label(string $loc, string $key): string
+    {
+        $m = self::LABELS[self::pickLocale($loc)] ?? self::LABELS['en'];
+
+        return $m[$key] ?? self::LABELS['en'][$key] ?? '';
+    }
+
+    /** JS `(m && m[s]) ?? s`: the localized phase name, else the raw status value. */
+    private static function statusLabel(string $loc, mixed $status): mixed
+    {
+        $s = $status ?? '';
+        $m = self::STATUS_LABELS[self::pickLocale($loc)] ?? null;
+
+        return $m !== null ? ($m[Js::str($s)] ?? $s) : $s;
+    }
+
+    /** @return list<string> */
+    private static function remediesList(string $loc): array
+    {
+        return self::REMEDIES[self::pickLocale($loc)] ?? self::REMEDIES['en'];
+    }
+
+    /** Number formatted to one decimal, matching Go's `%.1f`. */
+    private static function fmt1(mixed $n): string
+    {
+        return Js::toFixed(\is_int($n) || \is_float($n) ? $n : 0, 1);
+    }
+
+    private static function durationLabel(string $loc, mixed $years): string
+    {
+        $y = self::fmt1($years);
+
+        return match (self::pickLocale($loc)) {
+            'hi' => 'लगभग ' . $y . ' वर्ष',
+            'mr' => 'सुमारे ' . $y . ' वर्षे',
+            'te' => 'సుమారు ' . $y . ' సంవత్సరాలు',
+            'ta' => 'சுமார் ' . $y . ' ஆண்டுகள்',
+            'kn' => 'ಸುಮಾರು ' . $y . ' ವರ್ಷಗಳು',
+            'ml' => 'ഏകദേശം ' . $y . ' വർഷം',
+            'gu' => 'આશરે ' . $y . ' વર્ષ',
+            'bn' => 'প্রায় ' . $y . ' বছর',
+            default => 'approx ' . $y . ' years',
+        };
+    }
+
+    /**
+     * Prose for the current Sade Sati phase. `moon_sign` / `saturn_sign` are already
+     * locale-resolved by the handler; only the surrounding sentences switch locale.
+     *
+     * @param array<string, mixed> $st
+     */
+    private static function statusDescription(string $loc, array $st): string
+    {
+        $moon = Js::str($st['moon_sign'] ?? '');
+        $saturn = Js::str($st['saturn_sign'] ?? '');
+        $status = $st['status'] ?? '';
+        // JS `switch` compares with ===, so only these exact strings pick a phase sentence.
+        $phase = \is_string($status) && \in_array($status, ['rising', 'peak', 'setting'], true) ? $status : '';
+        switch (self::pickLocale($loc)) {
+            case 'hi':
+                return match ($phase) {
+                    'rising' => 'शनि वर्तमान में आपकी चंद्र राशि (' . $moon . ') से पूर्व राशि में संक्रमण कर रहे हैं — साढ़े साती का प्रारंभिक चरण।',
+                    'peak' => 'शनि वर्तमान में आपकी चंद्र राशि (' . $moon . ') पर ही गोचर कर रहे हैं — साढ़े साती का शिखर चरण।',
+                    'setting' => 'शनि वर्तमान में आपकी चंद्र राशि (' . $moon . ') से अगली राशि में हैं — साढ़े साती का अंतिम चरण।',
+                    default => 'वर्तमान में आप साढ़े साती से मुक्त हैं। शनि (' . $saturn . ') आपकी चंद्र राशि (' . $moon . ') से दूर है।',
+                };
+            case 'mr':
+                return match ($phase) {
+                    'rising' => 'शनी सध्या आपल्या चंद्र राशी (' . $moon . ') पासून मागील राशीत आहेत — साडेसातीचा प्रारंभिक टप्पा.',
+                    'peak' => 'शनी सध्या आपल्या चंद्र राशी (' . $moon . ') वरच गोचर करत आहेत — साडेसातीचा शिखर टप्पा.',
+                    'setting' => 'शनी सध्या आपल्या चंद्र राशी (' . $moon . ') पासून पुढील राशीत आहेत — साडेसातीचा अंतिम टप्पा.',
+                    default => 'सध्या आपण साडेसाती मुक्त आहात. शनी (' . $saturn . ') आपल्या चंद्र राशीपासून (' . $moon . ') दूर आहेत.',
+                };
+            case 'te':
+                return match ($phase) {
+                    'rising' => 'శని ప్రస్తుతం మీ చంద్ర రాశికి (' . $moon . ') ముందు రాశిలో సంచరిస్తున్నాడు. ఇది ఏలినాటి శని ప్రారంభ ఘట్టం.',
+                    'peak' => 'శని ప్రస్తుతం మీ చంద్ర రాశి (' . $moon . ') పైనే సంచరిస్తున్నాడు. ఇది ఏలినాటి శని శిఖర ఘట్టం.',
+                    'setting' => 'శని ప్రస్తుతం మీ చంద్ర రాశి (' . $moon . ') తర్వాతి రాశిలో ఉన్నాడు. ఇది ఏలినాటి శని చివరి ఘట్టం.',
+                    default => 'ప్రస్తుతం మీరు ఏలినాటి శని నుండి విముక్తులు. శని (' . $saturn . ') మీ చంద్ర రాశి (' . $moon . ') నుండి దూరంగా ఉన్నాడు.',
+                };
+            case 'ta':
+                return match ($phase) {
+                    'rising' => 'சனி தற்போது உங்கள் சந்திர ராசிக்கு (' . $moon . ') முந்தைய ராசியில் சஞ்சரிக்கிறார். இது ஏழரைச் சனியின் தொடக்கக் கட்டம்.',
+                    'peak' => 'சனி தற்போது உங்கள் சந்திர ராசியிலேயே (' . $moon . ') சஞ்சரிக்கிறார். இது ஏழரைச் சனியின் உச்சக் கட்டம்.',
+                    'setting' => 'சனி தற்போது உங்கள் சந்திர ராசிக்கு (' . $moon . ') அடுத்த ராசியில் இருக்கிறார். இது ஏழரைச் சனியின் இறுதிக் கட்டம்.',
+                    default => 'தற்போது நீங்கள் ஏழரைச் சனியிலிருந்து விடுபட்டிருக்கிறீர்கள். சனி (' . $saturn . ') உங்கள் சந்திர ராசியிலிருந்து (' . $moon . ') விலகி இருக்கிறார்.',
+                };
+            case 'kn':
+                return match ($phase) {
+                    'rising' => 'ಶನಿ ಪ್ರಸ್ತುತ ನಿಮ್ಮ ಚಂದ್ರ ರಾಶಿಯ (' . $moon . ') ಹಿಂದಿನ ರಾಶಿಯಲ್ಲಿ ಸಂಚರಿಸುತ್ತಿದ್ದಾನೆ. ಇದು ಸಾಡೇಸಾತಿಯ ಆರಂಭ ಹಂತ.',
+                    'peak' => 'ಶನಿ ಪ್ರಸ್ತುತ ನಿಮ್ಮ ಚಂದ್ರ ರಾಶಿಯಲ್ಲೇ (' . $moon . ') ಸಂಚರಿಸುತ್ತಿದ್ದಾನೆ. ಇದು ಸಾಡೇಸಾತಿಯ ಶಿಖರ ಹಂತ.',
+                    'setting' => 'ಶನಿ ಪ್ರಸ್ತುತ ನಿಮ್ಮ ಚಂದ್ರ ರಾಶಿಯ (' . $moon . ') ಮುಂದಿನ ರಾಶಿಯಲ್ಲಿದ್ದಾನೆ. ಇದು ಸಾಡೇಸಾತಿಯ ಅಂತಿಮ ಹಂತ.',
+                    default => 'ಪ್ರಸ್ತುತ ನೀವು ಸಾಡೇಸಾತಿಯಿಂದ ಮುಕ್ತರಾಗಿದ್ದೀರಿ. ಶನಿ (' . $saturn . ') ನಿಮ್ಮ ಚಂದ್ರ ರಾಶಿಯಿಂದ (' . $moon . ') ದೂರದಲ್ಲಿದ್ದಾನೆ.',
+                };
+            case 'ml':
+                return match ($phase) {
+                    'rising' => 'ശനി ഇപ്പോൾ നിങ്ങളുടെ ചന്ദ്രരാശിക്ക് (' . $moon . ') തൊട്ടുമുമ്പുള്ള രാശിയിലൂടെ സഞ്ചരിക്കുന്നു. ഇത് ഏഴരശ്ശനിയുടെ ആരംഭഘട്ടമാണ്.',
+                    'peak' => 'ശനി ഇപ്പോൾ നിങ്ങളുടെ ചന്ദ്രരാശിയിൽത്തന്നെ (' . $moon . ') സഞ്ചരിക്കുന്നു. ഇത് ഏഴരശ്ശനിയുടെ പാരമ്യഘട്ടമാണ്.',
+                    'setting' => 'ശനി ഇപ്പോൾ നിങ്ങളുടെ ചന്ദ്രരാശിയുടെ (' . $moon . ') തൊട്ടടുത്ത രാശിയിലാണ്. ഇത് ഏഴരശ്ശനിയുടെ അന്തിമഘട്ടമാണ്.',
+                    default => 'നിലവിൽ നിങ്ങൾ ഏഴരശ്ശനിയിൽ നിന്ന് മുക്തരാണ്. ശനി (' . $saturn . ') നിങ്ങളുടെ ചന്ദ്രരാശിയിൽ (' . $moon . ') നിന്ന് അകലെയാണ്.',
+                };
+            case 'gu':
+                return match ($phase) {
+                    'rising' => 'શનિ હાલ આપની ચંદ્ર રાશિ (' . $moon . ')ની પહેલાંની રાશિમાં ગોચર કરી રહ્યા છે. આ સાડાસાતી પનોતીનો આરંભનો તબક્કો છે.',
+                    'peak' => 'શનિ હાલ આપની ચંદ્ર રાશિ (' . $moon . ') પર જ ગોચર કરી રહ્યા છે. આ સાડાસાતી પનોતીનો શિખર તબક્કો છે.',
+                    'setting' => 'શનિ હાલ આપની ચંદ્ર રાશિ (' . $moon . ')ની પછીની રાશિમાં છે. આ સાડાસાતી પનોતીનો અંતિમ તબક્કો છે.',
+                    default => 'હાલ આપ સાડાસાતી પનોતીથી મુક્ત છો. શનિ (' . $saturn . ') આપની ચંદ્ર રાશિ (' . $moon . ')થી દૂર છે.',
+                };
+            case 'bn':
+                return match ($phase) {
+                    'rising' => 'শনি এখন আপনার চন্দ্র রাশির (' . $moon . ') আগের রাশিতে গোচর করছে। এটি শনির সাড়েসাতির প্রথম পর্যায়।',
+                    'peak' => 'শনি এখন আপনার চন্দ্র রাশির (' . $moon . ') উপর দিয়েই গোচর করছে। এটি শনির সাড়েসাতির শীর্ষ পর্যায়।',
+                    'setting' => 'শনি এখন আপনার চন্দ্র রাশির (' . $moon . ') পরের রাশিতে আছে। এটি শনির সাড়েসাতির শেষ পর্যায়।',
+                    default => 'এখন আপনি শনির সাড়েসাতি থেকে মুক্ত। শনি (' . $saturn . ') আপনার চন্দ্র রাশি (' . $moon . ') থেকে দূরে আছে।',
+                };
+            default:
+                return match ($phase) {
+                    'rising' => 'Saturn is currently transiting the sign before your moon sign (' . $moon . ') — the rising phase of Sade Sati.',
+                    'peak' => 'Saturn is currently transiting your moon sign (' . $moon . ') itself — the peak phase of Sade Sati.',
+                    'setting' => 'Saturn is currently transiting the sign after your moon sign (' . $moon . ') — the setting phase of Sade Sati.',
+                    default => 'You are currently clear of Sade Sati. Saturn (' . $saturn . ') is not in the cluster around your moon sign (' . $moon . ').',
+                };
+        }
+    }
+
+    /** JS `(signs ?? []).join(", ")`: null / undefined elements join as ''. */
+    private static function joinSigns(mixed $signs): string
+    {
+        if ($signs === null) {
+            return '';
+        }
+        if (!Js::isList($signs)) {
+            return Js::str($signs);
+        }
+
+        return implode(', ', array_map(
+            static fn (mixed $e): string => $e === null ? '' : Js::str($e),
+            Js::list($signs),
+        ));
+    }
+
+    /** A windows table row: from / to / duration / signs. */
+    private static function windowRow(string $loc, mixed $raw): string
+    {
+        $w = Js::map($raw);
+
+        return '<tr>
+  <td>' . Shared::esc($w['StartDate'] ?? null) . '</td>
+  <td>' . Shared::esc($w['EndDate'] ?? null) . '</td>
+  <td>' . Shared::esc(self::durationLabel($loc, $w['DurationYears'] ?? null)) . '</td>
+  <td>' . Shared::esc(self::joinSigns($w['SignsTraversed'] ?? null)) . '</td>
+</tr>';
+    }
+
+    /** A full windows table (header + rows), or the empty-list note. */
+    private static function windowsTable(string $loc, mixed $rows, string $emptyKey): string
+    {
+        if (!Js::nonEmptyList($rows)) {
+            return '<p class="empty-list">' . Shared::esc(self::label($loc, $emptyKey)) . '</p>';
+        }
+        $trs = array_map(static fn (mixed $w): string => self::windowRow($loc, $w), Js::list($rows));
+
+        return '<table>
+  <thead>
+    <tr>
+      <th>' . Shared::esc(self::label($loc, 'from')) . '</th>
+      <th>' . Shared::esc(self::label($loc, 'to')) . '</th>
+      <th>' . Shared::esc(self::label($loc, 'duration')) . '</th>
+      <th>' . Shared::esc(self::label($loc, 'signs_traversed')) . '</th>
+    </tr>
+  </thead>
+  <tbody>
+    ' . implode("\n    ", $trs) . '
+  </tbody>
+</table>';
+    }
+
+    /** @param array<mixed> $data */
+    public static function render(array $data, ?Branding $branding = null): string
+    {
+        $data = Js::map($data);
+        $loc = Js::str($data['Locale'] ?? '');
+        $b = Shared::resolveBranding($data['Branding'] ?? null, $branding);
+        $subject = Js::map($data['Subject'] ?? null);
+        $status = Js::map($data['CurrentStatus'] ?? null);
+        $title = self::label($loc, 'title_sade');
+        $esc = Shared::esc(...);
+        $label = static fn (string $key): string => self::label($loc, $key);
+
+        $cover = '<section class="cover">
+  ' . Shared::coverBrandingHtml($b) . '
+  <h1>' . $esc($title) . '</h1>
+  <div class="subject">' . $esc($subject['name'] ?? null) . '</div>
+  <div class="meta">
+    ' . $esc($label('born')) . ' ' . $esc($subject['birth_date'] ?? null) . ' ' . $esc($label('at')) . ' '
+            . $esc($subject['birth_time'] ?? null) . '<br>
+    ' . $esc($subject['birth_place'] ?? null) . '
+  </div>
+  <div class="moon-sign-badge">
+    ' . $esc($label('moon_sign')) . ': ' . $esc($subject['moon_sign'] ?? null) . '
+  </div>
+  <div class="generated">
+    ' . $esc($label('generated')) . ' ' . $esc(Js::formatGenerated($data['GeneratedAt'] ?? null)) . '
+  </div>
+</section>';
+
+        $statusCls = $status['status'] ?? '';
+        $currentCard = '<h2>' . $esc($label('section_current')) . '</h2>
+<div class="status-card ' . $esc($statusCls) . '">
+  <div class="label">' . $esc($label('current_phase')) . '</div>
+  <div class="value">' . $esc(self::statusLabel($loc, $status['status'] ?? null)) . '</div>
+  <div class="detail">' . $esc(self::statusDescription($loc, $status)) . '</div>
+</div>';
+
+        $pastSection = '<h2>' . $esc($label('section_past')) . '</h2>
+' . self::windowsTable($loc, $data['Past'] ?? null, 'no_past');
+
+        $activeSection = '';
+        $cur = $data['Current'] ?? null;
+        if (Js::truthy($cur)) {
+            $c = Js::map($cur);
+            $activeSection = '<h2>' . $esc($label('section_active_window')) . '</h2>
+<table>
+  <tbody>
+    <tr class="current-window"><td>' . $esc($label('from')) . '</td><td>' . $esc($c['StartDate'] ?? null) . '</td></tr>
+    <tr class="current-window"><td>' . $esc($label('to')) . '</td><td>' . $esc($c['EndDate'] ?? null) . '</td></tr>
+    <tr class="current-window"><td>' . $esc($label('signs_traversed')) . '</td><td>'
+                . $esc(self::joinSigns($c['SignsTraversed'] ?? null)) . '</td></tr>
+  </tbody>
+</table>';
+        }
+
+        $futureSection = '<h2>' . $esc($label('section_future')) . '</h2>
+' . self::windowsTable($loc, $data['Future'] ?? null, 'no_future');
+
+        $remedyItems = array_map(
+            static fn (string $r): string => '<li>' . Shared::esc($r) . '</li>',
+            self::remediesList($loc),
+        );
+        $remediesSection = '<h2>' . $esc($label('section_remedies')) . '</h2>
+<div class="remedies">
+  <p>' . $esc($label('remedies_intro')) . '</p>
+  <ul>
+    ' . implode("\n    ", $remedyItems) . '
+  </ul>
+</div>';
+
+        $bodyHtml = implode("\n\n", array_filter(
+            [$cover, $currentCard, $pastSection, $activeSection, $futureSection, $remediesSection],
+            static fn (string $s): bool => $s !== '',
+        ));
+
+        return Shared::layoutDocument(
+            title: $title,
+            branding: $b,
+            bodyHtml: $bodyHtml,
+            lang: Js::str(Js::or($data['Locale'] ?? null, 'en')),
+            extraCss: self::EXTRA_CSS,
+        );
+    }
+}

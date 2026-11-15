@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.2.0 (2026-11-15)
+
+Branded PDF reports, made on your own server.
+
+- `LifeAstroApi\Pdf\Reports::render*Html($report, $branding)` for all ten report renderers (kundli
+  lite, detailed and brihad, match making, mangal dosha, sade sati, varshaphal, numerology, dasha
+  analysis, horoscopes): the report JSON from `$client->reports->...` as a complete, branded HTML
+  document. Pure PHP, a port of the Node.js SDK's `lifeastroapi/pdf-html` templates with
+  byte-identical output in every language (checked against the Node templates in 313 cases).
+- `Reports::*Pdf(...)` and `Reports::htmlToPdf(...)`: PDF bytes, printed by a `PdfEngine`:
+  - `ChromePdfEngine`: a headless Chrome, Chromium or Edge on your server, driven over the DevTools
+    protocol with no extra Composer package (the default when no engine is passed);
+  - `GotenbergPdfEngine`: a Gotenberg service, for servers that cannot run a browser.
+- `Reports::kundliBrihadPdf()` adds a running header and footer, a table of contents with the exact
+  page of every section, and PDF bookmarks.
+- `Branding` (company name, logo, colours, footer, watermark), `PdfOptions` (paper size, margins,
+  orientation, scale, timeout).
+- `ext-mbstring` is now required.
+
 ## 0.1.0 (2026-11-14)
 
 First release of the official PHP SDK.
@@ -30,4 +49,4 @@ First release of the official PHP SDK.
 - Responses are the decoded JSON as arrays. Every method has native types and a PHPDoc block with
   the endpoint description, credit cost, path and array shapes; the package passes PHPStan at
   level max.
-- Not in this version: branded PDF rendering of `reports.*` (the Node SDK's `lifeastroapi/pdf`).
+- Not in this version: branded PDF rendering of `reports.*` (added in 0.2.0).

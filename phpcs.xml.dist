@@ -13,4 +13,11 @@
     <arg value="sp"/>
 
     <rule ref="PSR12"/>
+
+    <!-- The PDF templates and locale tables hold long label strings (Indic text, CSS) copied
+         verbatim from the Node.js SDK; their line length is not enforced. -->
+    <rule ref="Generic.Files.LineLength">
+        <exclude-pattern>src/Pdf/Templates/*</exclude-pattern>
+        <exclude-pattern>src/Pdf/Locales.php</exclude-pattern>
+    </rule>
 </ruleset>
