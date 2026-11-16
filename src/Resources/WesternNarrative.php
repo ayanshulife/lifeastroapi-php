@@ -35,7 +35,8 @@ final class WesternNarrative
      *
      * `GET /v1/western/narrative/decan`
      *
-     * @param string $sign
+     * @param string $sign Tropical zodiac sign (case-insensitive on input; canonicalised in
+     *     response).
      * @param int $decan
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
@@ -309,7 +310,8 @@ final class WesternNarrative
      *
      * `GET /v1/western/narrative/yearly`
      *
-     * @param string $sign
+     * @param string $sign Tropical zodiac sign (case-insensitive on input; canonicalised in
+     *     response).
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
      * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.

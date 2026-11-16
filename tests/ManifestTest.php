@@ -19,13 +19,15 @@ use PHPUnit\Framework\Attributes\DataProvider;
 final class ManifestTest extends TestCase
 {
     /** Methods in the Node.js SDK 0.9.1 (and the Python and Dart SDKs). */
-    private const NODE_METHOD_COUNT = 322;
+    private const NODE_METHOD_COUNT = 323;
 
     /** Params the examples list as required that the SDK leaves out on purpose. */
     private const NOT_REALLY_REQUIRED = [
         // The handler reads `tz` only together with `date` (the transit moment); like the Node
         // SDK, transit.sadeSati sends the natal chart only.
         '/v1/transit/sade-sati' => ['tz'],
+        // Same rule: the transit moment defaults to now, and `tz` only goes with `date`.
+        '/v1/vedic/narrative/transit-ashtakavarga' => ['tz'],
     ];
 
     /** @return iterable<string, array{Entry}> */

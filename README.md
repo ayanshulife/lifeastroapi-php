@@ -6,7 +6,7 @@ kundli, kundli matching, muhurat, dashas, horoscopes, numerology, tarot and West
 location-aware calculations and pay-per-call billing. Free tier: 1,500 credits a month, no card.
 [Get a key](https://lifeastroapi.com/signup/).
 
-- **Every endpoint**: 322 methods across 23 resource groups (panchang, chart, dasha, milan,
+- **Every endpoint**: all 322 endpoints (323 methods, with a shortcut for the navamsa chart) across 23 resource groups (panchang, chart, dasha, milan,
   transit, horoscope, numerology, muhurta, reports, narrative, remedies, a complete Western
   module and more). Same methods as the official Node.js SDK, generated from the same manifest.
 - **No third-party runtime packages**: the default transport uses `ext-curl` and keeps the
@@ -245,7 +245,7 @@ $chart = $client->chart->planets(...$arjun, lang: 'ta');   // the plain code wor
 | Group | What it covers |
 |-------|----------------|
 | `panchang` | tithi, nakshatra, yoga, karana, vara, sunrise/sunset, rahu kaal, choghadiya, hora, muhurtas, monthly calendar, composite `basic` / `advanced` |
-| `chart` | planets, ascendant, houses, divisional (D1-D60), dignity, aspects, shadbala, ashtakvarga, avakhada, KP, astro details; data bundles `kundliFacts`, `yogas`, `doshas`, birth-time `sensitivity` |
+| `chart` | planets, ascendant, houses, divisional (D1-D60), dignity, aspects, shadbala, ashtakvarga, avakhada, KP (sub lords, ruling planets, significators, 4-step chain), astro details; data bundles `kundliFacts`, `yogas`, `doshas`, birth-time `sensitivity` |
 | `dasha` | Vimshottari (full, current, 5-level drill-down), Yogini and Chara dashas |
 | `milan` | Ashtakoota (total, full, per koota), mangal / nadi / shani dosha, navamsa and dasha compatibility, `overlay`, `summary` |
 | `transit` | positions, sade sati, ashtakavarga, tarabala, vedha, double transit, small panoti, `sadeSatiWindows`, `windows` |
@@ -253,7 +253,7 @@ $chart = $client->chart->planets(...$arjun, lang: 'ta');   // the plain code wor
 | `numerology` | driver, conductor, soul, personality, destiny, full, advanced, challenges, personal periods |
 | `muhurta` | vivah, naamkaran, griha pravesh, vyapar, yatra, best time, chandra / tara bala |
 | `varshaphal` | annual chart, lord, muntha, mudda dasha, harsha bala, tajika yogas |
-| `prashna` | horary answer, chart, arudha, significators |
+| `prashna` | horary answer, chart, arudha, significators, KP horary (1-249) |
 | `eclipses` | solar, lunar, all (date range, local contacts and sutak) |
 | `calendar` | Hindu month, ritu, samvatsara, adhik maas, solstices |
 | `festivals` | Hindu festivals by month, on a date, or by vrat family; `lang`, `monthSystem` (amanta / purnimanta) |

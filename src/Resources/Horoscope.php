@@ -32,8 +32,9 @@ final class Horoscope
      *
      * `GET /v1/horoscope/daily`
      *
-     * @param string $rashi Moon sign, English or Hindi name in any case (`aries`, `Mesh`).
-     * @param string|null $date Date, `YYYY-MM-DD`.
+     * @param string $rashi Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh
+     *     or aries.
+     * @param string|null $date Date (YYYY-MM-DD).
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...).
      * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
@@ -63,9 +64,10 @@ final class Horoscope
      *
      * `GET /v1/horoscope/monthly`
      *
-     * @param string $rashi Moon sign, English or Hindi name in any case (`aries`, `Mesh`).
-     * @param string $month
-     * @param string|null $date Date, `YYYY-MM-DD`.
+     * @param string $rashi Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh
+     *     or aries.
+     * @param string $month Month (YYYY-MM), e.g. 2027-01.
+     * @param string|null $date Date (YYYY-MM-DD).
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...).
      * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
@@ -97,9 +99,10 @@ final class Horoscope
      *
      * `GET /v1/horoscope/weekly`
      *
-     * @param string $rashi Moon sign, English or Hindi name in any case (`aries`, `Mesh`).
+     * @param string $rashi Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh
+     *     or aries.
      * @param string $week
-     * @param string|null $date Date, `YYYY-MM-DD`.
+     * @param string|null $date Date (YYYY-MM-DD).
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...).
      * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.

@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.4.0 (2026-11-15)
+
+- New `$client->prashna->kpHorary(number: 23, lat: ..., lon: ..., tz: ..., date: ..., time: ...)`:
+  the KP horary chart for a number from 1 to 249, cast for the moment and place of judgement.
+  Returns the horary ascendant (the first degree of that number's part), the 12 Placidus cusps
+  with star, sub and sub-sub lords and significators, the planets with KP lords and houses, planet
+  significators, the KP 4-step chain and the ruling planets. Uses the Krishnamurti ayanamsa unless
+  `ayanamsa` is sent. 30 credits. Same method as the Node.js SDK 0.13.0.
+- `chart->kpSublord()` now also returns the KP ruling planets (`ruling_planets`), and
+  `chart->kpHouseSignificator()` returns each cusp's significator planets, the houses every planet
+  signifies and the 4-step chain (new fields from the API; nothing removed).
+- `chart->kpSublord()`'s `planet` and `chart->kpHouseSignificator()`'s `cusp` are now optional. The
+  API never read them: it always returns every planet and all 12 cusps. Code that passes them
+  keeps working.
+- Parameter docs refreshed from the API reference (for example `$month` on the monthly horoscope is
+  `YYYY-MM`).
+- 323 methods (322 endpoints).
+
 ## 0.3.0 (2026-11-15)
 
 - New `onResponse` hook, as a client argument (`new LifeAstro(onResponse: ...)`) and per call

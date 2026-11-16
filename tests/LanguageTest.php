@@ -150,7 +150,7 @@ final class LanguageTest extends TestCase
         $without = array_filter($vedic, static fn (array $e): bool => !Samples::hasParam($e, 'lang'));
         // manifest.mjs NO_LANG: 25 Vedic endpoints that return only times, numbers or ids.
         self::assertCount(25, $without);
-        self::assertSame(189, \count($vedic) - \count($without));
+        self::assertSame(190, \count($vedic) - \count($without));
 
         foreach (Samples::manifest() as $entry) {
             $westernNarrative = str_starts_with($entry['path'], '/v1/western/narrative/');

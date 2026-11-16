@@ -36,7 +36,7 @@ use Psr\Http\Message\RequestFactoryInterface;
 final class LifeAstro extends Resources
 {
     /** SDK version, sent in the `User-Agent` header. */
-    public const VERSION = '0.3.0';
+    public const VERSION = '0.4.0';
 
     public const DEFAULT_BASE_URL = 'https://api.lifeastroapi.com';
 

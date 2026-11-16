@@ -33,12 +33,13 @@ final class Prashna
      *
      * `GET /v1/prashna/answer`
      *
-     * @param float $lat Birth place latitude in decimal degrees.
-     * @param float $lon Birth place longitude in decimal degrees.
-     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
+     * @param float $lat Latitude of the place of the question, in decimal degrees.
+     * @param float $lon Longitude of the place of the question, in decimal degrees.
+     * @param string $tz Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC
+     *     offset (+05:30).
      * @param int $house
      * @param string|null $date Date, `YYYY-MM-DD`. Defaults to today in `tz`.
-     * @param string|null $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string|null $time Local time the question is asked (HH:MM, 24-hour).
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
@@ -81,11 +82,12 @@ final class Prashna
      *
      * `GET /v1/prashna/arudha`
      *
-     * @param float $lat Birth place latitude in decimal degrees.
-     * @param float $lon Birth place longitude in decimal degrees.
-     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
+     * @param float $lat Latitude of the place of the question, in decimal degrees.
+     * @param float $lon Longitude of the place of the question, in decimal degrees.
+     * @param string $tz Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC
+     *     offset (+05:30).
      * @param string|null $date Date, `YYYY-MM-DD`. Defaults to today in `tz`.
-     * @param string|null $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string|null $time Local time the question is asked (HH:MM, 24-hour).
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
@@ -126,11 +128,12 @@ final class Prashna
      *
      * `GET /v1/prashna/chart`
      *
-     * @param float $lat Birth place latitude in decimal degrees.
-     * @param float $lon Birth place longitude in decimal degrees.
-     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
+     * @param float $lat Latitude of the place of the question, in decimal degrees.
+     * @param float $lon Longitude of the place of the question, in decimal degrees.
+     * @param string $tz Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC
+     *     offset (+05:30).
      * @param string|null $date Date, `YYYY-MM-DD`. Defaults to today in `tz`.
-     * @param string|null $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string|null $time Local time the question is asked (HH:MM, 24-hour).
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
@@ -164,6 +167,61 @@ final class Prashna
     }
 
     /**
+     * KP horary chart for a number from 1 to 249 (30 credits), cast for the moment and place of
+     * judgement: the horary ascendant (the first degree of that number's sign/star/sub part), the
+     * 12 Placidus cusps with star, sub and sub-sub lords and significators, planets with KP lords
+     * and houses, planet significators, the 4-step chain and the ruling planets of the moment. Uses
+     * the Krishnamurti ayanamsa unless ayanamsa is sent.
+     *
+     * Cost: 30 credits per call.
+     *
+     * `GET /v1/prashna/kp-horary`
+     *
+     * @param float $lat Latitude of the place of the question, in decimal degrees.
+     * @param float $lon Longitude of the place of the question, in decimal degrees.
+     * @param string $tz Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC
+     *     offset (+05:30).
+     * @param int $number The KP horary number the querent gives, a whole number from 1 to 249.
+     *     Number n is the n-th of the 249 sign/star/sub parts of the zodiac counted from 0° Aries;
+     *     the horary ascendant is the degree where that part begins.
+     * @param string|null $date Date, `YYYY-MM-DD`. Defaults to today in `tz`.
+     * @param string|null $time Local time the question is asked (HH:MM, 24-hour).
+     * @param Ayanamsa|string|null $ayanamsa Ayanamsa. Defaults to krishnamurti here, the ayanamsa
+     *     KP horary is defined on (other endpoints default to lahiri).
+     * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
+     *     ...). Sent as `lang` and `locale`.
+     * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
+     *
+     * @return array<mixed> The decoded JSON response.
+     *
+     * @throws LifeAstroException On an API error or a network failure.
+     */
+    public function kpHorary(
+        float $lat,
+        float $lon,
+        string $tz,
+        int $number,
+        ?string $date = null,
+        ?string $time = null,
+        Ayanamsa|string|null $ayanamsa = null,
+        Lang|string|null $lang = null,
+        ?RequestOptions $requestOptions = null,
+    ): array {
+        $query = [];
+        Query::put($query, 'lat', $lat);
+        Query::put($query, 'lon', $lon);
+        Query::put($query, 'tz', $tz);
+        Query::put($query, 'date', $date ?? Query::todayIn($tz));
+        Query::put($query, 'time', $time);
+        Query::put($query, 'ayanamsa', $ayanamsa);
+        Query::put($query, 'number', $number);
+        Query::put($query, 'lang', $lang);
+        Query::put($query, 'locale', $lang);
+
+        return $this->http->requestArray('/v1/prashna/kp-horary', $query, $requestOptions);
+    }
+
+    /**
      * Get the lagna lord analysis for a Prashna chart — where the lagna lord is placed, its
      * strength, and what it indicates about the querent's situation and chances of success.
      *
@@ -171,11 +229,12 @@ final class Prashna
      *
      * `GET /v1/prashna/lagna-lord`
      *
-     * @param float $lat Birth place latitude in decimal degrees.
-     * @param float $lon Birth place longitude in decimal degrees.
-     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
+     * @param float $lat Latitude of the place of the question, in decimal degrees.
+     * @param float $lon Longitude of the place of the question, in decimal degrees.
+     * @param string $tz Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC
+     *     offset (+05:30).
      * @param string|null $date Date, `YYYY-MM-DD`. Defaults to today in `tz`.
-     * @param string|null $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string|null $time Local time the question is asked (HH:MM, 24-hour).
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
@@ -216,12 +275,13 @@ final class Prashna
      *
      * `GET /v1/prashna/significators`
      *
-     * @param float $lat Birth place latitude in decimal degrees.
-     * @param float $lon Birth place longitude in decimal degrees.
-     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
+     * @param float $lat Latitude of the place of the question, in decimal degrees.
+     * @param float $lon Longitude of the place of the question, in decimal degrees.
+     * @param string $tz Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC
+     *     offset (+05:30).
      * @param int $house Question house number (1–12)
      * @param string|null $date Date, `YYYY-MM-DD`. Defaults to today in `tz`.
-     * @param string|null $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string|null $time Local time the question is asked (HH:MM, 24-hour).
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.

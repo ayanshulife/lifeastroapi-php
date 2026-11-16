@@ -798,8 +798,10 @@ final class Chart
     }
 
     /**
-     * Get KP (Krishnamurti Paddhati) house significators for a given cusp — lists planets that
-     * significate the house through occupancy, lordship, and sub-lord chain.
+     * KP house significators for all 12 Placidus cusps (20 credits): each cusp's star, sub and
+     * sub-sub lords and its significator planets (four KP levels), the houses every planet
+     * signifies, and the KP 4-step chain. Pass ayanamsa krishnamurti for KP work. `cusp` is
+     * accepted for compatibility and ignored: all 12 cusps are returned.
      *
      * Cost: 20 credits per call.
      *
@@ -812,11 +814,11 @@ final class Chart
      * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
-     * @param int $cusp
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
+     * @param int|null $cusp
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
      * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
@@ -831,9 +833,9 @@ final class Chart
         string $date,
         string $time,
         string $tz,
-        int $cusp,
         Ayanamsa|string|null $ayanamsa = null,
         HouseSystem|string|null $houseSystem = null,
+        ?int $cusp = null,
         Lang|string|null $lang = null,
         ?RequestOptions $requestOptions = null,
     ): array {
@@ -853,8 +855,10 @@ final class Chart
     }
 
     /**
-     * Get the KP sublord of a planet — the sub-lord of the nakshatra sub-division the planet
-     * occupies (KP star lord → sub lord → sub-sub lord chain).
+     * KP star, sub and sub-sub lords of every planet (10 credits), and the KP ruling planets for
+     * the moment and place (day lord, and the star, sign and sub lords of the ascendant and the
+     * Moon); send the moment of judgement for horary or timing. Pass ayanamsa krishnamurti for KP
+     * work. `planet` is accepted for compatibility and ignored: all planets are returned.
      *
      * Cost: 10 credits per call.
      *
@@ -867,10 +871,10 @@ final class Chart
      * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
      * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
-     * @param string $planet
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
      *     as `house_system`.
+     * @param string|null $planet
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
      * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
@@ -885,9 +889,9 @@ final class Chart
         string $date,
         string $time,
         string $tz,
-        string $planet,
         Ayanamsa|string|null $ayanamsa = null,
         HouseSystem|string|null $houseSystem = null,
+        ?string $planet = null,
         Lang|string|null $lang = null,
         ?RequestOptions $requestOptions = null,
     ): array {

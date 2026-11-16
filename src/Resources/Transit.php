@@ -83,7 +83,8 @@ final class Transit
      * @param string|null $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
      *     Defaults to `UTC`.
      * @param string|null $date Date, `YYYY-MM-DD`. Defaults to today in `tz`.
-     * @param string|null $time Local time (HH:MM, 24-hour). Defaults to 12:00.
+     * @param string|null $time Local time of the moment to check (HH:MM, 24-hour). Defaults to
+     *     12:00.
      * @param Ayanamsa|string|null $ayanamsa Ayanamsa (sidereal offset) to use. Defaults to lahiri.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.

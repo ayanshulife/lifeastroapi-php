@@ -20,7 +20,8 @@
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/ashtakavarga/kaksha": {
@@ -50,7 +51,8 @@
    "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/ashtakavarga/sarva": {
@@ -104,7 +106,8 @@
    "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/calendar/adhik-maas": {
@@ -117,7 +120,8 @@
   },
   "docs": {
    "year": "Year (YYYY).",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/calendar/month": {
@@ -133,7 +137,8 @@
   "docs": {
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/calendar/ritu": {
@@ -149,7 +154,8 @@
   "docs": {
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/calendar/samvatsara": {
@@ -165,7 +171,8 @@
   "docs": {
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/calendar/solstices": {
@@ -181,7 +188,8 @@
   "docs": {
    "year": "Year (YYYY).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/ascendant": {
@@ -205,7 +213,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/ashtakvarga": {
@@ -229,7 +238,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/ashtakvarga/{planet}": {
@@ -253,7 +263,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/aspects": {
@@ -277,7 +288,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/astro-details": {
@@ -290,17 +302,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/avakhada": {
@@ -324,7 +337,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/bhavabala": {
@@ -372,7 +386,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/dignity": {
@@ -396,7 +411,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/divisional/{varga}": {
@@ -420,7 +436,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/doshas": {
@@ -459,17 +476,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/graha-yuddha": {
@@ -493,7 +511,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/house-occupants": {
@@ -517,7 +536,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/houses": {
@@ -541,7 +561,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/kp-house-significator": {
@@ -554,17 +575,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/kp-sublord": {
@@ -588,7 +610,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/kundli-facts": {
@@ -615,7 +638,8 @@
    "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
    "vargas": "Comma list of divisional charts (D2..D60, or names such as navamsa). Default D9. D1 is rejected (planets already carry it); at most 16.",
    "include": "Comma list of optional sections: shadbala, bhavabala, ashtakvarga, aspects, avastha, karakas, avakhada, yogas, or all. Default: every section except yogas.",
-   "gender": "Optional. Narrows Mahabhagya (male day birth / female night birth) exactly like /v1/vedic/narrative/yogas."
+   "gender": "Optional. Narrows Mahabhagya (male day birth / female night birth) exactly like /v1/vedic/narrative/yogas.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/nakshatra": {
@@ -639,7 +663,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/planet/{name}": {
@@ -663,7 +688,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/planets": {
@@ -687,7 +713,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/sensitivity": {
@@ -738,7 +765,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/shadbala/{component}": {
@@ -762,7 +790,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/chart/yogas": {
@@ -801,17 +830,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/char/current": {
@@ -824,19 +854,20 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
+   "time": "10:30",
    "at": "2027-01-15T00:00:00Z"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
-   "at": "UTC moment to evaluate (RFC3339 like 2027-01-15T00:00:00Z, or YYYY-MM-DD). Defaults to now."
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "at": "UTC moment to evaluate (RFC3339 like 2027-01-15T00:00:00Z, or YYYY-MM-DD). Defaults to now.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/char/major": {
@@ -849,17 +880,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/char/{md}": {
@@ -872,17 +904,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/char/{md}/{ad}": {
@@ -895,17 +928,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/vimshottari": {
@@ -929,7 +963,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/vimshottari/current": {
@@ -955,7 +990,8 @@
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "at": "UTC moment to find the running dasha for (RFC3339 like 2027-01-15T00:00:00Z, or YYYY-MM-DD). Defaults to now.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/vimshottari/{md}": {
@@ -968,17 +1004,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/vimshottari/{md}/{ad}": {
@@ -991,17 +1028,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/vimshottari/{md}/{ad}/{pd}": {
@@ -1014,17 +1052,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/vimshottari/{md}/{ad}/{pd}/{sd}": {
@@ -1037,17 +1076,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/yogini": {
@@ -1071,7 +1111,8 @@
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/yogini/current": {
@@ -1097,7 +1138,8 @@
    "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "at": "UTC moment to find the running dasha for (RFC3339 like 2027-01-15T00:00:00Z, or YYYY-MM-DD). Defaults to now.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/dasha/yogini/{name}": {
@@ -1110,17 +1152,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/eclipses/all": {
@@ -1139,7 +1182,8 @@
    "start_date": "First date of the range (YYYY-MM-DD).",
    "end_date": "Last date of the range (YYYY-MM-DD).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/eclipses/lunar": {
@@ -1158,7 +1202,8 @@
    "start_date": "First date of the range (YYYY-MM-DD).",
    "end_date": "Last date of the range (YYYY-MM-DD).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/eclipses/solar": {
@@ -1177,7 +1222,8 @@
    "start_date": "First date of the range (YYYY-MM-DD).",
    "end_date": "Last date of the range (YYYY-MM-DD).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/festivals/month": {
@@ -1255,9 +1301,9 @@
    "lon"
   ],
   "params": {
-   "limit": "2",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "limit": "2"
   },
   "docs": {
    "lat": "Latitude in decimal degrees.",
@@ -1291,33 +1337,49 @@
   }
  },
  "/v1/horoscope/daily": {
-  "status": 500,
-  "required": [],
+  "status": 200,
+  "required": [
+   "rashi"
+  ],
   "params": {
-   "rashi": "Mesha",
-   "date": "2027-01-15"
+   "date": "2027-01-15",
+   "rashi": "Mesha"
   },
-  "docs": {}
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "rashi": "Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh or aries."
+  }
  },
  "/v1/horoscope/monthly": {
-  "status": 500,
-  "required": [],
+  "status": 200,
+  "required": [
+   "rashi"
+  ],
   "params": {
-   "rashi": "Mesha",
    "date": "2027-01-15",
+   "rashi": "Mesha",
    "month": "2027-01"
   },
-  "docs": {}
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "rashi": "Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh or aries.",
+   "month": "Month (YYYY-MM), e.g. 2027-01."
+  }
  },
  "/v1/horoscope/weekly": {
-  "status": 500,
-  "required": [],
+  "status": 200,
+  "required": [
+   "rashi"
+  ],
   "params": {
-   "rashi": "Mesha",
    "date": "2027-01-15",
+   "rashi": "Mesha",
    "week": "2027-W03"
   },
-  "docs": {}
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "rashi": "Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh or aries."
+  }
  },
  "/v1/lalkitab/chart": {
   "status": 200,
@@ -1329,17 +1391,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/lalkitab/dasha": {
@@ -1352,17 +1415,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/lalkitab/dasha/current": {
@@ -1375,17 +1439,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/meta/ayanamsas": {
@@ -1476,7 +1541,8 @@
    "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/ashtakoota/total": {
@@ -1528,7 +1594,8 @@
    "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/dasha-sync": {
@@ -1548,12 +1615,12 @@
    "boy.tz": "Asia/Kolkata",
    "girl.date": "1992-03-20",
    "girl.tz": "Asia/Kolkata",
-   "boy.time": "10:30",
    "boy.lat": "19.076",
    "boy.lon": "72.8777",
-   "girl.time": "08:15",
    "girl.lat": "28.6139",
    "girl.lon": "77.209",
+   "boy.time": "10:30",
+   "girl.time": "08:15",
    "marriage_windows": "true",
    "from": "2027-01-15",
    "years": "3"
@@ -1563,17 +1630,18 @@
    "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "girl.date": "Girl's birth date (YYYY-MM-DD).",
    "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "boy.lat": "Boy's birth place latitude in decimal degrees.",
    "boy.lon": "Boy's birth place longitude in decimal degrees.",
-   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.lat": "Girl's birth place latitude in decimal degrees.",
    "girl.lon": "Girl's birth place longitude in decimal degrees.",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "marriage_windows": "Add the D-MarriageWindows1 tag to every timeline interval (implies timeline=true; needs boy.lat/lon and girl.lat/lon). Default false.",
    "from": "Timeline start YYYY-MM-DD (local midnight in tz). Defaults to the date= moment, else now.",
    "years": "Timeline span in calendar years. Default 10, max 30.",
    "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
-   "timeline": "Add the aligned MD/AD timeline of both partners. Default false."
+   "timeline": "Add the aligned MD/AD timeline of both partners. Default false.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/dhan-yog": {
@@ -1597,7 +1665,8 @@
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/longevity": {
@@ -1621,7 +1690,8 @@
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/mahendra": {
@@ -1647,7 +1717,8 @@
    "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/mangal-dosha": {
@@ -1671,7 +1742,8 @@
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/nadi-dosha": {
@@ -1697,7 +1769,8 @@
    "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/navamsa-compat": {
@@ -1723,7 +1796,8 @@
    "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/overlay": {
@@ -1785,7 +1859,8 @@
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/shani-dosha": {
@@ -1809,7 +1884,8 @@
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/stree-dirgha": {
@@ -1835,7 +1911,8 @@
    "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/summary": {
@@ -1876,7 +1953,8 @@
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "from": "Start of the 10-year Sade Sati range, YYYY-MM-DD (local midnight). Defaults to now.",
    "include": "Optional: kundli_facts embeds both partners' /v1/chart/kundli-facts.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/milan/vivah-phal": {
@@ -1900,7 +1978,8 @@
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/best-time": {
@@ -1927,7 +2006,8 @@
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
    "birth_date": "Optional birth date for Chandra Bala and Tara Bala scoring.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/chandra-bala": {
@@ -1976,7 +2056,8 @@
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
    "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/naamkaran": {
@@ -2003,7 +2084,8 @@
    "lon": "Longitude in decimal degrees.",
    "birth_date": "Child's birth date (YYYY-MM-DD). Minimum 10 days before ceremony.",
    "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/panchaka-rahita": {
@@ -2025,7 +2107,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/sarvartha-siddhi": {
@@ -2047,7 +2130,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/shubha-yoga": {
@@ -2069,7 +2153,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/tara-bala": {
@@ -2118,7 +2203,8 @@
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
    "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/vyapar": {
@@ -2142,7 +2228,8 @@
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
    "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/muhurta/yatra": {
@@ -2167,7 +2254,8 @@
    "lon": "Longitude in decimal degrees.",
    "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
    "direction": "Direction of travel (compass point). Default: E.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/numerology/advanced": {
@@ -2181,7 +2269,8 @@
   },
   "docs": {
    "name": "Full name.",
-   "dob": "Date of birth (YYYY-MM-DD)."
+   "dob": "Date of birth (YYYY-MM-DD).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/numerology/challenges": {
@@ -2193,7 +2282,8 @@
    "dob": "1990-01-15"
   },
   "docs": {
-   "dob": "Date of birth (YYYY-MM-DD)."
+   "dob": "Date of birth (YYYY-MM-DD).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/numerology/conductor": {
@@ -2205,7 +2295,8 @@
    "dob": "1990-01-15"
   },
   "docs": {
-   "dob": "Date of birth (YYYY-MM-DD)."
+   "dob": "Date of birth (YYYY-MM-DD).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/numerology/destiny": {
@@ -2217,7 +2308,8 @@
    "name": "Arjun Mehta"
   },
   "docs": {
-   "name": "Full name."
+   "name": "Full name.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/numerology/driver": {
@@ -2229,7 +2321,8 @@
    "dob": "1990-01-15"
   },
   "docs": {
-   "dob": "Date of birth (YYYY-MM-DD)."
+   "dob": "Date of birth (YYYY-MM-DD).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/numerology/full": {
@@ -2238,12 +2331,12 @@
    "dob"
   ],
   "params": {
-   "name": "Arjun Mehta",
-   "dob": "1990-01-15"
+   "dob": "1990-01-15",
+   "name": "Arjun Mehta"
   },
   "docs": {
-   "name": "Full name.",
-   "dob": "Date of birth (YYYY-MM-DD)."
+   "dob": "Date of birth (YYYY-MM-DD).",
+   "name": "Full name."
   }
  },
  "/v1/numerology/personal-periods": {
@@ -2255,7 +2348,8 @@
    "dob": "1990-01-15"
   },
   "docs": {
-   "dob": "Date of birth (YYYY-MM-DD)."
+   "dob": "Date of birth (YYYY-MM-DD).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/numerology/personality": {
@@ -2267,7 +2361,8 @@
    "name": "Arjun Mehta"
   },
   "docs": {
-   "name": "Full name."
+   "name": "Full name.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/numerology/soul": {
@@ -2279,7 +2374,8 @@
    "name": "Arjun Mehta"
   },
   "docs": {
-   "name": "Full name."
+   "name": "Full name.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/abhijit": {
@@ -2321,7 +2417,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/amrit-kalam": {
@@ -2343,7 +2440,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/basic": {
@@ -2364,7 +2462,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/brahma-muhurat": {
@@ -2406,7 +2505,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/durmuhurta": {
@@ -2470,7 +2570,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/hora": {
@@ -2491,7 +2592,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/hora-dinman": {
@@ -2512,7 +2614,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/karana": {
@@ -2533,7 +2636,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/lagna-table": {
@@ -2554,7 +2658,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/monthly": {
@@ -2624,7 +2729,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/nakshatra-prediction": {
@@ -2647,7 +2753,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/panchaka": {
@@ -2669,7 +2776,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/pradosh-kaal": {
@@ -2726,7 +2834,8 @@
   },
   "docs": {
    "date": "Date (YYYY-MM-DD).",
-   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/siddha-yoga": {
@@ -2748,7 +2857,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/summary": {
@@ -2770,7 +2880,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/sunrise-sunset": {
@@ -2812,7 +2923,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/vara": {
@@ -2833,7 +2945,8 @@
    "date": "Date (YYYY-MM-DD).",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/varjyam": {
@@ -2855,7 +2968,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/panchang/yamaganda": {
@@ -2898,7 +3012,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/planet-moments/combustion-window": {
@@ -2918,7 +3033,8 @@
    "date": "Birth date (YYYY-MM-DD).",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/planet-moments/ingress": {
@@ -2938,7 +3054,8 @@
    "date": "Birth date (YYYY-MM-DD).",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/planet-moments/retrograde-window": {
@@ -2957,7 +3074,8 @@
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/planet-moments/speed": {
@@ -2976,7 +3094,8 @@
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/prashna/answer": {
@@ -2989,7 +3108,7 @@
    "house"
   ],
   "params": {
-   "date": "1990-01-15",
+   "date": "2027-01-15",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
@@ -2997,13 +3116,14 @@
    "time": "10:30"
   },
   "docs": {
-   "date": "Birth date (YYYY-MM-DD).",
-   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees.",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "date": "Date the question is asked (YYYY-MM-DD).",
+   "tz": "Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude of the place of the question, in decimal degrees.",
+   "lon": "Longitude of the place of the question, in decimal degrees.",
+   "time": "Local time the question is asked (HH:MM, 24-hour).",
    "question_house": "House number representing the subject of the question",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/prashna/arudha": {
@@ -3015,19 +3135,20 @@
    "lon"
   ],
   "params": {
-   "date": "1990-01-15",
+   "date": "2027-01-15",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
    "time": "10:30"
   },
   "docs": {
-   "date": "Birth date (YYYY-MM-DD).",
-   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees.",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "date": "Date the question is asked (YYYY-MM-DD).",
+   "tz": "Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude of the place of the question, in decimal degrees.",
+   "lon": "Longitude of the place of the question, in decimal degrees.",
+   "time": "Local time the question is asked (HH:MM, 24-hour).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/prashna/chart": {
@@ -3039,19 +3160,48 @@
    "lon"
   ],
   "params": {
-   "date": "1990-01-15",
+   "date": "2027-01-15",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
    "time": "10:30"
   },
   "docs": {
-   "date": "Birth date (YYYY-MM-DD).",
-   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees.",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "date": "Date the question is asked (YYYY-MM-DD).",
+   "tz": "Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude of the place of the question, in decimal degrees.",
+   "lon": "Longitude of the place of the question, in decimal degrees.",
+   "time": "Local time the question is asked (HH:MM, 24-hour).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/prashna/kp-horary": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "number"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "number": "23",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Date the question is asked (YYYY-MM-DD).",
+   "tz": "Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude of the place of the question, in decimal degrees.",
+   "lon": "Longitude of the place of the question, in decimal degrees.",
+   "number": "The KP horary number the querent gives, a whole number from 1 to 249. Number n is the n-th of the 249 sign/star/sub parts of the zodiac counted from 0° Aries; the horary ascendant is the degree where that part begins.",
+   "time": "Local time the question is asked (HH:MM, 24-hour).",
+   "ayanamsa": "Ayanamsa. Defaults to krishnamurti here, the ayanamsa KP horary is defined on (other endpoints default to lahiri).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/prashna/lagna-lord": {
@@ -3063,19 +3213,20 @@
    "lon"
   ],
   "params": {
-   "date": "1990-01-15",
+   "date": "2027-01-15",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
    "time": "10:30"
   },
   "docs": {
-   "date": "Birth date (YYYY-MM-DD).",
-   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees.",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "date": "Date the question is asked (YYYY-MM-DD).",
+   "tz": "Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude of the place of the question, in decimal degrees.",
+   "lon": "Longitude of the place of the question, in decimal degrees.",
+   "time": "Local time the question is asked (HH:MM, 24-hour).",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/prashna/significators": {
@@ -3088,7 +3239,7 @@
    "house"
   ],
   "params": {
-   "date": "1990-01-15",
+   "date": "2027-01-15",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
@@ -3096,13 +3247,14 @@
    "house": "7"
   },
   "docs": {
-   "date": "Birth date (YYYY-MM-DD).",
-   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees.",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "date": "Date the question is asked (YYYY-MM-DD).",
+   "tz": "Timezone of the place of the question: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude of the place of the question, in decimal degrees.",
+   "lon": "Longitude of the place of the question, in decimal degrees.",
+   "time": "Local time the question is asked (HH:MM, 24-hour).",
    "house": "Question house number (1–12)",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/dasha-analysis": {
@@ -3114,22 +3266,25 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/horoscope/daily": {
-  "status": 500,
-  "required": [],
+  "status": 200,
+  "required": [
+   "rashi"
+  ],
   "params": {
    "date": "2027-01-15",
    "time": "10:30",
@@ -3138,11 +3293,21 @@
    "lon": "72.8777",
    "rashi": "Mesha"
   },
-  "docs": {}
+  "docs": {
+   "date": "Date (YYYY-MM-DD).",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "rashi": "Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh or aries.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/reports/horoscope/monthly": {
-  "status": 500,
-  "required": [],
+  "status": 200,
+  "required": [
+   "rashi"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -3152,11 +3317,22 @@
    "rashi": "Mesha",
    "month": "2027-01"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "rashi": "Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh or aries.",
+   "month": "Month (YYYY-MM), e.g. 2027-01.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/reports/horoscope/weekly": {
-  "status": 500,
-  "required": [],
+  "status": 200,
+  "required": [
+   "rashi"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -3166,7 +3342,15 @@
    "rashi": "Mesha",
    "week": "2027-W03"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "rashi": "Moon sign (rashi): English or Hindi name in any case, e.g. Mesha, Mesh or aries.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/reports/kundli/brihad": {
   "status": 200,
@@ -3177,17 +3361,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/kundli/detailed": {
@@ -3199,17 +3384,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/kundli/lite": {
@@ -3221,17 +3407,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/mangal-dosha": {
@@ -3243,17 +3430,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/match-making": {
@@ -3263,38 +3451,39 @@
    "girl.date"
   ],
   "params": {
+   "boy.date": "1990-01-15",
+   "girl.date": "1992-03-20",
    "date": "1990-01-15",
    "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
-   "boy.date": "1990-01-15",
    "boy.time": "10:30",
    "boy.tz": "Asia/Kolkata",
    "boy.lat": "19.076",
    "boy.lon": "72.8777",
-   "girl.date": "1992-03-20",
    "girl.time": "08:15",
    "girl.tz": "Asia/Kolkata",
    "girl.lat": "28.6139",
    "girl.lon": "77.209"
   },
   "docs": {
+   "boy.date": "Boy's birth date (YYYY-MM-DD).",
+   "girl.date": "Girl's birth date (YYYY-MM-DD).",
    "date": "Birth date (YYYY-MM-DD).",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
-   "boy.date": "Boy's birth date (YYYY-MM-DD).",
    "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "boy.lat": "Boy's birth place latitude in decimal degrees.",
    "boy.lon": "Boy's birth place longitude in decimal degrees.",
-   "girl.date": "Girl's birth date (YYYY-MM-DD).",
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "girl.lat": "Girl's birth place latitude in decimal degrees.",
-   "girl.lon": "Girl's birth place longitude in decimal degrees."
+   "girl.lon": "Girl's birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/numerology": {
@@ -3303,12 +3492,13 @@
    "dob"
   ],
   "params": {
-   "name": "Arjun Mehta",
-   "dob": "1990-01-15"
+   "dob": "1990-01-15",
+   "name": "Arjun Mehta"
   },
   "docs": {
+   "dob": "Date of birth (YYYY-MM-DD).",
    "name": "Full name.",
-   "dob": "Date of birth (YYYY-MM-DD)."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/sade-sati": {
@@ -3320,17 +3510,18 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/reports/varshaphal": {
@@ -3343,19 +3534,20 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
-   "year": "2027"
+   "year": "2027",
+   "time": "10:30",
+   "tz": "Asia/Kolkata"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
-   "year": "Year (YYYY)."
+   "year": "Year (YYYY).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/tarot/card/{id}": {
@@ -3428,7 +3620,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/transit/double-transit": {
@@ -3440,13 +3633,26 @@
   "params": {
    "date": "2027-01-15",
    "time": "06:00",
-   "tz": "Asia/Kolkata"
+   "tz": "Asia/Kolkata",
+   "lat": "28.6139",
+   "lon": "77.209",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lat": "19.076"
   },
   "docs": {
-   "date": "Date (YYYY-MM-DD).",
-   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lat": "Birth place latitude in decimal degrees.",
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/transit/positions": {
@@ -3468,7 +3674,8 @@
    "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/transit/sade-sati": {
@@ -3526,20 +3733,20 @@
    "birth.tz"
   ],
   "params": {
-   "date": "2027-01-15",
-   "time": "06:00",
    "tz": "Asia/Kolkata",
    "birth.date": "1990-01-15",
-   "birth.time": "10:30",
-   "birth.tz": "Asia/Kolkata"
+   "birth.tz": "Asia/Kolkata",
+   "date": "2027-01-15",
+   "time": "06:00",
+   "birth.time": "10:30"
   },
   "docs": {
-   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
-   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.date": "Birth date (YYYY-MM-DD).",
-   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/transit/small-panoti/history": {
@@ -3549,26 +3756,26 @@
    "birth.tz"
   ],
   "params": {
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
    "date": "2027-01-15",
    "time": "06:00",
    "tz": "Asia/Kolkata",
    "lat": "28.6139",
    "lon": "77.209",
-   "birth.date": "1990-01-15",
    "birth.time": "10:30",
-   "birth.tz": "Asia/Kolkata",
    "birth.lat": "19.076",
    "birth.lon": "72.8777"
   },
   "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
    "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
    "lon": "Longitude in decimal degrees.",
-   "birth.date": "Birth date (YYYY-MM-DD).",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees."
   }
@@ -3596,7 +3803,8 @@
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/transit/vedha": {
@@ -3628,7 +3836,8 @@
    "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/transit/windows": {
@@ -3639,18 +3848,18 @@
   ],
   "params": {
    "planet": "saturn",
+   "birth.tz": "Asia/Kolkata",
    "birth.date": "1990-01-15",
    "birth.time": "10:30",
-   "birth.tz": "Asia/Kolkata",
    "birth.lat": "19.076",
    "birth.lon": "72.8777",
    "from": "2027-01-15"
   },
   "docs": {
    "planet": "Planet id.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.date": "Birth date (YYYY-MM-DD).",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "from": "Start date YYYY-MM-DD (local midnight in tz). Defaults to now.",
@@ -3682,7 +3891,8 @@
    "lon": "Birth place longitude in decimal degrees.",
    "year": "Gregorian year of the solar return to compute.",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/varshaphal/harsha-bala": {
@@ -3696,19 +3906,20 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
-   "year": "2027"
+   "year": "2027",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
-   "year": "Year (YYYY)."
+   "year": "Year (YYYY).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/varshaphal/lord": {
@@ -3735,7 +3946,8 @@
    "lon": "Birth place longitude in decimal degrees.",
    "year": "Year (YYYY).",
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri."
+   "ayanamsa": "Ayanamsa (sidereal offset) to use. Defaults to lahiri.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/varshaphal/mudda-dasha": {
@@ -3749,19 +3961,20 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
-   "year": "2027"
+   "year": "2027",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
-   "year": "Year (YYYY)."
+   "year": "Year (YYYY).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/varshaphal/muntha": {
@@ -3829,24 +4042,29 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
-   "year": "2027"
+   "year": "2027",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
-   "year": "Year (YYYY)."
+   "year": "Year (YYYY).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/vedic/narrative/career-outlook": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -3854,7 +4072,14 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/dasha-phal": {
   "status": 200,
@@ -3864,71 +4089,102 @@
    "birth.tz"
   ],
   "params": {
-   "date": "2027-01-15",
    "tz": "Asia/Kolkata",
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "date": "2027-01-15",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/dasha-tree-phal": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
    "birth.date": "1990-01-15",
    "birth.time": "10:30",
    "birth.tz": "Asia/Kolkata"
   },
   "docs": {
-   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
-   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.date": "Birth date (YYYY-MM-DD).",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
- "/v1/vedic/narrative/dasha-tree-phal": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
  "/v1/vedic/narrative/divisional/{varga}": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/dosha/{id}": {
-  "status": 503,
+  "status": 200,
   "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/doshas": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/finance-outlook": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -3936,11 +4192,23 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/horoscope/daily-by-lagna": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -3948,23 +4216,45 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/horoscope/daily-by-moon": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/horoscope/daily-tamil": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -3972,11 +4262,23 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/horoscope/weekly-by-lagna": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -3984,23 +4286,46 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/horoscope/weekly-by-moon": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/house-lord": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "house"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -4009,11 +4334,23 @@
    "lon": "72.8777",
    "house": "7"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/house-lords-overview": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -4021,23 +4358,45 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/karakas": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/lagna": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -4045,11 +4404,22 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/marriage-outlook": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -4057,7 +4427,14 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/milan": {
   "status": 200,
@@ -4069,48 +4446,75 @@
   ],
   "params": {
    "boy.date": "1990-01-15",
-   "boy.time": "10:30",
    "boy.tz": "Asia/Kolkata",
    "girl.date": "1992-03-20",
-   "girl.time": "08:15",
-   "girl.tz": "Asia/Kolkata"
+   "girl.tz": "Asia/Kolkata",
+   "boy.time": "10:30",
+   "girl.time": "08:15"
   },
   "docs": {
    "boy.date": "Boy's birth date (YYYY-MM-DD).",
-   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "boy.tz": "Boy's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "girl.date": "Girl's birth date (YYYY-MM-DD).",
+   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "boy.time": "Boy's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "girl.time": "Girl's birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "girl.tz": "Girl's birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/vedic/narrative/moon-sign": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/nakshatra": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/planet-in-house": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "planet"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -4119,24 +4523,47 @@
    "lon": "72.8777",
    "planet": "Mars"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/planet-in-sign": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon",
+   "planet"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
    "planet": "Mars"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/planets-in-houses": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
    "time": "10:30",
@@ -4144,19 +4571,36 @@
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/planets-in-signs": {
-  "status": 503,
-  "required": [],
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777"
   },
-  "docs": {}
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/vedic/narrative/prashna": {
   "status": 200,
@@ -4168,137 +4612,148 @@
   ],
   "params": {
    "date": "2027-01-15",
-   "time": "10:00",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
+   "time": "10:00",
    "topic": "career"
   },
   "docs": {
    "date": "Date (YYYY-MM-DD).",
-   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
    "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Latitude in decimal degrees.",
-   "lon": "Longitude in decimal degrees."
+   "lon": "Longitude in decimal degrees.",
+   "time": "Local time (HH:MM, 24-hour). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/vedic/narrative/profile": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/reference": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/reference/{family}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/sade-sati-history": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/sade-sati-phase": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/sade-sati-status": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/sun-sign": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/transit-ashtakavarga": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/transit-double": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/transit-phal": {
   "status": 200,
   "required": [
+   "date",
    "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/reference": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/reference/{family}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/sade-sati-history": {
+  "status": 200,
+  "required": [
    "birth.date",
    "birth.tz"
   ],
   "params": {
-   "date": "2027-01-15",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/sade-sati-phase": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/sade-sati-status": {
+  "status": 200,
+  "required": [
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata"
+  },
+  "docs": {
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/sun-sign": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/transit-ashtakavarga": {
+  "status": 200,
+  "required": [
+   "tz",
+   "lat",
+   "lon",
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "date": "1990-01-15",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
@@ -4313,10 +4768,96 @@
    "lon": "Longitude in decimal degrees.",
    "birth.date": "Birth date (YYYY-MM-DD).",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/transit-double": {
+  "status": 200,
+  "required": [
+   "tz",
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "date": "2027-01-15",
+   "time": "10:30",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "birth.date": "1990-01-15",
+   "birth.time": "10:30",
+   "birth.tz": "Asia/Kolkata",
+   "birth.lon": "72.8777"
+  },
+  "docs": {
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "time": "Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.",
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/transit-phal": {
+  "status": 200,
+  "required": [
+   "tz",
+   "birth.date",
+   "birth.tz"
+  ],
+  "params": {
+   "tz": "Asia/Kolkata",
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "date": "2027-01-15",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "tz": "Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "date": "Date of the moment to check, e.g. the transit date (YYYY-MM-DD).",
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
  "/v1/vedic/narrative/varshaphal-themes": {
+  "status": 200,
+  "required": [
+   "lat",
+   "lon",
+   "birth.date",
+   "birth.tz",
+   "year"
+  ],
+  "params": {
+   "lat": "19.076",
+   "lon": "72.8777",
+   "birth.date": "1990-01-15",
+   "birth.tz": "Asia/Kolkata",
+   "year": "2027",
+   "birth.time": "10:30"
+  },
+  "docs": {
+   "lat": "Latitude in decimal degrees.",
+   "lon": "Longitude in decimal degrees.",
+   "birth.date": "Birth date (YYYY-MM-DD).",
+   "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "year": "Year (YYYY).",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/narrative/yearly-bhavishyafal": {
   "status": 200,
   "required": [
    "lat",
@@ -4339,184 +4880,19 @@
    "birth.date": "Birth date (YYYY-MM-DD).",
    "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
-   "year": "Year (YYYY)."
+   "year": "Year (YYYY).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
- },
- "/v1/vedic/narrative/yearly-bhavishyafal": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777",
-   "year": "2027"
-  },
-  "docs": {}
  },
  "/v1/vedic/narrative/yoga/{id}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/narrative/yogas": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/daan/{id}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/for-graha": {
   "status": 200,
-  "required": [
-   "graha"
-  ],
-  "params": {
-   "graha": "saturn",
-   "reason": "debilitated"
-  },
+  "required": [],
+  "params": {},
   "docs": {
-   "graha": "Graha id. Required unless reason is dosha:<id>.",
-   "reason": "debilitated | combust | dusthana | weak_shadbala | dasha | dosha:<id>",
-   "include": "Comma-separated extra kinds: pooja, pilgrimage, yantra, rudraksha, gemstone.",
-   "category": "Limit to one catalogue category.",
-   "locale": "Text locale (en, hi, mr, ta, te, kn, ...). English text is kept where no translation exists."
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
   }
  },
- "/v1/vedic/remedies/lal-kitab": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/lal-kitab/{planet}/{house}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/mantra/{id}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/pooja/{id}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/rudraksha/{id}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/vrat/{id}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/yantra/{id}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/vedic/remedies/{rule_id}": {
-  "status": 503,
-  "required": [],
-  "params": {
-   "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata",
-   "lat": "19.076",
-   "lon": "72.8777"
-  },
-  "docs": {}
- },
- "/v1/western/astrocartography/local-space": {
+ "/v1/vedic/narrative/yogas": {
   "status": 200,
   "required": [
    "date",
@@ -4536,7 +4912,126 @@
    "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/daan/{id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/for-graha": {
+  "status": 200,
+  "required": [
+   "graha"
+  ],
+  "params": {
+   "graha": "saturn",
+   "reason": "debilitated"
+  },
+  "docs": {
+   "graha": "Graha id. Required unless reason is dosha:<id>.",
+   "reason": "debilitated | combust | dusthana | weak_shadbala | dasha | dosha:<id>",
+   "include": "Comma-separated extra kinds: pooja, pilgrimage, yantra, rudraksha, gemstone.",
+   "category": "Limit to one catalogue category.",
+   "locale": "Text locale (en, hi, mr, ta, te, kn, ...). English text is kept where no translation exists."
+  }
+ },
+ "/v1/vedic/remedies/lal-kitab": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/lal-kitab/{planet}/{house}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/mantra/{id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/pooja/{id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/rudraksha/{id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/vrat/{id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/yantra/{id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
+ },
+ "/v1/vedic/remedies/{rule_id}": {
+  "status": 200,
+  "required": [],
+  "params": {},
+  "docs": {}
+ },
+ "/v1/western/astrocartography/local-space": {
+  "status": 200,
+  "required": [
+   "date",
+   "tz",
+   "lat",
+   "lon"
+  ],
+  "params": {
+   "date": "1990-01-15",
+   "tz": "Asia/Kolkata",
+   "lat": "19.076",
+   "lon": "72.8777",
+   "time": "10:30"
+  },
+  "docs": {
+   "date": "Birth date (YYYY-MM-DD).",
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "lat": "Birth place latitude in decimal degrees.",
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/astrocartography/planet-lines": {
@@ -4547,13 +5042,13 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata"
+   "tz": "Asia/Kolkata",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/compatibility/sun-sign": {
@@ -5029,13 +5524,13 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
-   "tz": "Asia/Kolkata"
+   "tz": "Asia/Kolkata",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
-   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30)."
+   "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/horoscope/daily": {
@@ -5148,17 +5643,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/narrative/decan": {
@@ -5171,7 +5666,10 @@
    "sign": "Aries",
    "decan": "1"
   },
-  "docs": {}
+  "docs": {
+   "sign": "Tropical zodiac sign (case-insensitive on input; canonicalised in response).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/western/narrative/fixed-star/{name}": {
   "status": 200,
@@ -5212,7 +5710,9 @@
   "params": {
    "degree": "15"
   },
-  "docs": {}
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/western/narrative/timelord/firdaria": {
   "status": 200,
@@ -5222,7 +5722,9 @@
   "params": {
    "lord": "Sun"
   },
-  "docs": {}
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/western/narrative/timelord/profection": {
   "status": 200,
@@ -5232,7 +5734,9 @@
   "params": {
    "house": "1"
   },
-  "docs": {}
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/western/narrative/timelord/zr": {
   "status": 200,
@@ -5242,7 +5746,9 @@
   "params": {
    "lord": "Sun"
   },
-  "docs": {}
+  "docs": {
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/western/narrative/transit-summary": {
   "status": 200,
@@ -5284,7 +5790,10 @@
   "params": {
    "sign": "Aries"
   },
-  "docs": {}
+  "docs": {
+   "sign": "Tropical zodiac sign (case-insensitive on input; canonicalised in response).",
+   "lang": "Language of names, labels and readings in the response: `en` (default), `hi`, `mr`, `gu`, `bn`, `te`, `ta`, `kn`, `ml`; `pa` returns names and terms in Punjabi with longer text in English. `locale` is accepted as an alias."
+  }
  },
  "/v1/western/natal/antiscia": {
   "status": 200,
@@ -5296,17 +5805,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/ascendant": {
@@ -5344,17 +5853,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/aspects": {
@@ -5396,17 +5905,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/asteroids/big-four-plus": {
@@ -5431,17 +5940,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/chart": {
@@ -5484,17 +5993,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/declinations": {
@@ -5507,17 +6016,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/dominant": {
@@ -5530,17 +6039,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/fixed-stars": {
@@ -5553,17 +6062,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/fixed-stars/{name}": {
@@ -5576,17 +6085,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/harmonic-aspects": {
@@ -5599,17 +6108,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/harmonic/{n}": {
@@ -5622,17 +6131,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/houses": {
@@ -5670,17 +6179,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/lot/{name}": {
@@ -5693,17 +6202,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/lots": {
@@ -5716,17 +6225,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/mc": {
@@ -5764,17 +6273,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/midpoints": {
@@ -5787,17 +6296,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/out-of-bounds": {
@@ -5810,17 +6319,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/parans": {
@@ -5833,17 +6342,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/planet/{name}": {
@@ -5916,17 +6425,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/natal/vertex-set": {
@@ -5939,17 +6448,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/primary-directions/placidus-mundane": {
@@ -5962,17 +6471,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/primary-directions/placidus-zodiacal": {
@@ -5985,17 +6494,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/primary-directions/regiomontanus": {
@@ -6008,17 +6517,17 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
-   "lon": "72.8777"
+   "lon": "72.8777",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/profections/annual": {
@@ -6205,19 +6714,19 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
-   "from": "2027-01-01T00:00:00Z"
+   "from": "2027-01-01T00:00:00Z",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
    "lon": "Birth place longitude in decimal degrees.",
-   "from": "Start of the range."
+   "from": "Start of the range.",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/returns/solar": {
@@ -6261,18 +6770,19 @@
   ],
   "params": {
    "date": "1990-01-15",
-   "time": "10:30",
    "tz": "Asia/Kolkata",
    "lat": "19.076",
    "lon": "72.8777",
-   "return_year": "2027"
+   "return_year": "2027",
+   "time": "10:30"
   },
   "docs": {
    "date": "Birth date (YYYY-MM-DD).",
-   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "lat": "Birth place latitude in decimal degrees.",
-   "lon": "Birth place longitude in decimal degrees."
+   "lon": "Birth place longitude in decimal degrees.",
+   "return_year": "Calendar year for the solar return. Range [-1000, 5000].",
+   "time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/returns/solar/exact-jd": {
@@ -6501,21 +7011,21 @@
   ],
   "params": {
    "birth.date": "1990-01-15",
-   "birth.time": "10:30",
    "birth.tz": "Asia/Kolkata",
    "birth.lat": "19.076",
    "birth.lon": "72.8777",
    "from": "2027-01-01",
-   "to": "2027-01-30"
+   "to": "2027-01-30",
+   "birth.time": "10:30"
   },
   "docs": {
    "birth.date": "Birth date (YYYY-MM-DD).",
-   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00.",
    "birth.tz": "Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).",
    "birth.lat": "Birth place latitude in decimal degrees.",
    "birth.lon": "Birth place longitude in decimal degrees.",
    "from": "Start of the range.",
-   "to": "End of the range."
+   "to": "End of the range.",
+   "birth.time": "Birth time (HH:MM, 24-hour, local). Defaults to 12:00."
   }
  },
  "/v1/western/transits/exact": {

@@ -39,11 +39,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/career-outlook`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -142,9 +142,9 @@ final class Narrative
      *
      * @param float $lat Latitude in decimal degrees, north positive.
      * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param string $maha
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
@@ -194,11 +194,11 @@ final class Narrative
      * `GET /v1/vedic/narrative/divisional/{varga}`
      *
      * @param string $varga
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -303,11 +303,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/doshas`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -356,11 +356,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/finance-outlook`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -409,11 +409,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/horoscope/daily-by-lagna`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -466,11 +466,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/horoscope/daily-by-moon`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -522,11 +522,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/horoscope/daily-tamil`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -578,11 +578,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/horoscope/weekly-by-lagna`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -634,11 +634,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/horoscope/weekly-by-moon`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -689,11 +689,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/house-lord`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param int $house
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
@@ -744,11 +744,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/house-lords-overview`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -797,11 +797,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/karakas`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -850,11 +850,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/lagna`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -903,11 +903,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/marriage-outlook`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -1007,11 +1007,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/moon-sign`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -1060,11 +1060,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/nakshatra`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -1113,11 +1113,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/planet-in-house`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param string $planet
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
@@ -1169,11 +1169,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/planet-in-sign`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param string $planet
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
@@ -1224,11 +1224,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/planets-in-houses`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -1276,11 +1276,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/planets-in-signs`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -1386,11 +1386,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/profile`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -1632,11 +1632,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/sun-sign`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
      * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
@@ -1686,11 +1686,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/transit-ashtakavarga`
      *
-     * @param string $birthDate
-     * @param string $birthTime
-     * @param string $birthTz
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
+     * @param string $birthDate Birth date (YYYY-MM-DD).
+     * @param string $birthTime Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $birthTz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
+     * @param float $lat Latitude in decimal degrees.
+     * @param float $lon Longitude in decimal degrees.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
      * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
@@ -1732,9 +1732,9 @@ final class Narrative
      * @param array{date: string, time: string, tz: string, lat: float|int, lon: float|int} $birth
      *     Natal chart: birth `date`, `time`, `tz`, `lat`, `lon`, sent as `birth.date`,
      *     `birth.time`, ...
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param string $date Date of the moment to check, e.g. the transit date (YYYY-MM-DD).
+     * @param string $time Local time of the moment to check (HH:MM, 24-hour). Defaults to 12:00.
+     * @param string $tz Timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
@@ -1873,12 +1873,12 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/yearly-bhavishyafal`
      *
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param int $year
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
+     * @param float $lat Latitude in decimal degrees.
+     * @param float $lon Longitude in decimal degrees.
+     * @param int $year Year (YYYY).
      * @param Lang|string|null $lang Response language: a `Lang` case or its code (`'hi'`, `'gu'`,
      *     ...). Sent as `lang` and `locale`.
      * @param RequestOptions|null $requestOptions Per-call timeout, raw body or onResponse hook.
@@ -1975,11 +1975,11 @@ final class Narrative
      *
      * `GET /v1/vedic/narrative/yogas`
      *
-     * @param float $lat Latitude in decimal degrees, north positive.
-     * @param float $lon Longitude in decimal degrees, east positive.
-     * @param string $date Date, `YYYY-MM-DD`.
-     * @param string $time Local time, 24-hour `HH:MM`.
-     * @param string $tz Time zone: IANA name (`Asia/Kolkata`) or UTC offset (`+05:30`).
+     * @param float $lat Birth place latitude in decimal degrees.
+     * @param float $lon Birth place longitude in decimal degrees.
+     * @param string $date Birth date (YYYY-MM-DD).
+     * @param string $time Birth time (HH:MM, 24-hour, local). Defaults to 12:00.
+     * @param string $tz Birth place timezone: IANA name (Asia/Kolkata) or UTC offset (+05:30).
      * @param Ayanamsa|string|null $ayanamsa Sidereal ayanamsa (`Ayanamsa` case or value); the API
      *     uses Lahiri when left out.
      * @param HouseSystem|string|null $houseSystem House system (`HouseSystem` case or value), sent
